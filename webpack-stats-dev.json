@@ -1,0 +1,7 @@
+{
+  "status": "error",
+  "assets": {},
+  "chunks": {},
+  "error": "ModuleNotFoundError",
+  "message": "Module not found: Error: Can't resolve '.' in 'D:\\git Project work\\TerminusDB'"
+}
