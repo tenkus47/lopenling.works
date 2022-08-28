@@ -16,7 +16,7 @@ module.exports = {
     parkhang: ["./app/index", "./website/index"],
   },
   output: {
-    path: path.resolve(__dirname, "public"),
+    path: path.resolve(__dirname, "docs"),
     filename: "main.js",
   },
   plugins: [
@@ -34,7 +34,7 @@ module.exports = {
   target: "web",
   devServer: {
     port: "9500",
-    static: ["./public"],
+    static: ["./docs"],
     open: true,
     hot: true,
     liveReload: true,
