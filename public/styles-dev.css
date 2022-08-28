@@ -1,0 +1,398 @@
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+.Header---header {
+    background-color: #FBFBFA;
+    font-family: "Overpass", "arial", "sans-serif";
+    font-size: 24px;
+    font-size: 1.5rem;
+    color: #666666;
+    height: 40px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .18);
+            box-shadow: 0 1px 8px rgba(0, 0, 0, .18);
+    /* Same as lopenling header */
+    z-index: 1;
+}
+
+.Header---header p {
+    margin: 0;
+    padding: 0;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+}
+
+.Header---logo {
+    margin-right: 20px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.Header---navigationButton {
+    margin-right: 10px;
+}
+
+.Header---loginButton {
+    font-family: "Overpass", "arial", "sans-serif";
+    font-size: 15px;
+    background-color: #88af8e;
+    color: #ffffff;
+    margin-right: 20px;
+    margin-left: 7px;
+    border: 0;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.Header---loginButton svg {
+    color: white;
+    margin-right: 5px;
+}
+
+.Header---buttonLink {
+    line-height: 1;
+    background-color: #88af8e;
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+.Header---controls {
+    position: relative;
+}
+.LocaleSwitcher---localeOptions {
+    margin-right: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.LocaleSwitcher---localeOption {
+    font-size: 14px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.LocaleSwitcher---selected {
+    font-weight: bold;
+}
+
+.LocaleSwitcher---localeOption:not(:nth-child(1)) {
+    border-left: 1px solid white;
+}
+.NavigationButton---button {
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    border-radius: 5px;
+}
+
+.NavigationButton---button svg {
+    width: 16px;
+}
+
+.NavigationButton---button:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+.AccountOverlay---overlay {
+    position: absolute;
+    width: 200px;
+    background-color: #ddd;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, .4);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, .4);
+    z-index: 1;
+    padding: 10px;
+}
+
+.AccountOverlay---username {
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+    color: #444;
+    margin: 0 0 10px 0;
+}
+
+.TranslateButton---langSelection{
+    background-color: #eee;
+    height: 40px;
+    width: 40px;
+     margin-right:30px;
+     cursor: pointer;padding-top:7px ;
+}
+.TranslateButton---langSelection:hover{
+    background-color: rgb(181, 175, 175);
+}
+.TranslateButton---langSelection div{
+    width: 100%;
+    text-align: center;
+}
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+.Resources---Resources {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.Resources---ResourceDetail {
+    background-color: white;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-top: 20px;
+}
+
+.Resources---optionlist .Resources---css-heg063-MuiTabs-flexContainer button {
+    padding: 2px !important;
+    min-width: 10px !important;
+}
+
+
+.ResourceOption---Dictionary{
+    padding:10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+    font-display: swap;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Overpass", "arial", "sans-serif";
+    font-display: swap;
+    -webkit-font-feature-settings: "kern";
+            font-feature-settings: "kern";
+    -webkit-font-kerning: normal;
+            font-kerning: normal;
+    /* background-color: white; */
+    overflow: hidden;
+}
+
+.App---container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.App---interface {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+
+.App---listContainer {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -webkit-transition: width 0.25s ease-in-out;
+    transition: width 0.25s ease-in-out;
+    position: relative;
+}
+
+.App---showListContainer {
+    width: 100%;
+}
+
+.App---hideListContainer {
+    width: 0%;
+}
+
+.Resizer.vertical {
+    width: 10px;
+    cursor: col-resize;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    cursor: pointer;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgba(1, 1, 1, .7);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    width: 8px;
+
+}
+
+@supports(scrollbar-color: gray) {
+
+    /* firefox support */
+    * {
+        scrollbar-color: gray;
+        scrollbar-width: thin;
+    }
+}
+.util---flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.util---flexColumn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.HomePage---list {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.HomePage---list::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}

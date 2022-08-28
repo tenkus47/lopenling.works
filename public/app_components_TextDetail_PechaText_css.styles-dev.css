@@ -1,0 +1,48 @@
+.PechaText---pechaText {
+    width: 100%;
+    background-color: white;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+.PechaText---textPagesRow {
+    overflow: hidden;
+}
+
+.PechaText---textPagesRow .PechaText---text {
+    max-width: 100%;
+}
+
+.PechaText---pechaImage {
+    background-color: #eee;
+    margin: auto auto;
+    height: 200px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.PechaText---pechaContent {
+    margin: 20px auto;
+    border-style: double;
+    border-width: 10px;
+    border-color: #666;
+    width: 90%;
+    height: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+}
+
+.PechaText---pechaContent p {
+    margin: 0 auto;
+}

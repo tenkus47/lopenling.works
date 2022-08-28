@@ -1,0 +1,335 @@
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+.SplitText---annotationControls {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: var(--controlsBackground);
+     */
+    background-color: transparent;
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 264px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding-top: 10px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.SplitText---annotationContent {
+    padding: 0 5px 5px 5px;
+
+}
+
+.SplitText---subTitle {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.SplitText---title {
+    font-size: 12px;
+}
+
+.SplitText---sectionHeading {
+    font-weight: normal;
+    font-size: 15px;
+    background: #eee;
+    -webkit-box-shadow: 0px 0px 3px #777;
+            box-shadow: 0px 0px 3px #777;
+
+}
+
+.SplitText---text {
+    font-size: 13px;
+}
+
+.SplitText---padding {
+    padding: 5px;
+}
+
+.SplitText---arrowTop {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #eee;
+}
+
+.SplitText---arrowLeft {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: - 10px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #eee;
+    border-bottom: 10px solid transparent;
+}
+
+.SplitText---arrowRight {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: - 10px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #eee;
+    border-bottom: 10px solid transparent;
+}
+
+.SplitText---inline {
+    z-index: 1;
+}
+
+.SplitText---inline .SplitText---arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -20px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #eee;
+    border-bottom: 20px solid transparent;
+}
+
+.SplitText---inline .SplitText---arrowDs {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    left: -20px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #bbb;
+    border-bottom: 20px solid transparent;
+}
+
+.SplitText---annotationContent>h3 {
+    font-family: "Overpass", "arial", "sans-serif";
+    font-size: 18px;
+    width: 100%;
+    padding: 0 0 0px 0;
+    margin: 5px 0 0px 0;
+    font-weight: normal;
+    color: #444;
+}
+
+.SplitText---nothingSelected {
+    position: relative;
+    top: 25%;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    color: #888;
+}
+
+.SplitText---anonymousMessage {
+    margin-top: -8px;
+    font-size: 12px;
+    line-height: 0.8;
+    background: rgba(175, 175, 175, .9);
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: bold;
+    height: 24px;
+}
+
+.SplitText---anonymousMessage a:link,
+.SplitText---anonymousMessage a:visited {
+    color: red;
+    font-weight: bold;
+}
+
+.SplitText---noNotes {
+    color: #aaa;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.SplitText---breakButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*margin-bottom: 20px;*/
+}
+
+.SplitText---breakButtons>button {
+    margin-top: 5px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+blockquote {
+    font-size: 16px;
+    margin: 10px;
+}
+
+.SplitText---splitText {
+    /* background-color: white; */
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-size: 24px;
+    width: 100%;
+}
+
+.SplitText---splitText * {
+    scroll-behavior: smooth;
+
+}
+
+.SplitText---splitText *:focus {
+    outline: none;
+}
+
+.SplitText---splitTextRowContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+
+.SplitText---splitTextRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.SplitText---splitTextRow * {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.SplitText---splitTextRow *::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.SplitText---splitTextRow .SplitText---text {
+    max-width: 100%;
+}
+
+.SplitText---pechaImage {
+    background-color: #eee;
+    height: 260px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+}
+
+.SplitText---image {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.SplitText---pechaImage img {
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.SplitText---controlsPlaceholder {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 264px;
+        flex-basis: 264px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.SplitText---hide {
+    display: none;
+}
+
+.SplitText---pageNumber {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 42px;
+    color: #444;
+}
+
+.ReactVirtualized__Grid__innerScrollContainer {
+    overflow: visible !important;
+    margin-bottom: 300px;
+}
+
+span {
+    position: relative
+}
+
+.SplitText---image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.SplitText---image-loading {
+    opacity: 0;
+    -webkit-transition: none;
+    transition: none;
+}

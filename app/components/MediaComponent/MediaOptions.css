@@ -1,0 +1,30 @@
+@import 'css/colour.css';
+
+.MediaOption {
+    resize: both;
+    overflow: auto;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    right: 0;
+    background-color: var(--text-bg);
+}
+
+.header {
+    position: relative;
+    top: 0;
+    height: 60px;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding-inline: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.closeBtn {
+    position: absolute !important;
+    right: 10px;
+    top: 10px;
+}

@@ -1,0 +1,16 @@
+.button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+}
+
+.button svg {
+    width: 16px;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}

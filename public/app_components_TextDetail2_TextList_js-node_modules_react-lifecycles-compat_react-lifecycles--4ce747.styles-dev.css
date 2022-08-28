@@ -1,0 +1,13 @@
+.TextList---textlist {
+    max-width: 240px;
+    max-width: 15rem;
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.TextList---textlist.TextList---open {
+    width: 500px;
+    height: 500px;
+}

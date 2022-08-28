@@ -1,7 +1,1710 @@
 {
-  "status": "error",
-  "assets": {},
-  "chunks": {},
-  "error": "ModuleNotFoundError",
-  "message": "Module not found: Error: Can't resolve '.' in 'D:\\git Project work\\TerminusDB'"
+  "status": "done",
+  "assets": {
+    "375e0e9056137a8eb3c9bbcb876efbdc.png": {
+      "name": "375e0e9056137a8eb3c9bbcb876efbdc.png",
+      "path": "D:\\git Project work\\TerminusDB\\public\\375e0e9056137a8eb3c9bbcb876efbdc.png"
+    },
+    "ea9a1cd4d17aad5a9c5bdfde6acaad2e.png": {
+      "name": "ea9a1cd4d17aad5a9c5bdfde6acaad2e.png",
+      "path": "D:\\git Project work\\TerminusDB\\public\\ea9a1cd4d17aad5a9c5bdfde6acaad2e.png"
+    },
+    "8967124136190c7842d863e4a862a528.png": {
+      "name": "8967124136190c7842d863e4a862a528.png",
+      "path": "D:\\git Project work\\TerminusDB\\public\\8967124136190c7842d863e4a862a528.png"
+    },
+    "b81eedeb7a90a13b48c4a1185a58ca30.png": {
+      "name": "b81eedeb7a90a13b48c4a1185a58ca30.png",
+      "path": "D:\\git Project work\\TerminusDB\\public\\b81eedeb7a90a13b48c4a1185a58ca30.png"
+    },
+    "styles-dev.css": {
+      "name": "styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\styles-dev.css"
+    },
+    "main.js": {
+      "name": "main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.js"
+    },
+    "app_components_App_switcher_css.styles-dev.css": {
+      "name": "app_components_App_switcher_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_App_switcher_css.styles-dev.css"
+    },
+    "app_components_App_switcher_css.main.js": {
+      "name": "app_components_App_switcher_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_App_switcher_css.main.js"
+    },
+    "app_components_Editors_index_js-app_components_Editors_EditorContainer_css-app_components_Edi-5ae254.styles-dev.css": {
+      "name": "app_components_Editors_index_js-app_components_Editors_EditorContainer_css-app_components_Edi-5ae254.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_index_js-app_components_Editors_EditorContainer_css-app_components_Edi-5ae254.styles-dev.css"
+    },
+    "app_components_Editors_index_js-app_components_Editors_EditorContainer_css-app_components_Edi-5ae254.main.js": {
+      "name": "app_components_Editors_index_js-app_components_Editors_EditorContainer_css-app_components_Edi-5ae254.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_index_js-app_components_Editors_EditorContainer_css-app_components_Edi-5ae254.main.js"
+    },
+    "app_components_Editors_EditorContainer_css-app_components_Editors_resizerStyle_css-app_compon-027f80.styles-dev.css": {
+      "name": "app_components_Editors_EditorContainer_css-app_components_Editors_resizerStyle_css-app_compon-027f80.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_EditorContainer_css-app_components_Editors_resizerStyle_css-app_compon-027f80.styles-dev.css"
+    },
+    "app_components_Editors_EditorContainer_js-app_components_Editors_EditorContainer_css-app_comp-ebe8fb.styles-dev.css": {
+      "name": "app_components_Editors_EditorContainer_js-app_components_Editors_EditorContainer_css-app_comp-ebe8fb.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_EditorContainer_js-app_components_Editors_EditorContainer_css-app_comp-ebe8fb.styles-dev.css"
+    },
+    "app_components_Editors_EditorContainer_js-app_components_Editors_EditorContainer_css-app_comp-ebe8fb.main.js": {
+      "name": "app_components_Editors_EditorContainer_js-app_components_Editors_EditorContainer_css-app_comp-ebe8fb.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_EditorContainer_js-app_components_Editors_EditorContainer_css-app_comp-ebe8fb.main.js"
+    },
+    "app_components_Editors_EditorContainer_css.styles-dev.css": {
+      "name": "app_components_Editors_EditorContainer_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_EditorContainer_css.styles-dev.css"
+    },
+    "app_components_Editors_EditorContainer_css.main.js": {
+      "name": "app_components_Editors_EditorContainer_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_EditorContainer_css.main.js"
+    },
+    "app_components_Editors_resizerStyle_css-app_components_MediaComponent_Image_css-app_component-cf8217.styles-dev.css": {
+      "name": "app_components_Editors_resizerStyle_css-app_components_MediaComponent_Image_css-app_component-cf8217.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_resizerStyle_css-app_components_MediaComponent_Image_css-app_component-cf8217.styles-dev.css"
+    },
+    "app_components_Editors_resizerStyle_css.styles-dev.css": {
+      "name": "app_components_Editors_resizerStyle_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_resizerStyle_css.styles-dev.css"
+    },
+    "app_components_Editors_resizerStyle_css.main.js": {
+      "name": "app_components_Editors_resizerStyle_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_resizerStyle_css.main.js"
+    },
+    "app_components_ErrorBoundary_ErrorBoundary_js.main.js": {
+      "name": "app_components_ErrorBoundary_ErrorBoundary_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_ErrorBoundary_ErrorBoundary_js.main.js"
+    },
+    "app_components_Header_Header_test_js.main.js": {
+      "name": "app_components_Header_Header_test_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Header_Header_test_js.main.js"
+    },
+    "app_components_MediaComponent_index_js-app_components_MediaComponent_Image_css-app_components-dcbd0a.styles-dev.css": {
+      "name": "app_components_MediaComponent_index_js-app_components_MediaComponent_Image_css-app_components-dcbd0a.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_index_js-app_components_MediaComponent_Image_css-app_components-dcbd0a.styles-dev.css"
+    },
+    "app_components_MediaComponent_index_js-app_components_MediaComponent_Image_css-app_components-dcbd0a.main.js": {
+      "name": "app_components_MediaComponent_index_js-app_components_MediaComponent_Image_css-app_components-dcbd0a.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_index_js-app_components_MediaComponent_Image_css-app_components-dcbd0a.main.js"
+    },
+    "app_components_MediaComponent_Audio_js.main.js": {
+      "name": "app_components_MediaComponent_Audio_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_Audio_js.main.js"
+    },
+    "app_components_MediaComponent_DraggableMedia_js.main.js": {
+      "name": "app_components_MediaComponent_DraggableMedia_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_DraggableMedia_js.main.js"
+    },
+    "app_components_MediaComponent_Image_js.styles-dev.css": {
+      "name": "app_components_MediaComponent_Image_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_Image_js.styles-dev.css"
+    },
+    "app_components_MediaComponent_Image_js.main.js": {
+      "name": "app_components_MediaComponent_Image_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_Image_js.main.js"
+    },
+    "app_components_MediaComponent_Image_css.styles-dev.css": {
+      "name": "app_components_MediaComponent_Image_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_Image_css.styles-dev.css"
+    },
+    "app_components_MediaComponent_Image_css.main.js": {
+      "name": "app_components_MediaComponent_Image_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_Image_css.main.js"
+    },
+    "app_components_MediaComponent_MediaContainer_js-app_components_MediaComponent_Image_css-app_c-c56821.styles-dev.css": {
+      "name": "app_components_MediaComponent_MediaContainer_js-app_components_MediaComponent_Image_css-app_c-c56821.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_MediaContainer_js-app_components_MediaComponent_Image_css-app_c-c56821.styles-dev.css"
+    },
+    "app_components_MediaComponent_MediaContainer_js-app_components_MediaComponent_Image_css-app_c-c56821.main.js": {
+      "name": "app_components_MediaComponent_MediaContainer_js-app_components_MediaComponent_Image_css-app_c-c56821.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_MediaContainer_js-app_components_MediaComponent_Image_css-app_c-c56821.main.js"
+    },
+    "app_components_MediaComponent_Image_css-app_components_MediaComponent_MediaOptions_css.styles-dev.css": {
+      "name": "app_components_MediaComponent_Image_css-app_components_MediaComponent_MediaOptions_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_Image_css-app_components_MediaComponent_MediaOptions_css.styles-dev.css"
+    },
+    "app_components_MediaComponent_MediaOptions_css.styles-dev.css": {
+      "name": "app_components_MediaComponent_MediaOptions_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_MediaOptions_css.styles-dev.css"
+    },
+    "app_components_MediaComponent_MediaOptions_css.main.js": {
+      "name": "app_components_MediaComponent_MediaOptions_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_MediaOptions_css.main.js"
+    },
+    "app_components_MediaComponent_Video_js.main.js": {
+      "name": "app_components_MediaComponent_Video_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_Video_js.main.js"
+    },
+    "app_components_MediaComponent_Video_css.styles-dev.css": {
+      "name": "app_components_MediaComponent_Video_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_Video_css.styles-dev.css"
+    },
+    "app_components_MediaComponent_Video_css.main.js": {
+      "name": "app_components_MediaComponent_Video_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_Video_css.main.js"
+    },
+    "app_components_Popover_index_js.styles-dev.css": {
+      "name": "app_components_Popover_index_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Popover_index_js.styles-dev.css"
+    },
+    "app_components_Popover_index_js.main.js": {
+      "name": "app_components_Popover_index_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Popover_index_js.main.js"
+    },
+    "app_components_Popover_Popover_js.styles-dev.css": {
+      "name": "app_components_Popover_Popover_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Popover_Popover_js.styles-dev.css"
+    },
+    "app_components_Popover_Popover_js.main.js": {
+      "name": "app_components_Popover_Popover_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Popover_Popover_js.main.js"
+    },
+    "app_components_Popover_Popover_css.styles-dev.css": {
+      "name": "app_components_Popover_Popover_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Popover_Popover_css.styles-dev.css"
+    },
+    "app_components_Popover_Popover_css.main.js": {
+      "name": "app_components_Popover_Popover_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Popover_Popover_css.main.js"
+    },
+    "app_components_Search_index_js.main.js": {
+      "name": "app_components_Search_index_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Search_index_js.main.js"
+    },
+    "app_components_Search_Search_js.main.js": {
+      "name": "app_components_Search_Search_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Search_Search_js.main.js"
+    },
+    "app_components_Search_Search_css.styles-dev.css": {
+      "name": "app_components_Search_Search_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Search_Search_css.styles-dev.css"
+    },
+    "app_components_Search_Search_css.main.js": {
+      "name": "app_components_Search_Search_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Search_Search_css.main.js"
+    },
+    "app_components_Search_SearchContainer_js.main.js": {
+      "name": "app_components_Search_SearchContainer_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Search_SearchContainer_js.main.js"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_TextDetail_index_js-app-7f7f2b.styles-dev.css": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_TextDetail_index_js-app-7f7f2b.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_TextDetail_index_js-app-7f7f2b.styles-dev.css"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_TextDetail_index_js-app-7f7f2b.main.js": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_TextDetail_index_js-app-7f7f2b.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_TextDetail_index_js-app-7f7f2b.main.js"
+    },
+    "app_components_TextDetail_AddButton_js.styles-dev.css": {
+      "name": "app_components_TextDetail_AddButton_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AddButton_js.styles-dev.css"
+    },
+    "app_components_TextDetail_AddButton_js.main.js": {
+      "name": "app_components_TextDetail_AddButton_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AddButton_js.main.js"
+    },
+    "app_components_TextDetail_AddButton_css.styles-dev.css": {
+      "name": "app_components_TextDetail_AddButton_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AddButton_css.styles-dev.css"
+    },
+    "app_components_TextDetail_AddButton_css.main.js": {
+      "name": "app_components_TextDetail_AddButton_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AddButton_css.main.js"
+    },
+    "node_modules_react-lifecycles-compat_react-lifecycles-compat_es_js-_54220.main.js": {
+      "name": "node_modules_react-lifecycles-compat_react-lifecycles-compat_es_js-_54220.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_react-lifecycles-compat_react-lifecycles-compat_es_js-_54220.main.js"
+    },
+    "app_components_TextDetail_AnnotationControls_css.styles-dev.css": {
+      "name": "app_components_TextDetail_AnnotationControls_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControls_css.styles-dev.css"
+    },
+    "app_components_TextDetail_AnnotationControls_css.main.js": {
+      "name": "app_components_TextDetail_AnnotationControls_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControls_css.main.js"
+    },
+    "app_components_TextDetail_AnnotationControls_test_js.main.js": {
+      "name": "app_components_TextDetail_AnnotationControls_test_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControls_test_js.main.js"
+    },
+    "node_modules_react-lifecycles-compat_react-lifecycles-compat_es_js-_54221.main.js": {
+      "name": "node_modules_react-lifecycles-compat_react-lifecycles-compat_es_js-_54221.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_react-lifecycles-compat_react-lifecycles-compat_es_js-_54221.main.js"
+    },
+    "app_components_TextDetail_AnnotationControlsContainer_test_js-node_modules_react-lifecycles-c-63b18d.main.js": {
+      "name": "app_components_TextDetail_AnnotationControlsContainer_test_js-node_modules_react-lifecycles-c-63b18d.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControlsContainer_test_js-node_modules_react-lifecycles-c-63b18d.main.js"
+    },
+    "app_components_TextDetail_AnnotationControlsHeader_css-app_components_UI_Accessory_css-app_co-f9061e.styles-dev.css": {
+      "name": "app_components_TextDetail_AnnotationControlsHeader_css-app_components_UI_Accessory_css-app_co-f9061e.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControlsHeader_css-app_components_UI_Accessory_css-app_co-f9061e.styles-dev.css"
+    },
+    "app_components_TextDetail_AnnotationControlsHeader_css.styles-dev.css": {
+      "name": "app_components_TextDetail_AnnotationControlsHeader_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControlsHeader_css.styles-dev.css"
+    },
+    "app_components_TextDetail_AnnotationControlsHeader_css.main.js": {
+      "name": "app_components_TextDetail_AnnotationControlsHeader_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControlsHeader_css.main.js"
+    },
+    "app_components_TextDetail_AnnotationControlsHeading_js.styles-dev.css": {
+      "name": "app_components_TextDetail_AnnotationControlsHeading_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControlsHeading_js.styles-dev.css"
+    },
+    "app_components_TextDetail_AnnotationControlsHeading_js.main.js": {
+      "name": "app_components_TextDetail_AnnotationControlsHeading_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControlsHeading_js.main.js"
+    },
+    "app_components_TextDetail_AnnotationControlsHeading_css.styles-dev.css": {
+      "name": "app_components_TextDetail_AnnotationControlsHeading_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControlsHeading_css.styles-dev.css"
+    },
+    "app_components_TextDetail_AnnotationControlsHeading_css.main.js": {
+      "name": "app_components_TextDetail_AnnotationControlsHeading_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControlsHeading_css.main.js"
+    },
+    "app_components_TextDetail_AnnotationDetail_js.styles-dev.css": {
+      "name": "app_components_TextDetail_AnnotationDetail_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationDetail_js.styles-dev.css"
+    },
+    "app_components_TextDetail_AnnotationDetail_js.main.js": {
+      "name": "app_components_TextDetail_AnnotationDetail_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationDetail_js.main.js"
+    },
+    "app_components_TextDetail_AnnotationDetail_css.styles-dev.css": {
+      "name": "app_components_TextDetail_AnnotationDetail_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationDetail_css.styles-dev.css"
+    },
+    "app_components_TextDetail_AnnotationDetail_css.main.js": {
+      "name": "app_components_TextDetail_AnnotationDetail_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationDetail_css.main.js"
+    },
+    "app_components_TextDetail_AnnotationDetailEdit_js.styles-dev.css": {
+      "name": "app_components_TextDetail_AnnotationDetailEdit_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationDetailEdit_js.styles-dev.css"
+    },
+    "app_components_TextDetail_AnnotationDetailEdit_js.main.js": {
+      "name": "app_components_TextDetail_AnnotationDetailEdit_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationDetailEdit_js.main.js"
+    },
+    "app_components_TextDetail_AnswerView_js.styles-dev.css": {
+      "name": "app_components_TextDetail_AnswerView_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnswerView_js.styles-dev.css"
+    },
+    "app_components_TextDetail_AnswerView_js.main.js": {
+      "name": "app_components_TextDetail_AnswerView_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnswerView_js.main.js"
+    },
+    "app_components_TextDetail_AnswerView_css.styles-dev.css": {
+      "name": "app_components_TextDetail_AnswerView_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnswerView_css.styles-dev.css"
+    },
+    "app_components_TextDetail_AnswerView_css.main.js": {
+      "name": "app_components_TextDetail_AnswerView_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnswerView_css.main.js"
+    },
+    "app_components_TextDetail_Button_css.styles-dev.css": {
+      "name": "app_components_TextDetail_Button_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_Button_css.styles-dev.css"
+    },
+    "app_components_TextDetail_Button_css.main.js": {
+      "name": "app_components_TextDetail_Button_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_Button_css.main.js"
+    },
+    "app_components_TextDetail_ExportControl_js.styles-dev.css": {
+      "name": "app_components_TextDetail_ExportControl_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_ExportControl_js.styles-dev.css"
+    },
+    "app_components_TextDetail_ExportControl_js.main.js": {
+      "name": "app_components_TextDetail_ExportControl_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_ExportControl_js.main.js"
+    },
+    "app_components_TextDetail_FontSize_js.styles-dev.css": {
+      "name": "app_components_TextDetail_FontSize_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_FontSize_js.styles-dev.css"
+    },
+    "app_components_TextDetail_FontSize_js.main.js": {
+      "name": "app_components_TextDetail_FontSize_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_FontSize_js.main.js"
+    },
+    "app_components_TextDetail_FontSize_css.styles-dev.css": {
+      "name": "app_components_TextDetail_FontSize_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_FontSize_css.styles-dev.css"
+    },
+    "app_components_TextDetail_FontSize_css.main.js": {
+      "name": "app_components_TextDetail_FontSize_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_FontSize_css.main.js"
+    },
+    "app_components_TextDetail_HeaderMenu_HighlightedString_js.main.js": {
+      "name": "app_components_TextDetail_HeaderMenu_HighlightedString_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_HighlightedString_js.main.js"
+    },
+    "app_components_TextDetail_HeaderMenu_Refresh_js.main.js": {
+      "name": "app_components_TextDetail_HeaderMenu_Refresh_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_Refresh_js.main.js"
+    },
+    "app_components_TextDetail_HeaderMenu_Search_js.main.js": {
+      "name": "app_components_TextDetail_HeaderMenu_Search_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_Search_js.main.js"
+    },
+    "app_components_TextDetail_HeaderMenu_SearchList_js-node_modules_react-lifecycles-compat_react-e2c7cb.styles-dev.css": {
+      "name": "app_components_TextDetail_HeaderMenu_SearchList_js-node_modules_react-lifecycles-compat_react-e2c7cb.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_SearchList_js-node_modules_react-lifecycles-compat_react-e2c7cb.styles-dev.css"
+    },
+    "app_components_TextDetail_HeaderMenu_SearchList_js-node_modules_react-lifecycles-compat_react-e2c7cb.main.js": {
+      "name": "app_components_TextDetail_HeaderMenu_SearchList_js-node_modules_react-lifecycles-compat_react-e2c7cb.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_SearchList_js-node_modules_react-lifecycles-compat_react-e2c7cb.main.js"
+    },
+    "app_components_TextDetail_HeaderMenu_SearchStyle_css.styles-dev.css": {
+      "name": "app_components_TextDetail_HeaderMenu_SearchStyle_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_SearchStyle_css.styles-dev.css"
+    },
+    "app_components_TextDetail_HeaderMenu_SearchStyle_css.main.js": {
+      "name": "app_components_TextDetail_HeaderMenu_SearchStyle_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_SearchStyle_css.main.js"
+    },
+    "app_components_TextDetail_HeaderMenu_Settings_js.styles-dev.css": {
+      "name": "app_components_TextDetail_HeaderMenu_Settings_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_Settings_js.styles-dev.css"
+    },
+    "app_components_TextDetail_HeaderMenu_Settings_js.main.js": {
+      "name": "app_components_TextDetail_HeaderMenu_Settings_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_Settings_js.main.js"
+    },
+    "app_components_TextDetail_HeaderMenu_TableOfContent_js.main.js": {
+      "name": "app_components_TextDetail_HeaderMenu_TableOfContent_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_TableOfContent_js.main.js"
+    },
+    "app_components_TextDetail_HeaderMenu_WindowSplitter_js.main.js": {
+      "name": "app_components_TextDetail_HeaderMenu_WindowSplitter_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_WindowSplitter_js.main.js"
+    },
+    "app_components_TextDetail_ImageToggle_js.styles-dev.css": {
+      "name": "app_components_TextDetail_ImageToggle_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_ImageToggle_js.styles-dev.css"
+    },
+    "app_components_TextDetail_ImageToggle_js.main.js": {
+      "name": "app_components_TextDetail_ImageToggle_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_ImageToggle_js.main.js"
+    },
+    "app_components_TextDetail_ImageToggle_css.styles-dev.css": {
+      "name": "app_components_TextDetail_ImageToggle_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_ImageToggle_css.styles-dev.css"
+    },
+    "app_components_TextDetail_ImageToggle_css.main.js": {
+      "name": "app_components_TextDetail_ImageToggle_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_ImageToggle_css.main.js"
+    },
+    "app_components_TextDetail_Note_js.styles-dev.css": {
+      "name": "app_components_TextDetail_Note_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_Note_js.styles-dev.css"
+    },
+    "app_components_TextDetail_Note_js.main.js": {
+      "name": "app_components_TextDetail_Note_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_Note_js.main.js"
+    },
+    "app_components_TextDetail_Note_css.styles-dev.css": {
+      "name": "app_components_TextDetail_Note_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_Note_css.styles-dev.css"
+    },
+    "app_components_TextDetail_Note_css.main.js": {
+      "name": "app_components_TextDetail_Note_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_Note_css.main.js"
+    },
+    "app_components_TextDetail_NoteEditor_js.styles-dev.css": {
+      "name": "app_components_TextDetail_NoteEditor_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_NoteEditor_js.styles-dev.css"
+    },
+    "app_components_TextDetail_NoteEditor_js.main.js": {
+      "name": "app_components_TextDetail_NoteEditor_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_NoteEditor_js.main.js"
+    },
+    "app_components_TextDetail_NoteEditor_css.styles-dev.css": {
+      "name": "app_components_TextDetail_NoteEditor_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_NoteEditor_css.styles-dev.css"
+    },
+    "app_components_TextDetail_NoteEditor_css.main.js": {
+      "name": "app_components_TextDetail_NoteEditor_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_NoteEditor_css.main.js"
+    },
+    "node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-ac6ce6.styles-dev.css": {
+      "name": "node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-ac6ce6.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-ac6ce6.styles-dev.css"
+    },
+    "node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-ac6ce6.main.js": {
+      "name": "node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-ac6ce6.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-ac6ce6.main.js"
+    },
+    "app_components_TextDetail_PechaText_css.styles-dev.css": {
+      "name": "app_components_TextDetail_PechaText_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_PechaText_css.styles-dev.css"
+    },
+    "app_components_TextDetail_PechaText_css.main.js": {
+      "name": "app_components_TextDetail_PechaText_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_PechaText_css.main.js"
+    },
+    "app_components_TextDetail_QuestionEditor_js.styles-dev.css": {
+      "name": "app_components_TextDetail_QuestionEditor_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_QuestionEditor_js.styles-dev.css"
+    },
+    "app_components_TextDetail_QuestionEditor_js.main.js": {
+      "name": "app_components_TextDetail_QuestionEditor_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_QuestionEditor_js.main.js"
+    },
+    "app_components_TextDetail_QuestionEditor_css.styles-dev.css": {
+      "name": "app_components_TextDetail_QuestionEditor_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_QuestionEditor_css.styles-dev.css"
+    },
+    "app_components_TextDetail_QuestionEditor_css.main.js": {
+      "name": "app_components_TextDetail_QuestionEditor_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_QuestionEditor_css.main.js"
+    },
+    "app_components_TextDetail_QuestionView_js.styles-dev.css": {
+      "name": "app_components_TextDetail_QuestionView_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_QuestionView_js.styles-dev.css"
+    },
+    "app_components_TextDetail_QuestionView_js.main.js": {
+      "name": "app_components_TextDetail_QuestionView_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_QuestionView_js.main.js"
+    },
+    "app_components_TextDetail_QuestionView_css.styles-dev.css": {
+      "name": "app_components_TextDetail_QuestionView_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_QuestionView_css.styles-dev.css"
+    },
+    "app_components_TextDetail_QuestionView_css.main.js": {
+      "name": "app_components_TextDetail_QuestionView_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_QuestionView_css.main.js"
+    },
+    "app_components_TextDetail_QuestionsLoading_js.styles-dev.css": {
+      "name": "app_components_TextDetail_QuestionsLoading_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_QuestionsLoading_js.styles-dev.css"
+    },
+    "app_components_TextDetail_QuestionsLoading_js.main.js": {
+      "name": "app_components_TextDetail_QuestionsLoading_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_QuestionsLoading_js.main.js"
+    },
+    "app_components_TextDetail_QuestionsLoading_css.styles-dev.css": {
+      "name": "app_components_TextDetail_QuestionsLoading_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_QuestionsLoading_css.styles-dev.css"
+    },
+    "app_components_TextDetail_QuestionsLoading_css.main.js": {
+      "name": "app_components_TextDetail_QuestionsLoading_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_QuestionsLoading_css.main.js"
+    },
+    "app_components_TextDetail_SelectVersion_js.styles-dev.css": {
+      "name": "app_components_TextDetail_SelectVersion_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_SelectVersion_js.styles-dev.css"
+    },
+    "app_components_TextDetail_SelectVersion_js.main.js": {
+      "name": "app_components_TextDetail_SelectVersion_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_SelectVersion_js.main.js"
+    },
+    "app_components_TextDetail_SelectVersion_css.styles-dev.css": {
+      "name": "app_components_TextDetail_SelectVersion_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_SelectVersion_css.styles-dev.css"
+    },
+    "app_components_TextDetail_SelectVersion_css.main.js": {
+      "name": "app_components_TextDetail_SelectVersion_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_SelectVersion_css.main.js"
+    },
+    "node_modules_mui_styles_withTheme_withTheme_js-node_modules_react-virtualized_styles_css-node-1fedaf0.main.js": {
+      "name": "node_modules_mui_styles_withTheme_withTheme_js-node_modules_react-virtualized_styles_css-node-1fedaf0.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_styles_withTheme_withTheme_js-node_modules_react-virtualized_styles_css-node-1fedaf0.main.js"
+    },
+    "app_components_TextDetail_SplitText_css.styles-dev.css": {
+      "name": "app_components_TextDetail_SplitText_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_SplitText_css.styles-dev.css"
+    },
+    "app_components_TextDetail_SplitText_css.main.js": {
+      "name": "app_components_TextDetail_SplitText_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_SplitText_css.main.js"
+    },
+    "app_components_TextDetail_TabBar_js.styles-dev.css": {
+      "name": "app_components_TextDetail_TabBar_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TabBar_js.styles-dev.css"
+    },
+    "app_components_TextDetail_TabBar_js.main.js": {
+      "name": "app_components_TextDetail_TabBar_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TabBar_js.main.js"
+    },
+    "app_components_TextDetail_TabBar_css.styles-dev.css": {
+      "name": "app_components_TextDetail_TabBar_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TabBar_css.styles-dev.css"
+    },
+    "app_components_TextDetail_TabBar_css.main.js": {
+      "name": "app_components_TextDetail_TabBar_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TabBar_css.main.js"
+    },
+    "app_components_TextDetail_TableOfContent_TableOfContent_js.styles-dev.css": {
+      "name": "app_components_TextDetail_TableOfContent_TableOfContent_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TableOfContent_TableOfContent_js.styles-dev.css"
+    },
+    "app_components_TextDetail_TableOfContent_TableOfContent_js.main.js": {
+      "name": "app_components_TextDetail_TableOfContent_TableOfContent_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TableOfContent_TableOfContent_js.main.js"
+    },
+    "app_components_TextDetail_TableOfContent_TableOfContent_css.styles-dev.css": {
+      "name": "app_components_TextDetail_TableOfContent_TableOfContent_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TableOfContent_TableOfContent_css.styles-dev.css"
+    },
+    "app_components_TextDetail_TableOfContent_TableOfContent_css.main.js": {
+      "name": "app_components_TextDetail_TableOfContent_TableOfContent_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TableOfContent_TableOfContent_css.main.js"
+    },
+    "node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-5ce2aa.styles-dev.css": {
+      "name": "node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-5ce2aa.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-5ce2aa.styles-dev.css"
+    },
+    "node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-5ce2aa.main.js": {
+      "name": "node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-5ce2aa.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-5ce2aa.main.js"
+    },
+    "app_components_TextDetail_Text_css.styles-dev.css": {
+      "name": "app_components_TextDetail_Text_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_Text_css.styles-dev.css"
+    },
+    "app_components_TextDetail_Text_css.main.js": {
+      "name": "app_components_TextDetail_Text_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_Text_css.main.js"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-6c85510.styles-dev.css": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-6c85510.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-6c85510.styles-dev.css"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-6c85510.main.js": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-6c85510.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-6c85510.main.js"
+    },
+    "app_components_TextDetail_TextDetail_css.styles-dev.css": {
+      "name": "app_components_TextDetail_TextDetail_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextDetail_css.styles-dev.css"
+    },
+    "app_components_TextDetail_TextDetail_css.main.js": {
+      "name": "app_components_TextDetail_TextDetail_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextDetail_css.main.js"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-6c85511.styles-dev.css": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-6c85511.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-6c85511.styles-dev.css"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-6c85511.main.js": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-6c85511.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-6c85511.main.js"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-node_modules_react-lifecycles-compat_r-8d4ee1.styles-dev.css": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-node_modules_react-lifecycles-compat_r-8d4ee1.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-node_modules_react-lifecycles-compat_r-8d4ee1.styles-dev.css"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-node_modules_react-lifecycles-compat_r-8d4ee1.main.js": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-node_modules_react-lifecycles-compat_r-8d4ee1.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-node_modules_react-lifecycles-compat_r-8d4ee1.main.js"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_TextDetail_TextDetailHe-33ddcb.styles-dev.css": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_TextDetail_TextDetailHe-33ddcb.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_TextDetail_TextDetailHe-33ddcb.styles-dev.css"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_TextDetail_TextDetailHe-33ddcb.main.js": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_TextDetail_TextDetailHe-33ddcb.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_TextDetail_TextDetailHe-33ddcb.main.js"
+    },
+    "app_components_TextDetail_FontSize_css-app_components_TextDetail_ImageToggle_css-app_componen-d58d19.styles-dev.css": {
+      "name": "app_components_TextDetail_FontSize_css-app_components_TextDetail_ImageToggle_css-app_componen-d58d19.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_FontSize_css-app_components_TextDetail_ImageToggle_css-app_componen-d58d19.styles-dev.css"
+    },
+    "app_components_TextDetail_TextHeading_css.styles-dev.css": {
+      "name": "app_components_TextDetail_TextHeading_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextHeading_css.styles-dev.css"
+    },
+    "app_components_TextDetail_TextHeading_css.main.js": {
+      "name": "app_components_TextDetail_TextHeading_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextHeading_css.main.js"
+    },
+    "app_components_TextDetail_TextHeading_test_js.main.js": {
+      "name": "app_components_TextDetail_TextHeading_test_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextHeading_test_js.main.js"
+    },
+    "app_components_TextDetail_TextHeadingContainer_js-app_components_TextDetail_FontSize_css-app_-fb003e.styles-dev.css": {
+      "name": "app_components_TextDetail_TextHeadingContainer_js-app_components_TextDetail_FontSize_css-app_-fb003e.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextHeadingContainer_js-app_components_TextDetail_FontSize_css-app_-fb003e.styles-dev.css"
+    },
+    "app_components_TextDetail_TextHeadingContainer_js-app_components_TextDetail_FontSize_css-app_-fb003e.main.js": {
+      "name": "app_components_TextDetail_TextHeadingContainer_js-app_components_TextDetail_FontSize_css-app_-fb003e.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextHeadingContainer_js-app_components_TextDetail_FontSize_css-app_-fb003e.main.js"
+    },
+    "app_components_TextDetail_TextList_js-node_modules_react-lifecycles-compat_react-lifecycles-c-7d1f11.styles-dev.css": {
+      "name": "app_components_TextDetail_TextList_js-node_modules_react-lifecycles-compat_react-lifecycles-c-7d1f11.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextList_js-node_modules_react-lifecycles-compat_react-lifecycles-c-7d1f11.styles-dev.css"
+    },
+    "app_components_TextDetail_TextList_js-node_modules_react-lifecycles-compat_react-lifecycles-c-7d1f11.main.js": {
+      "name": "app_components_TextDetail_TextList_js-node_modules_react-lifecycles-compat_react-lifecycles-c-7d1f11.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextList_js-node_modules_react-lifecycles-compat_react-lifecycles-c-7d1f11.main.js"
+    },
+    "app_components_TextDetail_TextList_css.styles-dev.css": {
+      "name": "app_components_TextDetail_TextList_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextList_css.styles-dev.css"
+    },
+    "app_components_TextDetail_TextList_css.main.js": {
+      "name": "app_components_TextDetail_TextList_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextList_css.main.js"
+    },
+    "app_components_TextDetail_TextListContainer_js-node_modules_react-lifecycles-compat_react-lif-e96c2f.styles-dev.css": {
+      "name": "app_components_TextDetail_TextListContainer_js-node_modules_react-lifecycles-compat_react-lif-e96c2f.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextListContainer_js-node_modules_react-lifecycles-compat_react-lif-e96c2f.styles-dev.css"
+    },
+    "app_components_TextDetail_TextListContainer_js-node_modules_react-lifecycles-compat_react-lif-e96c2f.main.js": {
+      "name": "app_components_TextDetail_TextListContainer_js-node_modules_react-lifecycles-compat_react-lif-e96c2f.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextListContainer_js-node_modules_react-lifecycles-compat_react-lif-e96c2f.main.js"
+    },
+    "app_components_TextDetail_textDetailHeading_css.styles-dev.css": {
+      "name": "app_components_TextDetail_textDetailHeading_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_textDetailHeading_css.styles-dev.css"
+    },
+    "app_components_TextDetail_textDetailHeading_css.main.js": {
+      "name": "app_components_TextDetail_textDetailHeading_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_textDetailHeading_css.main.js"
+    },
+    "app_components_TextDetail2_index_js-app_components_MediaComponent_Image_css-app_components_Te-a8d1a4.styles-dev.css": {
+      "name": "app_components_TextDetail2_index_js-app_components_MediaComponent_Image_css-app_components_Te-a8d1a4.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_index_js-app_components_MediaComponent_Image_css-app_components_Te-a8d1a4.styles-dev.css"
+    },
+    "app_components_TextDetail2_index_js-app_components_MediaComponent_Image_css-app_components_Te-a8d1a4.main.js": {
+      "name": "app_components_TextDetail2_index_js-app_components_MediaComponent_Image_css-app_components_Te-a8d1a4.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_index_js-app_components_MediaComponent_Image_css-app_components_Te-a8d1a4.main.js"
+    },
+    "app_components_TextDetail2_AnnotationControls_css.styles-dev.css": {
+      "name": "app_components_TextDetail2_AnnotationControls_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_AnnotationControls_css.styles-dev.css"
+    },
+    "app_components_TextDetail2_AnnotationControls_css.main.js": {
+      "name": "app_components_TextDetail2_AnnotationControls_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_AnnotationControls_css.main.js"
+    },
+    "app_components_TextDetail2_HeaderMenu_HighlightedString_js.main.js": {
+      "name": "app_components_TextDetail2_HeaderMenu_HighlightedString_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_HeaderMenu_HighlightedString_js.main.js"
+    },
+    "app_components_TextDetail2_HeaderMenu_Refresh_js.main.js": {
+      "name": "app_components_TextDetail2_HeaderMenu_Refresh_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_HeaderMenu_Refresh_js.main.js"
+    },
+    "app_components_TextDetail2_HeaderMenu_Search_js.main.js": {
+      "name": "app_components_TextDetail2_HeaderMenu_Search_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_HeaderMenu_Search_js.main.js"
+    },
+    "app_components_TextDetail2_HeaderMenu_SearchList_js-node_modules_react-lifecycles-compat_reac-6a7b21.styles-dev.css": {
+      "name": "app_components_TextDetail2_HeaderMenu_SearchList_js-node_modules_react-lifecycles-compat_reac-6a7b21.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_HeaderMenu_SearchList_js-node_modules_react-lifecycles-compat_reac-6a7b21.styles-dev.css"
+    },
+    "app_components_TextDetail2_HeaderMenu_SearchList_js-node_modules_react-lifecycles-compat_reac-6a7b21.main.js": {
+      "name": "app_components_TextDetail2_HeaderMenu_SearchList_js-node_modules_react-lifecycles-compat_reac-6a7b21.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_HeaderMenu_SearchList_js-node_modules_react-lifecycles-compat_reac-6a7b21.main.js"
+    },
+    "app_components_TextDetail2_HeaderMenu_SearchStyle_css.styles-dev.css": {
+      "name": "app_components_TextDetail2_HeaderMenu_SearchStyle_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_HeaderMenu_SearchStyle_css.styles-dev.css"
+    },
+    "app_components_TextDetail2_HeaderMenu_SearchStyle_css.main.js": {
+      "name": "app_components_TextDetail2_HeaderMenu_SearchStyle_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_HeaderMenu_SearchStyle_css.main.js"
+    },
+    "app_components_TextDetail2_HeaderMenu_Settings_js.styles-dev.css": {
+      "name": "app_components_TextDetail2_HeaderMenu_Settings_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_HeaderMenu_Settings_js.styles-dev.css"
+    },
+    "app_components_TextDetail2_HeaderMenu_Settings_js.main.js": {
+      "name": "app_components_TextDetail2_HeaderMenu_Settings_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_HeaderMenu_Settings_js.main.js"
+    },
+    "app_components_TextDetail2_HeaderMenu_TableOfContent_js.main.js": {
+      "name": "app_components_TextDetail2_HeaderMenu_TableOfContent_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_HeaderMenu_TableOfContent_js.main.js"
+    },
+    "app_components_TextDetail2_SelectVersion_js.styles-dev.css": {
+      "name": "app_components_TextDetail2_SelectVersion_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_SelectVersion_js.styles-dev.css"
+    },
+    "app_components_TextDetail2_SelectVersion_js.main.js": {
+      "name": "app_components_TextDetail2_SelectVersion_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_SelectVersion_js.main.js"
+    },
+    "app_components_TextDetail2_SelectVersion_css.styles-dev.css": {
+      "name": "app_components_TextDetail2_SelectVersion_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_SelectVersion_css.styles-dev.css"
+    },
+    "app_components_TextDetail2_SelectVersion_css.main.js": {
+      "name": "app_components_TextDetail2_SelectVersion_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_SelectVersion_css.main.js"
+    },
+    "node_modules_mui_styles_withTheme_withTheme_js-node_modules_react-virtualized_styles_css-node-1fedaf1.main.js": {
+      "name": "node_modules_mui_styles_withTheme_withTheme_js-node_modules_react-virtualized_styles_css-node-1fedaf1.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_styles_withTheme_withTheme_js-node_modules_react-virtualized_styles_css-node-1fedaf1.main.js"
+    },
+    "app_components_TextDetail2_SplitText_css.styles-dev.css": {
+      "name": "app_components_TextDetail2_SplitText_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_SplitText_css.styles-dev.css"
+    },
+    "app_components_TextDetail2_SplitText_css.main.js": {
+      "name": "app_components_TextDetail2_SplitText_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_SplitText_css.main.js"
+    },
+    "app_components_TextDetail2_TableOfContent_TableOfContent_js.main.js": {
+      "name": "app_components_TextDetail2_TableOfContent_TableOfContent_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TableOfContent_TableOfContent_js.main.js"
+    },
+    "node_modules_mui_styles_withTheme_withTheme_js-app_components_TextDetail2_Text2_css.styles-dev.css": {
+      "name": "node_modules_mui_styles_withTheme_withTheme_js-app_components_TextDetail2_Text2_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_styles_withTheme_withTheme_js-app_components_TextDetail2_Text2_css.styles-dev.css"
+    },
+    "node_modules_mui_styles_withTheme_withTheme_js-app_components_TextDetail2_Text2_css.main.js": {
+      "name": "node_modules_mui_styles_withTheme_withTheme_js-app_components_TextDetail2_Text2_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_styles_withTheme_withTheme_js-app_components_TextDetail2_Text2_css.main.js"
+    },
+    "app_components_TextDetail2_Text2_css.styles-dev.css": {
+      "name": "app_components_TextDetail2_Text2_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_Text2_css.styles-dev.css"
+    },
+    "app_components_TextDetail2_Text2_css.main.js": {
+      "name": "app_components_TextDetail2_Text2_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_Text2_css.main.js"
+    },
+    "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-1163230.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-1163230.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-1163230.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-1163230.main.js": {
+      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-1163230.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-1163230.main.js"
+    },
+    "app_components_TextDetail2_TextDetail_css.styles-dev.css": {
+      "name": "app_components_TextDetail2_TextDetail_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextDetail_css.styles-dev.css"
+    },
+    "app_components_TextDetail2_TextDetail_css.main.js": {
+      "name": "app_components_TextDetail2_TextDetail_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextDetail_css.main.js"
+    },
+    "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-1163231.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-1163231.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-1163231.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-1163231.main.js": {
+      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-1163231.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-1163231.main.js"
+    },
+    "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-d22546.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-d22546.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-d22546.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-d22546.main.js": {
+      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-d22546.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-d22546.main.js"
+    },
+    "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-d54753.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-d54753.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-d54753.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-d54753.main.js": {
+      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-d54753.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_NativeSelect_-d54753.main.js"
+    },
+    "app_components_TextDetail2_TextList_js-node_modules_react-lifecycles-compat_react-lifecycles--4ce747.styles-dev.css": {
+      "name": "app_components_TextDetail2_TextList_js-node_modules_react-lifecycles-compat_react-lifecycles--4ce747.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextList_js-node_modules_react-lifecycles-compat_react-lifecycles--4ce747.styles-dev.css"
+    },
+    "app_components_TextDetail2_TextList_js-node_modules_react-lifecycles-compat_react-lifecycles--4ce747.main.js": {
+      "name": "app_components_TextDetail2_TextList_js-node_modules_react-lifecycles-compat_react-lifecycles--4ce747.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextList_js-node_modules_react-lifecycles-compat_react-lifecycles--4ce747.main.js"
+    },
+    "app_components_TextDetail2_TextList_css.styles-dev.css": {
+      "name": "app_components_TextDetail2_TextList_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextList_css.styles-dev.css"
+    },
+    "app_components_TextDetail2_TextList_css.main.js": {
+      "name": "app_components_TextDetail2_TextList_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextList_css.main.js"
+    },
+    "app_components_TextDetail2_TextListContainer_js-node_modules_react-lifecycles-compat_react-li-9e7c78.styles-dev.css": {
+      "name": "app_components_TextDetail2_TextListContainer_js-node_modules_react-lifecycles-compat_react-li-9e7c78.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextListContainer_js-node_modules_react-lifecycles-compat_react-li-9e7c78.styles-dev.css"
+    },
+    "app_components_TextDetail2_TextListContainer_js-node_modules_react-lifecycles-compat_react-li-9e7c78.main.js": {
+      "name": "app_components_TextDetail2_TextListContainer_js-node_modules_react-lifecycles-compat_react-li-9e7c78.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextListContainer_js-node_modules_react-lifecycles-compat_react-li-9e7c78.main.js"
+    },
+    "app_components_TextDetail2_textDetailHeading_css.styles-dev.css": {
+      "name": "app_components_TextDetail2_textDetailHeading_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_textDetailHeading_css.styles-dev.css"
+    },
+    "app_components_TextDetail2_textDetailHeading_css.main.js": {
+      "name": "app_components_TextDetail2_textDetailHeading_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_textDetailHeading_css.main.js"
+    },
+    "app_components_TextList_index_js-node_modules_react-virtualized_styles_css-node_modules_react-5de2a2.main.js": {
+      "name": "app_components_TextList_index_js-node_modules_react-virtualized_styles_css-node_modules_react-5de2a2.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_index_js-node_modules_react-virtualized_styles_css-node_modules_react-5de2a2.main.js"
+    },
+    "app_components_TextList_HighlightedString_js.main.js": {
+      "name": "app_components_TextList_HighlightedString_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_HighlightedString_js.main.js"
+    },
+    "app_components_TextList_LoadMore_js.styles-dev.css": {
+      "name": "app_components_TextList_LoadMore_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_LoadMore_js.styles-dev.css"
+    },
+    "app_components_TextList_LoadMore_js.main.js": {
+      "name": "app_components_TextList_LoadMore_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_LoadMore_js.main.js"
+    },
+    "app_components_TextList_LoadMore_css.styles-dev.css": {
+      "name": "app_components_TextList_LoadMore_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_LoadMore_css.styles-dev.css"
+    },
+    "app_components_TextList_LoadMore_css.main.js": {
+      "name": "app_components_TextList_LoadMore_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_LoadMore_css.main.js"
+    },
+    "app_components_TextList_ResultCount_js.styles-dev.css": {
+      "name": "app_components_TextList_ResultCount_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_ResultCount_js.styles-dev.css"
+    },
+    "app_components_TextList_ResultCount_js.main.js": {
+      "name": "app_components_TextList_ResultCount_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_ResultCount_js.main.js"
+    },
+    "node_modules_react-virtualized_styles_css-node_modules_react-lifecycles-compat_react-lifecycl-4308ef.main.js": {
+      "name": "node_modules_react-virtualized_styles_css-node_modules_react-lifecycles-compat_react-lifecycl-4308ef.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_react-virtualized_styles_css-node_modules_react-lifecycles-compat_react-lifecycl-4308ef.main.js"
+    },
+    "app_components_TextList_TextList_css.styles-dev.css": {
+      "name": "app_components_TextList_TextList_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_TextList_css.styles-dev.css"
+    },
+    "app_components_TextList_TextList_css.main.js": {
+      "name": "app_components_TextList_TextList_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_TextList_css.main.js"
+    },
+    "app_components_TextList_TextListTab_js.styles-dev.css": {
+      "name": "app_components_TextList_TextListTab_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_TextListTab_js.styles-dev.css"
+    },
+    "app_components_TextList_TextListTab_js.main.js": {
+      "name": "app_components_TextList_TextListTab_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_TextListTab_js.main.js"
+    },
+    "app_components_TextList_TextListTab_css.styles-dev.css": {
+      "name": "app_components_TextList_TextListTab_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_TextListTab_css.styles-dev.css"
+    },
+    "app_components_TextList_TextListTab_css.main.js": {
+      "name": "app_components_TextList_TextListTab_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_TextListTab_css.main.js"
+    },
+    "app_components_TextList_TextListTabContainer_js.styles-dev.css": {
+      "name": "app_components_TextList_TextListTabContainer_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_TextListTabContainer_js.styles-dev.css"
+    },
+    "app_components_TextList_TextListTabContainer_js.main.js": {
+      "name": "app_components_TextList_TextListTabContainer_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_TextListTabContainer_js.main.js"
+    },
+    "app_components_TextsSearch_index_js.styles-dev.css": {
+      "name": "app_components_TextsSearch_index_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextsSearch_index_js.styles-dev.css"
+    },
+    "app_components_TextsSearch_index_js.main.js": {
+      "name": "app_components_TextsSearch_index_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextsSearch_index_js.main.js"
+    },
+    "app_components_TextsSearch_TextsSearch_js.styles-dev.css": {
+      "name": "app_components_TextsSearch_TextsSearch_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextsSearch_TextsSearch_js.styles-dev.css"
+    },
+    "app_components_TextsSearch_TextsSearch_js.main.js": {
+      "name": "app_components_TextsSearch_TextsSearch_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextsSearch_TextsSearch_js.main.js"
+    },
+    "app_components_TextsSearch_TextsSearch_css.styles-dev.css": {
+      "name": "app_components_TextsSearch_TextsSearch_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextsSearch_TextsSearch_css.styles-dev.css"
+    },
+    "app_components_TextsSearch_TextsSearch_css.main.js": {
+      "name": "app_components_TextsSearch_TextsSearch_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextsSearch_TextsSearch_css.main.js"
+    },
+    "app_components_TextsSearch_TextsSearch2_css.styles-dev.css": {
+      "name": "app_components_TextsSearch_TextsSearch2_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextsSearch_TextsSearch2_css.styles-dev.css"
+    },
+    "app_components_TextsSearch_TextsSearch2_css.main.js": {
+      "name": "app_components_TextsSearch_TextsSearch2_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextsSearch_TextsSearch2_css.main.js"
+    },
+    "app_components_TextsSearch_TextsSearchContainer_js.styles-dev.css": {
+      "name": "app_components_TextsSearch_TextsSearchContainer_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextsSearch_TextsSearchContainer_js.styles-dev.css"
+    },
+    "app_components_TextsSearch_TextsSearchContainer_js.main.js": {
+      "name": "app_components_TextsSearch_TextsSearchContainer_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextsSearch_TextsSearchContainer_js.main.js"
+    },
+    "app_components_UI_Accessory_js.styles-dev.css": {
+      "name": "app_components_UI_Accessory_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Accessory_js.styles-dev.css"
+    },
+    "app_components_UI_Accessory_js.main.js": {
+      "name": "app_components_UI_Accessory_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Accessory_js.main.js"
+    },
+    "app_components_UI_Accessory_css.styles-dev.css": {
+      "name": "app_components_UI_Accessory_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Accessory_css.styles-dev.css"
+    },
+    "app_components_UI_Accessory_css.main.js": {
+      "name": "app_components_UI_Accessory_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Accessory_css.main.js"
+    },
+    "app_components_UI_ApplyTooltip_js.main.js": {
+      "name": "app_components_UI_ApplyTooltip_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_ApplyTooltip_js.main.js"
+    },
+    "app_components_UI_Button_js.styles-dev.css": {
+      "name": "app_components_UI_Button_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Button_js.styles-dev.css"
+    },
+    "app_components_UI_Button_js.main.js": {
+      "name": "app_components_UI_Button_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Button_js.main.js"
+    },
+    "app_components_UI_Button_css.styles-dev.css": {
+      "name": "app_components_UI_Button_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Button_css.styles-dev.css"
+    },
+    "app_components_UI_Button_css.main.js": {
+      "name": "app_components_UI_Button_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Button_css.main.js"
+    },
+    "app_components_UI_ShareButton_js.styles-dev.css": {
+      "name": "app_components_UI_ShareButton_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_ShareButton_js.styles-dev.css"
+    },
+    "app_components_UI_ShareButton_js.main.js": {
+      "name": "app_components_UI_ShareButton_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_ShareButton_js.main.js"
+    },
+    "app_components_UI_Sharebutton_css.styles-dev.css": {
+      "name": "app_components_UI_Sharebutton_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Sharebutton_css.styles-dev.css"
+    },
+    "app_components_UI_Sharebutton_css.main.js": {
+      "name": "app_components_UI_Sharebutton_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Sharebutton_css.main.js"
+    },
+    "app_components_UI_Slider_js.styles-dev.css": {
+      "name": "app_components_UI_Slider_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Slider_js.styles-dev.css"
+    },
+    "app_components_UI_Slider_js.main.js": {
+      "name": "app_components_UI_Slider_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Slider_js.main.js"
+    },
+    "app_components_UI_Slider_css.styles-dev.css": {
+      "name": "app_components_UI_Slider_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Slider_css.styles-dev.css"
+    },
+    "app_components_UI_Slider_css.main.js": {
+      "name": "app_components_UI_Slider_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_Slider_css.main.js"
+    },
+    "app_components_UI_useDelayUnmount_js.main.js": {
+      "name": "app_components_UI_useDelayUnmount_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_UI_useDelayUnmount_js.main.js"
+    },
+    "docx.main.js": {
+      "name": "docx.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\docx.main.js"
+    },
+    "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f2bbb6.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f2bbb6.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f2bbb6.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f2bbb6.main.js": {
+      "name": "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f2bbb6.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f2bbb6.main.js"
+    },
+    "app_components_TextDetail_HeaderMenu_SearchStyle_css-app_components_TextDetail_SelectVersion_-99af8a.styles-dev.css": {
+      "name": "app_components_TextDetail_HeaderMenu_SearchStyle_css-app_components_TextDetail_SelectVersion_-99af8a.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_SearchStyle_css-app_components_TextDetail_SelectVersion_-99af8a.styles-dev.css"
+    },
+    "vendors-node_modules_react-virtualized_dist_es_List_index_js.main.js": {
+      "name": "vendors-node_modules_react-virtualized_dist_es_List_index_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_react-virtualized_dist_es_List_index_js.main.js"
+    },
+    "vendors-node_modules_grapheme-splitter_index_js.main.js": {
+      "name": "vendors-node_modules_grapheme-splitter_index_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_grapheme-splitter_index_js.main.js"
+    },
+    "vendors-node_modules_react-virtualized_dist_es_AutoSizer_index_js-node_modules_react-virtuali-53b447.main.js": {
+      "name": "vendors-node_modules_react-virtualized_dist_es_AutoSizer_index_js-node_modules_react-virtuali-53b447.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_react-virtualized_dist_es_AutoSizer_index_js-node_modules_react-virtuali-53b447.main.js"
+    },
+    "vendors-node_modules_react-string-replace_index_js.main.js": {
+      "name": "vendors-node_modules_react-string-replace_index_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_react-string-replace_index_js.main.js"
+    },
+    "vendors-node_modules_react-virtualized_dist_es_index_js.main.js": {
+      "name": "vendors-node_modules_react-virtualized_dist_es_index_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_react-virtualized_dist_es_index_js.main.js"
+    },
+    "vendors-node_modules_react-zoom-pan-pinch_dist_index_esm_js.main.js": {
+      "name": "vendors-node_modules_react-zoom-pan-pinch_dist_index_esm_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_react-zoom-pan-pinch_dist_index_esm_js.main.js"
+    },
+    "vendors-node_modules_mui_base_ClickAwayListener_ClickAwayListener_js-node_modules_mui_icons-m-379c0a.main.js": {
+      "name": "vendors-node_modules_mui_base_ClickAwayListener_ClickAwayListener_js-node_modules_mui_icons-m-379c0a.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_mui_base_ClickAwayListener_ClickAwayListener_js-node_modules_mui_icons-m-379c0a.main.js"
+    },
+    "vendors-node_modules_react-dom_server_browser_js.main.js": {
+      "name": "vendors-node_modules_react-dom_server_browser_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_react-dom_server_browser_js.main.js"
+    },
+    "vendors-node_modules_react-player_lib_index_js.main.js": {
+      "name": "vendors-node_modules_react-player_lib_index_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_react-player_lib_index_js.main.js"
+    },
+    "vendors-node_modules_react-howler-player_build_index_es_js.main.js": {
+      "name": "vendors-node_modules_react-howler-player_build_index_es_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_react-howler-player_build_index_es_js.main.js"
+    },
+    "vendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_ChevronLeft-91d2f1.main.js": {
+      "name": "vendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_ChevronLeft-91d2f1.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_ChevronLeft-91d2f1.main.js"
+    },
+    "vendors-node_modules_mui_material_Slide_Slide_js-node_modules_mui_material_Toolbar_Toolbar_js-6102f1.main.js": {
+      "name": "vendors-node_modules_mui_material_Slide_Slide_js-node_modules_mui_material_Toolbar_Toolbar_js-6102f1.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_mui_material_Slide_Slide_js-node_modules_mui_material_Toolbar_Toolbar_js-6102f1.main.js"
+    },
+    "vendors-node_modules_react-resizable_index_js.main.js": {
+      "name": "vendors-node_modules_react-resizable_index_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_react-resizable_index_js.main.js"
+    },
+    "vendors-node_modules_react-split-pane_dist_index_esm_js.main.js": {
+      "name": "vendors-node_modules_react-split-pane_dist_index_esm_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_react-split-pane_dist_index_esm_js.main.js"
+    },
+    "vendors-node_modules_mui_icons-material_esm_Edit_js-node_modules_mui_icons-material_esm_Share-3528ab.main.js": {
+      "name": "vendors-node_modules_mui_icons-material_esm_Edit_js-node_modules_mui_icons-material_esm_Share-3528ab.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_mui_icons-material_esm_Edit_js-node_modules_mui_icons-material_esm_Share-3528ab.main.js"
+    },
+    "vendors-node_modules_react-share_es_FacebookIcon_js-node_modules_react-share_es_FacebookShare-0e7a16.main.js": {
+      "name": "vendors-node_modules_react-share_es_FacebookIcon_js-node_modules_react-share_es_FacebookShare-0e7a16.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_react-share_es_FacebookIcon_js-node_modules_react-share_es_FacebookShare-0e7a16.main.js"
+    },
+    "vendors-node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_Nativ-ba21f4.main.js": {
+      "name": "vendors-node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_Nativ-ba21f4.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_mui_icons-material_Check_js-node_modules_mui_material_NativeSelect_Nativ-ba21f4.main.js"
+    },
+    "app_css_colour_css.styles-dev.css": {
+      "name": "app_css_colour_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_css_colour_css.styles-dev.css"
+    },
+    "app_components_TextDetail_AnnotationControlsHeader_js.main.js": {
+      "name": "app_components_TextDetail_AnnotationControlsHeader_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControlsHeader_js.main.js"
+    },
+    "app_components_TextDetail_AnnotationControls_js-app_components_TextDetail_AnnotationControlsH-2a6fde.styles-dev.css": {
+      "name": "app_components_TextDetail_AnnotationControls_js-app_components_TextDetail_AnnotationControlsH-2a6fde.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControls_js-app_components_TextDetail_AnnotationControlsH-2a6fde.styles-dev.css"
+    },
+    "app_components_TextDetail_AnnotationControls_js-app_components_TextDetail_AnnotationControlsH-2a6fde.main.js": {
+      "name": "app_components_TextDetail_AnnotationControls_js-app_components_TextDetail_AnnotationControlsH-2a6fde.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControls_js-app_components_TextDetail_AnnotationControlsH-2a6fde.main.js"
+    },
+    "app_components_TextDetail_AnnotationControlsContainer_js.main.js": {
+      "name": "app_components_TextDetail_AnnotationControlsContainer_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_AnnotationControlsContainer_js.main.js"
+    },
+    "app_components_TextDetail_Text_js.main.js": {
+      "name": "app_components_TextDetail_Text_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_Text_js.main.js"
+    },
+    "app_components_MediaComponent_MediaOptions_js.main.js": {
+      "name": "app_components_MediaComponent_MediaOptions_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_MediaOptions_js.main.js"
+    },
+    "app_components_TextDetail2_TextDetailHeading_js.main.js": {
+      "name": "app_components_TextDetail2_TextDetailHeading_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextDetailHeading_js.main.js"
+    },
+    "app_components_TextDetail_TextDetailHeading_js.main.js": {
+      "name": "app_components_TextDetail_TextDetailHeading_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextDetailHeading_js.main.js"
+    },
+    "app_components_TextDetail2_Text2_js.main.js": {
+      "name": "app_components_TextDetail2_Text2_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_Text2_js.main.js"
+    },
+    "app_components_TextDetail_SplitText_js-app_components_TextDetail_Text_css-node_modules_react--7d0792.styles-dev.css": {
+      "name": "app_components_TextDetail_SplitText_js-app_components_TextDetail_Text_css-node_modules_react--7d0792.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_SplitText_js-app_components_TextDetail_Text_css-node_modules_react--7d0792.styles-dev.css"
+    },
+    "app_components_TextDetail_SplitText_js-app_components_TextDetail_Text_css-node_modules_react--7d0792.main.js": {
+      "name": "app_components_TextDetail_SplitText_js-app_components_TextDetail_Text_css-node_modules_react--7d0792.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_SplitText_js-app_components_TextDetail_Text_css-node_modules_react--7d0792.main.js"
+    },
+    "app_components_TextDetail2_SplitText_js-app_components_TextDetail2_Text2_css-node_modules_rea-bbf483.styles-dev.css": {
+      "name": "app_components_TextDetail2_SplitText_js-app_components_TextDetail2_Text2_css-node_modules_rea-bbf483.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_SplitText_js-app_components_TextDetail2_Text2_css-node_modules_rea-bbf483.styles-dev.css"
+    },
+    "app_components_TextDetail2_SplitText_js-app_components_TextDetail2_Text2_css-node_modules_rea-bbf483.main.js": {
+      "name": "app_components_TextDetail2_SplitText_js-app_components_TextDetail2_Text2_css-node_modules_rea-bbf483.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_SplitText_js-app_components_TextDetail2_Text2_css-node_modules_rea-bbf483.main.js"
+    },
+    "app_components_TextList_TextList_js-node_modules_react-virtualized_styles_css.styles-dev.css": {
+      "name": "app_components_TextList_TextList_js-node_modules_react-virtualized_styles_css.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_TextList_js-node_modules_react-virtualized_styles_css.styles-dev.css"
+    },
+    "app_components_TextList_TextList_js-node_modules_react-virtualized_styles_css.main.js": {
+      "name": "app_components_TextList_TextList_js-node_modules_react-virtualized_styles_css.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_TextList_js-node_modules_react-virtualized_styles_css.main.js"
+    },
+    "app_components_TextDetail_TextDetail_js.main.js": {
+      "name": "app_components_TextDetail_TextDetail_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextDetail_js.main.js"
+    },
+    "app_components_Editors_TextSheet_js.main.js": {
+      "name": "app_components_Editors_TextSheet_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_TextSheet_js.main.js"
+    },
+    "app_components_TextDetail2_TextDetail_js.main.js": {
+      "name": "app_components_TextDetail2_TextDetail_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextDetail_js.main.js"
+    },
+    "app_components_TextDetail2_TextDetailContainer_js.main.js": {
+      "name": "app_components_TextDetail2_TextDetailContainer_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextDetailContainer_js.main.js"
+    },
+    "app_components_Editors_Editor_js.main.js": {
+      "name": "app_components_Editors_Editor_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_Editor_js.main.js"
+    },
+    "app_components_TextDetail_TextDetailContainer_js.main.js": {
+      "name": "app_components_TextDetail_TextDetailContainer_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextDetailContainer_js.main.js"
+    },
+    "app_components_TextDetail_TextHeading_js.main.js": {
+      "name": "app_components_TextDetail_TextHeading_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextHeading_js.main.js"
+    },
+    "main.149972d7ca1aee261a13.hot-update.js": {
+      "name": "main.149972d7ca1aee261a13.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.149972d7ca1aee261a13.hot-update.js"
+    },
+    "main.149972d7ca1aee261a13.hot-update.json": {
+      "name": "main.149972d7ca1aee261a13.hot-update.json",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.149972d7ca1aee261a13.hot-update.json"
+    },
+    "app_components_Editors_index_js.main.js": {
+      "name": "app_components_Editors_index_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_index_js.main.js"
+    },
+    "app_components_Editors_Editor_js-app_components_Editors_resizerStyle_css-app_components_Media-15ee0d.styles-dev.css": {
+      "name": "app_components_Editors_Editor_js-app_components_Editors_resizerStyle_css-app_components_Media-15ee0d.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_Editor_js-app_components_Editors_resizerStyle_css-app_components_Media-15ee0d.styles-dev.css"
+    },
+    "app_components_Editors_Editor_js-app_components_Editors_resizerStyle_css-app_components_Media-15ee0d.main.js": {
+      "name": "app_components_Editors_Editor_js-app_components_Editors_resizerStyle_css-app_components_Media-15ee0d.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_Editor_js-app_components_Editors_resizerStyle_css-app_components_Media-15ee0d.main.js"
+    },
+    "app_components_Editors_EditorContainer_js.main.js": {
+      "name": "app_components_Editors_EditorContainer_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_EditorContainer_js.main.js"
+    },
+    "app_components_Editors_resizerStyle_css-app_components_MediaComponent_Image_css-app_component-9e6c28.styles-dev.css": {
+      "name": "app_components_Editors_resizerStyle_css-app_components_MediaComponent_Image_css-app_component-9e6c28.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_resizerStyle_css-app_components_MediaComponent_Image_css-app_component-9e6c28.styles-dev.css"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.styles-dev.css": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.styles-dev.css"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.main.js": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.main.js"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_MediaCon-1cd731.styles-dev.css": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_MediaCon-1cd731.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_MediaCon-1cd731.styles-dev.css"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_MediaCon-1cd731.main.js": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_MediaCon-1cd731.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_MediaCon-1cd731.main.js"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.styles-dev.css": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.styles-dev.css"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.main.js": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.main.js"
+    },
+    "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_index_js-app_components_M-38dee6.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_index_js-app_components_M-38dee6.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-app_components_TextDetail_index_js-app_components_M-38dee6.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_index_js-app_components_M-38dee6.main.js": {
+      "name": "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_index_js-app_components_M-38dee6.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-app_components_TextDetail_index_js-app_components_M-38dee6.main.js"
+    },
+    "node_modules_mui_icons-material_Delete_js-_c0b70.main.js": {
+      "name": "node_modules_mui_icons-material_Delete_js-_c0b70.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-_c0b70.main.js"
+    },
+    "node_modules_mui_icons-material_Delete_js-_c0b71.main.js": {
+      "name": "node_modules_mui_icons-material_Delete_js-_c0b71.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-_c0b71.main.js"
+    },
+    "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AnnotationControlsContain-6849ed.main.js": {
+      "name": "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AnnotationControlsContain-6849ed.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AnnotationControlsContain-6849ed.main.js"
+    },
+    "app_components_TextDetail_HeaderMenu_SearchList_js.styles-dev.css": {
+      "name": "app_components_TextDetail_HeaderMenu_SearchList_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_SearchList_js.styles-dev.css"
+    },
+    "app_components_TextDetail_HeaderMenu_SearchList_js.main.js": {
+      "name": "app_components_TextDetail_HeaderMenu_SearchList_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_SearchList_js.main.js"
+    },
+    "node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-0a82fd.styles-dev.css": {
+      "name": "node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-0a82fd.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-0a82fd.styles-dev.css"
+    },
+    "node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-0a82fd.main.js": {
+      "name": "node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-0a82fd.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_styles_withTheme_withTheme_js-app_images_page_break_icon_svg-app_components_-0a82fd.main.js"
+    },
+    "node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-node-98ec93.main.js": {
+      "name": "node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-node-98ec93.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-node-98ec93.main.js"
+    },
+    "node_modules_mui_icons-material_Delete_js-app_components_MediaComponent_Image_css-app_compone-0595810.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Delete_js-app_components_MediaComponent_Image_css-app_compone-0595810.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-app_components_MediaComponent_Image_css-app_compone-0595810.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Delete_js-app_components_MediaComponent_Image_css-app_compone-0595810.main.js": {
+      "name": "node_modules_mui_icons-material_Delete_js-app_components_MediaComponent_Image_css-app_compone-0595810.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-app_components_MediaComponent_Image_css-app_compone-0595810.main.js"
+    },
+    "node_modules_mui_icons-material_Delete_js-app_components_MediaComponent_Image_css-app_compone-0595811.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Delete_js-app_components_MediaComponent_Image_css-app_compone-0595811.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-app_components_MediaComponent_Image_css-app_compone-0595811.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Delete_js-app_components_MediaComponent_Image_css-app_compone-0595811.main.js": {
+      "name": "node_modules_mui_icons-material_Delete_js-app_components_MediaComponent_Image_css-app_compone-0595811.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-app_components_MediaComponent_Image_css-app_compone-0595811.main.js"
+    },
+    "app_components_TextDetail_HeaderMenu_SearchStyle_css-app_components_TextDetail_SelectVersion_-3aa292.styles-dev.css": {
+      "name": "app_components_TextDetail_HeaderMenu_SearchStyle_css-app_components_TextDetail_SelectVersion_-3aa292.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_HeaderMenu_SearchStyle_css-app_components_TextDetail_SelectVersion_-3aa292.styles-dev.css"
+    },
+    "app_components_TextDetail_TextDetailHeadingContainer_js-app_components_TextDetail_HeaderMenu_-e7eec9.styles-dev.css": {
+      "name": "app_components_TextDetail_TextDetailHeadingContainer_js-app_components_TextDetail_HeaderMenu_-e7eec9.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextDetailHeadingContainer_js-app_components_TextDetail_HeaderMenu_-e7eec9.styles-dev.css"
+    },
+    "app_components_TextDetail_TextDetailHeadingContainer_js-app_components_TextDetail_HeaderMenu_-e7eec9.main.js": {
+      "name": "app_components_TextDetail_TextDetailHeadingContainer_js-app_components_TextDetail_HeaderMenu_-e7eec9.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextDetailHeadingContainer_js-app_components_TextDetail_HeaderMenu_-e7eec9.main.js"
+    },
+    "app_components_TextDetail_TextList_js.styles-dev.css": {
+      "name": "app_components_TextDetail_TextList_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextList_js.styles-dev.css"
+    },
+    "app_components_TextDetail_TextList_js.main.js": {
+      "name": "app_components_TextDetail_TextList_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextList_js.main.js"
+    },
+    "app_components_TextDetail_TextListContainer_js.styles-dev.css": {
+      "name": "app_components_TextDetail_TextListContainer_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextListContainer_js.styles-dev.css"
+    },
+    "app_components_TextDetail_TextListContainer_js.main.js": {
+      "name": "app_components_TextDetail_TextListContainer_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail_TextListContainer_js.main.js"
+    },
+    "app_images_wrench_svg-app_components_TextDetail2_index_js-app_components_UI_Slider_js-app_lib-0c8de1.styles-dev.css": {
+      "name": "app_images_wrench_svg-app_components_TextDetail2_index_js-app_components_UI_Slider_js-app_lib-0c8de1.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_TextDetail2_index_js-app_components_UI_Slider_js-app_lib-0c8de1.styles-dev.css"
+    },
+    "app_images_wrench_svg-app_components_TextDetail2_index_js-app_components_UI_Slider_js-app_lib-0c8de1.main.js": {
+      "name": "app_images_wrench_svg-app_components_TextDetail2_index_js-app_components_UI_Slider_js-app_lib-0c8de1.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_TextDetail2_index_js-app_components_UI_Slider_js-app_lib-0c8de1.main.js"
+    },
+    "app_components_TextDetail2_HeaderMenu_SearchList_js.styles-dev.css": {
+      "name": "app_components_TextDetail2_HeaderMenu_SearchList_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_HeaderMenu_SearchList_js.styles-dev.css"
+    },
+    "app_components_TextDetail2_HeaderMenu_SearchList_js.main.js": {
+      "name": "app_components_TextDetail2_HeaderMenu_SearchList_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_HeaderMenu_SearchList_js.main.js"
+    },
+    "node_modules_mui_styles_withTheme_withTheme_js-app_lib_SplitText_js-node_modules_react-virtua-d601f8.styles-dev.css": {
+      "name": "node_modules_mui_styles_withTheme_withTheme_js-app_lib_SplitText_js-node_modules_react-virtua-d601f8.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_styles_withTheme_withTheme_js-app_lib_SplitText_js-node_modules_react-virtua-d601f8.styles-dev.css"
+    },
+    "node_modules_mui_styles_withTheme_withTheme_js-app_lib_SplitText_js-node_modules_react-virtua-d601f8.main.js": {
+      "name": "node_modules_mui_styles_withTheme_withTheme_js-app_lib_SplitText_js-node_modules_react-virtua-d601f8.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_styles_withTheme_withTheme_js-app_lib_SplitText_js-node_modules_react-virtua-d601f8.main.js"
+    },
+    "app_images_wrench_svg-app_components_UI_Slider_js-app_lib_SplitText_js-app_components_MediaCo-a61b5e0.styles-dev.css": {
+      "name": "app_images_wrench_svg-app_components_UI_Slider_js-app_lib_SplitText_js-app_components_MediaCo-a61b5e0.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_UI_Slider_js-app_lib_SplitText_js-app_components_MediaCo-a61b5e0.styles-dev.css"
+    },
+    "app_images_wrench_svg-app_components_UI_Slider_js-app_lib_SplitText_js-app_components_MediaCo-a61b5e0.main.js": {
+      "name": "app_images_wrench_svg-app_components_UI_Slider_js-app_lib_SplitText_js-app_components_MediaCo-a61b5e0.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_UI_Slider_js-app_lib_SplitText_js-app_components_MediaCo-a61b5e0.main.js"
+    },
+    "app_images_wrench_svg-app_components_UI_Slider_js-app_lib_SplitText_js-app_components_MediaCo-a61b5e1.styles-dev.css": {
+      "name": "app_images_wrench_svg-app_components_UI_Slider_js-app_lib_SplitText_js-app_components_MediaCo-a61b5e1.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_UI_Slider_js-app_lib_SplitText_js-app_components_MediaCo-a61b5e1.styles-dev.css"
+    },
+    "app_images_wrench_svg-app_components_UI_Slider_js-app_lib_SplitText_js-app_components_MediaCo-a61b5e1.main.js": {
+      "name": "app_images_wrench_svg-app_components_UI_Slider_js-app_lib_SplitText_js-app_components_MediaCo-a61b5e1.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_UI_Slider_js-app_lib_SplitText_js-app_components_MediaCo-a61b5e1.main.js"
+    },
+    "app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail2_HeaderMenu_Searc-f9e1f3.styles-dev.css": {
+      "name": "app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail2_HeaderMenu_Searc-f9e1f3.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail2_HeaderMenu_Searc-f9e1f3.styles-dev.css"
+    },
+    "app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail2_HeaderMenu_Searc-f9e1f3.main.js": {
+      "name": "app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail2_HeaderMenu_Searc-f9e1f3.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail2_HeaderMenu_Searc-f9e1f3.main.js"
+    },
+    "app_images_wrench_svg-app_components_TextDetail2_TextDetailHeadingContainer_js-app_components-7243df.styles-dev.css": {
+      "name": "app_images_wrench_svg-app_components_TextDetail2_TextDetailHeadingContainer_js-app_components-7243df.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_TextDetail2_TextDetailHeadingContainer_js-app_components-7243df.styles-dev.css"
+    },
+    "app_images_wrench_svg-app_components_TextDetail2_TextDetailHeadingContainer_js-app_components-7243df.main.js": {
+      "name": "app_images_wrench_svg-app_components_TextDetail2_TextDetailHeadingContainer_js-app_components-7243df.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_TextDetail2_TextDetailHeadingContainer_js-app_components-7243df.main.js"
+    },
+    "app_components_TextDetail2_TextList_js.styles-dev.css": {
+      "name": "app_components_TextDetail2_TextList_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextList_js.styles-dev.css"
+    },
+    "app_components_TextDetail2_TextList_js.main.js": {
+      "name": "app_components_TextDetail2_TextList_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextList_js.main.js"
+    },
+    "app_components_TextDetail2_TextListContainer_js.styles-dev.css": {
+      "name": "app_components_TextDetail2_TextListContainer_js.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextListContainer_js.styles-dev.css"
+    },
+    "app_components_TextDetail2_TextListContainer_js.main.js": {
+      "name": "app_components_TextDetail2_TextListContainer_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextListContainer_js.main.js"
+    },
+    "app_components_TextList_index_js-node_modules_react-virtualized_styles_css-app_components_Tex-80e1eb.styles-dev.css": {
+      "name": "app_components_TextList_index_js-node_modules_react-virtualized_styles_css-app_components_Tex-80e1eb.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_index_js-node_modules_react-virtualized_styles_css-app_components_Tex-80e1eb.styles-dev.css"
+    },
+    "app_components_TextList_index_js-node_modules_react-virtualized_styles_css-app_components_Tex-80e1eb.main.js": {
+      "name": "app_components_TextList_index_js-node_modules_react-virtualized_styles_css-app_components_Tex-80e1eb.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_index_js-node_modules_react-virtualized_styles_css-app_components_Tex-80e1eb.main.js"
+    },
+    "node_modules_react-virtualized_styles_css-app_components_TextList_LoadMore_css-app_components-de4e52.styles-dev.css": {
+      "name": "node_modules_react-virtualized_styles_css-app_components_TextList_LoadMore_css-app_components-de4e52.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_react-virtualized_styles_css-app_components_TextList_LoadMore_css-app_components-de4e52.styles-dev.css"
+    },
+    "node_modules_react-virtualized_styles_css-app_components_TextList_LoadMore_css-app_components-de4e52.main.js": {
+      "name": "node_modules_react-virtualized_styles_css-app_components_TextList_LoadMore_css-app_components-de4e52.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_react-virtualized_styles_css-app_components_TextList_LoadMore_css-app_components-de4e52.main.js"
+    },
+    "vendors-node_modules_mui_base_ClickAwayListener_ClickAwayListener_js-node_modules_mui_icons-m-df5834.main.js": {
+      "name": "vendors-node_modules_mui_base_ClickAwayListener_ClickAwayListener_js-node_modules_mui_icons-m-df5834.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_mui_base_ClickAwayListener_ClickAwayListener_js-node_modules_mui_icons-m-df5834.main.js"
+    },
+    "vendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_ChevronLeft-f30207.main.js": {
+      "name": "vendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_ChevronLeft-f30207.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_ChevronLeft-f30207.main.js"
+    },
+    "vendors-node_modules_mui_icons-material_Delete_js-node_modules_react-split-pane_dist_index_esm_js.main.js": {
+      "name": "vendors-node_modules_mui_icons-material_Delete_js-node_modules_react-split-pane_dist_index_esm_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_mui_icons-material_Delete_js-node_modules_react-split-pane_dist_index_esm_js.main.js"
+    },
+    "vendors-node_modules_mui_icons-material_esm_Edit_js-node_modules_mui_icons-material_esm_Share-777218.main.js": {
+      "name": "vendors-node_modules_mui_icons-material_esm_Edit_js-node_modules_mui_icons-material_esm_Share-777218.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_mui_icons-material_esm_Edit_js-node_modules_mui_icons-material_esm_Share-777218.main.js"
+    },
+    "app_components_TextDetail2_SplitText_js.main.js": {
+      "name": "app_components_TextDetail2_SplitText_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_SplitText_js.main.js"
+    },
+    "app_components_TextList_TextList_js.main.js": {
+      "name": "app_components_TextList_TextList_js.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextList_TextList_js.main.js"
+    },
+    "app_components_TextDetail2_TextDetail_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-d808c0.styles-dev.css": {
+      "name": "app_components_TextDetail2_TextDetail_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-d808c0.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextDetail_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-d808c0.styles-dev.css"
+    },
+    "app_components_TextDetail2_TextDetail_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-d808c0.main.js": {
+      "name": "app_components_TextDetail2_TextDetail_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-d808c0.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextDetail_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-d808c0.main.js"
+    },
+    "main.27ea9e56dc1ee6b1498f.hot-update.js": {
+      "name": "main.27ea9e56dc1ee6b1498f.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.27ea9e56dc1ee6b1498f.hot-update.js"
+    },
+    "app_components_MediaComponent_Image_js.27ea9e56dc1ee6b1498f.hot-update.js": {
+      "name": "app_components_MediaComponent_Image_js.27ea9e56dc1ee6b1498f.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_MediaComponent_Image_js.27ea9e56dc1ee6b1498f.hot-update.js"
+    },
+    "vendors-node_modules_react-virtualized_dist_es_List_index_js.27ea9e56dc1ee6b1498f.hot-update.js": {
+      "name": "vendors-node_modules_react-virtualized_dist_es_List_index_js.27ea9e56dc1ee6b1498f.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_react-virtualized_dist_es_List_index_js.27ea9e56dc1ee6b1498f.hot-update.js"
+    },
+    "app_components_TextDetail2_TextDetailHeading_js.27ea9e56dc1ee6b1498f.hot-update.js": {
+      "name": "app_components_TextDetail2_TextDetailHeading_js.27ea9e56dc1ee6b1498f.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextDetailHeading_js.27ea9e56dc1ee6b1498f.hot-update.js"
+    },
+    "app_components_Editors_TextSheet_js.27ea9e56dc1ee6b1498f.hot-update.js": {
+      "name": "app_components_Editors_TextSheet_js.27ea9e56dc1ee6b1498f.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_TextSheet_js.27ea9e56dc1ee6b1498f.hot-update.js"
+    },
+    "main.27ea9e56dc1ee6b1498f.hot-update.json": {
+      "name": "main.27ea9e56dc1ee6b1498f.hot-update.json",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.27ea9e56dc1ee6b1498f.hot-update.json"
+    },
+    "app_components_Editors_Editor_js-app_components_Editors_resizerStyle_css-app_components_Media-3f831f.styles-dev.css": {
+      "name": "app_components_Editors_Editor_js-app_components_Editors_resizerStyle_css-app_components_Media-3f831f.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_Editor_js-app_components_Editors_resizerStyle_css-app_components_Media-3f831f.styles-dev.css"
+    },
+    "app_components_Editors_Editor_js-app_components_Editors_resizerStyle_css-app_components_Media-3f831f.main.js": {
+      "name": "app_components_Editors_Editor_js-app_components_Editors_resizerStyle_css-app_components_Media-3f831f.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_Editor_js-app_components_Editors_resizerStyle_css-app_components_Media-3f831f.main.js"
+    },
+    "app_components_Editors_resizerStyle_css-app_components_MediaComponent_MediaOptions_css-app_co-269008.styles-dev.css": {
+      "name": "app_components_Editors_resizerStyle_css-app_components_MediaComponent_MediaOptions_css-app_co-269008.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_resizerStyle_css-app_components_MediaComponent_MediaOptions_css-app_co-269008.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_TextDetail_ind-6b989a.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_TextDetail_ind-6b989a.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_TextDetail_ind-6b989a.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_TextDetail_ind-6b989a.main.js": {
+      "name": "node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_TextDetail_ind-6b989a.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_TextDetail_ind-6b989a.main.js"
+    },
+    "node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_UI_Slider_js-a-5372ee0.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_UI_Slider_js-a-5372ee0.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_UI_Slider_js-a-5372ee0.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_UI_Slider_js-a-5372ee0.main.js": {
+      "name": "node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_UI_Slider_js-a-5372ee0.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_UI_Slider_js-a-5372ee0.main.js"
+    },
+    "node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_UI_Slider_js-a-5372ee1.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_UI_Slider_js-a-5372ee1.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_UI_Slider_js-a-5372ee1.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_UI_Slider_js-a-5372ee1.main.js": {
+      "name": "node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_UI_Slider_js-a-5372ee1.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Delete_js-app_images_wrench_svg-app_components_UI_Slider_js-a-5372ee1.main.js"
+    },
+    "app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail_HeaderMenu_Search-30d039.styles-dev.css": {
+      "name": "app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail_HeaderMenu_Search-30d039.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail_HeaderMenu_Search-30d039.styles-dev.css"
+    },
+    "app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail_HeaderMenu_Search-30d039.main.js": {
+      "name": "app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail_HeaderMenu_Search-30d039.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail_HeaderMenu_Search-30d039.main.js"
+    },
+    "app_images_wrench_svg-app_components_TextDetail_TextDetailHeadingContainer_js-app_components_-58cf75.styles-dev.css": {
+      "name": "app_images_wrench_svg-app_components_TextDetail_TextDetailHeadingContainer_js-app_components_-58cf75.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_TextDetail_TextDetailHeadingContainer_js-app_components_-58cf75.styles-dev.css"
+    },
+    "app_images_wrench_svg-app_components_TextDetail_TextDetailHeadingContainer_js-app_components_-58cf75.main.js": {
+      "name": "app_images_wrench_svg-app_components_TextDetail_TextDetailHeadingContainer_js-app_components_-58cf75.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_images_wrench_svg-app_components_TextDetail_TextDetailHeadingContainer_js-app_components_-58cf75.main.js"
+    },
+    "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_index_js-app_lib_SplitTex-4ae38f.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_index_js-app_lib_SplitTex-4ae38f.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-app_components_TextDetail2_index_js-app_lib_SplitTex-4ae38f.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_index_js-app_lib_SplitTex-4ae38f.main.js": {
+      "name": "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_index_js-app_lib_SplitTex-4ae38f.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-app_components_TextDetail2_index_js-app_lib_SplitTex-4ae38f.main.js"
+    },
+    "node_modules_mui_icons-material_Check_js-app_lib_SplitText_js-node_modules_react-virtualized_-76b0bb0.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Check_js-app_lib_SplitText_js-node_modules_react-virtualized_-76b0bb0.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-app_lib_SplitText_js-node_modules_react-virtualized_-76b0bb0.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Check_js-app_lib_SplitText_js-node_modules_react-virtualized_-76b0bb0.main.js": {
+      "name": "node_modules_mui_icons-material_Check_js-app_lib_SplitText_js-node_modules_react-virtualized_-76b0bb0.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-app_lib_SplitText_js-node_modules_react-virtualized_-76b0bb0.main.js"
+    },
+    "node_modules_mui_icons-material_Check_js-app_lib_SplitText_js-node_modules_react-virtualized_-76b0bb1.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Check_js-app_lib_SplitText_js-node_modules_react-virtualized_-76b0bb1.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-app_lib_SplitText_js-node_modules_react-virtualized_-76b0bb1.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Check_js-app_lib_SplitText_js-node_modules_react-virtualized_-76b0bb1.main.js": {
+      "name": "node_modules_mui_icons-material_Check_js-app_lib_SplitText_js-node_modules_react-virtualized_-76b0bb1.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-app_lib_SplitText_js-node_modules_react-virtualized_-76b0bb1.main.js"
+    },
+    "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f736d0.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f736d0.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f736d0.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f736d0.main.js": {
+      "name": "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f736d0.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f736d0.main.js"
+    },
+    "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_TextDetailHeadingContaine-0faae4.styles-dev.css": {
+      "name": "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_TextDetailHeadingContaine-0faae4.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-app_components_TextDetail2_TextDetailHeadingContaine-0faae4.styles-dev.css"
+    },
+    "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_TextDetailHeadingContaine-0faae4.main.js": {
+      "name": "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_TextDetailHeadingContaine-0faae4.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_icons-material_Check_js-app_components_TextDetail2_TextDetailHeadingContaine-0faae4.main.js"
+    },
+    "vendors-node_modules_mui_icons-material_Check_js-node_modules_mui_icons-material_Delete_js-no-2156dd.main.js": {
+      "name": "vendors-node_modules_mui_icons-material_Check_js-node_modules_mui_icons-material_Delete_js-no-2156dd.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_mui_icons-material_Check_js-node_modules_mui_icons-material_Delete_js-no-2156dd.main.js"
+    },
+    "app_components_TextDetail2_TextDetail_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-7ba65c.styles-dev.css": {
+      "name": "app_components_TextDetail2_TextDetail_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-7ba65c.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextDetail_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-7ba65c.styles-dev.css"
+    },
+    "app_components_TextDetail2_TextDetail_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-7ba65c.main.js": {
+      "name": "app_components_TextDetail2_TextDetail_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-7ba65c.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextDetail_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-7ba65c.main.js"
+    },
+    "main.0ef29fc06feb33a698a7.hot-update.js": {
+      "name": "main.0ef29fc06feb33a698a7.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.0ef29fc06feb33a698a7.hot-update.js"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.0ef29fc06feb33a698a7.hot-update.js": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.0ef29fc06feb33a698a7.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.0ef29fc06feb33a698a7.hot-update.js"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_MediaCon-1cd731.0ef29fc06feb33a698a7.hot-update.js": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_MediaCon-1cd731.0ef29fc06feb33a698a7.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_MediaCon-1cd731.0ef29fc06feb33a698a7.hot-update.js"
+    },
+    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.0ef29fc06feb33a698a7.hot-update.js": {
+      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.0ef29fc06feb33a698a7.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.0ef29fc06feb33a698a7.hot-update.js"
+    },
+    "app_components_TextDetail2_TextDetailHeading_js.0ef29fc06feb33a698a7.hot-update.js": {
+      "name": "app_components_TextDetail2_TextDetailHeading_js.0ef29fc06feb33a698a7.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_TextDetail2_TextDetailHeading_js.0ef29fc06feb33a698a7.hot-update.js"
+    },
+    "app_components_Editors_TextSheet_js.0ef29fc06feb33a698a7.hot-update.js": {
+      "name": "app_components_Editors_TextSheet_js.0ef29fc06feb33a698a7.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\app_components_Editors_TextSheet_js.0ef29fc06feb33a698a7.hot-update.js"
+    },
+    "main.0ef29fc06feb33a698a7.hot-update.json": {
+      "name": "main.0ef29fc06feb33a698a7.hot-update.json",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.0ef29fc06feb33a698a7.hot-update.json"
+    },
+    "main.6fb6575bfc3c34325f57.hot-update.js": {
+      "name": "main.6fb6575bfc3c34325f57.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.6fb6575bfc3c34325f57.hot-update.js"
+    },
+    "main.6fb6575bfc3c34325f57.hot-update.json": {
+      "name": "main.6fb6575bfc3c34325f57.hot-update.json",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.6fb6575bfc3c34325f57.hot-update.json"
+    },
+    "main.styles-dev.css": {
+      "name": "main.styles-dev.css",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.styles-dev.css"
+    },
+    "main.64012252a22403a21257.hot-update.js": {
+      "name": "main.64012252a22403a21257.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.64012252a22403a21257.hot-update.js"
+    },
+    "main.64012252a22403a21257.hot-update.json": {
+      "name": "main.64012252a22403a21257.hot-update.json",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.64012252a22403a21257.hot-update.json"
+    },
+    "main.b3c6dba2c1443b3933fb.hot-update.js": {
+      "name": "main.b3c6dba2c1443b3933fb.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.b3c6dba2c1443b3933fb.hot-update.js"
+    },
+    "main.b3c6dba2c1443b3933fb.hot-update.json": {
+      "name": "main.b3c6dba2c1443b3933fb.hot-update.json",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.b3c6dba2c1443b3933fb.hot-update.json"
+    },
+    "main.69ce6304521d68f5f679.hot-update.js": {
+      "name": "main.69ce6304521d68f5f679.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.69ce6304521d68f5f679.hot-update.js"
+    },
+    "main.69ce6304521d68f5f679.hot-update.json": {
+      "name": "main.69ce6304521d68f5f679.hot-update.json",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.69ce6304521d68f5f679.hot-update.json"
+    },
+    "main.acd8735e430c0370c575.hot-update.js": {
+      "name": "main.acd8735e430c0370c575.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.acd8735e430c0370c575.hot-update.js"
+    },
+    "main.acd8735e430c0370c575.hot-update.json": {
+      "name": "main.acd8735e430c0370c575.hot-update.json",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.acd8735e430c0370c575.hot-update.json"
+    },
+    "main.f5a564eeccd8eae46b1e.hot-update.js": {
+      "name": "main.f5a564eeccd8eae46b1e.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.f5a564eeccd8eae46b1e.hot-update.js"
+    },
+    "main.f5a564eeccd8eae46b1e.hot-update.json": {
+      "name": "main.f5a564eeccd8eae46b1e.hot-update.json",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.f5a564eeccd8eae46b1e.hot-update.json"
+    },
+    "main.a902f4582cd65992d406.hot-update.js": {
+      "name": "main.a902f4582cd65992d406.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.a902f4582cd65992d406.hot-update.js"
+    },
+    "main.a902f4582cd65992d406.hot-update.json": {
+      "name": "main.a902f4582cd65992d406.hot-update.json",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.a902f4582cd65992d406.hot-update.json"
+    },
+    "main.f61e17d06c15d48b7567.hot-update.js": {
+      "name": "main.f61e17d06c15d48b7567.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.f61e17d06c15d48b7567.hot-update.js"
+    },
+    "main.f61e17d06c15d48b7567.hot-update.json": {
+      "name": "main.f61e17d06c15d48b7567.hot-update.json",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.f61e17d06c15d48b7567.hot-update.json"
+    },
+    "main.69b6ea7f92c5ec64bcc6.hot-update.js": {
+      "name": "main.69b6ea7f92c5ec64bcc6.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.69b6ea7f92c5ec64bcc6.hot-update.js"
+    },
+    "main.69b6ea7f92c5ec64bcc6.hot-update.json": {
+      "name": "main.69b6ea7f92c5ec64bcc6.hot-update.json",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.69b6ea7f92c5ec64bcc6.hot-update.json"
+    },
+    "vendors-node_modules_mui_base_ClickAwayListener_ClickAwayListener_js-node_modules_mui_icons-m-2e2b4c.main.js": {
+      "name": "vendors-node_modules_mui_base_ClickAwayListener_ClickAwayListener_js-node_modules_mui_icons-m-2e2b4c.main.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\vendors-node_modules_mui_base_ClickAwayListener_ClickAwayListener_js-node_modules_mui_icons-m-2e2b4c.main.js"
+    },
+    "main.08a38e1ee87c006ea6a9.hot-update.js": {
+      "name": "main.08a38e1ee87c006ea6a9.hot-update.js",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.08a38e1ee87c006ea6a9.hot-update.js"
+    },
+    "main.08a38e1ee87c006ea6a9.hot-update.json": {
+      "name": "main.08a38e1ee87c006ea6a9.hot-update.json",
+      "path": "D:\\git Project work\\TerminusDB\\public\\main.08a38e1ee87c006ea6a9.hot-update.json"
+    }
+  },
+  "chunks": {
+    "main": [
+      "styles-dev.css",
+      "main.js",
+      "main.08a38e1ee87c006ea6a9.hot-update.js"
+    ]
+  },
+  "error": "ModuleBuildError",
+  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: D:\\git Project work\\TerminusDB\\app\\components\\Resources\\Resources.js: Unexpected token, expected \",\" (27:8)\n\n  25 |               flexDirection: \"column\",\n  26 |         bgcolor:\"background.default\"\n> 27 |         height: \"100%\",\n     |         ^\n  28 |         maxWidth: \"250px\",\n  29 |         zIndex: 10,\n  30 |         position: \"relative\",\n    at instantiate (D:\\git Project work\\TerminusDB\\node_modules\\@babel\\parser\\lib\\index.js:72:32)\n    at constructor (D:\\git Project work\\TerminusDB\\node_modules\\@babel\\parser\\lib\\index.js:366:12)\n    at FlowParserMixin.raise (D:\\git Project work\\TerminusDB\\node_modules\\@babel\\parser\\lib\\index.js:3453:19)\n    at FlowParserMixin.unexpected (D:\\git Project work\\TerminusDB\\node_modules\\@babel\\parser\\lib\\index.js:3491:16)\n    at FlowParserMixin.expect (D:\\git Project work\\TerminusDB\\node_modules\\@babel\\parser\\lib\\index.js:4128:28)\n    at FlowParserMixin.parseObjectLike (D:\\git Project work\\TerminusDB\\node_modules\\@babel\\parser\\lib\\index.js:13730:14)\n    at FlowParserMixin.parseExprAtom (D:\\git Project work\\TerminusDB\\node_modules\\@babel\\parser\\lib\\index.js:13135:23)\n    at FlowParserMixin.parseExprAtom (D:\\git Project work\\TerminusDB\\node_modules\\@babel\\parser\\lib\\index.js:8174:20)\n    at FlowParserMixin.parseExprSubscripts (D:\\git Project work\\TerminusDB\\node_modules\\@babel\\parser\\lib\\index.js:12785:23)\n    at FlowParserMixin.parseUpdate (D:\\git Project work\\TerminusDB\\node_modules\\@babel\\parser\\lib\\index.js:12764:21)"
 }

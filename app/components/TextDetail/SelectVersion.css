@@ -1,0 +1,27 @@
+@import 'css/colour.css';
+
+.selectVersion {
+    height: 30px;
+    min-width: max-content;
+    font-size: 14px;
+    text-align: center;
+}
+
+.selectEmpty {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.selectOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.styled-select select {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+}

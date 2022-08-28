@@ -20,16 +20,16 @@ module.exports = {
     filename: "main.js",
   },
   plugins: [
-    // new BundleTracker({ filename: "./webpack-stats-dev.json" }),
-    // new MiniCssExtractPlugin({
-    //   filename: "styles-dev.css",
-    // }),
-    // new webpack.DefinePlugin({
-    //   "process.env": {
-    //     NODE_ENV: JSON.stringify("development"),
-    //   },
-    // }),
-    // new LodashModuleReplacementPlugin(),
+    new BundleTracker({ filename: "./webpack-stats-dev.json" }),
+    new MiniCssExtractPlugin({
+      filename: "styles-dev.css",
+    }),
+    new webpack.DefinePlugin({
+      "process.env": {
+        NODE_ENV: JSON.stringify("development"),
+      },
+    }),
+    new LodashModuleReplacementPlugin(),
   ],
   target: "web",
   devServer: {

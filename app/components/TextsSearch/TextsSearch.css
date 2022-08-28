@@ -1,0 +1,61 @@
+:root {
+    --inputHeight: 30px;
+    --searchButtonMinWidth: 70px;
+}
+
+.textsSearchContainer {
+    display: flex;
+}
+
+.textsSearch {
+    padding: 10px;
+    display: flex;
+    background-color: white;
+    flex-grow: 1;
+}
+
+.textsSearch form {
+    display: flex;
+    flex-grow: 1;
+}
+
+.textsSearch input :focus {
+    outline: none;
+    border: 0;
+}
+
+.textsSearch input {
+    font-size: 1em;
+    margin-right: 10px;
+    flex-grow: 1;
+    min-height: var(--inputHeight);
+    padding: 0 5px;
+    border: 0;
+    border-bottom: 2px solid gray;
+    border-radius: 4px;
+}
+
+.textsSearch button {
+    /* min-width: var(--searchButtonMinWidth); */
+    text-align: center;
+    border-radius: 3px;
+}
+
+.textsSearch select {
+    font-size: 0.8em;
+    height: var(--inputHeight);
+}
+
+.minify {
+    font-family: arial, sans-serif;
+    width: 20px;
+    background-color: #313131;
+    color: white;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 29px;
+    cursor: pointer;
+}

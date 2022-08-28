@@ -1,0 +1,7 @@
+@import 'css/type.css';
+
+.container {
+    font-family: var(--fonts);
+    font-size: 12px;
+    font-weight: bold;
+}

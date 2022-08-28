@@ -1,0 +1,12 @@
+.textlist {
+    max-width: 15rem;
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.textlist.open {
+    width: 500px;
+    height: 500px;
+}

@@ -1,0 +1,30 @@
+@import 'css/colour.css';
+
+
+.textDetail2 {
+    /* background-color: white; */
+    position: relative;
+    width: 100%;
+    /* color: var(--text-color); */
+    transition: height 0.3s linear;
+    overflow: hidden;
+}
+
+.textDetail2 ::selection {
+    color: black;
+    background-color: #ccc;
+}
+
+.textContainer2 {
+    flex-grow: 1;
+    border-radius: 10px;
+}
+
+:global(.loader) {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+}
