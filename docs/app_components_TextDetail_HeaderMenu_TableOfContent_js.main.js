@@ -19,16 +19,6 @@ eval("\n\nvar _interopRequireDefault = __webpack_require__(/*! @babel/runtime/he
 
 /***/ }),
 
-/***/ "./node_modules/@mui/icons-material/Menu.js":
-/*!**************************************************!*\
-  !*** ./node_modules/@mui/icons-material/Menu.js ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-eval("\n\nvar _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ \"./node_modules/@babel/runtime/helpers/interopRequireDefault.js\");\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nexports[\"default\"] = void 0;\n\nvar _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ \"./node_modules/@mui/icons-material/utils/createSvgIcon.js\"));\n\nvar _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n\nvar _default = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)(\"path\", {\n  d: \"M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z\"\n}), 'Menu');\n\nexports[\"default\"] = _default;\n\n//# sourceURL=webpack://teminusclient/./node_modules/@mui/icons-material/Menu.js?");
-
-/***/ }),
-
 /***/ "./app/components/TextDetail/HeaderMenu/TableOfContent.js":
 /*!****************************************************************!*\
   !*** ./app/components/TextDetail/HeaderMenu/TableOfContent.js ***!

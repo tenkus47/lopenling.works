@@ -202,6 +202,8 @@ blockquote {
     min-width: 0;
     width: 100%;
     font-size: 24px;
+    height: 100%;
+
 }
 
 .SplitText---splitText2 * {

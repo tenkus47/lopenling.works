@@ -1,0 +1,179 @@
+.MediaOptions---MediaOption {
+    resize: both;
+    overflow: auto;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    right: 0;
+    background-color: white;
+}
+.MediaOptions---header {
+    position: relative;
+    top: 0;
+    height: 60px;
+    right: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-inline: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.MediaOptions---closeBtn {
+    position: absolute !important;
+    right: 10px;
+    top: 10px;
+}
+.resizerStyle---Resizer {
+    background: transparent;
+    opacity: 0.2;
+    z-index: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-clip: padding-box;
+
+}
+
+.resizerStyle---Resizer:hover {
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.resizerStyle---Resizer.resizerStyle---horizontal {
+    height: 11px;
+    margin: -5px 0;
+    border-top: 5px solid rgba(255, 255, 255, 0);
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
+    cursor: row-resize;
+    width: 100%;
+}
+
+.resizerStyle---Resizer.resizerStyle---horizontal:hover {
+    border-top: 5px solid rgba(0, 0, 0, .5);
+    border-bottom: 5px solid rgba(0, 0, 0, .5);
+}
+
+.resizerStyle---Resizer.resizerStyle---vertical {
+    width: 11px;
+    margin: 0;
+    border-left: 5px solid rgba(255, 255, 255, 0);
+    border-right: 5px solid rgba(255, 255, 255, 0);
+    cursor: col-resize;
+}
+
+.resizerStyle---Resizer.resizerStyle---vertical:hover {
+    border-left: 5px solid rgba(0, 0, 0, .5);
+    border-right: 5px solid rgba(0, 0, 0, .5);
+}
+
+.resizerStyle---Resizer.resizerStyle---disabled {
+    cursor: not-allowed;
+}
+
+.resizerStyle---Resizer.resizerStyle---disabled:hover {
+    border-color: transparent;
+}
+.TextDetail---textDetail {
+    /* background-color: var(--text-bg); */
+    position: relative;
+    width: 100%;
+    /* color: var(--text-color); */
+    -webkit-transition: height 0.4s linear;
+    transition: height 0.4s linear;
+}
+.TextDetail---textDetail ::-moz-selection {
+    color: black;
+    background-color: #ccc
+}
+.TextDetail---textDetail ::selection {
+    color: black;
+    background-color: #ccc
+}
+.TextDetail---textContainer {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    border-radius: 10px;
+}
+.TextDetail---tableContent {
+    padding-inline: 20px;
+}
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.textDetailHeading---button_group_menu svg {
+        margin: 0 !important;
+    }
+.SelectVersion---selectVersion {
+    height: 30px;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    font-size: 14px;
+    text-align: center;
+}
+.SelectVersion---selectEmpty {
+    width: 100%;
+    border-radius: 10px;
+}
+.SelectVersion---selectOptions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.SelectVersion---styled-select select {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+}
+.TextList---textlist {
+    z-index: 1;
+    min-width: 240px;
+    min-width: 15rem;
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: 100;
+}
+
+.TextList---textlist.TextList---open {
+    width: 500px;
+    height: 500px;
+}
+.SearchStyle---highlight {
+    background-color: yellow;
+
+}
+
+.SearchStyle---searchListItem {
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.SearchStyle---searchListItem:hover {
+    font-weight: 600;
+}
+.TableOfContent---TableContent .loader {
+    left: 0;
+    right: 0;
+
+}

@@ -31,7 +31,6 @@
     /* background-color: var(--text-bg); */
     margin: 0px;
     min-width: 0;
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
