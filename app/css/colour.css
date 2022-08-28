@@ -1,0 +1,33 @@
+@value green-tint: #88af8e;
+@value blue-tint: #024279;
+
+@value active-button: #00746b;
+
+:root {
+    --main-tint: #0088cc;
+    --main-tint-hover: #069;
+    --blue-tint: blue-tint;
+    --green-tint: green-tint;
+    --white: #ddd;
+    --green: #5B8960;
+    --yellow: #ffc300;
+    --red: #840000;
+    --cancel: #840000;
+    --active-button: active-button;
+    --white: white;
+    --rightbackground: #FBFBFA;
+    --dark-gray: #a6a6a6;
+    --light-gray: rgb(208, 199, 199);
+    --text-color: black;
+    --editor-bg: black;
+    --text-bg: white;
+    --nav-text: #666666;
+    --nav-bgcolor: #FBFBFA;
+    --resource-header-bgcolor: #EDEDED;
+    --textDetail-heading: #f7f7f7;
+}
+
+:export {
+    mainTint: blue-tint;
+    activeButton: active-button;
+}

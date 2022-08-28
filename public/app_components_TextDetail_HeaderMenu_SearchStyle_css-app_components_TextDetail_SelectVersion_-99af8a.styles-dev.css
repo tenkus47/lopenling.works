@@ -1,0 +1,134 @@
+.TextDetail---textDetail {
+    /* background-color: var(--text-bg); */
+    position: relative;
+    width: 100%;
+    /* color: var(--text-color); */
+    -webkit-transition: height 0.4s linear;
+    transition: height 0.4s linear;
+}
+.TextDetail---textDetail ::-moz-selection {
+    color: black;
+    background-color: #ccc
+}
+.TextDetail---textDetail ::selection {
+    color: black;
+    background-color: #ccc
+}
+.TextDetail---textContainer {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    border-radius: 10px;
+}
+.TextDetail---tableContent {
+    padding-inline: 20px;
+}
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.textDetailHeading---button_group_menu svg {
+        margin: 0 !important;
+    }
+.SelectVersion---selectVersion {
+    height: 30px;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    font-size: 14px;
+    text-align: center;
+}
+.SelectVersion---selectEmpty {
+    width: 100%;
+    border-radius: 10px;
+}
+.SelectVersion---selectOptions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.SelectVersion---styled-select select {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+}
+.TextList---textlist {
+    z-index: 1;
+    min-width: 240px;
+    min-width: 15rem;
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: 100;
+}
+
+.TextList---textlist.TextList---open {
+    width: 500px;
+    height: 500px;
+}
+.Slider---inputRanges {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.Slider---inputRanges>span {
+    position: relative;
+}
+
+.Slider---inputRange {
+    background: #eee;
+    border: solid 1px #82CFD0;
+    border-radius: 8px;
+    height: 2px;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-transition: 0.4s all ease-out;
+    transition: 0.4s all ease-out;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 6px;
+    -webkit-appearance: none;
+    height: 12px;
+    background: black;
+    border-radius: 2px;
+    -webkit-transition: 0.4s all ease-out;
+    transition: 0.4s all ease-out;
+
+}
+.SearchStyle---highlight {
+    background-color: yellow;
+
+}
+
+.SearchStyle---searchListItem {
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.SearchStyle---searchListItem:hover {
+    font-weight: 600;
+}
+.TableOfContent---TableContent .loader {
+    left: 0;
+    right: 0;
+
+}

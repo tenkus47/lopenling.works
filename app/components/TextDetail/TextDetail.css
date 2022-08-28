@@ -1,0 +1,33 @@
+@import 'css/colour.css';
+
+
+.textDetail {
+    /* background-color: var(--text-bg); */
+    position: relative;
+    width: 100%;
+    /* color: var(--text-color); */
+    transition: height 0.4s linear;
+}
+
+.textDetail ::selection {
+    color: black;
+    background-color: #ccc
+}
+
+.textContainer {
+    flex-grow: 1;
+    border-radius: 10px;
+}
+
+.tableContent {
+    padding-inline: 20px;
+}
+
+:global(.loader) {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+}

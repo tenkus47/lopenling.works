@@ -1,0 +1,16 @@
+.highlight {
+    background-color: yellow;
+
+}
+
+.searchListItem {
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.searchListItem:hover {
+    font-weight: 600;
+
+}

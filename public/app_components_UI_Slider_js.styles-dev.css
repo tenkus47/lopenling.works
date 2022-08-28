@@ -1,0 +1,34 @@
+.Slider---inputRanges {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.Slider---inputRanges>span {
+    position: relative;
+}
+
+.Slider---inputRange {
+    background: #eee;
+    border: solid 1px #82CFD0;
+    border-radius: 8px;
+    height: 2px;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-transition: 0.4s all ease-out;
+    transition: 0.4s all ease-out;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 6px;
+    -webkit-appearance: none;
+    height: 12px;
+    background: black;
+    border-radius: 2px;
+    -webkit-transition: 0.4s all ease-out;
+    transition: 0.4s all ease-out;
+
+}

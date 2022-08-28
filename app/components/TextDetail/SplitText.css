@@ -1,0 +1,111 @@
+@import 'AnnotationControls.css';
+
+.splitText {
+    /* background-color: white; */
+    flex-grow: 1;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+}
+
+.splitText * {
+    scroll-behavior: smooth;
+
+}
+
+
+.splitText *:focus {
+    outline: none;
+}
+
+.splitTextRowContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.splitTextRow {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.splitTextRow * {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.splitTextRow *::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+
+.splitTextRow .text {
+    max-width: 100%;
+}
+
+.pechaImage {
+    background-color: #eee;
+    height: 260px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.image {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.pechaImage img {
+    object-fit: cover;
+}
+
+.controlsPlaceholder {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: var(--controlsWidth);
+    padding: var(--controlsPadding);
+    margin-left: var(--controlsMargin);
+    margin-right: var(--controlsMargin);
+}
+
+.hide {
+    display: none;
+}
+
+.pageNumber {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 42px;
+    color: #444;
+}
+
+:global(.ReactVirtualized__Grid__innerScrollContainer) {
+    overflow: visible !important;
+    margin-bottom: 300px;
+}
+
+span {
+    position: relative
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.image-loading {
+    opacity: 0;
+    transition: none;
+}

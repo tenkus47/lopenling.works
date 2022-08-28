@@ -1,0 +1,50 @@
+@import 'css/type.css';
+
+:root {
+    --button: {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 8px 5px 5px;
+        border: 0;
+        border-radius: 3px;
+        font-weight: normal;
+        font-size: 12px;
+        box-shadow: 0px 1px 1px #555;
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
+.button {
+    @apply --button;
+}
+
+.buttonNoBezel {
+    @apply --button;
+    border-radius: 0;
+    box-shadow: none;
+    flex-basis: 0;
+}
+
+.button:disabled,
+.buttonNoBezel:disabled {
+    opacity: 0.2;
+}
+
+.active {
+    box-shadow: none;
+}
+
+.leftAlign {
+    @apply --button;
+    text-align: left;
+}
+
+.title {
+    flex-grow: 1;
+}
+
+.icon {
+    display: flex;
+}

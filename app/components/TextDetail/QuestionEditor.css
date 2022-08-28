@@ -1,0 +1,16 @@
+@import 'css/type.css';
+@import 'css/colour.css';
+
+.editorContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+.textEditor {
+    height: 5em;
+    margin-bottom: 0.7em;
+    font-size: 14px;
+}

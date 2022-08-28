@@ -1,0 +1,75 @@
+.TextsSearch2---textsSearchContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.TextsSearch2---textsSearch {
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+.TextsSearch2---textsSearch form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+.TextsSearch2---textsSearch input :focus{
+    outline: none;
+    border:0;
+}
+
+.TextsSearch2---textsSearch input {
+    font-size: 1em;
+    margin-right: 10px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    min-height: 30px;
+    padding: 0 5px;
+    border:0;
+    border-bottom: 2px solid gray;
+    border-radius: 4px;
+}
+
+.TextsSearch2---textsSearch button {
+    min-width: 70px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.TextsSearch2---textsSearch select {
+    font-size: 0.8em;
+    height: 30px;
+}
+
+.TextsSearch2---minify {
+    font-family: arial, sans-serif;
+    width: 20px;
+    background-color: #313131;
+    color: white;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    line-height: 29px;
+    cursor: pointer;
+}

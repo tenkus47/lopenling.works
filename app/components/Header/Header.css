@@ -1,0 +1,77 @@
+@import "css/type.css";
+@import "css/colour.css";
+
+@value header-height: 40px;
+
+:root {
+    --header-height: header-height;
+}
+
+:export {
+    headerHeight: header-height;
+}
+
+.header {
+    background-color: var(--nav-bgcolor);
+    font-family: var(--fonts);
+    font-size: 1.5rem;
+    color: var(--nav-text);
+    height: var(--header-height);
+    justify-content: space-between;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.18);
+    /* Same as lopenling header */
+    z-index: 1;
+}
+
+.header p {
+    margin: 0;
+    padding: 0;
+    flex-grow: 2;
+}
+
+.logo {
+    margin-right: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigationButton {
+    margin-right: 10px;
+}
+
+
+.loginButton {
+    font-family: var(--fonts);
+    font-size: 15px;
+    background-color: var(--green-tint);
+    color: #ffffff;
+    margin-right: 20px;
+    margin-left: 7px;
+    border: 0;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.loginButton svg {
+    color: white;
+    margin-right: 5px;
+}
+
+
+.buttonLink {
+    line-height: 1;
+    background-color: var(--green-tint);
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+.controls {
+    position: relative;
+}

@@ -1,0 +1,13 @@
+.textlist {
+    z-index: 1;
+    min-width: 15rem;
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: 100;
+}
+
+.textlist.open {
+    width: 500px;
+    height: 500px;
+}

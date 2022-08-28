@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" class="hamburgerIcon">
+    <style>
+        .hamburgerIcon .line {
+            stroke: currentColor;
+            stroke-width: 3px;
+        }
+    </style>
+    <line x1="0" y1="2" x2="24" y2="2"  class="line"/>
+    <line x1="0" y1="10" x2="24" y2="10"  class="line"/>
+    <line x1="0" y1="18" x2="24" y2="18"  class="line"/>
+</svg>

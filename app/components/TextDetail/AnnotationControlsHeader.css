@@ -1,0 +1,36 @@
+@import 'css/colour.css';
+
+.header {
+    height: 27px;
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+    background-color: rgba(175, 175, 175, 0.9);
+    border: 1px solid darkgray;
+}
+
+
+.header>div {
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+.Anotation_closeBtn {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: red;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.edit svg {
+    width: 1rem;
+    height: 1rem;
+    fill: #fff;
+    cursor: pointer;
+}

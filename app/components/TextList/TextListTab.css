@@ -1,0 +1,25 @@
+
+.tab {
+    background-color: #666;
+    color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    padding: 5px 40px;
+    white-space:nowrap;
+    transform: rotate(90deg);
+    z-index: 2;
+    transform-origin: bottom left;
+    transition: left 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.showTab {
+    left: 0px;
+}
+
+.hideTab {
+    left: -40px;
+}

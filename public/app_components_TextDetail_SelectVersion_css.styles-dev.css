@@ -1,0 +1,30 @@
+.SelectVersion---selectVersion {
+    height: 30px;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    font-size: 14px;
+    text-align: center;
+}
+.SelectVersion---selectEmpty {
+    width: 100%;
+    border-radius: 10px;
+}
+.SelectVersion---selectOptions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.SelectVersion---styled-select select {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+}
