@@ -1,0 +1,23 @@
+.TabBar---tabBar {
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap:20px;
+}
+.TabBar---tab {
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+.TabBar---selected {
+    border-bottom: 3px solid #024279;
+    font-weight: bold;
+    color: #024279;
+    background-color: #eee;
+    padding:2px 10px;
+    border-radius: 10px;
+}

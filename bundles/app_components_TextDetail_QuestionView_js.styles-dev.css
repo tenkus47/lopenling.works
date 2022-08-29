@@ -1,0 +1,296 @@
+.QuestionView---question {
+    background-color: #ffffff;
+}
+
+.QuestionView---question blockquote {
+    display: none;
+}
+
+.QuestionView---question p {
+    margin: 0;
+    padding: 0;
+}
+
+.QuestionView---threadLink {
+    float: right;
+    color: green;
+}
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/font/monlam_bodyig-webfont.woff') format('woff');
+    unicode-range: U+0F00-0FFF;
+}
+
+
+.AnnotationControls---annotationControls {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: var(--controlsBackground);
+     */
+    background-color: transparent;
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 264px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding-top: 10px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+
+.AnnotationControls---annotationContent {
+    padding: 0 5px 5px 5px;
+
+}
+
+
+.AnnotationControls---subTitle {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.AnnotationControls---title {
+    font-size: 12px;
+}
+
+
+.AnnotationControls---sectionHeading {
+    font-weight: normal;
+    font-size: 15px;
+    background: #eee;
+    -webkit-box-shadow: 0px 0px 3px #777;
+            box-shadow: 0px 0px 3px #777;
+
+}
+
+
+.AnnotationControls---text {
+    font-size: 13px;
+}
+
+
+.AnnotationControls---padding {
+    padding: 5px;
+}
+
+
+.AnnotationControls---arrowTop {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #eee;
+}
+
+
+.AnnotationControls---arrowLeft {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: - 10px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #eee;
+    border-bottom: 10px solid transparent;
+}
+
+
+.AnnotationControls---arrowRight {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: - 10px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #eee;
+    border-bottom: 10px solid transparent;
+}
+
+
+.AnnotationControls---inline {
+    z-index: 1;
+}
+
+
+.AnnotationControls---inline .AnnotationControls---arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -20px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #eee;
+    border-bottom: 20px solid transparent;
+}
+
+
+.AnnotationControls---inline .AnnotationControls---arrowDs {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    left: -20px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #bbb;
+    border-bottom: 20px solid transparent;
+}
+
+
+.AnnotationControls---annotationContent>h3 {
+    font-family: "Overpass", "arial", "sans-serif";
+    font-size: 18px;
+    width: 100%;
+    padding: 0 0 0px 0;
+    margin: 5px 0 0px 0;
+    font-weight: normal;
+    color: #444;
+}
+
+
+.AnnotationControls---nothingSelected {
+    position: relative;
+    top: 25%;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    color: #888;
+}
+
+
+.AnnotationControls---anonymousMessage {
+    margin-top: -8px;
+    font-size: 12px;
+    line-height: 0.8;
+    background: rgba(175, 175, 175, .9);
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: bold;
+    height: 24px;
+}
+
+
+.AnnotationControls---anonymousMessage a:link,
+.AnnotationControls---anonymousMessage a:visited {
+    color: red;
+    font-weight: bold;
+}
+
+
+.AnnotationControls---noNotes {
+    color: #aaa;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+.AnnotationControls---breakButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*margin-bottom: 20px;*/
+}
+
+
+.AnnotationControls---breakButtons>button {
+    margin-top: 5px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+
+blockquote {
+    font-size: 16px;
+    margin: 10px;
+}
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/font/monlam_bodyig-webfont.woff') format('woff');
+    unicode-range: U+0F00-0FFF;
+}
+
+
+.Button---save {
+    color: white;
+    background-color: #0088cc;
+  padding: 5px 8px 5px 8px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 1px #555;
+          box-shadow: 0px 1px 1px #555;
+  cursor: pointer;
+}
+
+
+.Button---save:hover {
+    background-color: #069;
+}
+
+
+.Button---cancel {
+    color: white;
+    background-color: #840000;
+  padding: 5px 8px 5px 8px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 1px #555;
+          box-shadow: 0px 1px 1px #555;
+  cursor: pointer;
+}
+
+
+.Button---buttonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.AnswerView---name {
+    font-weight: bold;
+}
+
+.AnswerView---answer {
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}

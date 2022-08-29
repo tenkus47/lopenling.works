@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(self["webpackChunkteminusclient"] = self["webpackChunkteminusclient"] || []).push([["app_components_TextDetail_AnnotationControls_css"],{
+
+/***/ "./app/components/TextDetail/AnnotationControls.css":
+/*!**********************************************************!*\
+  !*** ./app/components/TextDetail/AnnotationControls.css ***!
+  \**********************************************************/
+/***/ ((module) => {
+
+eval("// extracted by mini-css-extract-plugin\nmodule.exports = {\"green-tint\":\"#88af8e\",\"blue-tint\":\"#024279\",\"active-button\":\"#00746b\",\"mainTint\":\"#024279\",\"activeButton\":\"#00746b\",\"inlineWidth\":\"280px\",\"annotationControls\":\"AnnotationControls---annotationControls\",\"annotationContent\":\"AnnotationControls---annotationContent\",\"subTitle\":\"AnnotationControls---subTitle\",\"title\":\"AnnotationControls---title\",\"sectionHeading\":\"AnnotationControls---sectionHeading\",\"text\":\"AnnotationControls---text\",\"padding\":\"AnnotationControls---padding\",\"arrowTop\":\"AnnotationControls---arrowTop\",\"arrowLeft\":\"AnnotationControls---arrowLeft\",\"arrowRight\":\"AnnotationControls---arrowRight\",\"inline\":\"AnnotationControls---inline\",\"arrow\":\"AnnotationControls---arrow\",\"arrowDs\":\"AnnotationControls---arrowDs\",\"nothingSelected\":\"AnnotationControls---nothingSelected\",\"anonymousMessage\":\"AnnotationControls---anonymousMessage\",\"noNotes\":\"AnnotationControls---noNotes\",\"breakButtons\":\"AnnotationControls---breakButtons\"};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAvY29tcG9uZW50cy9UZXh0RGV0YWlsL0Fubm90YXRpb25Db250cm9scy5jc3MuanMiLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSxrQkFBa0IiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly90ZW1pbnVzY2xpZW50Ly4vYXBwL2NvbXBvbmVudHMvVGV4dERldGFpbC9Bbm5vdGF0aW9uQ29udHJvbHMuY3NzPzVlZWUiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5tb2R1bGUuZXhwb3J0cyA9IHtcImdyZWVuLXRpbnRcIjpcIiM4OGFmOGVcIixcImJsdWUtdGludFwiOlwiIzAyNDI3OVwiLFwiYWN0aXZlLWJ1dHRvblwiOlwiIzAwNzQ2YlwiLFwibWFpblRpbnRcIjpcIiMwMjQyNzlcIixcImFjdGl2ZUJ1dHRvblwiOlwiIzAwNzQ2YlwiLFwiaW5saW5lV2lkdGhcIjpcIjI4MHB4XCIsXCJhbm5vdGF0aW9uQ29udHJvbHNcIjpcIkFubm90YXRpb25Db250cm9scy0tLWFubm90YXRpb25Db250cm9sc1wiLFwiYW5ub3RhdGlvbkNvbnRlbnRcIjpcIkFubm90YXRpb25Db250cm9scy0tLWFubm90YXRpb25Db250ZW50XCIsXCJzdWJUaXRsZVwiOlwiQW5ub3RhdGlvbkNvbnRyb2xzLS0tc3ViVGl0bGVcIixcInRpdGxlXCI6XCJBbm5vdGF0aW9uQ29udHJvbHMtLS10aXRsZVwiLFwic2VjdGlvbkhlYWRpbmdcIjpcIkFubm90YXRpb25Db250cm9scy0tLXNlY3Rpb25IZWFkaW5nXCIsXCJ0ZXh0XCI6XCJBbm5vdGF0aW9uQ29udHJvbHMtLS10ZXh0XCIsXCJwYWRkaW5nXCI6XCJBbm5vdGF0aW9uQ29udHJvbHMtLS1wYWRkaW5nXCIsXCJhcnJvd1RvcFwiOlwiQW5ub3RhdGlvbkNvbnRyb2xzLS0tYXJyb3dUb3BcIixcImFycm93TGVmdFwiOlwiQW5ub3RhdGlvbkNvbnRyb2xzLS0tYXJyb3dMZWZ0XCIsXCJhcnJvd1JpZ2h0XCI6XCJBbm5vdGF0aW9uQ29udHJvbHMtLS1hcnJvd1JpZ2h0XCIsXCJpbmxpbmVcIjpcIkFubm90YXRpb25Db250cm9scy0tLWlubGluZVwiLFwiYXJyb3dcIjpcIkFubm90YXRpb25Db250cm9scy0tLWFycm93XCIsXCJhcnJvd0RzXCI6XCJBbm5vdGF0aW9uQ29udHJvbHMtLS1hcnJvd0RzXCIsXCJub3RoaW5nU2VsZWN0ZWRcIjpcIkFubm90YXRpb25Db250cm9scy0tLW5vdGhpbmdTZWxlY3RlZFwiLFwiYW5vbnltb3VzTWVzc2FnZVwiOlwiQW5ub3RhdGlvbkNvbnRyb2xzLS0tYW5vbnltb3VzTWVzc2FnZVwiLFwibm9Ob3Rlc1wiOlwiQW5ub3RhdGlvbkNvbnRyb2xzLS0tbm9Ob3Rlc1wiLFwiYnJlYWtCdXR0b25zXCI6XCJBbm5vdGF0aW9uQ29udHJvbHMtLS1icmVha0J1dHRvbnNcIn07Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./app/components/TextDetail/AnnotationControls.css\n");
+
+/***/ })
+
+}]);

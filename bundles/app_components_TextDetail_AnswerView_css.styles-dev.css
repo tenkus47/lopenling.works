@@ -1,0 +1,9 @@
+.AnswerView---name {
+    font-weight: bold;
+}
+
+.AnswerView---answer {
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
