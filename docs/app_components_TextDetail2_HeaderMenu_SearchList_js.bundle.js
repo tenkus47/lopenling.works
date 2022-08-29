@@ -1,0 +1,233 @@
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(self["webpackChunkteminusclient"] = self["webpackChunkteminusclient"] || []).push([["app_components_TextDetail2_HeaderMenu_SearchList_js"],{
+
+/***/ "./app/components/TextDetail2/HeaderMenu/HighlightedString.js":
+/*!********************************************************************!*\
+  !*** ./app/components/TextDetail2/HeaderMenu/HighlightedString.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ HighlightedString)\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ \"./node_modules/@babel/runtime/helpers/esm/classCallCheck.js\");\n/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ \"./node_modules/@babel/runtime/helpers/esm/createClass.js\");\n/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ \"./node_modules/@babel/runtime/helpers/esm/inherits.js\");\n/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ \"./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js\");\n/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ \"./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var grapheme_splitter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! grapheme-splitter */ \"./node_modules/grapheme-splitter/index.js\");\n/* harmony import */ var grapheme_splitter__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(grapheme_splitter__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var react_string_replace__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-string-replace */ \"./node_modules/react-string-replace/index.js\");\n/* harmony import */ var react_string_replace__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_string_replace__WEBPACK_IMPORTED_MODULE_7__);\n\n\n\n\n\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0,_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(this, result); }; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }\n\n\n\n\n\nvar HighlightedString = /*#__PURE__*/function (_React$Component) {\n  (0,_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(HighlightedString, _React$Component);\n\n  var _super = _createSuper(HighlightedString);\n\n  function HighlightedString(props) {\n    (0,_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(this, HighlightedString);\n\n    return _super.call(this, props);\n  }\n\n  (0,_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(HighlightedString, [{\n    key: \"render\",\n    value: function render() {\n      var _this = this;\n\n      var string = this.props.string;\n      var nameHtml = string;\n      var stringClass = this.props.stringClass || \"\";\n\n      if (this.props.searchTerm) {\n        var searchTerm = this.props.searchTerm;\n        var splitter = new (grapheme_splitter__WEBPACK_IMPORTED_MODULE_6___default())();\n        var graphemes = splitter.splitGraphemes(string);\n        var start = string.indexOf(searchTerm);\n        var end = start + searchTerm.length;\n        var position = 0;\n        var foundGraphemes = \"\";\n\n        if (start > -1) {\n          for (var i = 0; i < graphemes.length; i++) {\n            var grapheme = graphemes[i];\n\n            if (position >= start && position < end) {\n              foundGraphemes += grapheme;\n            }\n\n            position += grapheme.length;\n          }\n        }\n\n        if (foundGraphemes.length > 0) {\n          nameHtml = react_string_replace__WEBPACK_IMPORTED_MODULE_7___default()(string, foundGraphemes, function (match, i) {\n            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__.createElement(\"span\", {\n              className: _this.props.highlightClass,\n              key: \"highlight-\".concat(i)\n            }, match);\n          });\n        }\n      }\n\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__.createElement(\"span\", {\n        className: stringClass\n      }, nameHtml);\n    }\n  }]);\n\n  return HighlightedString;\n}(react__WEBPACK_IMPORTED_MODULE_5__.Component);\n\n\n\n//# sourceURL=webpack://teminusclient/./app/components/TextDetail2/HeaderMenu/HighlightedString.js?");
+
+/***/ }),
+
+/***/ "./app/components/TextDetail2/HeaderMenu/SearchList.js":
+/*!*************************************************************!*\
+  !*** ./app/components/TextDetail2/HeaderMenu/SearchList.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_virtualized__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-virtualized */ \"./node_modules/react-virtualized/dist/es/index.js\");\n/* harmony import */ var _HighlightedString__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HighlightedString */ \"./app/components/TextDetail2/HeaderMenu/HighlightedString.js\");\n/* harmony import */ var _SearchStyle_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SearchStyle.css */ \"./app/components/TextDetail2/HeaderMenu/SearchStyle.css\");\n/* harmony import */ var _SearchStyle_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_SearchStyle_css__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\nfunction SearchList(props) {\n  var handleListItemClick = props.handleListItemClick,\n      searchValue = props.searchValue,\n      results = props.results,\n      selectedText = props.selectedText;\n  var listRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();\n  var cache = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(new react_virtualized__WEBPACK_IMPORTED_MODULE_1__.CellMeasurerCache({\n    fixedWidth: true,\n    defaultHeight: 100\n  }));\n\n  var rowRenderer = function rowRenderer(_ref) {\n    var key = _ref.key,\n        index = _ref.index,\n        parent = _ref.parent,\n        style = _ref.style;\n    var result = results[index];\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_virtualized__WEBPACK_IMPORTED_MODULE_1__.CellMeasurer, {\n      key: \"listkeys2-\".concat(key),\n      cache: cache.current,\n      parent: parent,\n      columnIndex: 0,\n      rowIndex: index\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      style: style\n    }, results.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      className: (_SearchStyle_css__WEBPACK_IMPORTED_MODULE_3___default().searchListItem),\n      onClick: function onClick() {\n        return handleListItemClick(result[0]);\n      }\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HighlightedString__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n      string: result[1],\n      highlightClass: (_SearchStyle_css__WEBPACK_IMPORTED_MODULE_3___default().highlight),\n      searchTerm: searchValue\n    }))));\n  };\n\n  if (!results) return null;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_virtualized__WEBPACK_IMPORTED_MODULE_1__.AutoSizer, null, function (_ref2) {\n    var height = _ref2.height,\n        width = _ref2.width;\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_virtualized__WEBPACK_IMPORTED_MODULE_1__.List, {\n      ref: listRef,\n      height: height,\n      rowCount: results === null || results === void 0 ? void 0 : results.length,\n      rowHeight: cache.current.rowHeight,\n      deferredMeasurementCache: cache.current,\n      rowRenderer: rowRenderer,\n      width: width,\n      overscanRowCount: 1\n    });\n  }));\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SearchList);\n\n//# sourceURL=webpack://teminusclient/./app/components/TextDetail2/HeaderMenu/SearchList.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_Symbol.js":
+/*!****************************************!*\
+  !*** ./node_modules/lodash/_Symbol.js ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var root = __webpack_require__(/*! ./_root */ \"./node_modules/lodash/_root.js\");\n\n/** Built-in value references. */\nvar Symbol = root.Symbol;\n\nmodule.exports = Symbol;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/_Symbol.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_arrayPush.js":
+/*!*******************************************!*\
+  !*** ./node_modules/lodash/_arrayPush.js ***!
+  \*******************************************/
+/***/ ((module) => {
+
+eval("/**\n * Appends the elements of `values` to `array`.\n *\n * @private\n * @param {Array} array The array to modify.\n * @param {Array} values The values to append.\n * @returns {Array} Returns `array`.\n */\nfunction arrayPush(array, values) {\n  var index = -1,\n      length = values.length,\n      offset = array.length;\n\n  while (++index < length) {\n    array[offset + index] = values[index];\n  }\n  return array;\n}\n\nmodule.exports = arrayPush;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/_arrayPush.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseFlatten.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_baseFlatten.js ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var arrayPush = __webpack_require__(/*! ./_arrayPush */ \"./node_modules/lodash/_arrayPush.js\"),\n    isFlattenable = __webpack_require__(/*! ./_isFlattenable */ \"./node_modules/lodash/_isFlattenable.js\");\n\n/**\n * The base implementation of `_.flatten` with support for restricting flattening.\n *\n * @private\n * @param {Array} array The array to flatten.\n * @param {number} depth The maximum recursion depth.\n * @param {boolean} [predicate=isFlattenable] The function invoked per iteration.\n * @param {boolean} [isStrict] Restrict to values that pass `predicate` checks.\n * @param {Array} [result=[]] The initial result value.\n * @returns {Array} Returns the new flattened array.\n */\nfunction baseFlatten(array, depth, predicate, isStrict, result) {\n  var index = -1,\n      length = array.length;\n\n  predicate || (predicate = isFlattenable);\n  result || (result = []);\n\n  while (++index < length) {\n    var value = array[index];\n    if (depth > 0 && predicate(value)) {\n      if (depth > 1) {\n        // Recursively flatten arrays (susceptible to call stack limits).\n        baseFlatten(value, depth - 1, predicate, isStrict, result);\n      } else {\n        arrayPush(result, value);\n      }\n    } else if (!isStrict) {\n      result[result.length] = value;\n    }\n  }\n  return result;\n}\n\nmodule.exports = baseFlatten;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/_baseFlatten.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseGetTag.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_baseGetTag.js ***!
+  \********************************************/
+/***/ ((module) => {
+
+eval("/** Used for built-in method references. */\nvar objectProto = Object.prototype;\n\n/**\n * Used to resolve the\n * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)\n * of values.\n */\nvar nativeObjectToString = objectProto.toString;\n\n/**\n * Converts `value` to a string using `Object.prototype.toString`.\n *\n * @private\n * @param {*} value The value to convert.\n * @returns {string} Returns the converted string.\n */\nfunction objectToString(value) {\n  return nativeObjectToString.call(value);\n}\n\nmodule.exports = objectToString;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/_baseGetTag.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseIsRegExp.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash/_baseIsRegExp.js ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ \"./node_modules/lodash/_baseGetTag.js\"),\n    isObjectLike = __webpack_require__(/*! ./isObjectLike */ \"./node_modules/lodash/isObjectLike.js\");\n\n/** `Object#toString` result references. */\nvar regexpTag = '[object RegExp]';\n\n/**\n * The base implementation of `_.isRegExp` without Node.js optimizations.\n *\n * @private\n * @param {*} value The value to check.\n * @returns {boolean} Returns `true` if `value` is a regexp, else `false`.\n */\nfunction baseIsRegExp(value) {\n  return isObjectLike(value) && baseGetTag(value) == regexpTag;\n}\n\nmodule.exports = baseIsRegExp;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/_baseIsRegExp.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseUnary.js":
+/*!*******************************************!*\
+  !*** ./node_modules/lodash/_baseUnary.js ***!
+  \*******************************************/
+/***/ ((module) => {
+
+eval("/**\n * The base implementation of `_.unary` without support for storing metadata.\n *\n * @private\n * @param {Function} func The function to cap arguments for.\n * @returns {Function} Returns the new capped function.\n */\nfunction baseUnary(func) {\n  return function(value) {\n    return func(value);\n  };\n}\n\nmodule.exports = baseUnary;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/_baseUnary.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_freeGlobal.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_freeGlobal.js ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("/** Detect free variable `global` from Node.js. */\nvar freeGlobal = typeof __webpack_require__.g == 'object' && __webpack_require__.g && __webpack_require__.g.Object === Object && __webpack_require__.g;\n\nmodule.exports = freeGlobal;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/_freeGlobal.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_isFlattenable.js":
+/*!***********************************************!*\
+  !*** ./node_modules/lodash/_isFlattenable.js ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var Symbol = __webpack_require__(/*! ./_Symbol */ \"./node_modules/lodash/_Symbol.js\"),\n    isArguments = __webpack_require__(/*! ./isArguments */ \"./node_modules/lodash/isArguments.js\"),\n    isArray = __webpack_require__(/*! ./isArray */ \"./node_modules/lodash/isArray.js\");\n\n/** Built-in value references. */\nvar spreadableSymbol = Symbol ? Symbol.isConcatSpreadable : undefined;\n\n/**\n * Checks if `value` is a flattenable `arguments` object or array.\n *\n * @private\n * @param {*} value The value to check.\n * @returns {boolean} Returns `true` if `value` is flattenable, else `false`.\n */\nfunction isFlattenable(value) {\n  return isArray(value) || isArguments(value) ||\n    !!(spreadableSymbol && value && value[spreadableSymbol]);\n}\n\nmodule.exports = isFlattenable;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/_isFlattenable.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_nodeUtil.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_nodeUtil.js ***!
+  \******************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar freeGlobal = __webpack_require__(/*! ./_freeGlobal */ \"./node_modules/lodash/_freeGlobal.js\");\n\n/** Detect free variable `exports`. */\nvar freeExports =  true && exports && !exports.nodeType && exports;\n\n/** Detect free variable `module`. */\nvar freeModule = freeExports && \"object\" == 'object' && module && !module.nodeType && module;\n\n/** Detect the popular CommonJS extension `module.exports`. */\nvar moduleExports = freeModule && freeModule.exports === freeExports;\n\n/** Detect free variable `process` from Node.js. */\nvar freeProcess = moduleExports && freeGlobal.process;\n\n/** Used to access faster Node.js helpers. */\nvar nodeUtil = (function() {\n  try {\n    // Use `util.types` for Node.js 10+.\n    var types = freeModule && freeModule.require && freeModule.require('util').types;\n\n    if (types) {\n      return types;\n    }\n\n    // Legacy `process.binding('util')` for Node.js < 10.\n    return freeProcess && freeProcess.binding && freeProcess.binding('util');\n  } catch (e) {}\n}());\n\nmodule.exports = nodeUtil;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/_nodeUtil.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_root.js":
+/*!**************************************!*\
+  !*** ./node_modules/lodash/_root.js ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var freeGlobal = __webpack_require__(/*! ./_freeGlobal */ \"./node_modules/lodash/_freeGlobal.js\");\n\n/** Detect free variable `self`. */\nvar freeSelf = typeof self == 'object' && self && self.Object === Object && self;\n\n/** Used as a reference to the global object. */\nvar root = freeGlobal || freeSelf || Function('return this')();\n\nmodule.exports = root;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/_root.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/escapeRegExp.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/escapeRegExp.js ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var toString = __webpack_require__(/*! ./toString */ \"./node_modules/lodash/toString.js\");\n\n/**\n * Used to match `RegExp`\n * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).\n */\nvar reRegExpChar = /[\\\\^$.*+?()[\\]{}|]/g,\n    reHasRegExpChar = RegExp(reRegExpChar.source);\n\n/**\n * Escapes the `RegExp` special characters \"^\", \"$\", \"\\\", \".\", \"*\", \"+\",\n * \"?\", \"(\", \")\", \"[\", \"]\", \"{\", \"}\", and \"|\" in `string`.\n *\n * @static\n * @memberOf _\n * @since 3.0.0\n * @category String\n * @param {string} [string=''] The string to escape.\n * @returns {string} Returns the escaped string.\n * @example\n *\n * _.escapeRegExp('[lodash](https://lodash.com/)');\n * // => '\\[lodash\\]\\(https://lodash\\.com/\\)'\n */\nfunction escapeRegExp(string) {\n  string = toString(string);\n  return (string && reHasRegExpChar.test(string))\n    ? string.replace(reRegExpChar, '\\\\$&')\n    : string;\n}\n\nmodule.exports = escapeRegExp;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/escapeRegExp.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/flatten.js":
+/*!****************************************!*\
+  !*** ./node_modules/lodash/flatten.js ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var baseFlatten = __webpack_require__(/*! ./_baseFlatten */ \"./node_modules/lodash/_baseFlatten.js\");\n\n/**\n * Flattens `array` a single level deep.\n *\n * @static\n * @memberOf _\n * @since 0.1.0\n * @category Array\n * @param {Array} array The array to flatten.\n * @returns {Array} Returns the new flattened array.\n * @example\n *\n * _.flatten([1, [2, [3, [4]], 5]]);\n * // => [1, 2, [3, [4]], 5]\n */\nfunction flatten(array) {\n  var length = array == null ? 0 : array.length;\n  return length ? baseFlatten(array, 1) : [];\n}\n\nmodule.exports = flatten;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/flatten.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isArguments.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/isArguments.js ***!
+  \********************************************/
+/***/ ((module) => {
+
+eval("/**\n * This method returns `false`.\n *\n * @static\n * @memberOf _\n * @since 4.13.0\n * @category Util\n * @returns {boolean} Returns `false`.\n * @example\n *\n * _.times(2, _.stubFalse);\n * // => [false, false]\n */\nfunction stubFalse() {\n  return false;\n}\n\nmodule.exports = stubFalse;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/isArguments.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isArray.js":
+/*!****************************************!*\
+  !*** ./node_modules/lodash/isArray.js ***!
+  \****************************************/
+/***/ ((module) => {
+
+eval("/**\n * Checks if `value` is classified as an `Array` object.\n *\n * @static\n * @memberOf _\n * @since 0.1.0\n * @category Lang\n * @param {*} value The value to check.\n * @returns {boolean} Returns `true` if `value` is an array, else `false`.\n * @example\n *\n * _.isArray([1, 2, 3]);\n * // => true\n *\n * _.isArray(document.body.children);\n * // => false\n *\n * _.isArray('abc');\n * // => false\n *\n * _.isArray(_.noop);\n * // => false\n */\nvar isArray = Array.isArray;\n\nmodule.exports = isArray;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/isArray.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isObjectLike.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/isObjectLike.js ***!
+  \*********************************************/
+/***/ ((module) => {
+
+eval("/**\n * Checks if `value` is object-like. A value is object-like if it's not `null`\n * and has a `typeof` result of \"object\".\n *\n * @static\n * @memberOf _\n * @since 4.0.0\n * @category Lang\n * @param {*} value The value to check.\n * @returns {boolean} Returns `true` if `value` is object-like, else `false`.\n * @example\n *\n * _.isObjectLike({});\n * // => true\n *\n * _.isObjectLike([1, 2, 3]);\n * // => true\n *\n * _.isObjectLike(_.noop);\n * // => false\n *\n * _.isObjectLike(null);\n * // => false\n */\nfunction isObjectLike(value) {\n  return value != null && typeof value == 'object';\n}\n\nmodule.exports = isObjectLike;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/isObjectLike.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isRegExp.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/isRegExp.js ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var baseIsRegExp = __webpack_require__(/*! ./_baseIsRegExp */ \"./node_modules/lodash/_baseIsRegExp.js\"),\n    baseUnary = __webpack_require__(/*! ./_baseUnary */ \"./node_modules/lodash/_baseUnary.js\"),\n    nodeUtil = __webpack_require__(/*! ./_nodeUtil */ \"./node_modules/lodash/_nodeUtil.js\");\n\n/* Node.js helper references. */\nvar nodeIsRegExp = nodeUtil && nodeUtil.isRegExp;\n\n/**\n * Checks if `value` is classified as a `RegExp` object.\n *\n * @static\n * @memberOf _\n * @since 0.1.0\n * @category Lang\n * @param {*} value The value to check.\n * @returns {boolean} Returns `true` if `value` is a regexp, else `false`.\n * @example\n *\n * _.isRegExp(/abc/);\n * // => true\n *\n * _.isRegExp('/abc/');\n * // => false\n */\nvar isRegExp = nodeIsRegExp ? baseUnary(nodeIsRegExp) : baseIsRegExp;\n\nmodule.exports = isRegExp;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/isRegExp.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isString.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/isString.js ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ \"./node_modules/lodash/_baseGetTag.js\"),\n    isArray = __webpack_require__(/*! ./isArray */ \"./node_modules/lodash/isArray.js\"),\n    isObjectLike = __webpack_require__(/*! ./isObjectLike */ \"./node_modules/lodash/isObjectLike.js\");\n\n/** `Object#toString` result references. */\nvar stringTag = '[object String]';\n\n/**\n * Checks if `value` is classified as a `String` primitive or object.\n *\n * @static\n * @since 0.1.0\n * @memberOf _\n * @category Lang\n * @param {*} value The value to check.\n * @returns {boolean} Returns `true` if `value` is a string, else `false`.\n * @example\n *\n * _.isString('abc');\n * // => true\n *\n * _.isString(1);\n * // => false\n */\nfunction isString(value) {\n  return typeof value == 'string' ||\n    (!isArray(value) && isObjectLike(value) && baseGetTag(value) == stringTag);\n}\n\nmodule.exports = isString;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/isString.js?");
+
+/***/ }),
+
+/***/ "./node_modules/lodash/toString.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/toString.js ***!
+  \*****************************************/
+/***/ ((module) => {
+
+eval("/**\n * This method returns the first argument it receives.\n *\n * @static\n * @since 0.1.0\n * @memberOf _\n * @category Util\n * @param {*} value Any value.\n * @returns {*} Returns `value`.\n * @example\n *\n * var object = { 'a': 1 };\n *\n * console.log(_.identity(object) === object);\n * // => true\n */\nfunction identity(value) {\n  return value;\n}\n\nmodule.exports = identity;\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/lodash/toString.js?");
+
+/***/ }),
+
+/***/ "./app/components/TextDetail2/HeaderMenu/SearchStyle.css":
+/*!***************************************************************!*\
+  !*** ./app/components/TextDetail2/HeaderMenu/SearchStyle.css ***!
+  \***************************************************************/
+/***/ ((module) => {
+
+eval("// extracted by mini-css-extract-plugin\nmodule.exports = {\"highlight\":\"SearchStyle---highlight\",\"searchListItem\":\"SearchStyle---searchListItem\"};\n\n//# sourceURL=webpack://teminusclient/./app/components/TextDetail2/HeaderMenu/SearchStyle.css?");
+
+/***/ }),
+
+/***/ "./node_modules/react-string-replace/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/react-string-replace/index.js ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("/* eslint-disable vars-on-top, no-var, prefer-template */\nvar isRegExp = __webpack_require__(/*! lodash/isRegExp */ \"./node_modules/lodash/isRegExp.js\");\nvar escapeRegExp = __webpack_require__(/*! lodash/escapeRegExp */ \"./node_modules/lodash/escapeRegExp.js\");\nvar isString = __webpack_require__(/*! lodash/isString */ \"./node_modules/lodash/isString.js\");\nvar flatten = __webpack_require__(/*! lodash/flatten */ \"./node_modules/lodash/flatten.js\");\n\n/**\n * Given a string, replace every substring that is matched by the `match` regex\n * with the result of calling `fn` on matched substring. The result will be an\n * array with all odd indexed elements containing the replacements. The primary\n * use case is similar to using String.prototype.replace except for React.\n *\n * React will happily render an array as children of a react element, which\n * makes this approach very useful for tasks like surrounding certain text\n * within a string with react elements.\n *\n * Example:\n * matchReplace(\n *   'Emphasize all phone numbers like 884-555-4443.',\n *   /([\\d|-]+)/g,\n *   (number, i) => <strong key={i}>{number}</strong>\n * );\n * // => ['Emphasize all phone numbers like ', <strong>884-555-4443</strong>, '.'\n *\n * @param {string} str\n * @param {regexp|str} match Must contain a matching group\n * @param {function} fn\n * @return {array}\n */\nfunction replaceString(str, match, fn) {\n  var curCharStart = 0;\n  var curCharLen = 0;\n\n  if (str === '') {\n    return str;\n  } else if (!str || !isString(str)) {\n    throw new TypeError('First argument to react-string-replace#replaceString must be a string');\n  }\n\n  var re = match;\n\n  if (!isRegExp(re)) {\n    re = new RegExp('(' + escapeRegExp(re) + ')', 'gi');\n  }\n\n  var result = str.split(re);\n\n  // Apply fn to all odd elements\n  for (var i = 1, length = result.length; i < length; i += 2) {\n    curCharLen = result[i].length;\n    curCharStart += result[i - 1].length;\n    result[i] = fn(result[i], i, curCharStart);\n    curCharStart += curCharLen;\n  }\n\n  return result;\n}\n\nmodule.exports = function reactStringReplace(source, match, fn) {\n  if (!Array.isArray(source)) source = [source];\n\n  return flatten(source.map(function(x) {\n    return isString(x) ? replaceString(x, match, fn) : x;\n  }));\n};\n\n\n//# sourceURL=webpack://teminusclient/./node_modules/react-string-replace/index.js?");
+
+/***/ })
+
+}]);
