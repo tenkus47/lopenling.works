@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/font/monlam_bodyig-webfont.woff') format('woff');
+    unicode-range: U+0F00-0FFF;
+}
+
+
+.Text---text {
+    font-size: 24px;
+    line-height: 1.8;
+    padding: 0 20px;
+    font-family: "Tibetan";
+    letter-spacing: 0.04em;
+    margin: 0;
+    min-width: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    /* background-color: var(--text-bg); */
+
+}
+
+
+.Text---syncIdClass {
+    font-weight: 900;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+.Text---textFirstRow {
+    padding-block: 5px;
+    border-top: 15px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+.Text---textLine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+    scrollbar-color: red;
+}
+
+
+.Text---textline>span {
+    max-height: 4ch;
+}
+
+
+.Text---limitWidth.Text---textFirstRow {
+    margin-top: 20px;
+}
+
+
+.Text---textContainer {
+    /* background-color: white; */
+    overflow: auto;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding-left: 0;
+    min-width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+}
+
+
+.Text---limitWidth {
+    max-width: 600px;
+}
+
+
+.Text---limitWidth.Text---text {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.Text---annotation {
+    color: #0366bc;
+    cursor: pointer;
+}
+
+
+.Text---selectedAnnotation {
+    background-color: hsl(0, 0%, 93%);
+    color: hsl(0, 0%, 19%);
+
+}
+
+
+.Text---removedByAnnotation {
+  color: #aaa;
+  cursor: pointer;
+    -webkit-text-decoration: line-through red;
+            text-decoration: line-through red;
+
+}
+
+
+.Text---insertion {
+  color: #aaa;
+  cursor: pointer;
+    -webkit-text-decoration: line-through green;
+            text-decoration: line-through green;
+}
+
+
+.Text---highlight {
+    background-color: yellow;
+}
+
+
+.Text---activeHighlight {
+    background-color: orange;
+}
+
+
+.Text---lineBreak {
+    color: #aaa;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+
+
+.Text---pageBreak {
+    color: #aaa;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 0.8em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+.Text---pageBreak>svg {
+    width: 0.8em;
+    pointer-events: none;
+    max-height: 4ch;
+}
+
+
+.Text---selectedRangelight {
+    background-color: #eee;
+}
+
+
+.Text---selectedRangeDark {
+    background-color: black;
+    color: #eee;
+}
+
+
+.Text---selectedImage {
+    font-weight: bolder;
+}

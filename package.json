@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server ./app",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "Webpack ./app"
   },
   "repository": {
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/tenkus47/ReactTerminusDB/issues"
   },
-  "homepage": "https://github.com/tenkus47/ReactTerminusDB#readme",
+  "homepage": "https://tenkus47.github.io/ReactTerminusDB",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.17.12",
     "@emotion/react": "^11.9.3",
@@ -104,6 +106,7 @@
     "file-loader": "^6.0.0",
     "flow-bin": "^0.108.0",
     "flow-typed": "^2.6.2",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27",

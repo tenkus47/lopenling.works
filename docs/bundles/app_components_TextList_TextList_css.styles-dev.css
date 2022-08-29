@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/font/monlam_bodyig-webfont.woff') format('woff');
+    unicode-range: U+0F00-0FFF;
+}
+
+
+.TextList---textList {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: hsla(0, 8%, 88%, .109);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+
+.TextList---textList *:focus {
+    outline: none;
+}
+
+
+.TextList---textListRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: hsla(0, 8%, 88%, .109);
+    color: black;
+    padding: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: "Tibetan";
+    font-size: 12px;
+}
+
+
+.TextList---textListRow:hover {
+    color: black;
+}
+
+
+.TextList---selectedRow {
+    color: hsl(240, 51%, 51%);
+}
+
+
+.TextList---selectedRow>.TextList---textNameRow>span::before {
+    content: '- ';
+}
+
+
+.TextList---textNameRow {
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: rgba(80, 73, 73, 1);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+
+.TextList---textName {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.TextList---highlight {
+    font-weight: bold;
+}
+
+
+.TextList---selectedRow .TextList---highlight {
+    background-color: #d48100;
+}
+
+
+.TextList---searchResults {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-size: 12px;
+}
+
+
+.TextList---searchResult {
+    padding-left: 10px;
+}
+
+
+.TextList---selectedSearchResult {
+    background-color: #aaa;
+    padding-left: 10px;
+}
+
+
+.TextList---searchTotal {
+    background-color: white;
+    color: #222;
+    border-radius: 9px;
+    padding: 0 4px;
+    font-size: 11px;
+    min-width: 18px;
+    height: 18px;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-family: "Overpass", "arial", "sans-serif";
+}
+
+
+.TextList---textListLoader {
+    position: relative;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+
+.TextList---textListLoader .loader {
+    position: relative;
+    left: 0;
+    top: 0;
+    background: 0;
+    padding: 0;
+    margin: 50px 0 20px 0;
+}
+
+
+.TextList---searching {
+    text-align: center;
+}
+
+
+.TextList---loadMore {
+    padding-left: 10px;
+    margin: 5px 0;
+}

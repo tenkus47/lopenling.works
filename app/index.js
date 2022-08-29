@@ -1,5 +1,5 @@
 import React from "react";
-import reactDom from "react-dom";
+import { createRoot } from "react-dom/client";
 import Cookies from "js-cookie";
 import AppContainer from "components/App/AppContainer";
 
@@ -151,13 +151,13 @@ function intlSelector(state) {
     key: state.intl.locale,
   };
 }
-
-reactDom.render(
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(
   <Provider store={store}>
     <IntlProvider textComponent={Fragment} intlSelector={intlSelector}>
       <AppContainer />
     </IntlProvider>
-  </Provider>,
-  document.getElementById("root")
+  </Provider>
 );
 store.dispatch(loadInitialData());
