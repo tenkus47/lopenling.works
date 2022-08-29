@@ -1,0 +1,876 @@
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+.AnnotationDetail---annotationDetail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 5px 10px 0px 0;
+    padding: 0 0 0 0;
+    background-color: #ddd;
+    position: relative;
+    -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, .2);
+            box-shadow: 0px 2px 1px rgba(0, 0, 0, .2);
+
+}
+
+.AnnotationDetail---annotationDetail h3 {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-size: 12px;
+    color: #444;
+    font-family: "Tibetan",
+        "Tsumachu",
+        "Dutsa";
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    padding: 5px 10px 0px 10px;
+}
+
+.AnnotationDetail---annotationDetail p {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-size: 12px;
+    color: #000;
+    font-family: "Tibetan",
+        "Tsumachu",
+        "Dutsa";
+    margin: 0;
+    padding: 0px 10px 5px 10px;
+    margin-left: 5px;
+}
+
+.AnnotationDetail---active {
+    background-color: #a6a6a6;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+    color: black
+}
+
+.AnnotationDetail---annotationHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: #aebcc7;
+}
+
+.AnnotationDetail---annotationDetail.AnnotationDetail---active h3 {
+    color: black;
+    padding-left: 5px;
+}
+
+.AnnotationDetail---activeIcon {
+    padding: 3px 0px 0 5px;
+}
+
+.AnnotationDetail---editing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 10px 0px 10px;
+}
+
+.AnnotationDetail---editing textarea {
+    font-size: 12px;
+    font-family: "Tibetan",
+        "Tsumachu",
+        "Dutsa";
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 100%;
+    resize: none;
+    overflow: hidden;
+    min-height: 50px;
+    max-height: 100px;
+}
+
+.AnnotationDetail---actionButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 14px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.AnnotationDetail---edit {
+  padding: 5px 8px 5px 8px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 1px #555;
+          box-shadow: 0px 1px 1px #555;
+  cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 5px auto;
+    color: white;
+    background-color: #0088cc;
+    padding: 2px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.AnnotationDetail---editImage {
+    fill: white;
+}
+
+.AnnotationDetail---save {
+    color: white;
+    background-color: #0088cc;
+  padding: 5px 8px 5px 8px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 1px #555;
+          box-shadow: 0px 1px 1px #555;
+  cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.AnnotationDetail---save:hover {
+    background-color: #069;
+
+}
+
+.AnnotationDetail---cancel {
+    color: white;
+    background-color: #840000;
+  padding: 5px 8px 5px 8px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 1px #555;
+          box-shadow: 0px 1px 1px #555;
+  cursor: pointer;
+}
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+.AnnotationControls---annotationControls {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: var(--controlsBackground);
+     */
+    background-color: transparent;
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 264px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding-top: 10px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.AnnotationControls---annotationContent {
+    padding: 0 5px 5px 5px;
+
+}
+
+.AnnotationControls---subTitle {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.AnnotationControls---title {
+    font-size: 12px;
+}
+
+.AnnotationControls---sectionHeading {
+    font-weight: normal;
+    font-size: 15px;
+    background: #eee;
+    -webkit-box-shadow: 0px 0px 3px #777;
+            box-shadow: 0px 0px 3px #777;
+
+}
+
+.AnnotationControls---text {
+    font-size: 13px;
+}
+
+.AnnotationControls---padding {
+    padding: 5px;
+}
+
+.AnnotationControls---arrowTop {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #eee;
+}
+
+.AnnotationControls---arrowLeft {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: - 10px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #eee;
+    border-bottom: 10px solid transparent;
+}
+
+.AnnotationControls---arrowRight {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: - 10px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #eee;
+    border-bottom: 10px solid transparent;
+}
+
+.AnnotationControls---inline {
+    z-index: 1;
+}
+
+.AnnotationControls---inline .AnnotationControls---arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -20px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #eee;
+    border-bottom: 20px solid transparent;
+}
+
+.AnnotationControls---inline .AnnotationControls---arrowDs {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    left: -20px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #bbb;
+    border-bottom: 20px solid transparent;
+}
+
+.AnnotationControls---annotationContent>h3 {
+    font-family: "Overpass", "arial", "sans-serif";
+    font-size: 18px;
+    width: 100%;
+    padding: 0 0 0px 0;
+    margin: 5px 0 0px 0;
+    font-weight: normal;
+    color: #444;
+}
+
+.AnnotationControls---nothingSelected {
+    position: relative;
+    top: 25%;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    color: #888;
+}
+
+.AnnotationControls---anonymousMessage {
+    margin-top: -8px;
+    font-size: 12px;
+    line-height: 0.8;
+    background: rgba(175, 175, 175, .9);
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: bold;
+    height: 24px;
+}
+
+.AnnotationControls---anonymousMessage a:link,
+.AnnotationControls---anonymousMessage a:visited {
+    color: red;
+    font-weight: bold;
+}
+
+.AnnotationControls---noNotes {
+    color: #aaa;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.AnnotationControls---breakButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*margin-bottom: 20px;*/
+}
+
+.AnnotationControls---breakButtons>button {
+    margin-top: 5px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+blockquote {
+    font-size: 16px;
+    margin: 10px;
+}
+.AnnotationControlsHeading---heading {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.AnnotationControlsHeading---title {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+.AnnotationControlsHeading---button {
+    -ms-flex-negative: 2;
+        flex-shrink: 2;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+}
+.AddButton---button {
+    background-color: #0088cc;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+.NoteEditor---editorContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1em;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+.NoteEditor---textEditor {
+    height: 5em;
+    margin-bottom: 0.7em;
+    font-size: 14px;
+}
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+.Button---save {
+    color: white;
+    background-color: #0088cc;
+  padding: 5px 8px 5px 8px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 1px #555;
+          box-shadow: 0px 1px 1px #555;
+  cursor: pointer;
+}
+
+.Button---save:hover {
+    background-color: #069;
+}
+
+.Button---cancel {
+    color: white;
+    background-color: #840000;
+  padding: 5px 8px 5px 8px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 1px #555;
+          box-shadow: 0px 1px 1px #555;
+  cursor: pointer;
+}
+
+.Button---buttonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.QuestionView---question {
+    background-color: #ffffff;
+}
+
+.QuestionView---question blockquote {
+    display: none;
+}
+
+.QuestionView---question p {
+    margin: 0;
+    padding: 0;
+}
+
+.QuestionView---threadLink {
+    float: right;
+    color: green;
+}
+.AnswerView---name {
+    font-weight: bold;
+}
+
+.AnswerView---answer {
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+.QuestionEditor---editorContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1em;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+.QuestionEditor---textEditor {
+    height: 5em;
+    margin-bottom: 0.7em;
+    font-size: 14px;
+}
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+.Button---button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 8px 5px 5px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 1px #555;
+          box-shadow: 0px 1px 1px #555;
+  cursor: pointer;
+  color: #fff;
+}
+
+.Button---buttonNoBezel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 8px 5px 5px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 1px #555;
+          box-shadow: 0px 1px 1px #555;
+  cursor: pointer;
+  color: #fff;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+}
+
+.Button---button:disabled,
+.Button---buttonNoBezel:disabled {
+    opacity: 0.2;
+}
+
+.Button---active {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.Button---leftAlign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 8px 5px 5px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 1px #555;
+          box-shadow: 0px 1px 1px #555;
+  cursor: pointer;
+  color: #fff;
+    text-align: left;
+}
+
+.Button---title {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+.Button---icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.QuestionsLoading---loading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5px;
+}
+
+.QuestionsLoading---loading .loader {
+    position: relative;
+    left: 0;
+    top: 0;
+    background: 0;
+    padding: 0;
+    width: 30px;
+}
+.Accessory---accessory {
+    background-color: gray;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+}
+.Accessory---accessory:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+.Note---note {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 5px;
+    /* box-shadow: 0px 0px 1px 1px grey; */
+}
+
+.Note---note p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.Note---header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.Note---info {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+.Note---content {
+    font-size: 18px;
+}
+
+.Note---delete {
+    border-radius: 50%;
+    color: #444;
+    font-size: 18px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    cursor: pointer;
+}
+.AnnotationControlsHeader---header {
+    height: 27px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: rgba(175, 175, 175, .9);
+    border: 1px solid darkgray;
+}
+.AnnotationControlsHeader---header>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+}
+.AnnotationControlsHeader---Anotation_closeBtn {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+
+}
+.AnnotationControlsHeader---edit svg {
+    width: 16px;
+    width: 1rem;
+    height: 16px;
+    height: 1rem;
+    fill: #fff;
+    cursor: pointer;
+}

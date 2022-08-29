@@ -1,0 +1,275 @@
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+.TextHeading---headingContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex:1;
+        -ms-flex:1;
+            flex:1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: 1px solid #ccc;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    color:var(--dark-text);
+    background-color: white;
+}
+
+.TextHeading---textHeading {
+    font-size: 21px;
+    margin: 0;
+    margin-left:30px;
+    font-weight: normal;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-family: "Tibetan",
+        "Tsumachu",
+        "Dutsa";
+}
+
+.TextHeading---topRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.TextHeading---textHeadingloader {
+    position: relative;
+    right: 10px;
+}
+
+.TextHeading---textHeadingloader .loader {
+    position: relative;
+    left: 0;
+    top: 0;
+    background: 0;
+    padding: 0;
+}
+
+.TextHeading---controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.TextHeading---controls label {
+    margin-right: 5px;
+}
+.TabBar---tabBar {
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap:20px;
+}
+.TabBar---tab {
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+.TabBar---selected {
+    border-bottom: 3px solid #024279;
+    font-weight: bold;
+    color: #024279;
+    background-color: #eee;
+    padding:2px 10px;
+    border-radius: 10px;
+}
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+.Button---button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 8px 5px 5px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 1px #555;
+          box-shadow: 0px 1px 1px #555;
+  cursor: pointer;
+  color: #fff;
+}
+
+.Button---buttonNoBezel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 8px 5px 5px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 1px #555;
+          box-shadow: 0px 1px 1px #555;
+  cursor: pointer;
+  color: #fff;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+}
+
+.Button---button:disabled,
+.Button---buttonNoBezel:disabled {
+    opacity: 0.2;
+}
+
+.Button---active {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.Button---leftAlign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 8px 5px 5px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 1px #555;
+          box-shadow: 0px 1px 1px #555;
+  cursor: pointer;
+  color: #fff;
+    text-align: left;
+}
+
+.Button---title {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+.Button---icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.Accessory---accessory {
+    background-color: gray;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+}
+.Accessory---accessory:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+.ImageToggle---imageToggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 1em;
+}
+
+.ImageToggle---imageToggle label {
+    font-size: 1em;
+}
+.FontSize---fontSize {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 1em;
+}
+
+.FontSize---fontSize label {
+    font-size: 1em;
+}
