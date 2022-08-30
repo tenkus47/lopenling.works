@@ -64,7 +64,10 @@ export const LoginControls = (props: LoginProps) => (
       </Button>
     </a>
 
-    <form method="post" action="/discourse/login_redirect/">
+    <form
+      method="post"
+      action="https://parkhang.lopenling.org/discourse/login_redirect/"
+    >
       {/* <IconButton>
                 <UserIcon width="11" />
             </IconButton> */}

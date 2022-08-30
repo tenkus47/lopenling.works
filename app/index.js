@@ -28,7 +28,6 @@ import textMiddleware from "state_helpers/textMiddleware";
 
 // URL management
 import { connectRoutes, history } from "redux-first-router";
-
 // Sagas
 import "core-js/stable";
 import "regenerator-runtime/runtime";
@@ -64,6 +63,7 @@ function Fragment(props) {
   return props.children || <span {...props} /> || null;
 }
 const RouteEditorPage = (dispatch, getState) => {
+  console.log("page");
   dispatch(actions.changeUrl("Editors"));
 };
 const sagaMiddleware = createSagaMiddleware();
@@ -93,7 +93,6 @@ const routesMap = {
     thunk: RouteEditorPage,
   },
 };
-
 const routes = connectRoutes(routesMap, {
   initialDispatch: false,
 });
@@ -125,6 +124,7 @@ store.dispatch(actions.updateLocales(locales));
 
 let USER_LOGGED_IN = false;
 // USER_ID
+
 let USER_LOCALE = "en";
 // USER_NAME
 

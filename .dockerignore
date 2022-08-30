@@ -1,0 +1,10 @@
+# all file not required in our build docker container
+
+Dockerfile
+.dockerignore
+.gitignore
+.git
+.env
+#Artifacts that will be build during image
+
+node_module

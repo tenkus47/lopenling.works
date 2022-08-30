@@ -3,1181 +3,172 @@
   "assets": {
     "375e0e9056137a8eb3c9bbcb876efbdc.png": {
       "name": "375e0e9056137a8eb3c9bbcb876efbdc.png",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\375e0e9056137a8eb3c9bbcb876efbdc.png"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\375e0e9056137a8eb3c9bbcb876efbdc.png"
     },
     "ea9a1cd4d17aad5a9c5bdfde6acaad2e.png": {
       "name": "ea9a1cd4d17aad5a9c5bdfde6acaad2e.png",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\ea9a1cd4d17aad5a9c5bdfde6acaad2e.png"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\ea9a1cd4d17aad5a9c5bdfde6acaad2e.png"
     },
     "8967124136190c7842d863e4a862a528.png": {
       "name": "8967124136190c7842d863e4a862a528.png",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\8967124136190c7842d863e4a862a528.png"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\8967124136190c7842d863e4a862a528.png"
     },
     "b81eedeb7a90a13b48c4a1185a58ca30.png": {
       "name": "b81eedeb7a90a13b48c4a1185a58ca30.png",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\b81eedeb7a90a13b48c4a1185a58ca30.png"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\b81eedeb7a90a13b48c4a1185a58ca30.png"
     },
     "styles-dev.css": {
       "name": "styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\styles-dev.css"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\styles-dev.css"
     },
     "main.bundle.js": {
       "name": "main.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\main.bundle.js"
-    },
-    "app_components_App_switcher_css.styles-dev.css": {
-      "name": "app_components_App_switcher_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_App_switcher_css.styles-dev.css"
-    },
-    "app_components_App_switcher_css.bundle.js": {
-      "name": "app_components_App_switcher_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_App_switcher_css.bundle.js"
-    },
-    "app_components_Editors_index_js.bundle.js": {
-      "name": "app_components_Editors_index_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Editors_index_js.bundle.js"
-    },
-    "default-app_components_Editors_Editor_js-app_components_MediaComponent_Image_css-app_componen-e4f023.styles-dev.css": {
-      "name": "default-app_components_Editors_Editor_js-app_components_MediaComponent_Image_css-app_componen-e4f023.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\default-app_components_Editors_Editor_js-app_components_MediaComponent_Image_css-app_componen-e4f023.styles-dev.css"
-    },
-    "default-app_components_Editors_Editor_js-app_components_MediaComponent_Image_css-app_componen-e4f023.bundle.js": {
-      "name": "default-app_components_Editors_Editor_js-app_components_MediaComponent_Image_css-app_componen-e4f023.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\default-app_components_Editors_Editor_js-app_components_MediaComponent_Image_css-app_componen-e4f023.bundle.js"
-    },
-    "app_components_Editors_EditorContainer_js.bundle.js": {
-      "name": "app_components_Editors_EditorContainer_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Editors_EditorContainer_js.bundle.js"
-    },
-    "app_components_Editors_EditorContainer_css.styles-dev.css": {
-      "name": "app_components_Editors_EditorContainer_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Editors_EditorContainer_css.styles-dev.css"
-    },
-    "app_components_Editors_EditorContainer_css.bundle.js": {
-      "name": "app_components_Editors_EditorContainer_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Editors_EditorContainer_css.bundle.js"
-    },
-    "app_components_Editors_TextSheet_js-app_components_MediaComponent_Image_css-app_components_Me-8fbf6d.styles-dev.css": {
-      "name": "app_components_Editors_TextSheet_js-app_components_MediaComponent_Image_css-app_components_Me-8fbf6d.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Editors_TextSheet_js-app_components_MediaComponent_Image_css-app_components_Me-8fbf6d.styles-dev.css"
-    },
-    "app_components_Editors_TextSheet_js-app_components_MediaComponent_Image_css-app_components_Me-8fbf6d.bundle.js": {
-      "name": "app_components_Editors_TextSheet_js-app_components_MediaComponent_Image_css-app_components_Me-8fbf6d.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Editors_TextSheet_js-app_components_MediaComponent_Image_css-app_components_Me-8fbf6d.bundle.js"
-    },
-    "app_components_Editors_resizerStyle_css.styles-dev.css": {
-      "name": "app_components_Editors_resizerStyle_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Editors_resizerStyle_css.styles-dev.css"
-    },
-    "app_components_Editors_resizerStyle_css.bundle.js": {
-      "name": "app_components_Editors_resizerStyle_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Editors_resizerStyle_css.bundle.js"
-    },
-    "app_components_ErrorBoundary_ErrorBoundary_js.bundle.js": {
-      "name": "app_components_ErrorBoundary_ErrorBoundary_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_ErrorBoundary_ErrorBoundary_js.bundle.js"
-    },
-    "app_components_Header_Header_test_js.bundle.js": {
-      "name": "app_components_Header_Header_test_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Header_Header_test_js.bundle.js"
-    },
-    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.styles-dev.css": {
-      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.styles-dev.css"
-    },
-    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.bundle.js": {
-      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_index_js-eb4dea.bundle.js"
-    },
-    "app_components_MediaComponent_Audio_js.bundle.js": {
-      "name": "app_components_MediaComponent_Audio_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_MediaComponent_Audio_js.bundle.js"
-    },
-    "app_components_MediaComponent_DraggableMedia_js.bundle.js": {
-      "name": "app_components_MediaComponent_DraggableMedia_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_MediaComponent_DraggableMedia_js.bundle.js"
-    },
-    "app_components_MediaComponent_Image_js.styles-dev.css": {
-      "name": "app_components_MediaComponent_Image_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_MediaComponent_Image_js.styles-dev.css"
-    },
-    "app_components_MediaComponent_Image_js.bundle.js": {
-      "name": "app_components_MediaComponent_Image_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_MediaComponent_Image_js.bundle.js"
-    },
-    "app_components_MediaComponent_Image_css.styles-dev.css": {
-      "name": "app_components_MediaComponent_Image_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_MediaComponent_Image_css.styles-dev.css"
-    },
-    "app_components_MediaComponent_Image_css.bundle.js": {
-      "name": "app_components_MediaComponent_Image_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_MediaComponent_Image_css.bundle.js"
-    },
-    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.styles-dev.css": {
-      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.styles-dev.css"
-    },
-    "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.bundle.js": {
-      "name": "node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_material_NativeSelect_NativeSelect_js-app_components_MediaComponent_Image_cs-da3632.bundle.js"
-    },
-    "app_components_MediaComponent_MediaOptions_js.styles-dev.css": {
-      "name": "app_components_MediaComponent_MediaOptions_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_MediaComponent_MediaOptions_js.styles-dev.css"
-    },
-    "app_components_MediaComponent_MediaOptions_js.bundle.js": {
-      "name": "app_components_MediaComponent_MediaOptions_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_MediaComponent_MediaOptions_js.bundle.js"
-    },
-    "app_components_MediaComponent_MediaOptions_css.styles-dev.css": {
-      "name": "app_components_MediaComponent_MediaOptions_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_MediaComponent_MediaOptions_css.styles-dev.css"
-    },
-    "app_components_MediaComponent_MediaOptions_css.bundle.js": {
-      "name": "app_components_MediaComponent_MediaOptions_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_MediaComponent_MediaOptions_css.bundle.js"
-    },
-    "app_components_MediaComponent_Video_js.bundle.js": {
-      "name": "app_components_MediaComponent_Video_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_MediaComponent_Video_js.bundle.js"
-    },
-    "app_components_MediaComponent_Video_css.styles-dev.css": {
-      "name": "app_components_MediaComponent_Video_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_MediaComponent_Video_css.styles-dev.css"
-    },
-    "app_components_MediaComponent_Video_css.bundle.js": {
-      "name": "app_components_MediaComponent_Video_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_MediaComponent_Video_css.bundle.js"
-    },
-    "app_components_Popover_index_js.styles-dev.css": {
-      "name": "app_components_Popover_index_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Popover_index_js.styles-dev.css"
-    },
-    "app_components_Popover_index_js.bundle.js": {
-      "name": "app_components_Popover_index_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Popover_index_js.bundle.js"
-    },
-    "app_components_Popover_Popover_js.styles-dev.css": {
-      "name": "app_components_Popover_Popover_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Popover_Popover_js.styles-dev.css"
-    },
-    "app_components_Popover_Popover_js.bundle.js": {
-      "name": "app_components_Popover_Popover_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Popover_Popover_js.bundle.js"
-    },
-    "app_components_Popover_Popover_css.styles-dev.css": {
-      "name": "app_components_Popover_Popover_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Popover_Popover_css.styles-dev.css"
-    },
-    "app_components_Popover_Popover_css.bundle.js": {
-      "name": "app_components_Popover_Popover_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Popover_Popover_css.bundle.js"
-    },
-    "app_components_Search_index_js.bundle.js": {
-      "name": "app_components_Search_index_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Search_index_js.bundle.js"
-    },
-    "app_components_Search_Search_js.bundle.js": {
-      "name": "app_components_Search_Search_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Search_Search_js.bundle.js"
-    },
-    "app_components_Search_Search_css.styles-dev.css": {
-      "name": "app_components_Search_Search_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Search_Search_css.styles-dev.css"
-    },
-    "app_components_Search_Search_css.bundle.js": {
-      "name": "app_components_Search_Search_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Search_Search_css.bundle.js"
-    },
-    "app_components_Search_SearchContainer_js.bundle.js": {
-      "name": "app_components_Search_SearchContainer_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_Search_SearchContainer_js.bundle.js"
-    },
-    "node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-app_-d04464.styles-dev.css": {
-      "name": "node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-app_-d04464.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-app_-d04464.styles-dev.css"
-    },
-    "node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-app_-d04464.bundle.js": {
-      "name": "node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-app_-d04464.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-app_-d04464.bundle.js"
-    },
-    "app_components_TextDetail_AddButton_js.styles-dev.css": {
-      "name": "app_components_TextDetail_AddButton_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AddButton_js.styles-dev.css"
-    },
-    "app_components_TextDetail_AddButton_js.bundle.js": {
-      "name": "app_components_TextDetail_AddButton_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AddButton_js.bundle.js"
-    },
-    "app_components_TextDetail_AddButton_css.styles-dev.css": {
-      "name": "app_components_TextDetail_AddButton_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AddButton_css.styles-dev.css"
-    },
-    "app_components_TextDetail_AddButton_css.bundle.js": {
-      "name": "app_components_TextDetail_AddButton_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AddButton_css.bundle.js"
-    },
-    "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AddButton_css-app_compone-eb32800.styles-dev.css": {
-      "name": "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AddButton_css-app_compone-eb32800.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AddButton_css-app_compone-eb32800.styles-dev.css"
-    },
-    "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AddButton_css-app_compone-eb32800.bundle.js": {
-      "name": "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AddButton_css-app_compone-eb32800.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AddButton_css-app_compone-eb32800.bundle.js"
-    },
-    "app_components_TextDetail_AnnotationControls_css.styles-dev.css": {
-      "name": "app_components_TextDetail_AnnotationControls_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationControls_css.styles-dev.css"
-    },
-    "app_components_TextDetail_AnnotationControls_css.bundle.js": {
-      "name": "app_components_TextDetail_AnnotationControls_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationControls_css.bundle.js"
-    },
-    "app_components_TextDetail_AnnotationControls_test_js.bundle.js": {
-      "name": "app_components_TextDetail_AnnotationControls_test_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationControls_test_js.bundle.js"
-    },
-    "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AddButton_css-app_compone-eb32801.styles-dev.css": {
-      "name": "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AddButton_css-app_compone-eb32801.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AddButton_css-app_compone-eb32801.styles-dev.css"
-    },
-    "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AddButton_css-app_compone-eb32801.bundle.js": {
-      "name": "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AddButton_css-app_compone-eb32801.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AddButton_css-app_compone-eb32801.bundle.js"
-    },
-    "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AnnotationControlsContain-e93f96.styles-dev.css": {
-      "name": "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AnnotationControlsContain-e93f96.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AnnotationControlsContain-e93f96.styles-dev.css"
-    },
-    "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AnnotationControlsContain-e93f96.bundle.js": {
-      "name": "node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AnnotationControlsContain-e93f96.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Delete_js-app_components_TextDetail_AnnotationControlsContain-e93f96.bundle.js"
-    },
-    "app_components_TextDetail_AnnotationControlsHeader_js.styles-dev.css": {
-      "name": "app_components_TextDetail_AnnotationControlsHeader_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationControlsHeader_js.styles-dev.css"
-    },
-    "app_components_TextDetail_AnnotationControlsHeader_js.bundle.js": {
-      "name": "app_components_TextDetail_AnnotationControlsHeader_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationControlsHeader_js.bundle.js"
-    },
-    "app_components_TextDetail_AnnotationControlsHeader_css.styles-dev.css": {
-      "name": "app_components_TextDetail_AnnotationControlsHeader_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationControlsHeader_css.styles-dev.css"
-    },
-    "app_components_TextDetail_AnnotationControlsHeader_css.bundle.js": {
-      "name": "app_components_TextDetail_AnnotationControlsHeader_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationControlsHeader_css.bundle.js"
-    },
-    "app_components_TextDetail_AnnotationControlsHeading_js.styles-dev.css": {
-      "name": "app_components_TextDetail_AnnotationControlsHeading_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationControlsHeading_js.styles-dev.css"
-    },
-    "app_components_TextDetail_AnnotationControlsHeading_js.bundle.js": {
-      "name": "app_components_TextDetail_AnnotationControlsHeading_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationControlsHeading_js.bundle.js"
-    },
-    "app_components_TextDetail_AnnotationControlsHeading_css.styles-dev.css": {
-      "name": "app_components_TextDetail_AnnotationControlsHeading_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationControlsHeading_css.styles-dev.css"
-    },
-    "app_components_TextDetail_AnnotationControlsHeading_css.bundle.js": {
-      "name": "app_components_TextDetail_AnnotationControlsHeading_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationControlsHeading_css.bundle.js"
-    },
-    "app_components_TextDetail_AnnotationDetail_js.styles-dev.css": {
-      "name": "app_components_TextDetail_AnnotationDetail_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationDetail_js.styles-dev.css"
-    },
-    "app_components_TextDetail_AnnotationDetail_js.bundle.js": {
-      "name": "app_components_TextDetail_AnnotationDetail_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationDetail_js.bundle.js"
-    },
-    "app_components_TextDetail_AnnotationDetail_css.styles-dev.css": {
-      "name": "app_components_TextDetail_AnnotationDetail_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationDetail_css.styles-dev.css"
-    },
-    "app_components_TextDetail_AnnotationDetail_css.bundle.js": {
-      "name": "app_components_TextDetail_AnnotationDetail_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationDetail_css.bundle.js"
-    },
-    "app_components_TextDetail_AnnotationDetailEdit_js.styles-dev.css": {
-      "name": "app_components_TextDetail_AnnotationDetailEdit_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationDetailEdit_js.styles-dev.css"
-    },
-    "app_components_TextDetail_AnnotationDetailEdit_js.bundle.js": {
-      "name": "app_components_TextDetail_AnnotationDetailEdit_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnnotationDetailEdit_js.bundle.js"
-    },
-    "app_components_TextDetail_AnswerView_js.styles-dev.css": {
-      "name": "app_components_TextDetail_AnswerView_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnswerView_js.styles-dev.css"
-    },
-    "app_components_TextDetail_AnswerView_js.bundle.js": {
-      "name": "app_components_TextDetail_AnswerView_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnswerView_js.bundle.js"
-    },
-    "app_components_TextDetail_AnswerView_css.styles-dev.css": {
-      "name": "app_components_TextDetail_AnswerView_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnswerView_css.styles-dev.css"
-    },
-    "app_components_TextDetail_AnswerView_css.bundle.js": {
-      "name": "app_components_TextDetail_AnswerView_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_AnswerView_css.bundle.js"
-    },
-    "app_components_TextDetail_Button_css.styles-dev.css": {
-      "name": "app_components_TextDetail_Button_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_Button_css.styles-dev.css"
-    },
-    "app_components_TextDetail_Button_css.bundle.js": {
-      "name": "app_components_TextDetail_Button_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_Button_css.bundle.js"
-    },
-    "app_components_TextDetail_ExportControl_js.styles-dev.css": {
-      "name": "app_components_TextDetail_ExportControl_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_ExportControl_js.styles-dev.css"
-    },
-    "app_components_TextDetail_ExportControl_js.bundle.js": {
-      "name": "app_components_TextDetail_ExportControl_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_ExportControl_js.bundle.js"
-    },
-    "app_components_TextDetail_FontSize_js.styles-dev.css": {
-      "name": "app_components_TextDetail_FontSize_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_FontSize_js.styles-dev.css"
-    },
-    "app_components_TextDetail_FontSize_js.bundle.js": {
-      "name": "app_components_TextDetail_FontSize_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_FontSize_js.bundle.js"
-    },
-    "app_components_TextDetail_FontSize_css.styles-dev.css": {
-      "name": "app_components_TextDetail_FontSize_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_FontSize_css.styles-dev.css"
-    },
-    "app_components_TextDetail_FontSize_css.bundle.js": {
-      "name": "app_components_TextDetail_FontSize_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_FontSize_css.bundle.js"
-    },
-    "app_components_TextDetail_HeaderMenu_HighlightedString_js.bundle.js": {
-      "name": "app_components_TextDetail_HeaderMenu_HighlightedString_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_HeaderMenu_HighlightedString_js.bundle.js"
-    },
-    "app_components_TextDetail_HeaderMenu_Refresh_js.bundle.js": {
-      "name": "app_components_TextDetail_HeaderMenu_Refresh_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_HeaderMenu_Refresh_js.bundle.js"
-    },
-    "app_components_TextDetail_HeaderMenu_Search_js.bundle.js": {
-      "name": "app_components_TextDetail_HeaderMenu_Search_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_HeaderMenu_Search_js.bundle.js"
-    },
-    "app_components_TextDetail_HeaderMenu_SearchList_js.styles-dev.css": {
-      "name": "app_components_TextDetail_HeaderMenu_SearchList_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_HeaderMenu_SearchList_js.styles-dev.css"
-    },
-    "app_components_TextDetail_HeaderMenu_SearchList_js.bundle.js": {
-      "name": "app_components_TextDetail_HeaderMenu_SearchList_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_HeaderMenu_SearchList_js.bundle.js"
-    },
-    "app_components_TextDetail_HeaderMenu_SearchStyle_css.styles-dev.css": {
-      "name": "app_components_TextDetail_HeaderMenu_SearchStyle_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_HeaderMenu_SearchStyle_css.styles-dev.css"
-    },
-    "app_components_TextDetail_HeaderMenu_SearchStyle_css.bundle.js": {
-      "name": "app_components_TextDetail_HeaderMenu_SearchStyle_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_HeaderMenu_SearchStyle_css.bundle.js"
-    },
-    "app_components_TextDetail_HeaderMenu_Settings_js.styles-dev.css": {
-      "name": "app_components_TextDetail_HeaderMenu_Settings_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_HeaderMenu_Settings_js.styles-dev.css"
-    },
-    "app_components_TextDetail_HeaderMenu_Settings_js.bundle.js": {
-      "name": "app_components_TextDetail_HeaderMenu_Settings_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_HeaderMenu_Settings_js.bundle.js"
-    },
-    "app_components_TextDetail_HeaderMenu_TableOfContent_js.bundle.js": {
-      "name": "app_components_TextDetail_HeaderMenu_TableOfContent_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_HeaderMenu_TableOfContent_js.bundle.js"
-    },
-    "app_components_TextDetail_HeaderMenu_WindowSplitter_js.bundle.js": {
-      "name": "app_components_TextDetail_HeaderMenu_WindowSplitter_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_HeaderMenu_WindowSplitter_js.bundle.js"
-    },
-    "app_components_TextDetail_ImageToggle_js.styles-dev.css": {
-      "name": "app_components_TextDetail_ImageToggle_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_ImageToggle_js.styles-dev.css"
-    },
-    "app_components_TextDetail_ImageToggle_js.bundle.js": {
-      "name": "app_components_TextDetail_ImageToggle_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_ImageToggle_js.bundle.js"
-    },
-    "app_components_TextDetail_ImageToggle_css.styles-dev.css": {
-      "name": "app_components_TextDetail_ImageToggle_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_ImageToggle_css.styles-dev.css"
-    },
-    "app_components_TextDetail_ImageToggle_css.bundle.js": {
-      "name": "app_components_TextDetail_ImageToggle_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_ImageToggle_css.bundle.js"
-    },
-    "app_components_TextDetail_Note_js.styles-dev.css": {
-      "name": "app_components_TextDetail_Note_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_Note_js.styles-dev.css"
-    },
-    "app_components_TextDetail_Note_js.bundle.js": {
-      "name": "app_components_TextDetail_Note_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_Note_js.bundle.js"
-    },
-    "app_components_TextDetail_Note_css.styles-dev.css": {
-      "name": "app_components_TextDetail_Note_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_Note_css.styles-dev.css"
-    },
-    "app_components_TextDetail_Note_css.bundle.js": {
-      "name": "app_components_TextDetail_Note_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_Note_css.bundle.js"
-    },
-    "app_components_TextDetail_NoteEditor_js.styles-dev.css": {
-      "name": "app_components_TextDetail_NoteEditor_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_NoteEditor_js.styles-dev.css"
-    },
-    "app_components_TextDetail_NoteEditor_js.bundle.js": {
-      "name": "app_components_TextDetail_NoteEditor_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_NoteEditor_js.bundle.js"
-    },
-    "app_components_TextDetail_NoteEditor_css.styles-dev.css": {
-      "name": "app_components_TextDetail_NoteEditor_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_NoteEditor_css.styles-dev.css"
-    },
-    "app_components_TextDetail_NoteEditor_css.bundle.js": {
-      "name": "app_components_TextDetail_NoteEditor_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_NoteEditor_css.bundle.js"
-    },
-    "app_components_TextDetail_PechaText_js.styles-dev.css": {
-      "name": "app_components_TextDetail_PechaText_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_PechaText_js.styles-dev.css"
-    },
-    "app_components_TextDetail_PechaText_js.bundle.js": {
-      "name": "app_components_TextDetail_PechaText_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_PechaText_js.bundle.js"
-    },
-    "app_components_TextDetail_PechaText_css.styles-dev.css": {
-      "name": "app_components_TextDetail_PechaText_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_PechaText_css.styles-dev.css"
-    },
-    "app_components_TextDetail_PechaText_css.bundle.js": {
-      "name": "app_components_TextDetail_PechaText_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_PechaText_css.bundle.js"
-    },
-    "app_components_TextDetail_QuestionEditor_js.styles-dev.css": {
-      "name": "app_components_TextDetail_QuestionEditor_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_QuestionEditor_js.styles-dev.css"
-    },
-    "app_components_TextDetail_QuestionEditor_js.bundle.js": {
-      "name": "app_components_TextDetail_QuestionEditor_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_QuestionEditor_js.bundle.js"
-    },
-    "app_components_TextDetail_QuestionEditor_css.styles-dev.css": {
-      "name": "app_components_TextDetail_QuestionEditor_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_QuestionEditor_css.styles-dev.css"
-    },
-    "app_components_TextDetail_QuestionEditor_css.bundle.js": {
-      "name": "app_components_TextDetail_QuestionEditor_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_QuestionEditor_css.bundle.js"
-    },
-    "app_components_TextDetail_QuestionView_js.styles-dev.css": {
-      "name": "app_components_TextDetail_QuestionView_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_QuestionView_js.styles-dev.css"
-    },
-    "app_components_TextDetail_QuestionView_js.bundle.js": {
-      "name": "app_components_TextDetail_QuestionView_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_QuestionView_js.bundle.js"
-    },
-    "app_components_TextDetail_QuestionView_css.styles-dev.css": {
-      "name": "app_components_TextDetail_QuestionView_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_QuestionView_css.styles-dev.css"
-    },
-    "app_components_TextDetail_QuestionView_css.bundle.js": {
-      "name": "app_components_TextDetail_QuestionView_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_QuestionView_css.bundle.js"
-    },
-    "app_components_TextDetail_QuestionsLoading_js.styles-dev.css": {
-      "name": "app_components_TextDetail_QuestionsLoading_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_QuestionsLoading_js.styles-dev.css"
-    },
-    "app_components_TextDetail_QuestionsLoading_js.bundle.js": {
-      "name": "app_components_TextDetail_QuestionsLoading_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_QuestionsLoading_js.bundle.js"
-    },
-    "app_components_TextDetail_QuestionsLoading_css.styles-dev.css": {
-      "name": "app_components_TextDetail_QuestionsLoading_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_QuestionsLoading_css.styles-dev.css"
-    },
-    "app_components_TextDetail_QuestionsLoading_css.bundle.js": {
-      "name": "app_components_TextDetail_QuestionsLoading_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_QuestionsLoading_css.bundle.js"
-    },
-    "app_components_TextDetail_SelectVersion_js.styles-dev.css": {
-      "name": "app_components_TextDetail_SelectVersion_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_SelectVersion_js.styles-dev.css"
-    },
-    "app_components_TextDetail_SelectVersion_js.bundle.js": {
-      "name": "app_components_TextDetail_SelectVersion_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_SelectVersion_js.bundle.js"
-    },
-    "app_components_TextDetail_SelectVersion_css.styles-dev.css": {
-      "name": "app_components_TextDetail_SelectVersion_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_SelectVersion_css.styles-dev.css"
-    },
-    "app_components_TextDetail_SelectVersion_css.bundle.js": {
-      "name": "app_components_TextDetail_SelectVersion_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_SelectVersion_css.bundle.js"
-    },
-    "node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-node-98ec93.bundle.js": {
-      "name": "node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-node-98ec93.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-node-98ec93.bundle.js"
-    },
-    "app_components_TextDetail_SplitText_css.styles-dev.css": {
-      "name": "app_components_TextDetail_SplitText_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_SplitText_css.styles-dev.css"
-    },
-    "app_components_TextDetail_SplitText_css.bundle.js": {
-      "name": "app_components_TextDetail_SplitText_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_SplitText_css.bundle.js"
-    },
-    "app_components_TextDetail_TabBar_js.styles-dev.css": {
-      "name": "app_components_TextDetail_TabBar_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TabBar_js.styles-dev.css"
-    },
-    "app_components_TextDetail_TabBar_js.bundle.js": {
-      "name": "app_components_TextDetail_TabBar_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TabBar_js.bundle.js"
-    },
-    "app_components_TextDetail_TabBar_css.styles-dev.css": {
-      "name": "app_components_TextDetail_TabBar_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TabBar_css.styles-dev.css"
-    },
-    "app_components_TextDetail_TabBar_css.bundle.js": {
-      "name": "app_components_TextDetail_TabBar_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TabBar_css.bundle.js"
-    },
-    "app_components_TextDetail_TableOfContent_TableOfContent_js.styles-dev.css": {
-      "name": "app_components_TextDetail_TableOfContent_TableOfContent_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TableOfContent_TableOfContent_js.styles-dev.css"
-    },
-    "app_components_TextDetail_TableOfContent_TableOfContent_js.bundle.js": {
-      "name": "app_components_TextDetail_TableOfContent_TableOfContent_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TableOfContent_TableOfContent_js.bundle.js"
-    },
-    "app_components_TextDetail_TableOfContent_TableOfContent_css.styles-dev.css": {
-      "name": "app_components_TextDetail_TableOfContent_TableOfContent_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TableOfContent_TableOfContent_css.styles-dev.css"
-    },
-    "app_components_TextDetail_TableOfContent_TableOfContent_css.bundle.js": {
-      "name": "app_components_TextDetail_TableOfContent_TableOfContent_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TableOfContent_TableOfContent_css.bundle.js"
-    },
-    "app_components_TextDetail_Text_js.styles-dev.css": {
-      "name": "app_components_TextDetail_Text_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_Text_js.styles-dev.css"
-    },
-    "app_components_TextDetail_Text_js.bundle.js": {
-      "name": "app_components_TextDetail_Text_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_Text_js.bundle.js"
-    },
-    "app_components_TextDetail_Text_css.styles-dev.css": {
-      "name": "app_components_TextDetail_Text_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_Text_css.styles-dev.css"
-    },
-    "app_components_TextDetail_Text_css.bundle.js": {
-      "name": "app_components_TextDetail_Text_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_Text_css.bundle.js"
-    },
-    "node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-app_-f4a8d3.styles-dev.css": {
-      "name": "node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-app_-f4a8d3.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-app_-f4a8d3.styles-dev.css"
-    },
-    "node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-app_-f4a8d3.bundle.js": {
-      "name": "node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-app_-f4a8d3.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Delete_js-node_modules_mui_styles_withTheme_withTheme_js-app_-f4a8d3.bundle.js"
-    },
-    "app_components_TextDetail_TextDetail_css.styles-dev.css": {
-      "name": "app_components_TextDetail_TextDetail_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextDetail_css.styles-dev.css"
-    },
-    "app_components_TextDetail_TextDetail_css.bundle.js": {
-      "name": "app_components_TextDetail_TextDetail_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextDetail_css.bundle.js"
-    },
-    "node_modules_mui_icons-material_Delete_js-node_modules_mui_material_Slide_Slide_js-node_modul-8a67ab.styles-dev.css": {
-      "name": "node_modules_mui_icons-material_Delete_js-node_modules_mui_material_Slide_Slide_js-node_modul-8a67ab.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Delete_js-node_modules_mui_material_Slide_Slide_js-node_modul-8a67ab.styles-dev.css"
-    },
-    "node_modules_mui_icons-material_Delete_js-node_modules_mui_material_Slide_Slide_js-node_modul-8a67ab.bundle.js": {
-      "name": "node_modules_mui_icons-material_Delete_js-node_modules_mui_material_Slide_Slide_js-node_modul-8a67ab.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Delete_js-node_modules_mui_material_Slide_Slide_js-node_modul-8a67ab.bundle.js"
-    },
-    "app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail_HeaderMenu_Search-30d039.styles-dev.css": {
-      "name": "app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail_HeaderMenu_Search-30d039.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail_HeaderMenu_Search-30d039.styles-dev.css"
-    },
-    "app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail_HeaderMenu_Search-30d039.bundle.js": {
-      "name": "app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail_HeaderMenu_Search-30d039.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_images_wrench_svg-app_components_UI_Slider_js-app_components_TextDetail_HeaderMenu_Search-30d039.bundle.js"
-    },
-    "app_images_wrench_svg-app_components_TextDetail_TextDetailHeadingContainer_js-app_components_-58cf75.styles-dev.css": {
-      "name": "app_images_wrench_svg-app_components_TextDetail_TextDetailHeadingContainer_js-app_components_-58cf75.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_images_wrench_svg-app_components_TextDetail_TextDetailHeadingContainer_js-app_components_-58cf75.styles-dev.css"
-    },
-    "app_images_wrench_svg-app_components_TextDetail_TextDetailHeadingContainer_js-app_components_-58cf75.bundle.js": {
-      "name": "app_images_wrench_svg-app_components_TextDetail_TextDetailHeadingContainer_js-app_components_-58cf75.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_images_wrench_svg-app_components_TextDetail_TextDetailHeadingContainer_js-app_components_-58cf75.bundle.js"
-    },
-    "app_components_TextDetail_TextHeading_js.styles-dev.css": {
-      "name": "app_components_TextDetail_TextHeading_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextHeading_js.styles-dev.css"
-    },
-    "app_components_TextDetail_TextHeading_js.bundle.js": {
-      "name": "app_components_TextDetail_TextHeading_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextHeading_js.bundle.js"
-    },
-    "app_components_TextDetail_TextHeading_css.styles-dev.css": {
-      "name": "app_components_TextDetail_TextHeading_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextHeading_css.styles-dev.css"
-    },
-    "app_components_TextDetail_TextHeading_css.bundle.js": {
-      "name": "app_components_TextDetail_TextHeading_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextHeading_css.bundle.js"
-    },
-    "app_components_TextDetail_TextHeading_test_js.bundle.js": {
-      "name": "app_components_TextDetail_TextHeading_test_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextHeading_test_js.bundle.js"
-    },
-    "app_components_TextDetail_TextHeadingContainer_js.styles-dev.css": {
-      "name": "app_components_TextDetail_TextHeadingContainer_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextHeadingContainer_js.styles-dev.css"
-    },
-    "app_components_TextDetail_TextHeadingContainer_js.bundle.js": {
-      "name": "app_components_TextDetail_TextHeadingContainer_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextHeadingContainer_js.bundle.js"
-    },
-    "app_components_TextDetail_TextList_js.styles-dev.css": {
-      "name": "app_components_TextDetail_TextList_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextList_js.styles-dev.css"
-    },
-    "app_components_TextDetail_TextList_js.bundle.js": {
-      "name": "app_components_TextDetail_TextList_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextList_js.bundle.js"
-    },
-    "app_components_TextDetail_TextList_css.styles-dev.css": {
-      "name": "app_components_TextDetail_TextList_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextList_css.styles-dev.css"
-    },
-    "app_components_TextDetail_TextList_css.bundle.js": {
-      "name": "app_components_TextDetail_TextList_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextList_css.bundle.js"
-    },
-    "app_components_TextDetail_TextListContainer_js.styles-dev.css": {
-      "name": "app_components_TextDetail_TextListContainer_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextListContainer_js.styles-dev.css"
-    },
-    "app_components_TextDetail_TextListContainer_js.bundle.js": {
-      "name": "app_components_TextDetail_TextListContainer_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_TextListContainer_js.bundle.js"
-    },
-    "app_components_TextDetail_textDetailHeading_css.styles-dev.css": {
-      "name": "app_components_TextDetail_textDetailHeading_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_textDetailHeading_css.styles-dev.css"
-    },
-    "app_components_TextDetail_textDetailHeading_css.bundle.js": {
-      "name": "app_components_TextDetail_textDetailHeading_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail_textDetailHeading_css.bundle.js"
-    },
-    "node_modules_mui_icons-material_Check_js-node_modules_mui_material_Slide_Slide_js-node_module-88682f.styles-dev.css": {
-      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_material_Slide_Slide_js-node_module-88682f.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Check_js-node_modules_mui_material_Slide_Slide_js-node_module-88682f.styles-dev.css"
-    },
-    "node_modules_mui_icons-material_Check_js-node_modules_mui_material_Slide_Slide_js-node_module-88682f.bundle.js": {
-      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_material_Slide_Slide_js-node_module-88682f.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Check_js-node_modules_mui_material_Slide_Slide_js-node_module-88682f.bundle.js"
-    },
-    "app_components_TextDetail2_AnnotationControls_css.styles-dev.css": {
-      "name": "app_components_TextDetail2_AnnotationControls_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_AnnotationControls_css.styles-dev.css"
-    },
-    "app_components_TextDetail2_AnnotationControls_css.bundle.js": {
-      "name": "app_components_TextDetail2_AnnotationControls_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_AnnotationControls_css.bundle.js"
-    },
-    "app_components_TextDetail2_HeaderMenu_HighlightedString_js.bundle.js": {
-      "name": "app_components_TextDetail2_HeaderMenu_HighlightedString_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_HeaderMenu_HighlightedString_js.bundle.js"
-    },
-    "app_components_TextDetail2_HeaderMenu_Refresh_js.bundle.js": {
-      "name": "app_components_TextDetail2_HeaderMenu_Refresh_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_HeaderMenu_Refresh_js.bundle.js"
-    },
-    "app_components_TextDetail2_HeaderMenu_Search_js.bundle.js": {
-      "name": "app_components_TextDetail2_HeaderMenu_Search_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_HeaderMenu_Search_js.bundle.js"
-    },
-    "app_components_TextDetail2_HeaderMenu_SearchList_js.styles-dev.css": {
-      "name": "app_components_TextDetail2_HeaderMenu_SearchList_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_HeaderMenu_SearchList_js.styles-dev.css"
-    },
-    "app_components_TextDetail2_HeaderMenu_SearchList_js.bundle.js": {
-      "name": "app_components_TextDetail2_HeaderMenu_SearchList_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_HeaderMenu_SearchList_js.bundle.js"
-    },
-    "app_components_TextDetail2_HeaderMenu_SearchStyle_css.styles-dev.css": {
-      "name": "app_components_TextDetail2_HeaderMenu_SearchStyle_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_HeaderMenu_SearchStyle_css.styles-dev.css"
-    },
-    "app_components_TextDetail2_HeaderMenu_SearchStyle_css.bundle.js": {
-      "name": "app_components_TextDetail2_HeaderMenu_SearchStyle_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_HeaderMenu_SearchStyle_css.bundle.js"
-    },
-    "app_components_TextDetail2_HeaderMenu_Settings_js.styles-dev.css": {
-      "name": "app_components_TextDetail2_HeaderMenu_Settings_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_HeaderMenu_Settings_js.styles-dev.css"
-    },
-    "app_components_TextDetail2_HeaderMenu_Settings_js.bundle.js": {
-      "name": "app_components_TextDetail2_HeaderMenu_Settings_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_HeaderMenu_Settings_js.bundle.js"
-    },
-    "app_components_TextDetail2_HeaderMenu_TableOfContent_js.bundle.js": {
-      "name": "app_components_TextDetail2_HeaderMenu_TableOfContent_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_HeaderMenu_TableOfContent_js.bundle.js"
-    },
-    "app_components_TextDetail2_SelectVersion_js.styles-dev.css": {
-      "name": "app_components_TextDetail2_SelectVersion_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_SelectVersion_js.styles-dev.css"
-    },
-    "app_components_TextDetail2_SelectVersion_js.bundle.js": {
-      "name": "app_components_TextDetail2_SelectVersion_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_SelectVersion_js.bundle.js"
-    },
-    "app_components_TextDetail2_SelectVersion_css.styles-dev.css": {
-      "name": "app_components_TextDetail2_SelectVersion_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_SelectVersion_css.styles-dev.css"
-    },
-    "app_components_TextDetail2_SelectVersion_css.bundle.js": {
-      "name": "app_components_TextDetail2_SelectVersion_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_SelectVersion_css.bundle.js"
-    },
-    "node_modules_mui_styles_withTheme_withTheme_js-app_lib_SplitText_js-node_modules_react-virtua-d601f8.styles-dev.css": {
-      "name": "node_modules_mui_styles_withTheme_withTheme_js-app_lib_SplitText_js-node_modules_react-virtua-d601f8.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_styles_withTheme_withTheme_js-app_lib_SplitText_js-node_modules_react-virtua-d601f8.styles-dev.css"
-    },
-    "node_modules_mui_styles_withTheme_withTheme_js-app_lib_SplitText_js-node_modules_react-virtua-d601f8.bundle.js": {
-      "name": "node_modules_mui_styles_withTheme_withTheme_js-app_lib_SplitText_js-node_modules_react-virtua-d601f8.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_styles_withTheme_withTheme_js-app_lib_SplitText_js-node_modules_react-virtua-d601f8.bundle.js"
-    },
-    "app_components_TextDetail2_SplitText_css.styles-dev.css": {
-      "name": "app_components_TextDetail2_SplitText_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_SplitText_css.styles-dev.css"
-    },
-    "app_components_TextDetail2_SplitText_css.bundle.js": {
-      "name": "app_components_TextDetail2_SplitText_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_SplitText_css.bundle.js"
-    },
-    "app_components_TextDetail2_TableOfContent_TableOfContent_js.bundle.js": {
-      "name": "app_components_TextDetail2_TableOfContent_TableOfContent_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_TableOfContent_TableOfContent_js.bundle.js"
-    },
-    "app_components_TextDetail2_Text2_js.styles-dev.css": {
-      "name": "app_components_TextDetail2_Text2_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_Text2_js.styles-dev.css"
-    },
-    "app_components_TextDetail2_Text2_js.bundle.js": {
-      "name": "app_components_TextDetail2_Text2_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_Text2_js.bundle.js"
-    },
-    "app_components_TextDetail2_Text2_css.styles-dev.css": {
-      "name": "app_components_TextDetail2_Text2_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_Text2_css.styles-dev.css"
-    },
-    "app_components_TextDetail2_Text2_css.bundle.js": {
-      "name": "app_components_TextDetail2_Text2_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_Text2_css.bundle.js"
-    },
-    "node_modules_mui_icons-material_Check_js-node_modules_mui_styles_withTheme_withTheme_js-app_c-fd2821.styles-dev.css": {
-      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_styles_withTheme_withTheme_js-app_c-fd2821.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Check_js-node_modules_mui_styles_withTheme_withTheme_js-app_c-fd2821.styles-dev.css"
-    },
-    "node_modules_mui_icons-material_Check_js-node_modules_mui_styles_withTheme_withTheme_js-app_c-fd2821.bundle.js": {
-      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_styles_withTheme_withTheme_js-app_c-fd2821.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Check_js-node_modules_mui_styles_withTheme_withTheme_js-app_c-fd2821.bundle.js"
-    },
-    "app_components_TextDetail2_TextDetail_css.styles-dev.css": {
-      "name": "app_components_TextDetail2_TextDetail_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_TextDetail_css.styles-dev.css"
-    },
-    "app_components_TextDetail2_TextDetail_css.bundle.js": {
-      "name": "app_components_TextDetail2_TextDetail_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_TextDetail_css.bundle.js"
-    },
-    "node_modules_mui_icons-material_Check_js-node_modules_mui_material_Slide_Slide_js-node_module-39c8d1.styles-dev.css": {
-      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_material_Slide_Slide_js-node_module-39c8d1.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Check_js-node_modules_mui_material_Slide_Slide_js-node_module-39c8d1.styles-dev.css"
-    },
-    "node_modules_mui_icons-material_Check_js-node_modules_mui_material_Slide_Slide_js-node_module-39c8d1.bundle.js": {
-      "name": "node_modules_mui_icons-material_Check_js-node_modules_mui_material_Slide_Slide_js-node_module-39c8d1.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Check_js-node_modules_mui_material_Slide_Slide_js-node_module-39c8d1.bundle.js"
-    },
-    "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f736d0.styles-dev.css": {
-      "name": "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f736d0.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f736d0.styles-dev.css"
-    },
-    "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f736d0.bundle.js": {
-      "name": "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f736d0.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Check_js-app_components_TextDetail2_HeaderMenu_SearchStyle_cs-f736d0.bundle.js"
-    },
-    "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_TextDetailHeadingContaine-0faae4.styles-dev.css": {
-      "name": "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_TextDetailHeadingContaine-0faae4.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Check_js-app_components_TextDetail2_TextDetailHeadingContaine-0faae4.styles-dev.css"
-    },
-    "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_TextDetailHeadingContaine-0faae4.bundle.js": {
-      "name": "node_modules_mui_icons-material_Check_js-app_components_TextDetail2_TextDetailHeadingContaine-0faae4.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\node_modules_mui_icons-material_Check_js-app_components_TextDetail2_TextDetailHeadingContaine-0faae4.bundle.js"
-    },
-    "app_components_TextDetail2_TextList_js.styles-dev.css": {
-      "name": "app_components_TextDetail2_TextList_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_TextList_js.styles-dev.css"
-    },
-    "app_components_TextDetail2_TextList_js.bundle.js": {
-      "name": "app_components_TextDetail2_TextList_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_TextList_js.bundle.js"
-    },
-    "app_components_TextDetail2_TextList_css.styles-dev.css": {
-      "name": "app_components_TextDetail2_TextList_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_TextList_css.styles-dev.css"
-    },
-    "app_components_TextDetail2_TextList_css.bundle.js": {
-      "name": "app_components_TextDetail2_TextList_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_TextList_css.bundle.js"
-    },
-    "app_components_TextDetail2_TextListContainer_js.styles-dev.css": {
-      "name": "app_components_TextDetail2_TextListContainer_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_TextListContainer_js.styles-dev.css"
-    },
-    "app_components_TextDetail2_TextListContainer_js.bundle.js": {
-      "name": "app_components_TextDetail2_TextListContainer_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_TextListContainer_js.bundle.js"
-    },
-    "app_components_TextDetail2_textDetailHeading_css.styles-dev.css": {
-      "name": "app_components_TextDetail2_textDetailHeading_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_textDetailHeading_css.styles-dev.css"
-    },
-    "app_components_TextDetail2_textDetailHeading_css.bundle.js": {
-      "name": "app_components_TextDetail2_textDetailHeading_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextDetail2_textDetailHeading_css.bundle.js"
-    },
-    "app_components_TextList_index_js.styles-dev.css": {
-      "name": "app_components_TextList_index_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_index_js.styles-dev.css"
-    },
-    "app_components_TextList_index_js.bundle.js": {
-      "name": "app_components_TextList_index_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_index_js.bundle.js"
-    },
-    "app_components_TextList_HighlightedString_js.bundle.js": {
-      "name": "app_components_TextList_HighlightedString_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_HighlightedString_js.bundle.js"
-    },
-    "app_components_TextList_LoadMore_js.styles-dev.css": {
-      "name": "app_components_TextList_LoadMore_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_LoadMore_js.styles-dev.css"
-    },
-    "app_components_TextList_LoadMore_js.bundle.js": {
-      "name": "app_components_TextList_LoadMore_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_LoadMore_js.bundle.js"
-    },
-    "app_components_TextList_LoadMore_css.styles-dev.css": {
-      "name": "app_components_TextList_LoadMore_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_LoadMore_css.styles-dev.css"
-    },
-    "app_components_TextList_LoadMore_css.bundle.js": {
-      "name": "app_components_TextList_LoadMore_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_LoadMore_css.bundle.js"
-    },
-    "app_components_TextList_ResultCount_js.styles-dev.css": {
-      "name": "app_components_TextList_ResultCount_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_ResultCount_js.styles-dev.css"
-    },
-    "app_components_TextList_ResultCount_js.bundle.js": {
-      "name": "app_components_TextList_ResultCount_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_ResultCount_js.bundle.js"
-    },
-    "app_components_TextList_TextList_js.styles-dev.css": {
-      "name": "app_components_TextList_TextList_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_TextList_js.styles-dev.css"
-    },
-    "app_components_TextList_TextList_js.bundle.js": {
-      "name": "app_components_TextList_TextList_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_TextList_js.bundle.js"
-    },
-    "app_components_TextList_TextList_css.styles-dev.css": {
-      "name": "app_components_TextList_TextList_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_TextList_css.styles-dev.css"
-    },
-    "app_components_TextList_TextList_css.bundle.js": {
-      "name": "app_components_TextList_TextList_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_TextList_css.bundle.js"
-    },
-    "app_components_TextList_TextListTab_js.styles-dev.css": {
-      "name": "app_components_TextList_TextListTab_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_TextListTab_js.styles-dev.css"
-    },
-    "app_components_TextList_TextListTab_js.bundle.js": {
-      "name": "app_components_TextList_TextListTab_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_TextListTab_js.bundle.js"
-    },
-    "app_components_TextList_TextListTab_css.styles-dev.css": {
-      "name": "app_components_TextList_TextListTab_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_TextListTab_css.styles-dev.css"
-    },
-    "app_components_TextList_TextListTab_css.bundle.js": {
-      "name": "app_components_TextList_TextListTab_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_TextListTab_css.bundle.js"
-    },
-    "app_components_TextList_TextListTabContainer_js.styles-dev.css": {
-      "name": "app_components_TextList_TextListTabContainer_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_TextListTabContainer_js.styles-dev.css"
-    },
-    "app_components_TextList_TextListTabContainer_js.bundle.js": {
-      "name": "app_components_TextList_TextListTabContainer_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextList_TextListTabContainer_js.bundle.js"
-    },
-    "app_components_TextsSearch_index_js.styles-dev.css": {
-      "name": "app_components_TextsSearch_index_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextsSearch_index_js.styles-dev.css"
-    },
-    "app_components_TextsSearch_index_js.bundle.js": {
-      "name": "app_components_TextsSearch_index_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextsSearch_index_js.bundle.js"
-    },
-    "app_components_TextsSearch_TextsSearch_js.styles-dev.css": {
-      "name": "app_components_TextsSearch_TextsSearch_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextsSearch_TextsSearch_js.styles-dev.css"
-    },
-    "app_components_TextsSearch_TextsSearch_js.bundle.js": {
-      "name": "app_components_TextsSearch_TextsSearch_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextsSearch_TextsSearch_js.bundle.js"
-    },
-    "app_components_TextsSearch_TextsSearch_css.styles-dev.css": {
-      "name": "app_components_TextsSearch_TextsSearch_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextsSearch_TextsSearch_css.styles-dev.css"
-    },
-    "app_components_TextsSearch_TextsSearch_css.bundle.js": {
-      "name": "app_components_TextsSearch_TextsSearch_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextsSearch_TextsSearch_css.bundle.js"
-    },
-    "app_components_TextsSearch_TextsSearch2_css.styles-dev.css": {
-      "name": "app_components_TextsSearch_TextsSearch2_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextsSearch_TextsSearch2_css.styles-dev.css"
-    },
-    "app_components_TextsSearch_TextsSearch2_css.bundle.js": {
-      "name": "app_components_TextsSearch_TextsSearch2_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextsSearch_TextsSearch2_css.bundle.js"
-    },
-    "app_components_TextsSearch_TextsSearchContainer_js.styles-dev.css": {
-      "name": "app_components_TextsSearch_TextsSearchContainer_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextsSearch_TextsSearchContainer_js.styles-dev.css"
-    },
-    "app_components_TextsSearch_TextsSearchContainer_js.bundle.js": {
-      "name": "app_components_TextsSearch_TextsSearchContainer_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_TextsSearch_TextsSearchContainer_js.bundle.js"
-    },
-    "app_components_UI_Accessory_js.styles-dev.css": {
-      "name": "app_components_UI_Accessory_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Accessory_js.styles-dev.css"
-    },
-    "app_components_UI_Accessory_js.bundle.js": {
-      "name": "app_components_UI_Accessory_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Accessory_js.bundle.js"
-    },
-    "app_components_UI_Accessory_css.styles-dev.css": {
-      "name": "app_components_UI_Accessory_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Accessory_css.styles-dev.css"
-    },
-    "app_components_UI_Accessory_css.bundle.js": {
-      "name": "app_components_UI_Accessory_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Accessory_css.bundle.js"
-    },
-    "app_components_UI_ApplyTooltip_js.bundle.js": {
-      "name": "app_components_UI_ApplyTooltip_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_ApplyTooltip_js.bundle.js"
-    },
-    "app_components_UI_Button_js.styles-dev.css": {
-      "name": "app_components_UI_Button_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Button_js.styles-dev.css"
-    },
-    "app_components_UI_Button_js.bundle.js": {
-      "name": "app_components_UI_Button_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Button_js.bundle.js"
-    },
-    "app_components_UI_Button_css.styles-dev.css": {
-      "name": "app_components_UI_Button_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Button_css.styles-dev.css"
-    },
-    "app_components_UI_Button_css.bundle.js": {
-      "name": "app_components_UI_Button_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Button_css.bundle.js"
-    },
-    "app_components_UI_ShareButton_js.styles-dev.css": {
-      "name": "app_components_UI_ShareButton_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_ShareButton_js.styles-dev.css"
-    },
-    "app_components_UI_ShareButton_js.bundle.js": {
-      "name": "app_components_UI_ShareButton_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_ShareButton_js.bundle.js"
-    },
-    "app_components_UI_Sharebutton_css.styles-dev.css": {
-      "name": "app_components_UI_Sharebutton_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Sharebutton_css.styles-dev.css"
-    },
-    "app_components_UI_Sharebutton_css.bundle.js": {
-      "name": "app_components_UI_Sharebutton_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Sharebutton_css.bundle.js"
-    },
-    "app_components_UI_Slider_js.styles-dev.css": {
-      "name": "app_components_UI_Slider_js.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Slider_js.styles-dev.css"
-    },
-    "app_components_UI_Slider_js.bundle.js": {
-      "name": "app_components_UI_Slider_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Slider_js.bundle.js"
-    },
-    "app_components_UI_Slider_css.styles-dev.css": {
-      "name": "app_components_UI_Slider_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Slider_css.styles-dev.css"
-    },
-    "app_components_UI_Slider_css.bundle.js": {
-      "name": "app_components_UI_Slider_css.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_Slider_css.bundle.js"
-    },
-    "app_components_UI_useDelayUnmount_js.bundle.js": {
-      "name": "app_components_UI_useDelayUnmount_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\app_components_UI_useDelayUnmount_js.bundle.js"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.bundle.js"
+    },
+    "app_components_Editors_index_js-node_modules_react-virtualized_styles_css.styles-dev.css": {
+      "name": "app_components_Editors_index_js-node_modules_react-virtualized_styles_css.styles-dev.css",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\app_components_Editors_index_js-node_modules_react-virtualized_styles_css.styles-dev.css"
+    },
+    "app_components_Editors_index_js-node_modules_react-virtualized_styles_css.bundle.js": {
+      "name": "app_components_Editors_index_js-node_modules_react-virtualized_styles_css.bundle.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\app_components_Editors_index_js-node_modules_react-virtualized_styles_css.bundle.js"
     },
     "docx.bundle.js": {
       "name": "docx.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\docx.bundle.js"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx.bundle.js"
     },
-    "defaultVendors-node_modules_react-virtualized_dist_es_List_index_js.bundle.js": {
-      "name": "defaultVendors-node_modules_react-virtualized_dist_es_List_index_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\defaultVendors-node_modules_react-virtualized_dist_es_List_index_js.bundle.js"
+    "defaultVendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_Chec-c5dbb9.bundle.js": {
+      "name": "defaultVendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_Chec-c5dbb9.bundle.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\defaultVendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_Chec-c5dbb9.bundle.js"
     },
-    "defaultVendors-node_modules_grapheme-splitter_index_js.bundle.js": {
-      "name": "defaultVendors-node_modules_grapheme-splitter_index_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\defaultVendors-node_modules_grapheme-splitter_index_js.bundle.js"
+    "index.html": {
+      "name": "index.html",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\index.html"
     },
-    "defaultVendors-node_modules_react-virtualized_dist_es_AutoSizer_index_js-node_modules_react-v-d60a08.bundle.js": {
-      "name": "defaultVendors-node_modules_react-virtualized_dist_es_AutoSizer_index_js-node_modules_react-v-d60a08.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\defaultVendors-node_modules_react-virtualized_dist_es_AutoSizer_index_js-node_modules_react-v-d60a08.bundle.js"
+    "main.41498aa79a1bd25db4b9.hot-update.js": {
+      "name": "main.41498aa79a1bd25db4b9.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.41498aa79a1bd25db4b9.hot-update.js"
     },
-    "defaultVendors-node_modules_react-virtualized_dist_es_index_js.bundle.js": {
-      "name": "defaultVendors-node_modules_react-virtualized_dist_es_index_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\defaultVendors-node_modules_react-virtualized_dist_es_index_js.bundle.js"
+    "main.41498aa79a1bd25db4b9.hot-update.json": {
+      "name": "main.41498aa79a1bd25db4b9.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.41498aa79a1bd25db4b9.hot-update.json"
     },
-    "defaultVendors-node_modules_mui_base_ClickAwayListener_ClickAwayListener_js-node_modules_mui_-57df17.bundle.js": {
-      "name": "defaultVendors-node_modules_mui_base_ClickAwayListener_ClickAwayListener_js-node_modules_mui_-57df17.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\defaultVendors-node_modules_mui_base_ClickAwayListener_ClickAwayListener_js-node_modules_mui_-57df17.bundle.js"
+    "main.82ae5c82c4b28718df21.hot-update.js": {
+      "name": "main.82ae5c82c4b28718df21.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.82ae5c82c4b28718df21.hot-update.js"
     },
-    "defaultVendors-node_modules_react-dom_server_browser_js.bundle.js": {
-      "name": "defaultVendors-node_modules_react-dom_server_browser_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\defaultVendors-node_modules_react-dom_server_browser_js.bundle.js"
+    "main.82ae5c82c4b28718df21.hot-update.json": {
+      "name": "main.82ae5c82c4b28718df21.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.82ae5c82c4b28718df21.hot-update.json"
     },
-    "defaultVendors-node_modules_react-zoom-pan-pinch_dist_index_esm_js.bundle.js": {
-      "name": "defaultVendors-node_modules_react-zoom-pan-pinch_dist_index_esm_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\defaultVendors-node_modules_react-zoom-pan-pinch_dist_index_esm_js.bundle.js"
+    "main.4c428f71a10ca78626d8.hot-update.js": {
+      "name": "main.4c428f71a10ca78626d8.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.4c428f71a10ca78626d8.hot-update.js"
     },
-    "defaultVendors-node_modules_react-player_lib_index_js.bundle.js": {
-      "name": "defaultVendors-node_modules_react-player_lib_index_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\defaultVendors-node_modules_react-player_lib_index_js.bundle.js"
+    "main.4c428f71a10ca78626d8.hot-update.json": {
+      "name": "main.4c428f71a10ca78626d8.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.4c428f71a10ca78626d8.hot-update.json"
     },
-    "defaultVendors-node_modules_react-howler-player_build_index_es_js.bundle.js": {
-      "name": "defaultVendors-node_modules_react-howler-player_build_index_es_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\defaultVendors-node_modules_react-howler-player_build_index_es_js.bundle.js"
+    "main.bb21306f543134c13cdb.hot-update.js": {
+      "name": "main.bb21306f543134c13cdb.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.bb21306f543134c13cdb.hot-update.js"
     },
-    "defaultVendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_Chev-2d3a25.bundle.js": {
-      "name": "defaultVendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_Chev-2d3a25.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\defaultVendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_Chev-2d3a25.bundle.js"
+    "main.bb21306f543134c13cdb.hot-update.json": {
+      "name": "main.bb21306f543134c13cdb.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.bb21306f543134c13cdb.hot-update.json"
     },
-    "defaultVendors-node_modules_react-resizable_index_js.bundle.js": {
-      "name": "defaultVendors-node_modules_react-resizable_index_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\defaultVendors-node_modules_react-resizable_index_js.bundle.js"
+    "main.eea6b8280a384f759dcc.hot-update.js": {
+      "name": "main.eea6b8280a384f759dcc.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.eea6b8280a384f759dcc.hot-update.js"
     },
-    "defaultVendors-node_modules_mui_icons-material_Check_js-node_modules_mui_icons-material_Delet-3cc405.bundle.js": {
-      "name": "defaultVendors-node_modules_mui_icons-material_Check_js-node_modules_mui_icons-material_Delet-3cc405.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\defaultVendors-node_modules_mui_icons-material_Check_js-node_modules_mui_icons-material_Delet-3cc405.bundle.js"
+    "main.eea6b8280a384f759dcc.hot-update.json": {
+      "name": "main.eea6b8280a384f759dcc.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.eea6b8280a384f759dcc.hot-update.json"
     },
-    "defaultVendors-node_modules_mui_icons-material_esm_Edit_js-node_modules_mui_icons-material_es-5fd4e6.bundle.js": {
-      "name": "defaultVendors-node_modules_mui_icons-material_esm_Edit_js-node_modules_mui_icons-material_es-5fd4e6.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\defaultVendors-node_modules_mui_icons-material_esm_Edit_js-node_modules_mui_icons-material_es-5fd4e6.bundle.js"
+    "main.20e1dde8dd682e5fb309.hot-update.js": {
+      "name": "main.20e1dde8dd682e5fb309.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.20e1dde8dd682e5fb309.hot-update.js"
     },
-    "default-app_css_colour_css.styles-dev.css": {
-      "name": "default-app_css_colour_css.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\default-app_css_colour_css.styles-dev.css"
+    "main.20e1dde8dd682e5fb309.hot-update.json": {
+      "name": "main.20e1dde8dd682e5fb309.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.20e1dde8dd682e5fb309.hot-update.json"
     },
-    "default-app_components_TextDetail_AnnotationControls_js.bundle.js": {
-      "name": "default-app_components_TextDetail_AnnotationControls_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\default-app_components_TextDetail_AnnotationControls_js.bundle.js"
+    "main.styles-dev.css": {
+      "name": "main.styles-dev.css",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.styles-dev.css"
     },
-    "default-app_components_TextDetail_AnnotationControlsContainer_js.bundle.js": {
-      "name": "default-app_components_TextDetail_AnnotationControlsContainer_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\default-app_components_TextDetail_AnnotationControlsContainer_js.bundle.js"
+    "main.8503da6cc1080b6223e0.hot-update.js": {
+      "name": "main.8503da6cc1080b6223e0.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.8503da6cc1080b6223e0.hot-update.js"
     },
-    "default-app_components_TextDetail2_TextDetailHeading_js.bundle.js": {
-      "name": "default-app_components_TextDetail2_TextDetailHeading_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\default-app_components_TextDetail2_TextDetailHeading_js.bundle.js"
+    "main.8503da6cc1080b6223e0.hot-update.json": {
+      "name": "main.8503da6cc1080b6223e0.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.8503da6cc1080b6223e0.hot-update.json"
     },
-    "default-app_components_TextDetail_TextDetailHeading_js.bundle.js": {
-      "name": "default-app_components_TextDetail_TextDetailHeading_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\default-app_components_TextDetail_TextDetailHeading_js.bundle.js"
+    "main.c44014c7156f53042da3.hot-update.js": {
+      "name": "main.c44014c7156f53042da3.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.c44014c7156f53042da3.hot-update.js"
     },
-    "default-app_components_TextDetail_SplitText_js-app_components_TextDetail_AddButton_css-app_co-5ab619.styles-dev.css": {
-      "name": "default-app_components_TextDetail_SplitText_js-app_components_TextDetail_AddButton_css-app_co-5ab619.styles-dev.css",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\default-app_components_TextDetail_SplitText_js-app_components_TextDetail_AddButton_css-app_co-5ab619.styles-dev.css"
+    "main.c44014c7156f53042da3.hot-update.json": {
+      "name": "main.c44014c7156f53042da3.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.c44014c7156f53042da3.hot-update.json"
     },
-    "default-app_components_TextDetail_SplitText_js-app_components_TextDetail_AddButton_css-app_co-5ab619.bundle.js": {
-      "name": "default-app_components_TextDetail_SplitText_js-app_components_TextDetail_AddButton_css-app_co-5ab619.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\default-app_components_TextDetail_SplitText_js-app_components_TextDetail_AddButton_css-app_co-5ab619.bundle.js"
+    "main.0b1e509be99bc61f2eb2.hot-update.js": {
+      "name": "main.0b1e509be99bc61f2eb2.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.0b1e509be99bc61f2eb2.hot-update.js"
     },
-    "default-app_components_TextDetail2_SplitText_js.bundle.js": {
-      "name": "default-app_components_TextDetail2_SplitText_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\default-app_components_TextDetail2_SplitText_js.bundle.js"
+    "main.0b1e509be99bc61f2eb2.hot-update.json": {
+      "name": "main.0b1e509be99bc61f2eb2.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.0b1e509be99bc61f2eb2.hot-update.json"
     },
-    "default-app_components_TextDetail2_TextDetailContainer_js.bundle.js": {
-      "name": "default-app_components_TextDetail2_TextDetailContainer_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\default-app_components_TextDetail2_TextDetailContainer_js.bundle.js"
+    "main.a7c564d0e4629bbc8fb5.hot-update.js": {
+      "name": "main.a7c564d0e4629bbc8fb5.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.a7c564d0e4629bbc8fb5.hot-update.js"
     },
-    "default-app_components_MediaComponent_MediaContainer_js.bundle.js": {
-      "name": "default-app_components_MediaComponent_MediaContainer_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\default-app_components_MediaComponent_MediaContainer_js.bundle.js"
+    "main.a7c564d0e4629bbc8fb5.hot-update.json": {
+      "name": "main.a7c564d0e4629bbc8fb5.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.a7c564d0e4629bbc8fb5.hot-update.json"
     },
-    "default-app_components_TextDetail_TextDetailContainer_js.bundle.js": {
-      "name": "default-app_components_TextDetail_TextDetailContainer_js.bundle.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\default-app_components_TextDetail_TextDetailContainer_js.bundle.js"
+    "main.2d965ffbab729dc13021.hot-update.js": {
+      "name": "main.2d965ffbab729dc13021.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.2d965ffbab729dc13021.hot-update.js"
     },
-    "main.481adb45dae3fc1e60ad.hot-update.js": {
-      "name": "main.481adb45dae3fc1e60ad.hot-update.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\main.481adb45dae3fc1e60ad.hot-update.js"
+    "main.2d965ffbab729dc13021.hot-update.json": {
+      "name": "main.2d965ffbab729dc13021.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.2d965ffbab729dc13021.hot-update.json"
     },
-    "main.481adb45dae3fc1e60ad.hot-update.json": {
-      "name": "main.481adb45dae3fc1e60ad.hot-update.json",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\main.481adb45dae3fc1e60ad.hot-update.json"
+    "main.1e42594e8fee8f6c4c54.hot-update.js": {
+      "name": "main.1e42594e8fee8f6c4c54.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.1e42594e8fee8f6c4c54.hot-update.js"
     },
-    "main.ac91cbb6236679a0a731.hot-update.js": {
-      "name": "main.ac91cbb6236679a0a731.hot-update.js",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\main.ac91cbb6236679a0a731.hot-update.js"
+    "main.1e42594e8fee8f6c4c54.hot-update.json": {
+      "name": "main.1e42594e8fee8f6c4c54.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.1e42594e8fee8f6c4c54.hot-update.json"
     },
-    "main.ac91cbb6236679a0a731.hot-update.json": {
-      "name": "main.ac91cbb6236679a0a731.hot-update.json",
-      "path": "D:\\git Project work\\TerminusDB\\docs\\bundles\\main.ac91cbb6236679a0a731.hot-update.json"
+    "main.73fc4f949425e3b1566c.hot-update.js": {
+      "name": "main.73fc4f949425e3b1566c.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.73fc4f949425e3b1566c.hot-update.js"
+    },
+    "main.73fc4f949425e3b1566c.hot-update.json": {
+      "name": "main.73fc4f949425e3b1566c.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.73fc4f949425e3b1566c.hot-update.json"
+    },
+    "main.4a37bff9448af257ae1c.hot-update.js": {
+      "name": "main.4a37bff9448af257ae1c.hot-update.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.4a37bff9448af257ae1c.hot-update.js"
+    },
+    "main.4a37bff9448af257ae1c.hot-update.json": {
+      "name": "main.4a37bff9448af257ae1c.hot-update.json",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.4a37bff9448af257ae1c.hot-update.json"
     }
   },
   "chunks": {
     "main": [
       "styles-dev.css",
-      "main.bundle.js"
+      "main.bundle.js",
+      "main.4a37bff9448af257ae1c.hot-update.js"
     ]
-  }
+  },
+  "error": "ModuleBuildError",
+  "message": "Module build failed: Error: ENOENT: no such file or directory, open 'D:\\git Project work\\Lopenling-Frontend\\node_modules\\query-string\\index.js'"
 }

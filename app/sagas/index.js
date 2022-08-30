@@ -944,11 +944,6 @@ function* selectTextUrl(action) {
     texts = { data: null };
     yield put(setTextData);
   }
-
-  // const nullSelect = actions.selectedText({ text: null });
-  // yield put(nullSelect);
-  // const nullSelect2 = actions.selectedText2({ text: null });
-  // yield put(nullSelect2);
   const scrollnull = actions.changeScrollToId({
     id: null,
     from: null,

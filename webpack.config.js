@@ -3,6 +3,7 @@ var webpack = require("webpack");
 var BundleTracker = require("webpack-bundle-tracker");
 var postcssImport = require("postcss-import");
 var postcssCssnext = require("postcss-cssnext");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var LodashModuleReplacementPlugin = require("lodash-webpack-plugin");
 /*We are basically telling webpack to take index.js from entry. Then check for all file extensions in resolve. 
@@ -55,11 +56,17 @@ module.exports = (env, argv) => {
         },
       }),
       new LodashModuleReplacementPlugin(),
+      new HtmlWebpackPlugin({
+        title: "Your amazing app!",
+        inject: "body",
+        scriptLoading: "defer",
+        template: "./app/index.html",
+      }),
     ],
     target: "web",
     devServer: {
-      port: "9500",
-      static: ["./docs"],
+      port: "1200",
+      static: ["./docs/bundles"],
       open: true,
       hot: true,
       liveReload: true,
@@ -194,6 +201,7 @@ module.exports = (env, argv) => {
             publicPath: (url) => "../css/" + url,
           },
         },
+        { test: /.html$/, loader: "html-loader" },
       ],
     },
   };

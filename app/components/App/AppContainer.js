@@ -7,6 +7,7 @@ import App from "components/App";
 let user;
 
 const mapStateToProps = (state) => {
+  console.log(state);
   const selectedText = reducers.getSelectedText(state);
   let selectedWitness;
   let witnesses;

@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server ./app",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "dev": "webpack --config webpack.config.js --progress --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs",
     "build": "Webpack ./app"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.8.7",
     "@mui/styles": "^5.9.0",
+    "@reduxjs/toolkit": "^1.8.5",
     "@svgr/webpack": "^3.1.0",
     "axios": "^0.26.1",
     "classnames": "^2.3",
@@ -107,6 +109,7 @@
     "flow-bin": "^0.108.0",
     "flow-typed": "^2.6.2",
     "gh-pages": "^4.0.0",
+    "html-loader": "^4.1.0",
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27",
