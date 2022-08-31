@@ -3,6 +3,8 @@ import _ from "lodash";
 import Link from "redux-first-router-link";
 import addTibetanShay from "lib/addTibetanShay";
 import styles from "./HomePage.css";
+import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import {
   CircularProgress,
   Card,
@@ -19,6 +21,7 @@ import {
   Checkbox,
   Divider,
 } from "@mui/material";
+
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import Filter from "./Filter";
 import { motion } from "framer-motion";
@@ -36,7 +39,7 @@ function HomePage(props) {
   const handleToggleFilter = React.useCallback(() => {
     setShowFilter((prev) => !prev);
   }, []);
-
+  const listRef = React.useRef(null);
   useEffect(() => {
     let tempData = [];
     if (filteredTitle !== null) {
@@ -66,6 +69,14 @@ function HomePage(props) {
     // }
     setFilteredData(tempData.sort((a, b) => a?.order - b?.order));
   }, [filteredTitle, detail]);
+
+  function handleLeft() {
+    listRef.current.scrollLeft -= 320;
+    console.log("left");
+  }
+  function handleRight() {
+    listRef.current.scrollLeft += 320;
+  }
 
   return (
     <Stack sx={{ height: "100vh" }}>
@@ -97,23 +108,31 @@ function HomePage(props) {
       <Divider />
       <Container>
         <Box
-          className={styles.list}
           mt={2}
-          sx={{ overflowY: "scroll" }}
           py={1}
-          height={{ xs: "60vh", md: "auto" }}
+          display="flex"
+          // height={{ xs: "60vh", md: "auto" }}
         >
+          <IconButton onClick={handleLeft} disableRipple>
+            <KeyboardDoubleArrowLeftIcon />
+          </IconButton>
           <motion.div layout>
-            <Grid container rowSpacing={2} columnSpacing={2}>
+            <Stack
+              sx={{ overflowX: "auto", scrollSnapType: "x mandatory" }}
+              p={1}
+              direction="row"
+              className={styles.list}
+              ref={listRef}
+            >
               {filteredData.map((pecha, i) => {
                 return (
-                  <Grid
+                  <Box
                     key={pecha.id || `filteredData-${i}`}
-                    item
-                    xs={12}
-                    sm={6}
-                    md={4}
                     px={1}
+                    sx={{
+                      width: "auto",
+                      scrollSnapAlign: "start",
+                    }}
                   >
                     <motion.div
                       animate={{ opacity: 1 }}
@@ -127,7 +146,6 @@ function HomePage(props) {
                       >
                         <Card
                           sx={{
-                            borderLeft: "2px solid black",
                             cursor: "pointer",
                             textDecoration: "none",
                           }}
@@ -144,18 +162,33 @@ function HomePage(props) {
                             >
                               {addTibetanShay(pecha.title)}
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                              {pecha.description}
-                            </Typography>
+                            <div
+                              style={{
+                                overflow: "hidden",
+                                textOverflow: "ellipsis",
+                                width: "13rem",
+                              }}
+                            >
+                              <Typography
+                                variant="body2"
+                                color="text.secondary"
+                                noWrap
+                              >
+                                {pecha.description}
+                              </Typography>
+                            </div>
                           </CardContent>
                         </Card>
                       </Link>
                     </motion.div>
-                  </Grid>
+                  </Box>
                 );
               })}
-            </Grid>
+            </Stack>
           </motion.div>
+          <IconButton onClick={handleRight} disableRipple>
+            <KeyboardDoubleArrowRightIcon />
+          </IconButton>
         </Box>
       </Container>
       <Footer />

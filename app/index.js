@@ -63,7 +63,6 @@ function Fragment(props) {
   return props.children || <span {...props} /> || null;
 }
 const RouteEditorPage = (dispatch, getState) => {
-  console.log("page");
   dispatch(actions.changeUrl("Editors"));
 };
 const sagaMiddleware = createSagaMiddleware();

@@ -1,11 +1,15 @@
 .list {
-    -ms-overflow-style: none;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
     /* Internet Explorer 10+ */
-    scrollbar-width: none;
+    scrollbar-width: thin;
     /* Firefox */
+    width: 90vw;
+    scroll-behavior: smooth;
 }
 
 .list::-webkit-scrollbar {
     display: none;
     /* Safari and Chrome */
+    cursor: pointer;
+    height: 5px;
 }
