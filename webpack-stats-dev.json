@@ -3,172 +3,65 @@
   "assets": {
     "375e0e9056137a8eb3c9bbcb876efbdc.png": {
       "name": "375e0e9056137a8eb3c9bbcb876efbdc.png",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\375e0e9056137a8eb3c9bbcb876efbdc.png"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\375e0e9056137a8eb3c9bbcb876efbdc.png",
+      "publicPath": "/375e0e9056137a8eb3c9bbcb876efbdc.png"
     },
     "ea9a1cd4d17aad5a9c5bdfde6acaad2e.png": {
       "name": "ea9a1cd4d17aad5a9c5bdfde6acaad2e.png",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\ea9a1cd4d17aad5a9c5bdfde6acaad2e.png"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\ea9a1cd4d17aad5a9c5bdfde6acaad2e.png",
+      "publicPath": "/ea9a1cd4d17aad5a9c5bdfde6acaad2e.png"
     },
     "8967124136190c7842d863e4a862a528.png": {
       "name": "8967124136190c7842d863e4a862a528.png",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\8967124136190c7842d863e4a862a528.png"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\8967124136190c7842d863e4a862a528.png",
+      "publicPath": "/8967124136190c7842d863e4a862a528.png"
     },
     "b81eedeb7a90a13b48c4a1185a58ca30.png": {
       "name": "b81eedeb7a90a13b48c4a1185a58ca30.png",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\b81eedeb7a90a13b48c4a1185a58ca30.png"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\b81eedeb7a90a13b48c4a1185a58ca30.png",
+      "publicPath": "/b81eedeb7a90a13b48c4a1185a58ca30.png"
     },
     "styles-dev.css": {
       "name": "styles-dev.css",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\styles-dev.css"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\styles-dev.css",
+      "publicPath": "/styles-dev.css"
     },
     "main.bundle.js": {
       "name": "main.bundle.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.bundle.js"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.bundle.js",
+      "publicPath": "/main.bundle.js"
     },
     "app_components_Editors_index_js-node_modules_react-virtualized_styles_css.styles-dev.css": {
       "name": "app_components_Editors_index_js-node_modules_react-virtualized_styles_css.styles-dev.css",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\app_components_Editors_index_js-node_modules_react-virtualized_styles_css.styles-dev.css"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\app_components_Editors_index_js-node_modules_react-virtualized_styles_css.styles-dev.css",
+      "publicPath": "/app_components_Editors_index_js-node_modules_react-virtualized_styles_css.styles-dev.css"
     },
     "app_components_Editors_index_js-node_modules_react-virtualized_styles_css.bundle.js": {
       "name": "app_components_Editors_index_js-node_modules_react-virtualized_styles_css.bundle.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\app_components_Editors_index_js-node_modules_react-virtualized_styles_css.bundle.js"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\app_components_Editors_index_js-node_modules_react-virtualized_styles_css.bundle.js",
+      "publicPath": "/app_components_Editors_index_js-node_modules_react-virtualized_styles_css.bundle.js"
     },
     "docx.bundle.js": {
       "name": "docx.bundle.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx.bundle.js"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx.bundle.js",
+      "publicPath": "/docx.bundle.js"
     },
     "defaultVendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_Chec-c5dbb9.bundle.js": {
       "name": "defaultVendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_Chec-c5dbb9.bundle.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\defaultVendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_Chec-c5dbb9.bundle.js"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\defaultVendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_Chec-c5dbb9.bundle.js",
+      "publicPath": "/defaultVendors-node_modules_mui_icons-material_Cancel_js-node_modules_mui_icons-material_Chec-c5dbb9.bundle.js"
     },
     "index.html": {
       "name": "index.html",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\index.html"
-    },
-    "main.41498aa79a1bd25db4b9.hot-update.js": {
-      "name": "main.41498aa79a1bd25db4b9.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.41498aa79a1bd25db4b9.hot-update.js"
-    },
-    "main.41498aa79a1bd25db4b9.hot-update.json": {
-      "name": "main.41498aa79a1bd25db4b9.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.41498aa79a1bd25db4b9.hot-update.json"
-    },
-    "main.82ae5c82c4b28718df21.hot-update.js": {
-      "name": "main.82ae5c82c4b28718df21.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.82ae5c82c4b28718df21.hot-update.js"
-    },
-    "main.82ae5c82c4b28718df21.hot-update.json": {
-      "name": "main.82ae5c82c4b28718df21.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.82ae5c82c4b28718df21.hot-update.json"
-    },
-    "main.4c428f71a10ca78626d8.hot-update.js": {
-      "name": "main.4c428f71a10ca78626d8.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.4c428f71a10ca78626d8.hot-update.js"
-    },
-    "main.4c428f71a10ca78626d8.hot-update.json": {
-      "name": "main.4c428f71a10ca78626d8.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.4c428f71a10ca78626d8.hot-update.json"
-    },
-    "main.bb21306f543134c13cdb.hot-update.js": {
-      "name": "main.bb21306f543134c13cdb.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.bb21306f543134c13cdb.hot-update.js"
-    },
-    "main.bb21306f543134c13cdb.hot-update.json": {
-      "name": "main.bb21306f543134c13cdb.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.bb21306f543134c13cdb.hot-update.json"
-    },
-    "main.eea6b8280a384f759dcc.hot-update.js": {
-      "name": "main.eea6b8280a384f759dcc.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.eea6b8280a384f759dcc.hot-update.js"
-    },
-    "main.eea6b8280a384f759dcc.hot-update.json": {
-      "name": "main.eea6b8280a384f759dcc.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.eea6b8280a384f759dcc.hot-update.json"
-    },
-    "main.20e1dde8dd682e5fb309.hot-update.js": {
-      "name": "main.20e1dde8dd682e5fb309.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.20e1dde8dd682e5fb309.hot-update.js"
-    },
-    "main.20e1dde8dd682e5fb309.hot-update.json": {
-      "name": "main.20e1dde8dd682e5fb309.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.20e1dde8dd682e5fb309.hot-update.json"
-    },
-    "main.styles-dev.css": {
-      "name": "main.styles-dev.css",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.styles-dev.css"
-    },
-    "main.8503da6cc1080b6223e0.hot-update.js": {
-      "name": "main.8503da6cc1080b6223e0.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.8503da6cc1080b6223e0.hot-update.js"
-    },
-    "main.8503da6cc1080b6223e0.hot-update.json": {
-      "name": "main.8503da6cc1080b6223e0.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.8503da6cc1080b6223e0.hot-update.json"
-    },
-    "main.c44014c7156f53042da3.hot-update.js": {
-      "name": "main.c44014c7156f53042da3.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.c44014c7156f53042da3.hot-update.js"
-    },
-    "main.c44014c7156f53042da3.hot-update.json": {
-      "name": "main.c44014c7156f53042da3.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.c44014c7156f53042da3.hot-update.json"
-    },
-    "main.0b1e509be99bc61f2eb2.hot-update.js": {
-      "name": "main.0b1e509be99bc61f2eb2.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.0b1e509be99bc61f2eb2.hot-update.js"
-    },
-    "main.0b1e509be99bc61f2eb2.hot-update.json": {
-      "name": "main.0b1e509be99bc61f2eb2.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.0b1e509be99bc61f2eb2.hot-update.json"
-    },
-    "main.a7c564d0e4629bbc8fb5.hot-update.js": {
-      "name": "main.a7c564d0e4629bbc8fb5.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.a7c564d0e4629bbc8fb5.hot-update.js"
-    },
-    "main.a7c564d0e4629bbc8fb5.hot-update.json": {
-      "name": "main.a7c564d0e4629bbc8fb5.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.a7c564d0e4629bbc8fb5.hot-update.json"
-    },
-    "main.2d965ffbab729dc13021.hot-update.js": {
-      "name": "main.2d965ffbab729dc13021.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.2d965ffbab729dc13021.hot-update.js"
-    },
-    "main.2d965ffbab729dc13021.hot-update.json": {
-      "name": "main.2d965ffbab729dc13021.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.2d965ffbab729dc13021.hot-update.json"
-    },
-    "main.1e42594e8fee8f6c4c54.hot-update.js": {
-      "name": "main.1e42594e8fee8f6c4c54.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.1e42594e8fee8f6c4c54.hot-update.js"
-    },
-    "main.1e42594e8fee8f6c4c54.hot-update.json": {
-      "name": "main.1e42594e8fee8f6c4c54.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.1e42594e8fee8f6c4c54.hot-update.json"
-    },
-    "main.73fc4f949425e3b1566c.hot-update.js": {
-      "name": "main.73fc4f949425e3b1566c.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.73fc4f949425e3b1566c.hot-update.js"
-    },
-    "main.73fc4f949425e3b1566c.hot-update.json": {
-      "name": "main.73fc4f949425e3b1566c.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.73fc4f949425e3b1566c.hot-update.json"
-    },
-    "main.4a37bff9448af257ae1c.hot-update.js": {
-      "name": "main.4a37bff9448af257ae1c.hot-update.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.4a37bff9448af257ae1c.hot-update.js"
-    },
-    "main.4a37bff9448af257ae1c.hot-update.json": {
-      "name": "main.4a37bff9448af257ae1c.hot-update.json",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\main.4a37bff9448af257ae1c.hot-update.json"
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\index.html",
+      "publicPath": "/index.html"
     }
   },
   "chunks": {
     "main": [
       "styles-dev.css",
-      "main.bundle.js",
-      "main.4a37bff9448af257ae1c.hot-update.js"
+      "main.bundle.js"
     ]
   },
-  "error": "ModuleBuildError",
-  "message": "Module build failed: Error: ENOENT: no such file or directory, open 'D:\\git Project work\\Lopenling-Frontend\\node_modules\\query-string\\index.js'"
+  "publicPath": "/"
 }

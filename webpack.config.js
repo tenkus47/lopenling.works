@@ -21,6 +21,7 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, "docs/bundles"),
       filename: "[name].bundle.js",
+      publicPath: "/",
     },
     optimization: {
       splitChunks: {
@@ -70,6 +71,7 @@ module.exports = (env, argv) => {
       open: true,
       hot: true,
       liveReload: true,
+      historyApiFallback: true,
     },
     devtool: devMode ? "eval-source-map" : false,
     resolve: {
