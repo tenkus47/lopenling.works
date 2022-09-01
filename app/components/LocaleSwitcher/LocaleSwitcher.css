@@ -13,7 +13,3 @@
 .selected {
     font-weight: bold;
 }
-
-.localeOption:not(:nth-child(1)) {
-    border-left: 1px solid white;
-}

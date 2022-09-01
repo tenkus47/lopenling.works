@@ -311,12 +311,7 @@ export const Header = (props: HeaderProps) => {
             sx={{ display: { xs: "block", md: "none" } }}
           >
             <MenuItem onClick={handleCloseNavMenu}>
-              <Button
-                to={"/"}
-                style={{ color: "#676767" }}
-                component={LinkRef}
-                variant="text"
-              >
+              <Button to={"/"} color="links" component={LinkRef} variant="text">
                 <FormattedMessage id={"header.texts"} />
               </Button>
             </MenuItem>
@@ -334,7 +329,7 @@ export const Header = (props: HeaderProps) => {
             <MenuItem onClick={handleCloseNavMenu}>
               <Button
                 href={"https://www.lopenling.org"}
-                style={{ color: "#676767" }}
+                color="links"
                 variant="text"
                 component={"a"}
               >
@@ -344,17 +339,21 @@ export const Header = (props: HeaderProps) => {
             <MenuItem onClick={handleCloseNavMenu}>
               <Button
                 href={"https://www.nalanda.works"}
-                style={{ color: "#676767" }}
+                color="links"
                 variant="text"
                 component={"a"}
               >
                 <FormattedMessage id={"Nalanda"} />
               </Button>
             </MenuItem>
-            <MenuItem onClick={handleCloseNavMenu}>
+
+            <MenuItem
+              onClick={handleCloseNavMenu}
+              sx={{ display: props.page !== "Editors" ? "none" : "block" }}
+            >
               <Button
                 sx={{
-                  color: "#676767",
+                  color: "links",
                   display: props.page !== "Editors" ? "none" : "block",
                 }}
                 variant="text"

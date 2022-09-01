@@ -219,9 +219,17 @@ function* loadSources() {
     console.log("FAILED loadSources! %o", e);
   }
 }
-
+function* loadTextInfo() {
+  try {
+    let texts = yield call(api.fetchChapterDetail);
+    let setTextData = actions.setTextData(texts);
+    yield put(setTextData);
+  } catch (e) {
+    console.log("FAILED loadTextInfo! %o", e);
+  }
+}
 function* loadInitialData(): Saga<void> {
-  yield all([call(loadTexts), call(loadSources)]);
+  yield all([call(loadTexts), call(loadSources), call(loadTextInfo)]);
   yield put(actions.loadedInitialData());
 }
 
@@ -936,14 +944,10 @@ function* selectTextUrl(action) {
   let texts;
   let setTextData;
 
-  try {
-    texts = yield call(api.fetchChapterDetail);
-    setTextData = actions.setTextData(texts);
-    yield put(setTextData);
-  } catch (e) {
-    texts = { data: null };
-    yield put(setTextData);
-  }
+  // texts = yield call(api.fetchChapterDetail);
+  // setTextData = actions.setTextData(texts);
+  // yield put(setTextData);
+
   const scrollnull = actions.changeScrollToId({
     id: null,
     from: null,

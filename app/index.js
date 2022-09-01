@@ -59,9 +59,11 @@ import * as constants from "app_constants";
 // For react-intl - prevents FormattedMessage from always
 // outputting a <span>
 // see https://github.com/yahoo/react-intl/issues/999#issuecomment-335799491
+
 function Fragment(props) {
   return props.children || <span {...props} /> || null;
 }
+
 const RouteEditorPage = (dispatch, getState) => {
   dispatch(actions.changeUrl("Editors"));
 };

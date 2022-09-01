@@ -1,0 +1,132 @@
+{
+  "status": "done",
+  "assets": {
+    "375e0e9056137a8eb3c9bbcb876efbdc.png": {
+      "name": "375e0e9056137a8eb3c9bbcb876efbdc.png",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\375e0e9056137a8eb3c9bbcb876efbdc.png",
+      "publicPath": "/375e0e9056137a8eb3c9bbcb876efbdc.png"
+    },
+    "ea9a1cd4d17aad5a9c5bdfde6acaad2e.png": {
+      "name": "ea9a1cd4d17aad5a9c5bdfde6acaad2e.png",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\ea9a1cd4d17aad5a9c5bdfde6acaad2e.png",
+      "publicPath": "/ea9a1cd4d17aad5a9c5bdfde6acaad2e.png"
+    },
+    "8967124136190c7842d863e4a862a528.png": {
+      "name": "8967124136190c7842d863e4a862a528.png",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\8967124136190c7842d863e4a862a528.png",
+      "publicPath": "/8967124136190c7842d863e4a862a528.png"
+    },
+    "b81eedeb7a90a13b48c4a1185a58ca30.png": {
+      "name": "b81eedeb7a90a13b48c4a1185a58ca30.png",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\b81eedeb7a90a13b48c4a1185a58ca30.png",
+      "publicPath": "/b81eedeb7a90a13b48c4a1185a58ca30.png"
+    },
+    "styles-dev.css": {
+      "name": "styles-dev.css",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\styles-dev.css",
+      "publicPath": "/styles-dev.css"
+    },
+    "parkhang-ea8a970c567537e4ea33.js": {
+      "name": "parkhang-ea8a970c567537e4ea33.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-ea8a970c567537e4ea33.js",
+      "publicPath": "/parkhang-ea8a970c567537e4ea33.js"
+    },
+    "418.styles-dev.css": {
+      "name": "418.styles-dev.css",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\418.styles-dev.css",
+      "publicPath": "/418.styles-dev.css"
+    },
+    "418-ea8a970c567537e4ea33.js": {
+      "name": "418-ea8a970c567537e4ea33.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\418-ea8a970c567537e4ea33.js",
+      "publicPath": "/418-ea8a970c567537e4ea33.js"
+    },
+    "docx-ea8a970c567537e4ea33.js": {
+      "name": "docx-ea8a970c567537e4ea33.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-ea8a970c567537e4ea33.js",
+      "publicPath": "/docx-ea8a970c567537e4ea33.js"
+    },
+    "821-ea8a970c567537e4ea33.js": {
+      "name": "821-ea8a970c567537e4ea33.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-ea8a970c567537e4ea33.js",
+      "publicPath": "/821-ea8a970c567537e4ea33.js"
+    },
+    "font/models.png": {
+      "name": "font/models.png",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\font\\models.png",
+      "publicPath": "/font/models.png"
+    },
+    "font/monlam_bodyig-webfont.woff": {
+      "name": "font/monlam_bodyig-webfont.woff",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\font\\monlam_bodyig-webfont.woff",
+      "publicPath": "/font/monlam_bodyig-webfont.woff"
+    },
+    "font/tsumachu.woff2": {
+      "name": "font/tsumachu.woff2",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\font\\tsumachu.woff2",
+      "publicPath": "/font/tsumachu.woff2"
+    },
+    "821-ea8a970c567537e4ea33.js.LICENSE.txt": {
+      "name": "821-ea8a970c567537e4ea33.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-ea8a970c567537e4ea33.js.LICENSE.txt",
+      "publicPath": "/821-ea8a970c567537e4ea33.js.LICENSE.txt"
+    },
+    "docx-ea8a970c567537e4ea33.js.LICENSE.txt": {
+      "name": "docx-ea8a970c567537e4ea33.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-ea8a970c567537e4ea33.js.LICENSE.txt",
+      "publicPath": "/docx-ea8a970c567537e4ea33.js.LICENSE.txt"
+    },
+    "parkhang-ea8a970c567537e4ea33.js.LICENSE.txt": {
+      "name": "parkhang-ea8a970c567537e4ea33.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-ea8a970c567537e4ea33.js.LICENSE.txt",
+      "publicPath": "/parkhang-ea8a970c567537e4ea33.js.LICENSE.txt"
+    },
+    "index.html": {
+      "name": "index.html",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\index.html",
+      "publicPath": "/index.html"
+    },
+    "parkhang-19c75db1b5aee8baadae.js": {
+      "name": "parkhang-19c75db1b5aee8baadae.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-19c75db1b5aee8baadae.js",
+      "publicPath": "/parkhang-19c75db1b5aee8baadae.js"
+    },
+    "418-19c75db1b5aee8baadae.js": {
+      "name": "418-19c75db1b5aee8baadae.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\418-19c75db1b5aee8baadae.js",
+      "publicPath": "/418-19c75db1b5aee8baadae.js"
+    },
+    "docx-19c75db1b5aee8baadae.js": {
+      "name": "docx-19c75db1b5aee8baadae.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-19c75db1b5aee8baadae.js",
+      "publicPath": "/docx-19c75db1b5aee8baadae.js"
+    },
+    "821-19c75db1b5aee8baadae.js": {
+      "name": "821-19c75db1b5aee8baadae.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-19c75db1b5aee8baadae.js",
+      "publicPath": "/821-19c75db1b5aee8baadae.js"
+    },
+    "821-19c75db1b5aee8baadae.js.LICENSE.txt": {
+      "name": "821-19c75db1b5aee8baadae.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-19c75db1b5aee8baadae.js.LICENSE.txt",
+      "publicPath": "/821-19c75db1b5aee8baadae.js.LICENSE.txt"
+    },
+    "docx-19c75db1b5aee8baadae.js.LICENSE.txt": {
+      "name": "docx-19c75db1b5aee8baadae.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-19c75db1b5aee8baadae.js.LICENSE.txt",
+      "publicPath": "/docx-19c75db1b5aee8baadae.js.LICENSE.txt"
+    },
+    "parkhang-19c75db1b5aee8baadae.js.LICENSE.txt": {
+      "name": "parkhang-19c75db1b5aee8baadae.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-19c75db1b5aee8baadae.js.LICENSE.txt",
+      "publicPath": "/parkhang-19c75db1b5aee8baadae.js.LICENSE.txt"
+    }
+  },
+  "chunks": {
+    "parkhang": [
+      "styles-dev.css",
+      "parkhang-19c75db1b5aee8baadae.js"
+    ]
+  },
+  "publicPath": "/"
+}

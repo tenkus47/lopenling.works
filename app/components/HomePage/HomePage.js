@@ -21,7 +21,7 @@ import {
   Checkbox,
   Divider,
 } from "@mui/material";
-
+import Tooltip from "@mui/material/Tooltip";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import Filter from "./Filter";
 import { motion } from "framer-motion";
@@ -72,7 +72,6 @@ function HomePage(props) {
 
   function handleLeft() {
     listRef.current.scrollLeft -= 320;
-    console.log("left");
   }
   function handleRight() {
     listRef.current.scrollLeft += 320;
@@ -105,53 +104,56 @@ function HomePage(props) {
           // setAuthor={setAuthor}
         />
       </Collapse>
-      <Divider />
-      <Container>
-        <Box
-          mt={2}
-          py={1}
-          display="flex"
-          // height={{ xs: "60vh", md: "auto" }}
-        >
-          <IconButton onClick={handleLeft} disableRipple>
-            <KeyboardDoubleArrowLeftIcon />
-          </IconButton>
-          <motion.div layout>
-            <Stack
-              sx={{ overflowX: "auto", scrollSnapType: "x mandatory" }}
-              p={1}
-              direction="row"
-              className={styles.list}
-              ref={listRef}
-            >
-              {filteredData.map((pecha, i) => {
-                return (
-                  <Box
-                    key={pecha.id || `filteredData-${i}`}
-                    px={1}
-                    sx={{
-                      width: "auto",
-                      scrollSnapAlign: "start",
-                    }}
+      <Box
+        mt={2}
+        py={1}
+        display="flex"
+        // height={{ xs: "60vh", md: "auto" }}
+      >
+        <IconButton onClick={handleLeft} disableRipple style={{ flex: 1 }}>
+          <KeyboardDoubleArrowLeftIcon />
+        </IconButton>
+        <motion.div layout style={{ flex: 1, maxWidth: "80%" }}>
+          <Stack
+            sx={{
+              overflowX: "auto",
+              scrollSnapType: "x mandatory",
+            }}
+            p={1}
+            pb={2}
+            direction="row"
+            className={styles.list}
+            ref={listRef}
+          >
+            {filteredData.map((pecha, i) => {
+              return (
+                <Box
+                  key={pecha.id || `filteredData-${i}`}
+                  px={1}
+                  sx={{
+                    width: "auto",
+                    scrollSnapAlign: "start",
+                  }}
+                >
+                  <motion.div
+                    animate={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    exit={{ opacity: 0 }}
+                    layout
                   >
-                    <motion.div
-                      animate={{ opacity: 1 }}
-                      initial={{ opacity: 0 }}
-                      exit={{ opacity: 0 }}
-                      layout
+                    <Link
+                      to={`/texts/${pecha.text}`}
+                      style={{ textDecoration: "none" }}
                     >
-                      <Link
-                        to={`/texts/${pecha.text}`}
-                        style={{ textDecoration: "none" }}
+                      <Card
+                        sx={{
+                          cursor: "pointer",
+                          textDecoration: "none",
+                        }}
+                        elevation={3}
+                        key={pecha.id}
                       >
-                        <Card
-                          sx={{
-                            cursor: "pointer",
-                            textDecoration: "none",
-                          }}
-                          elevation={3}
-                          key={pecha.id}
-                        >
+                        <Tooltip title={pecha.description}>
                           <CardContent>
                             <Typography
                               gutterBottom
@@ -159,38 +161,24 @@ function HomePage(props) {
                               textAlign="center"
                               textTransform="capitalize"
                               fontWeight="bold"
+                              width="max-content"
                             >
                               {addTibetanShay(pecha.title)}
                             </Typography>
-                            <div
-                              style={{
-                                overflow: "hidden",
-                                textOverflow: "ellipsis",
-                                width: "13rem",
-                              }}
-                            >
-                              <Typography
-                                variant="body2"
-                                color="text.secondary"
-                                noWrap
-                              >
-                                {pecha.description}
-                              </Typography>
-                            </div>
                           </CardContent>
-                        </Card>
-                      </Link>
-                    </motion.div>
-                  </Box>
-                );
-              })}
-            </Stack>
-          </motion.div>
-          <IconButton onClick={handleRight} disableRipple>
-            <KeyboardDoubleArrowRightIcon />
-          </IconButton>
-        </Box>
-      </Container>
+                        </Tooltip>
+                      </Card>
+                    </Link>
+                  </motion.div>
+                </Box>
+              );
+            })}
+          </Stack>
+        </motion.div>
+        <IconButton onClick={handleRight} disableRipple style={{ flex: 1 }}>
+          <KeyboardDoubleArrowRightIcon />
+        </IconButton>
+      </Box>
       <Footer />
     </Stack>
   );

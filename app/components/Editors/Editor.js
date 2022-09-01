@@ -129,7 +129,7 @@ const Editor = (props) => {
       </SplitPane>
       <SpeedDial
         ariaLabel="SpeedDial basic"
-        sx={{ position: "absolute", bottom: 16, right: 16 }}
+        sx={{ position: "absolute", bottom: 60, right: 16 }}
         icon={<SpeedDialIcon />}
       >
         {actions.map((action) => (

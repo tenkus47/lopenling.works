@@ -1,8 +1,8 @@
-FROM node:current-alpine
+FROM node
 WORKDIR /app
 
 COPY package.json .
-RUN npm install --legacy-peer-deps
+RUN npm install -f
 
 COPY . .
 CMD ["npm","start"]
