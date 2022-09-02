@@ -5,6 +5,7 @@
     /* Firefox */
     scroll-behavior: smooth;
     max-width: calc(100%);
+    justify-content: center;
 }
 
 .list::-webkit-scrollbar {
