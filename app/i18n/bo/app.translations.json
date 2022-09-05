@@ -33,6 +33,10 @@
         "header.texts":"དཔེ་ཆ།",
         "header.editor":"བཟོ་བཅོད་ཁང་།",
         "lopenlingForum":"འཛོམས་ས།",
-        "Nalanda":"པན་གྲུབ་བཅུ་བདུན།"
+        "Nalanda":"པན་གྲུབ་བཅུ་བདུན།",
+        "library":"དཔེ་མཛོད་ཁང་།",
+        "Resource.About":"དཔེ་ཆ་སྐོར།",
+        "text.title":"འགོ་བརྗོད།",
+        "text.description":"འགྲེལ་བཤད།"
     }
 }

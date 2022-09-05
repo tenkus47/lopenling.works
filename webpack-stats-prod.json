@@ -1,5 +1,5 @@
 {
-  "status": "done",
+  "status": "compile",
   "assets": {
     "375e0e9056137a8eb3c9bbcb876efbdc.png": {
       "name": "375e0e9056137a8eb3c9bbcb876efbdc.png",
@@ -26,30 +26,30 @@
       "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\styles-dev.css",
       "publicPath": "/styles-dev.css"
     },
-    "parkhang-ea8a970c567537e4ea33.js": {
-      "name": "parkhang-ea8a970c567537e4ea33.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-ea8a970c567537e4ea33.js",
-      "publicPath": "/parkhang-ea8a970c567537e4ea33.js"
+    "parkhang-974ab514e66487d795e3.js": {
+      "name": "parkhang-974ab514e66487d795e3.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-974ab514e66487d795e3.js",
+      "publicPath": "/parkhang-974ab514e66487d795e3.js"
     },
     "418.styles-dev.css": {
       "name": "418.styles-dev.css",
       "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\418.styles-dev.css",
       "publicPath": "/418.styles-dev.css"
     },
-    "418-ea8a970c567537e4ea33.js": {
-      "name": "418-ea8a970c567537e4ea33.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\418-ea8a970c567537e4ea33.js",
-      "publicPath": "/418-ea8a970c567537e4ea33.js"
+    "418-974ab514e66487d795e3.js": {
+      "name": "418-974ab514e66487d795e3.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\418-974ab514e66487d795e3.js",
+      "publicPath": "/418-974ab514e66487d795e3.js"
     },
-    "docx-ea8a970c567537e4ea33.js": {
-      "name": "docx-ea8a970c567537e4ea33.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-ea8a970c567537e4ea33.js",
-      "publicPath": "/docx-ea8a970c567537e4ea33.js"
+    "docx-974ab514e66487d795e3.js": {
+      "name": "docx-974ab514e66487d795e3.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-974ab514e66487d795e3.js",
+      "publicPath": "/docx-974ab514e66487d795e3.js"
     },
-    "821-ea8a970c567537e4ea33.js": {
-      "name": "821-ea8a970c567537e4ea33.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-ea8a970c567537e4ea33.js",
-      "publicPath": "/821-ea8a970c567537e4ea33.js"
+    "821-974ab514e66487d795e3.js": {
+      "name": "821-974ab514e66487d795e3.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-974ab514e66487d795e3.js",
+      "publicPath": "/821-974ab514e66487d795e3.js"
     },
     "font/models.png": {
       "name": "font/models.png",
@@ -66,67 +66,209 @@
       "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\font\\tsumachu.woff2",
       "publicPath": "/font/tsumachu.woff2"
     },
-    "821-ea8a970c567537e4ea33.js.LICENSE.txt": {
-      "name": "821-ea8a970c567537e4ea33.js.LICENSE.txt",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-ea8a970c567537e4ea33.js.LICENSE.txt",
-      "publicPath": "/821-ea8a970c567537e4ea33.js.LICENSE.txt"
+    "821-974ab514e66487d795e3.js.LICENSE.txt": {
+      "name": "821-974ab514e66487d795e3.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-974ab514e66487d795e3.js.LICENSE.txt",
+      "publicPath": "/821-974ab514e66487d795e3.js.LICENSE.txt"
     },
-    "docx-ea8a970c567537e4ea33.js.LICENSE.txt": {
-      "name": "docx-ea8a970c567537e4ea33.js.LICENSE.txt",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-ea8a970c567537e4ea33.js.LICENSE.txt",
-      "publicPath": "/docx-ea8a970c567537e4ea33.js.LICENSE.txt"
+    "docx-974ab514e66487d795e3.js.LICENSE.txt": {
+      "name": "docx-974ab514e66487d795e3.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-974ab514e66487d795e3.js.LICENSE.txt",
+      "publicPath": "/docx-974ab514e66487d795e3.js.LICENSE.txt"
     },
-    "parkhang-ea8a970c567537e4ea33.js.LICENSE.txt": {
-      "name": "parkhang-ea8a970c567537e4ea33.js.LICENSE.txt",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-ea8a970c567537e4ea33.js.LICENSE.txt",
-      "publicPath": "/parkhang-ea8a970c567537e4ea33.js.LICENSE.txt"
+    "parkhang-974ab514e66487d795e3.js.LICENSE.txt": {
+      "name": "parkhang-974ab514e66487d795e3.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-974ab514e66487d795e3.js.LICENSE.txt",
+      "publicPath": "/parkhang-974ab514e66487d795e3.js.LICENSE.txt"
     },
     "index.html": {
       "name": "index.html",
       "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\index.html",
       "publicPath": "/index.html"
     },
-    "parkhang-19c75db1b5aee8baadae.js": {
-      "name": "parkhang-19c75db1b5aee8baadae.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-19c75db1b5aee8baadae.js",
-      "publicPath": "/parkhang-19c75db1b5aee8baadae.js"
+    "parkhang-e448b5c17e37f9325944.js": {
+      "name": "parkhang-e448b5c17e37f9325944.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-e448b5c17e37f9325944.js",
+      "publicPath": "/parkhang-e448b5c17e37f9325944.js"
     },
-    "418-19c75db1b5aee8baadae.js": {
-      "name": "418-19c75db1b5aee8baadae.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\418-19c75db1b5aee8baadae.js",
-      "publicPath": "/418-19c75db1b5aee8baadae.js"
+    "418-e448b5c17e37f9325944.js": {
+      "name": "418-e448b5c17e37f9325944.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\418-e448b5c17e37f9325944.js",
+      "publicPath": "/418-e448b5c17e37f9325944.js"
     },
-    "docx-19c75db1b5aee8baadae.js": {
-      "name": "docx-19c75db1b5aee8baadae.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-19c75db1b5aee8baadae.js",
-      "publicPath": "/docx-19c75db1b5aee8baadae.js"
+    "docx-e448b5c17e37f9325944.js": {
+      "name": "docx-e448b5c17e37f9325944.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-e448b5c17e37f9325944.js",
+      "publicPath": "/docx-e448b5c17e37f9325944.js"
     },
-    "821-19c75db1b5aee8baadae.js": {
-      "name": "821-19c75db1b5aee8baadae.js",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-19c75db1b5aee8baadae.js",
-      "publicPath": "/821-19c75db1b5aee8baadae.js"
+    "821-e448b5c17e37f9325944.js": {
+      "name": "821-e448b5c17e37f9325944.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-e448b5c17e37f9325944.js",
+      "publicPath": "/821-e448b5c17e37f9325944.js"
     },
-    "821-19c75db1b5aee8baadae.js.LICENSE.txt": {
-      "name": "821-19c75db1b5aee8baadae.js.LICENSE.txt",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-19c75db1b5aee8baadae.js.LICENSE.txt",
-      "publicPath": "/821-19c75db1b5aee8baadae.js.LICENSE.txt"
+    "821-e448b5c17e37f9325944.js.LICENSE.txt": {
+      "name": "821-e448b5c17e37f9325944.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-e448b5c17e37f9325944.js.LICENSE.txt",
+      "publicPath": "/821-e448b5c17e37f9325944.js.LICENSE.txt"
     },
-    "docx-19c75db1b5aee8baadae.js.LICENSE.txt": {
-      "name": "docx-19c75db1b5aee8baadae.js.LICENSE.txt",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-19c75db1b5aee8baadae.js.LICENSE.txt",
-      "publicPath": "/docx-19c75db1b5aee8baadae.js.LICENSE.txt"
+    "docx-e448b5c17e37f9325944.js.LICENSE.txt": {
+      "name": "docx-e448b5c17e37f9325944.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-e448b5c17e37f9325944.js.LICENSE.txt",
+      "publicPath": "/docx-e448b5c17e37f9325944.js.LICENSE.txt"
     },
-    "parkhang-19c75db1b5aee8baadae.js.LICENSE.txt": {
-      "name": "parkhang-19c75db1b5aee8baadae.js.LICENSE.txt",
-      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-19c75db1b5aee8baadae.js.LICENSE.txt",
-      "publicPath": "/parkhang-19c75db1b5aee8baadae.js.LICENSE.txt"
+    "parkhang-e448b5c17e37f9325944.js.LICENSE.txt": {
+      "name": "parkhang-e448b5c17e37f9325944.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-e448b5c17e37f9325944.js.LICENSE.txt",
+      "publicPath": "/parkhang-e448b5c17e37f9325944.js.LICENSE.txt"
+    },
+    "parkhang-1ffee9b1008f10ca7acd.js": {
+      "name": "parkhang-1ffee9b1008f10ca7acd.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-1ffee9b1008f10ca7acd.js",
+      "publicPath": "/parkhang-1ffee9b1008f10ca7acd.js"
+    },
+    "418-1ffee9b1008f10ca7acd.js": {
+      "name": "418-1ffee9b1008f10ca7acd.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\418-1ffee9b1008f10ca7acd.js",
+      "publicPath": "/418-1ffee9b1008f10ca7acd.js"
+    },
+    "docx-1ffee9b1008f10ca7acd.js": {
+      "name": "docx-1ffee9b1008f10ca7acd.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-1ffee9b1008f10ca7acd.js",
+      "publicPath": "/docx-1ffee9b1008f10ca7acd.js"
+    },
+    "821-1ffee9b1008f10ca7acd.js": {
+      "name": "821-1ffee9b1008f10ca7acd.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-1ffee9b1008f10ca7acd.js",
+      "publicPath": "/821-1ffee9b1008f10ca7acd.js"
+    },
+    "821-1ffee9b1008f10ca7acd.js.LICENSE.txt": {
+      "name": "821-1ffee9b1008f10ca7acd.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-1ffee9b1008f10ca7acd.js.LICENSE.txt",
+      "publicPath": "/821-1ffee9b1008f10ca7acd.js.LICENSE.txt"
+    },
+    "docx-1ffee9b1008f10ca7acd.js.LICENSE.txt": {
+      "name": "docx-1ffee9b1008f10ca7acd.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-1ffee9b1008f10ca7acd.js.LICENSE.txt",
+      "publicPath": "/docx-1ffee9b1008f10ca7acd.js.LICENSE.txt"
+    },
+    "parkhang-1ffee9b1008f10ca7acd.js.LICENSE.txt": {
+      "name": "parkhang-1ffee9b1008f10ca7acd.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-1ffee9b1008f10ca7acd.js.LICENSE.txt",
+      "publicPath": "/parkhang-1ffee9b1008f10ca7acd.js.LICENSE.txt"
+    },
+    "parkhang-2de50accef870900c301.js": {
+      "name": "parkhang-2de50accef870900c301.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-2de50accef870900c301.js",
+      "publicPath": "/parkhang-2de50accef870900c301.js"
+    },
+    "418-2de50accef870900c301.js": {
+      "name": "418-2de50accef870900c301.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\418-2de50accef870900c301.js",
+      "publicPath": "/418-2de50accef870900c301.js"
+    },
+    "docx-2de50accef870900c301.js": {
+      "name": "docx-2de50accef870900c301.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-2de50accef870900c301.js",
+      "publicPath": "/docx-2de50accef870900c301.js"
+    },
+    "821-2de50accef870900c301.js": {
+      "name": "821-2de50accef870900c301.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-2de50accef870900c301.js",
+      "publicPath": "/821-2de50accef870900c301.js"
+    },
+    "821-2de50accef870900c301.js.LICENSE.txt": {
+      "name": "821-2de50accef870900c301.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-2de50accef870900c301.js.LICENSE.txt",
+      "publicPath": "/821-2de50accef870900c301.js.LICENSE.txt"
+    },
+    "docx-2de50accef870900c301.js.LICENSE.txt": {
+      "name": "docx-2de50accef870900c301.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-2de50accef870900c301.js.LICENSE.txt",
+      "publicPath": "/docx-2de50accef870900c301.js.LICENSE.txt"
+    },
+    "parkhang-2de50accef870900c301.js.LICENSE.txt": {
+      "name": "parkhang-2de50accef870900c301.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-2de50accef870900c301.js.LICENSE.txt",
+      "publicPath": "/parkhang-2de50accef870900c301.js.LICENSE.txt"
+    },
+    "parkhang-0ee64bf828b8637a2454.js": {
+      "name": "parkhang-0ee64bf828b8637a2454.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-0ee64bf828b8637a2454.js",
+      "publicPath": "/parkhang-0ee64bf828b8637a2454.js"
+    },
+    "418-0ee64bf828b8637a2454.js": {
+      "name": "418-0ee64bf828b8637a2454.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\418-0ee64bf828b8637a2454.js",
+      "publicPath": "/418-0ee64bf828b8637a2454.js"
+    },
+    "docx-0ee64bf828b8637a2454.js": {
+      "name": "docx-0ee64bf828b8637a2454.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-0ee64bf828b8637a2454.js",
+      "publicPath": "/docx-0ee64bf828b8637a2454.js"
+    },
+    "821-0ee64bf828b8637a2454.js": {
+      "name": "821-0ee64bf828b8637a2454.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-0ee64bf828b8637a2454.js",
+      "publicPath": "/821-0ee64bf828b8637a2454.js"
+    },
+    "821-0ee64bf828b8637a2454.js.LICENSE.txt": {
+      "name": "821-0ee64bf828b8637a2454.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-0ee64bf828b8637a2454.js.LICENSE.txt",
+      "publicPath": "/821-0ee64bf828b8637a2454.js.LICENSE.txt"
+    },
+    "docx-0ee64bf828b8637a2454.js.LICENSE.txt": {
+      "name": "docx-0ee64bf828b8637a2454.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-0ee64bf828b8637a2454.js.LICENSE.txt",
+      "publicPath": "/docx-0ee64bf828b8637a2454.js.LICENSE.txt"
+    },
+    "parkhang-0ee64bf828b8637a2454.js.LICENSE.txt": {
+      "name": "parkhang-0ee64bf828b8637a2454.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-0ee64bf828b8637a2454.js.LICENSE.txt",
+      "publicPath": "/parkhang-0ee64bf828b8637a2454.js.LICENSE.txt"
+    },
+    "parkhang-c7dd4023f65477eb63a1.js": {
+      "name": "parkhang-c7dd4023f65477eb63a1.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-c7dd4023f65477eb63a1.js",
+      "publicPath": "/parkhang-c7dd4023f65477eb63a1.js"
+    },
+    "418-c7dd4023f65477eb63a1.js": {
+      "name": "418-c7dd4023f65477eb63a1.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\418-c7dd4023f65477eb63a1.js",
+      "publicPath": "/418-c7dd4023f65477eb63a1.js"
+    },
+    "docx-c7dd4023f65477eb63a1.js": {
+      "name": "docx-c7dd4023f65477eb63a1.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-c7dd4023f65477eb63a1.js",
+      "publicPath": "/docx-c7dd4023f65477eb63a1.js"
+    },
+    "821-c7dd4023f65477eb63a1.js": {
+      "name": "821-c7dd4023f65477eb63a1.js",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-c7dd4023f65477eb63a1.js",
+      "publicPath": "/821-c7dd4023f65477eb63a1.js"
+    },
+    "821-c7dd4023f65477eb63a1.js.LICENSE.txt": {
+      "name": "821-c7dd4023f65477eb63a1.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\821-c7dd4023f65477eb63a1.js.LICENSE.txt",
+      "publicPath": "/821-c7dd4023f65477eb63a1.js.LICENSE.txt"
+    },
+    "docx-c7dd4023f65477eb63a1.js.LICENSE.txt": {
+      "name": "docx-c7dd4023f65477eb63a1.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\docx-c7dd4023f65477eb63a1.js.LICENSE.txt",
+      "publicPath": "/docx-c7dd4023f65477eb63a1.js.LICENSE.txt"
+    },
+    "parkhang-c7dd4023f65477eb63a1.js.LICENSE.txt": {
+      "name": "parkhang-c7dd4023f65477eb63a1.js.LICENSE.txt",
+      "path": "D:\\git Project work\\Lopenling-Frontend\\docs\\bundles\\parkhang-c7dd4023f65477eb63a1.js.LICENSE.txt",
+      "publicPath": "/parkhang-c7dd4023f65477eb63a1.js.LICENSE.txt"
     }
   },
   "chunks": {
     "parkhang": [
       "styles-dev.css",
-      "parkhang-19c75db1b5aee8baadae.js"
+      "parkhang-c7dd4023f65477eb63a1.js"
     ]
   },
-  "publicPath": "/"
+  "publicPath": "/",
+  "error": "ModuleParseError",
+  "message": "Module parse failed: Unexpected number in JSON at position 1578 while parsing '{\r\n    \"locale\": \"en\",\r\n    \"displayName'\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\nJSONParseError: Unexpected number in JSON at position 1578 while parsing '{\r\n    \"locale\": \"en\",\r\n    \"displayName'\n    at JsonParser.parse (D:\\git Project work\\Lopenling-Frontend\\node_modules\\webpack\\lib\\json\\JsonParser.js:43:7)\n    at D:\\git Project work\\Lopenling-Frontend\\node_modules\\webpack\\lib\\NormalModule.js:1087:26\n    at processResult (D:\\git Project work\\Lopenling-Frontend\\node_modules\\webpack\\lib\\NormalModule.js:800:11)\n    at D:\\git Project work\\Lopenling-Frontend\\node_modules\\webpack\\lib\\NormalModule.js:860:5\n    at D:\\git Project work\\Lopenling-Frontend\\node_modules\\loader-runner\\lib\\LoaderRunner.js:407:3\n    at iterateNormalLoaders (D:\\git Project work\\Lopenling-Frontend\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:10)\n    at D:\\git Project work\\Lopenling-Frontend\\node_modules\\loader-runner\\lib\\LoaderRunner.js:224:4\n    at D:\\git Project work\\Lopenling-Frontend\\node_modules\\webpack\\lib\\NormalModule.js:834:15\n    at Array.eval (eval at create (D:\\git Project work\\Lopenling-Frontend\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:12:1)\n    at runCallbacks (D:\\git Project work\\Lopenling-Frontend\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:27:15)\n    at D:\\git Project work\\Lopenling-Frontend\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:200:4\n    at D:\\git Project work\\Lopenling-Frontend\\node_modules\\graceful-fs\\graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:73:3)"
 }

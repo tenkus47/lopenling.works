@@ -7,6 +7,6 @@ services:
       - .:/LOPENLING-FRONTEND
    ports:
      - 3000:3000
-   image: app:react
-   container_name: react_container
+   image: lopenlong:react
+   container_name: lopenling_react
    command: npm start

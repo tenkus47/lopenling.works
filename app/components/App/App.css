@@ -1,6 +1,7 @@
 @import 'css/type.css';
 @import 'css/colour.css';
 
+
 html {
     box-sizing: border-box;
 }
@@ -26,6 +27,7 @@ body {
     font-kerning: normal;
     /* background-color: white; */
     overflow: hidden;
+
 }
 
 

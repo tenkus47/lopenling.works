@@ -18,7 +18,7 @@
 }
 
 .text {
-    font-size: 24px;
+    font-size: 1rem;
     line-height: 1.8;
     padding: 0 var(--paddingSide);
     font-family: var(--tibetan-fonts);

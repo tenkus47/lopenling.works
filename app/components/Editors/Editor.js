@@ -5,7 +5,7 @@ import TextListTabContainer from "components/TextList/TextListTabContainer";
 import * as constants from "app_constants";
 import lopenlingLogo from "images/lopenling_logo.png";
 import headerStyles from "components/Header/Header.css";
-import Resources from "components/Resources";
+import Sidebar from "components/Sidebar";
 import SplitPane, { Pane } from "react-split-pane";
 import styles from "./EditorContainer.css";
 import classnames from "classnames";
@@ -121,7 +121,7 @@ const Editor = (props) => {
           mountOnEnter
           unmountOnExit
         >
-          <Resources />
+          <Sidebar />
         </Collapse>
         <Box sx={{ height: "100vh", width: "100%" }}>
           <TextSheet bodyHeight={bodyHeight} />

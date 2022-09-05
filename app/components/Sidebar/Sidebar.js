@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./Resources.css";
+import styles from "./Sidebar.css";
 import InfoIcon from "@mui/icons-material/Info";
 import PermMediaIcon from "@mui/icons-material/PermMedia";
 import BookIcon from "@mui/icons-material/Book";
 import FeedbackIcon from "@mui/icons-material/Feedback";
 import YoutubeSearchedForIcon from "@mui/icons-material/YoutubeSearchedFor";
-import Index from "./ResourceOption";
+import Index from "./SidebarOptions";
 import { NavLink } from "redux-first-router-link";
 import lopenling_logo from "images/lopenling_logo_173x.png";
 import useLocalStorage from "components/utility/useLocalStorage";
@@ -124,6 +124,7 @@ function TabPanel(props: TabPanelProps) {
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
       {...other}
+      style={{ paddingInline: 5 }}
     >
       {value === index && <Box pt={2}>{children}</Box>}
     </div>

@@ -1,6 +1,7 @@
 import { Box, Container, Paper, Stack, Typography } from "@mui/material";
 import React from "react";
-import Indrajala from "images/indrajala_logo.png";
+import Indrajala from "images/Indrajala_logo.png";
+
 import { prayer } from "./prayerMarquee";
 import Marquee from "react-fast-marquee";
 

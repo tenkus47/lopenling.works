@@ -111,11 +111,11 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    border-radius: 10px;
 }
 
 .LocaleSwitcher---localeOption {
     font-size: 14px;
-    padding: 0 20px;
     cursor: pointer;
 }
 
@@ -388,6 +388,9 @@ body {
     /* Firefox */
     scroll-behavior: smooth;
     max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .HomePage---list::-webkit-scrollbar {

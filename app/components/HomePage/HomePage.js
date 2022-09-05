@@ -3,8 +3,7 @@ import _ from "lodash";
 import Link from "redux-first-router-link";
 import addTibetanShay from "lib/addTibetanShay";
 import styles from "./HomePage.css";
-import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
-import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import { FormattedMessage, injectIntl } from "react-intl";
 import {
   CircularProgress,
   Card,
@@ -28,7 +27,7 @@ import Filter from "./Filter";
 import { motion } from "framer-motion";
 import Footer from "./Footer";
 import usePagination from "./pagination";
-const PER_PAGE = 7;
+const PER_PAGE = 4;
 
 function HomePage(props) {
   let { Textdata } = props;
@@ -90,13 +89,13 @@ function HomePage(props) {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          height: "4rem",
         }}
         mx={2}
-        mt={3}
       >
-        <Typography variant="h5" color="#888" mx={3}>
-          Browse the Library
-        </Typography>
+        <h3 className={styles.title} mx={3}>
+          <FormattedMessage id={"library"} />
+        </h3>
 
         <IconButton onClick={handleToggleFilter}>
           <FilterAltIcon />
@@ -126,7 +125,6 @@ function HomePage(props) {
             variant="outlined"
             shape="rounded"
             onChange={handleChange}
-            autoCapitalize
             sx={{ alignSelf: "flex-end", marginTop: 2 }}
           />
         )}
@@ -142,7 +140,6 @@ function HomePage(props) {
                 flexWrap: "wrap",
                 gap: 1,
               }}
-              p={1}
               pb={2}
               direction="row"
               className={styles.list}
@@ -152,31 +149,30 @@ function HomePage(props) {
                 return (
                   <Box
                     key={pecha.id || `filteredData-${i}`}
-                    px={1}
                     sx={{
                       width: "auto",
                       scrollSnapAlign: "start",
                     }}
                   >
-                    <motion.div
-                      animate={{ opacity: 1 }}
-                      initial={{ opacity: 0 }}
-                      exit={{ opacity: 0 }}
-                      layout
-                    >
-                      <Link
-                        to={`/texts/${pecha.text}`}
-                        style={{ textDecoration: "none" }}
+                    <Tooltip title={pecha.description}>
+                      <motion.div
+                        animate={{ opacity: 1 }}
+                        initial={{ opacity: 0 }}
+                        exit={{ opacity: 0 }}
+                        layout
                       >
-                        <Card
-                          sx={{
-                            cursor: "pointer",
-                            textDecoration: "none",
-                          }}
-                          elevation={3}
-                          key={pecha.id}
+                        <Link
+                          to={`/texts/${pecha.text}`}
+                          style={{ textDecoration: "none" }}
                         >
-                          <Tooltip title={pecha.description}>
+                          <Card
+                            sx={{
+                              cursor: "pointer",
+                              textDecoration: "none",
+                            }}
+                            elevation={3}
+                            key={pecha.id}
+                          >
                             <CardContent>
                               <Typography
                                 gutterBottom
@@ -189,10 +185,10 @@ function HomePage(props) {
                                 {addTibetanShay(pecha.title)}
                               </Typography>
                             </CardContent>
-                          </Tooltip>
-                        </Card>
-                      </Link>
-                    </motion.div>
+                          </Card>
+                        </Link>
+                      </motion.div>
+                    </Tooltip>
                   </Box>
                 );
               })}

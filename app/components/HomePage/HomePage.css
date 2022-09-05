@@ -1,3 +1,12 @@
+@import 'css/layout.css';
+@import 'css/type.css';
+
+.title {
+    font-size: var(--step-3);
+    color: #888;
+    font-family: var(--Macondo);
+}
+
 .list {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     /* Internet Explorer 10+ */
@@ -6,6 +15,11 @@
     scroll-behavior: smooth;
     max-width: calc(100%);
     justify-content: center;
+}
+
+.list h6 {
+    font-size: var(--step-0) !important;
+
 }
 
 .list::-webkit-scrollbar {

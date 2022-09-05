@@ -20,7 +20,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "docs/bundles"),
-    filename: "[name]-[hash].js",
+    filename: "[name]-build.js",
     publicPath: "/",
   },
   optimization: {

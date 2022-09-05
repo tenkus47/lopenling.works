@@ -7,4 +7,5 @@ Dockerfile
 .env
 #Artifacts that will be build during image
 
-node_module
+
+node_modules

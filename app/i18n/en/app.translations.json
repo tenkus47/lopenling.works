@@ -33,6 +33,11 @@
         "header.texts":"Texts",
         "header.editor":"Editor",
         "lopenlingForum":"Lopenling Forum",
-        "Nalanda":"Nalanda"
+        "Nalanda":"Nalanda",
+        "library":"Library",
+            "Resource.About":"About",
+        "text.title":"Title",
+        "text.description":"Description"
+
     }
 }

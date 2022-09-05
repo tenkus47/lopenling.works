@@ -1,7 +1,7 @@
 :root {
     --fonts: "Overpass", "arial", "sans-serif";
     --tibetan-fonts: "Tibetan";
-    --tibetan-fonts2: "Tibetan";
+    --tibetan-fonts2: "Tsumachu";
     --Macondo: Macondo;
 }
 
@@ -18,5 +18,13 @@
     font-style: normal;
     font-weight: 400;
     src: url('/font/monlam_bodyig-webfont.woff') format('woff');
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/font/tsumachu.woff2') format('woff2');
     unicode-range: U+0F00-0FFF;
 }

@@ -22,10 +22,8 @@ import * as actions from "actions";
 import lopenlingLogo from "images/lopenling_logo_173x.png";
 import UserIcon from "images/discourse_user.svg";
 import { NavLink } from "redux-first-router-link";
-import TranslateButton from "components/utility/TranslateButton";
-import { history } from "redux-first-router";
 import ToggleTheme from "./ToggleTheme";
-import Resources from "components/Resources";
+import Sidebar from "components/Sidebar";
 
 import {
   Container,
@@ -54,6 +52,7 @@ export const LoginControls = (props: LoginProps) => (
     <a href={SSO_SIGNUP_URL}>
       <Button
         variant="contained"
+        className={styles.ButtonText}
         style={{
           padding: "6px 10px",
           boxShadow:
@@ -64,17 +63,15 @@ export const LoginControls = (props: LoginProps) => (
       </Button>
     </a>
 
-    <form
-      method="post"
-      action="https://parkhang.lopenling.org/discourse/login_redirect/"
-    >
+    <form method="post" action="/discourse/login_redirect/">
       {/* <IconButton>
                 <UserIcon width="11" />
             </IconButton> */}
       <Button
         variant="contained"
         type="submit"
-        style={{
+        className={styles.ButtonText}
+        sx={{
           padding: "6px 10px",
           display: "flex",
           alignItems: "center",
@@ -82,7 +79,7 @@ export const LoginControls = (props: LoginProps) => (
             "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
         }}
       >
-        <PersonIcon style={{ height: 18, width: 19 }} />
+        <PersonIcon style={{ height: 16, width: 16 }} />
         <FormattedMessage id="header.login" />
       </Button>
       <input type="hidden" name="csrfmiddlewaretoken" value={props.csrfToken} />

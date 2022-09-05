@@ -310,10 +310,16 @@ function* selectedWitness(action: actions.SelectedTextWitnessAction) {
   if (!hasLoadedAnnotations) {
     yield call(loadWitnessAnnotations, action);
   }
+  const hasLoadedAlignments = yield select(
+    reducers.hasLoadedAlignments,
+    witnessId
+  );
+  if (!hasLoadedAlignments) {
+    let AlignmentData = yield select(reducers.getAlignment);
+    yield call(loadTextAlignment, action, AlignmentData);
+    yield call(loadVideoData, action, AlignmentData);
+  }
   let selectedWitness = yield select(reducers.getSelectedTextWitness);
-  let AlignmentData = yield select(reducers.getAlignment);
-  yield call(loadTextAlignment, action, AlignmentData);
-  yield call(loadVideoData, action, AlignmentData);
 
   let urlAction = {
     type: actions.TEXT_URL,
@@ -909,7 +915,7 @@ function* loadedTextIdonlyUrl(action) {
   _loadedTextUrl = false;
   let data;
   let textId = parseInt(action.payload.textId);
-  yield call(loadAlignmentData, action, textId);
+  // yield call(loadAlignmentData, action, textId);
   yield delay(500);
   let AlignmentData = yield select(reducers.getAlignment);
   if (AlignmentData?.alignments?.text.length > 0) {
@@ -965,7 +971,8 @@ function* watchSelectTextUrlActions() {
 function* loadAlignmentData(action, textId) {
   if (textId) {
     const AlignmentData = yield call(api.fetchAlignment, textId);
-    yield put(actions.loadAlignment(AlignmentData));
+    console.log(AlignmentData);
+    yield put(actions.loadAlignment(AlignmentData, action.witnessId));
   }
 }
 

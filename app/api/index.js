@@ -1,10 +1,19 @@
 // @flow
 import axios from "axios";
+import { setupCache } from "axios-cache-adapter";
 import Annotation from "lib/Annotation";
 import Witness from "lib/Witness";
 import User from "lib/User";
 axios.defaults.xsrfCookieName = "csrftoken";
 axios.defaults.xsrfHeaderName = "X-CSRFToken";
+
+const cache = setupCache({
+  maxAge: 15 * 60 * 1000,
+});
+
+const api = axios.create({
+  adapter: cache.adapter,
+});
 
 const GET = "get";
 const POST = "post";
@@ -47,6 +56,22 @@ function request(method: ReqMethod, url, data: any = null): Promise<*> {
   }
 
   const promiseReq = req;
+  if (method === "get") {
+    return new Promise((resolve, reject) => {
+      api({
+        url: url,
+        method: "get",
+      })
+        .then(async (response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          // console.dir(error);
+          console.log("couldnot get the data . check connection");
+          reject(error);
+        });
+    });
+  }
   return new Promise((resolve, reject) => {
     promiseReq(url, data)
       .then((response) => {
@@ -115,24 +140,20 @@ export function fetchChapterDetail() {
   return request(GET, url);
 }
 export function fetchTextPairWithAlignmentId(AlignmentId = 0) {
-  if (AlignmentId === 0) {
-    return;
-  }
+  if (!AlignmentId) return;
   const url = `/api/alignments/text/${AlignmentId}`;
   return request(GET, url);
 }
 export function fetchImageWithAlignmentId(AlignmentId = 0) {
-  if (AlignmentId === 0) {
-    return;
-  }
+  if (!AlignmentId) return;
+
   const url = `/api/alignments/image/${AlignmentId}`;
   return request(GET, url);
 }
 
 export function fetchVideoWithAlignmentId(AlignmentId = 0) {
-  if (AlignmentId === 0) {
-    return;
-  }
+  if (!AlignmentId) return;
+
   const url = `/api/alignments/video/${AlignmentId}`;
   return request(GET, url);
 }
