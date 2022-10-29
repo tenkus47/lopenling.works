@@ -8,40 +8,44 @@ var LodashModuleReplacementPlugin = require("lodash-webpack-plugin");
 /*We are basically telling webpack to take index.js from entry. Then check for all file extensions in resolve. 
 After that apply all the rules in module.rules and produce the output and place it in main.js in the public folder.*/
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+const mode =
+  process.env.NODE_ENV === "development" ? "development" : "production";
+
 module.exports = {
   context: __dirname,
-  mode: "development",
-
+  mode,
   entry: {
-    parkhang: ["./app/index", "./website/index"],
+    parkhang: ["./app/index"],
   },
   output: {
     path: path.resolve(__dirname, "static/bundles"),
     filename: "main.bundle.js",
+    publicPath: "/",
   },
-  optimization: {
-    splitChunks: {
-      chunks: "async",
-      minSize: 20000,
-      minRemainingSize: 0,
-      minChunks: 1,
-      maxAsyncRequests: 30,
-      maxInitialRequests: 30,
-      enforceSizeThreshold: 50000,
-      cacheGroups: {
-        defaultVendors: {
-          test: /[\\/]node_modules[\\/]/,
-          priority: -10,
-          reuseExistingChunk: true,
-        },
-        default: {
-          minChunks: 2,
-          priority: -20,
-          reuseExistingChunk: true,
-        },
-      },
-    },
-  },
+  // optimization: {
+  //   splitChunks: {
+  //     chunks: "async",
+  //     minSize: 20000,
+  //     minRemainingSize: 0,
+  //     minChunks: 1,
+  //     maxAsyncRequests: 30,
+  //     maxInitialRequests: 30,
+  //     enforceSizeThreshold: 50000,
+  //     cacheGroups: {
+  //       defaultVendors: {
+  //         test: /[\\/]node_modules[\\/]/,
+  //         priority: -10,
+  //         reuseExistingChunk: true,
+  //       },
+  //       default: {
+  //         minChunks: 2,
+  //         priority: -20,
+  //         reuseExistingChunk: true,
+  //       },
+  //     },
+  //   },
+  // },
   plugins: [
     new BundleTracker({ filename: "./webpack-stats-dev.json" }),
     new MiniCssExtractPlugin({
@@ -49,7 +53,7 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       "process.env": {
-        NODE_ENV: JSON.stringify("development"),
+        NODE_ENV: JSON.stringify(mode),
       },
     }),
     new LodashModuleReplacementPlugin(),
@@ -64,7 +68,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    port: "8000",
+    port: "3000",
     static: ["./"],
     open: true,
     hot: true,

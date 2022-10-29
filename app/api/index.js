@@ -17,7 +17,9 @@ export type AnnotationOp = "A" | "R";
 export const appliedOp: AnnotationOp = "A";
 export const removedOp: AnnotationOp = "R";
 
-let HOST = "https://parkhang.lopenling.org";
+// let HOST = "https://parkhang.lopenling.org";
+let HOST = "http://localhost:8000";
+
 export function setHost(host: string) {
   HOST = host;
 }

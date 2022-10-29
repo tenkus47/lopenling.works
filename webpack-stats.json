@@ -1,0 +1,8 @@
+{
+  "status": "error",
+  "assets": {},
+  "chunks": {},
+  "publicPath": "/",
+  "error": "Error",
+  "message": "main.65c9167d76149568a83d.js from Terser plugin\nInvalid syntax: 65c9167d76149568a83d [main.65c9167d76149568a83d.js:89504,102]\n    at js_error (D:\\work\\lopenling.works\\node_modules\\terser\\dist\\bundle.min.js:554:11)\n    at parse_error (D:\\work\\lopenling.works\\node_modules\\terser\\dist\\bundle.min.js:690:9)\n    at read_num (D:\\work\\lopenling.works\\node_modules\\terser\\dist\\bundle.min.js:752:13)\n    at Object.next_token [as input] (D:\\work\\lopenling.works\\node_modules\\terser\\dist\\bundle.min.js:1116:40)\n    at peek (D:\\work\\lopenling.works\\node_modules\\terser\\dist\\bundle.min.js:1258:56)\n    at next (D:\\work\\lopenling.works\\node_modules\\terser\\dist\\bundle.min.js:1263:24)\n    at expect_token (D:\\work\\lopenling.works\\node_modules\\terser\\dist\\bundle.min.js:1297:20)\n    at expect (D:\\work\\lopenling.works\\node_modules\\terser\\dist\\bundle.min.js:1302:36)\n    at maybe_conditional (D:\\work\\lopenling.works\\node_modules\\terser\\dist\\bundle.min.js:3399:13)\n    at maybe_assign (D:\\work\\lopenling.works\\node_modules\\terser\\dist\\bundle.min.js:3472:20)"
+}

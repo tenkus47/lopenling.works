@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server ./app",
-    "build": "Webpack ./app"
+    "build": "webpack --mode production --progress",
+    "dev":"webpack serve --progress ",
+    "serve":"live-server static/bundles"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "classnames": "^2.3",
     "core-js": "^3.22.5",
     "docx": "4.3",
+    "express": "^4.18.2",
     "file-saver": "^2.0.5",
     "flagsmith": "^2.0.9",
     "framer-motion": "^7.0.0",
