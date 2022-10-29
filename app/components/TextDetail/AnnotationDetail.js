@@ -1,12 +1,15 @@
 // @flow
-import React, { useState } from "react";
+import React from "react";
 import classnames from "classnames";
 import { FormattedMessage } from "react-intl";
 import styles from "./AnnotationDetail.css";
 import type { AnnotationData } from "api";
 import CheckIcon from "images/check_circle.svg";
 import colours from "css/colour.css";
-import ApplyTooltip from "../UI/ApplyTooltip";
+import { Box } from "components/UI/muiComponent";
+import Share from "components/UI/ShareButton";
+import Voting from "components/UI/Voting";
+import AnnotationAvatar from "components/UI/AnnotationAvatar";
 export type Props = {
     annotationData: AnnotationData,
     isActive: boolean,
@@ -14,45 +17,11 @@ export type Props = {
     isLoggedIn: boolean,
     editAnnotationHandler: () => void,
     fontSize: Number,
-    isWorkingSection: boolean,
 };
 const MAXIMUM_TEXT_LENGTH = 250;
 
 const AnnotationDetail = (props: Props) => {
-    const [imageUrl, setImageUrl] = useState(null);
-
-    function longest_str_in_array(arra) {
-        var max_str = arra[0].length;
-        var ans = arra[0].length;
-        for (var i = 0; i < arra.length; i++) {
-            var maxi = arra[i].length;
-            if (maxi > max_str) {
-                ans = arra[i].length;
-                max_str = maxi;
-            }
-        }
-        return ans;
-    }
-    function mergeArray(arr) {
-        var textCount = arr.length;
-        var maxPerLine = 55;
-
-        for (
-            var i = 0;
-            i < Math.ceil(arr.join().length / maxPerLine) + 1;
-            i++
-        ) {
-            if (arr[i] && arr[i + 1] && arr[i].length < maxPerLine) {
-                arr[i] = arr[i] + " " + arr[i + 1];
-                arr.splice(i + 1, 1);
-                mergeArray(arr);
-            } else if (arr[i] && arr[i + 1] && arr[i].length > maxPerLine) {
-                // code to cut selected text should be here
-            }
-        }
-        return arr;
-    }
-
+    let accuracyPercentage = props.accuracy;
     let desc = (
         <p>
             &lt;
@@ -68,7 +37,7 @@ const AnnotationDetail = (props: Props) => {
             content = content.substr(0, MAXIMUM_TEXT_LENGTH) + "…";
         }
         // content variable is the selected trimmed context
-        desc = <p>{content}</p>;
+        desc = <p style={{ minWidth: 100, maxWidth: "30ch" }}>{content}</p>;
     }
 
     let classes = [styles.annotationDetail];
@@ -78,19 +47,38 @@ const AnnotationDetail = (props: Props) => {
     }
 
     let className = classnames(...classes);
+
+    let name = props.annotationData.name
+        ? props.annotationData.name
+        : props.user.name;
     return (
         <div className={className} onClick={props.selectAnnotationHandler}>
-            <div className={styles.annotationHeader}>
-                {props.isActive && (
-                    <div className={styles.activeIcon}>
-                        <CheckIcon
-                            style={{ fill: colours.activeButton }}
-                            width={15}
-                            height={15}
-                        />
-                    </div>
-                )}
-                <h3>{props.annotationData.name}</h3>
+            <Box
+                className={styles.annotationHeader}
+                sx={{
+                    bgcolor: "secondary.light",
+                    color: "texts.main",
+                }}
+            >
+                <AnnotationAvatar name={name} />
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                    <h3>{name}</h3>
+                    {name === "པེ་ཅིན།" && (
+                        <span className={styles.date}>
+                            1738, month, day N/A
+                        </span>
+                    )}
+                    {name === "སྣར་ཐང༌།" && (
+                        <span className={styles.date}>
+                            1742, month, day N/A
+                        </span>
+                    )}
+                    {name === "སྡེ་དགེ" && (
+                        <span className={styles.date}>
+                            1744, month, day N/A
+                        </span>
+                    )}
+                </div>
                 {props.isLoggedIn && props.isActive && (
                     <button
                         style={{ display: "none" }}
@@ -99,11 +87,22 @@ const AnnotationDetail = (props: Props) => {
                         id="editBtn"
                     ></button>
                 )}
+            </Box>
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                }}
+            >
+                {desc}
+                {/* <div style={{ float: "right" }}>{accuracyPercentage + "%"}</div> */}
             </div>
-
-            {!props.isWorkingSection && desc}
-
-            {/* {props.isWorkingSection  && <ShareButton props={props}/>} */}
+            <div className={styles.contentOptions}>
+                <Voting data={props.annotationData} />
+                {/* {props.isActive && (
+                    <Share content={props.annotationData.content} />
+                )} */}
+            </div>
         </div>
     );
 };

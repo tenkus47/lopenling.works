@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import WrenchIcon from "images/wrench.svg";
-import Slider from "../../UI/Slider";
 import useLocalStorage from "components/utility/useLocalStorage";
+import FontContainer from "components/textDetail/fontSize";
 
-import CheckIcon from "@mui/icons-material/Check";
+import { Check as CheckIcon } from "components/UI/muiIcon";
 import {
     IconButton,
     MenuList,
@@ -12,7 +12,7 @@ import {
     Grow,
     Box,
     ClickAwayListener,
-} from "@mui/material";
+} from "components/UI/muiComponent";
 import { FONT_LIST } from "app_constants";
 
 function Settings(props) {
@@ -30,16 +30,9 @@ function Settings(props) {
     const handlefont = (value) => {
         setFontSelect(value);
         document.body.style.setProperty("--tibetan-fonts2", `${value}`);
-        let update = document.getElementById("updateList2");
-        let times = 1;
-        let timer = setInterval(() => {
-            update.click();
-            times++;
-            console.log("ran");
-            if (times > 4) {
-                clearInterval(timer);
-            }
-        }, 800);
+        setTimeout(() => {
+            window.dispatchEvent(new Event("resize"));
+        }, 1000);
         setShowOption(false);
     };
     return (
@@ -59,11 +52,9 @@ function Settings(props) {
                             bgcolor: "heading.main",
                         }}
                     >
-                        <Slider
-                            max={20}
-                            min={7}
-                            initialvalue={props.textFontSize}
-                            changeSize={props.onChangedFontSize}
+                        <FontContainer
+                            fontSize={props.textFontSize}
+                            onChange={props.onChangedFontSize}
                         />
                         <Divider />
                         <FontSelection

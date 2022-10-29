@@ -1,29 +1,23 @@
 
 .shareContainer{
-    position: absolute;
-    right:3px;
-    top:-25px;
     display: flex;
     overflow: hidden;
     cursor: pointer;
     font-size: 14px;
     transition: .3s linear;
-    padding-inline:8px;
+    max-width: 40px;
 }
 .shareContainer:hover{
     transform: scale(1.1);
 }
 .shareButton{
-position:absolute;
-height: 100%;
-width: 100%;
+    position:absolute;
 display: flex;
 justify-content: space-around;
 color:var(--main-tint);
 text-align: center;
 line-height: 20px;
 z-index: 444;
-bottom: 3px;
 transition: .6s linear;
 }
 .shareContainer:hover .shareButton{
@@ -41,7 +35,7 @@ transition: .6s linear;
 .shareContainer:hover .facebookButton,
 .shareContainer:hover .whatsappButton{
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0) ;
 }
 .shareContainer:hover .facebookButton{
     transition-delay: 0.6s;

@@ -22,29 +22,34 @@ class AnnotationControlsHeader extends React.Component<Props> {
     constructor() {
         super();
     }
-    // componentDidMount() {
-    //     this.keyHandler = (e) => {
-    //         if (e.key === "e" || e.key === "E") {
-    //             this.props.editAnnotationHandler();
-    //         }
-    //         if (e.key === "q" || e.key === "Q") {
-    //             this.props.addQuestion();
-    //         }
-    //         if (e.key === "l" || e.key === "L") {
-    //             this.props.addLineBreak();
-    //         }
-    //         if (e.key === "n" || e.key === "N") {
-    //             this.props.addNote();
-    //         }
-    //         if (e.key === "p" || e.key === "P") {
-    //             this.props.addPageBreak();
-    //         }
-    //     };
-    //     document.addEventListener("keyup", this.keyHandler, { once: true });
-    // }
-    // componentWillUnmount() {
-    //     document.removeEventListener("keyup", this.keyHandler);
-    // }
+    componentDidMount() {
+        // this.keyHandler = (evtobj) => {
+        //     var e = window.event ? event : evtobj;
+        //     let condition = e.ctrlKey;
+        //     if (condition && e.keyCode != 67) {
+        //         evtobj.preventDefault();
+        //     }
+        //     if (condition && e.keyCode == 69) {
+        //         this.props.editAnnotationHandler();
+        //     }
+        //     if (condition && e.keyCode == 81) {
+        //         this.props?.addQuestion();
+        //     }
+        //     if (condition && e.keyCode == 76) {
+        //         this.props?.addLineBreak();
+        //     }
+        //     if (condition && e.keyCode == 78) {
+        //         this.props?.addNote();
+        //     }
+        //     if (condition && e.keyCode == 80) {
+        //         this.props?.addPageBreak();
+        //     }
+        // };
+        // document.addEventListener("keydown", this.keyHandler, { once: false });
+    }
+    componentWillUnmount() {
+        document.removeEventListener("keydown", this.keyHandler);
+    }
     render() {
         const allowPageBreak = this.props.addPageBreak != null;
         const allowLineBreak = this.props.addLineBreak != null;

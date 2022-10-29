@@ -1,5 +1,5 @@
 // @flow
-import React, { useCallback, useEffect } from "react";
+import React, { useCallback } from "react";
 import { connect } from "react-redux";
 import classnames from "classnames";
 import styles from "./Header.css";
@@ -22,13 +22,9 @@ import * as actions from "actions";
 import lopenlingLogo from "images/lopenling_logo_173x.png";
 import UserIcon from "images/discourse_user.svg";
 import { NavLink } from "redux-first-router-link";
-import TranslateButton from "components/utility/TranslateButton";
-import { history } from "redux-first-router";
 import ToggleTheme from "./ToggleTheme";
-import Resources from "components/Resources";
-
+import { pageList } from "reducers/pages";
 import {
-  Container,
   Button,
   Tooltip,
   Stack,
@@ -36,24 +32,23 @@ import {
   Menu,
   IconButton,
   MenuItem,
-  Typography,
-  Drawer,
-  getInitColorSchemeScript,
   AppBar,
-} from "@mui/material";
-import { Person as PersonIcon, Menu as MenuIcon } from "@mui/icons-material";
+} from "components/UI/muiComponent";
+import { Person as PersonIcon, Menu as MenuIcon } from "components/UI/muiIcon";
 import _ from "lodash";
 type LoginProps = {
   successRedirect: string,
   csrfToken: string,
 };
-const image_location = lopenlingLogo;
+let linkToEditor = "/editor";
 const SSO_SIGNUP_URL = "";
+
 export const LoginControls = (props: LoginProps) => (
   <Stack direction="row" spacing={2}>
     <a href={SSO_SIGNUP_URL}>
       <Button
         variant="contained"
+        className={styles.ButtonText}
         style={{
           padding: "6px 10px",
           boxShadow:
@@ -71,7 +66,8 @@ export const LoginControls = (props: LoginProps) => (
       <Button
         variant="contained"
         type="submit"
-        style={{
+        className={styles.ButtonText}
+        sx={{
           padding: "6px 10px",
           display: "flex",
           alignItems: "center",
@@ -79,7 +75,7 @@ export const LoginControls = (props: LoginProps) => (
             "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
         }}
       >
-        <PersonIcon style={{ height: 18, width: 19 }} />
+        <PersonIcon style={{ height: 16, width: 16 }} />
         <FormattedMessage id="header.login" />
       </Button>
       <input type="hidden" name="csrfmiddlewaretoken" value={props.csrfToken} />
@@ -110,11 +106,8 @@ export const LoggedInControls = (props: LoggedInControlsProps) => {
       <Menu
         anchorEl={anchorEl}
         id="account-menu"
-        open={props.overlayVisible}
+        open={props.overlayVisible || false}
         onClose={props.accountButtonClicked}
-        MenuListProps={{
-          "aria-labelledby": "account-menu-button",
-        }}
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "top" }}
         style={{ top: 20 }}
@@ -164,7 +157,7 @@ type HeaderProps = {
 
 export const Header = (props: HeaderProps) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-
+  const selectedText = props.selectedText;
   let controls = null;
   if (props.user.isLoggedIn) {
     controls = (
@@ -183,7 +176,7 @@ export const Header = (props: HeaderProps) => {
     );
   }
 
-  let toggleTitle = props.intl.formatMessage({
+  let toggleTitle = props.intl?.formatMessage({
     id: "header.toggleTextList",
   });
 
@@ -192,6 +185,11 @@ export const Header = (props: HeaderProps) => {
       <NavLink {...props} />
     </div>
   ));
+  React.useEffect(() => {
+    if (selectedText) {
+      linkToEditor = `/texts/${selectedText.id}`;
+    }
+  }, [selectedText]);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -199,13 +197,16 @@ export const Header = (props: HeaderProps) => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
   const themeChange = useCallback((e) => props.themeButtonClicked(e), []);
   return (
     <AppBar
       position="static"
       color="navbar"
-      sx={{ boxShadow: 1, zIndex: 3 }}
+      sx={{
+        boxShadow: 1,
+        zIndex: 3,
+        display: props.page === "Vote" ? "none" : "block",
+      }}
       // className={styles.header}
     >
       <Stack
@@ -226,43 +227,43 @@ export const Header = (props: HeaderProps) => {
             alignItems: { md: "center" },
           }}
         >
-          {props.page !== "Editors" && (
-            <NavLink to="/">
-              <div className={styles.logo}>
-                <img
-                  src={image_location}
-                  height="37"
-                  width={173}
-                  alt="parkhang-logo"
-                />
-              </div>
-            </NavLink>
-          )}
+          <NavLink to="/">
+            <div className={styles.logo}>
+              <img
+                src={lopenlingLogo}
+                height="37"
+                width={173}
+                alt="parkhang-logo"
+              />
+            </div>
+          </NavLink>
 
-          {props.page === "Editors" && (
-            <NavigationButton
-              onClick={props.navigationButtonClicked}
-              className={styles.navigationButton}
-              title={toggleTitle}
-              isListVisible={props.textListVisible}
-            />
-          )}
+          {/* {props.page === "Editors" && (
+                        <NavigationButton
+                            onClick={props.navigationButtonClicked}
+                            className={styles.navigationButton}
+                            title={toggleTitle}
+                            isListVisible={props.textListVisible}
+                        />
+                    )} */}
           <Box display={{ xs: "none", md: "flex" }}>
-            <Button to={"/"} component={LinkRef} variant="text" color="links">
-              <FormattedMessage id={"header.texts"} />
-            </Button>
-            <Button
-              to={"/editor"}
-              component={LinkRef}
-              variant="text"
-              color="links"
-              disabled={_.isEmpty(props.text)}
-            >
-              <FormattedMessage id={"header.editor"} />
-            </Button>
+            {pageList.map((page, i) => {
+              return (
+                <Button
+                  to={page.pageName === "Editors" ? linkToEditor : page.url}
+                  variant="text"
+                  component={LinkRef}
+                  color="links"
+                  key={page.id}
+                >
+                  <FormattedMessage id={page.id} />
+                </Button>
+              );
+            })}
+
             <Tooltip title="Forum">
               <Button
-                href={"https://www.lopenling.org"}
+                href={"https://lopenling.org"}
                 variant="text"
                 component={"a"}
                 color="links"
@@ -308,22 +309,17 @@ export const Header = (props: HeaderProps) => {
             sx={{ display: { xs: "block", md: "none" } }}
           >
             <MenuItem onClick={handleCloseNavMenu}>
-              <Button
-                to={"/"}
-                style={{ color: "#676767" }}
-                component={LinkRef}
-                variant="text"
-              >
+              <Button to={"/"} color="links" component={LinkRef} variant="text">
                 <FormattedMessage id={"header.texts"} />
               </Button>
             </MenuItem>
             <MenuItem onClick={handleCloseNavMenu}>
               <Button
-                to={"/editor"}
+                to={linkToEditor}
                 component={LinkRef}
                 variant="text"
                 color="links"
-                disabled={_.isEmpty(props.text)}
+                // disabled={_.isEmpty(props.text)}
               >
                 <FormattedMessage id={"header.editor"} />
               </Button>
@@ -331,7 +327,7 @@ export const Header = (props: HeaderProps) => {
             <MenuItem onClick={handleCloseNavMenu}>
               <Button
                 href={"https://www.lopenling.org"}
-                style={{ color: "#676767" }}
+                color="links"
                 variant="text"
                 component={"a"}
               >
@@ -341,23 +337,11 @@ export const Header = (props: HeaderProps) => {
             <MenuItem onClick={handleCloseNavMenu}>
               <Button
                 href={"https://www.nalanda.works"}
-                style={{ color: "#676767" }}
+                color="links"
                 variant="text"
                 component={"a"}
               >
                 <FormattedMessage id={"Nalanda"} />
-              </Button>
-            </MenuItem>
-            <MenuItem onClick={handleCloseNavMenu}>
-              <Button
-                sx={{
-                  color: "#676767",
-                  display: props.page !== "Editors" ? "none" : "block",
-                }}
-                variant="text"
-                onClick={props.navigationButtonClicked}
-              >
-                Options
               </Button>
             </MenuItem>
           </Menu>
@@ -368,7 +352,6 @@ export const Header = (props: HeaderProps) => {
           sx={{ float: { sx: "right" } }}
         >
           <LocaleSwitcher />
-          {/* <TranslateButton /> */}
           {controls}
           <ToggleTheme theme={props.theme} changeTheme={themeChange} />
         </Stack>
@@ -376,18 +359,17 @@ export const Header = (props: HeaderProps) => {
     </AppBar>
   );
 };
-
 const mapStateToProps = (state: AppState): { user: User } => {
   const user = getUser(state);
+  const CSRF_TOKEN = "dfasdfsadfasdfasdfsadf";
+
   const activeLocale = getActiveLocale(state);
   const successRedirect = document.location.pathname;
   // TODO: move global CSRF_TOKEN into redux
-  // const csrfToken = CSRF_TOKEN;
-  const csrfToken = "";
-
+  const csrfToken = CSRF_TOKEN;
   const page = state.page;
-
   return {
+    page: state.page,
     user: user,
     activeLocale: activeLocale,
     textListIsVisible: getTextListVisible(state),
@@ -398,6 +380,7 @@ const mapStateToProps = (state: AppState): { user: User } => {
     theme: getTheme(state),
     text: getSelectedText(state),
     page,
+    selectedText: getSelectedText(state),
   };
 };
 

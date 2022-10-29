@@ -170,7 +170,9 @@ export const getSelectedTextWitness2 = (state: AppState): Witness | null => {
     }
     return witness;
 };
-
+export const getConditionForAlignment = (state) => {
+    return ui.getConditionForAlignment(state.ui);
+};
 export const getTheme = (state: AppState): String => {
     return ui.getTheme(state.ui);
 };
@@ -242,6 +244,11 @@ export const getSelectedSearchResult = (
 ): null | { textId: number, start: number, length: number } => {
     return ui.getSelectedSearchResult(state.ui);
 };
+export const getSelectedSearchResult2 = (
+    state: AppState
+): null | { textId: number, start: number, length: number } => {
+    return ui.getSelectedSearchResult2(state.ui);
+};
 
 export const getAccountOverlayVisible = (state: AppState): boolean => {
     return ui.getAccountOverlayVisible(state.ui);
@@ -261,9 +268,6 @@ export const isSecondWindowOpen = (state: AppState): number => {
 export const getScrollToId = (state) => {
     return ui.getScrollToId(state.ui);
 };
-export const getImageScrollId = (state) => {
-    return ui.getImageScrollId(state.ui);
-};
 
 export const getSyncIdOnClick = (state: AppState): number => {
     return ui.getSyncIdOnCLick(state.ui);
@@ -278,13 +282,6 @@ export const getSelectedTargetRange = (state) => {
     return ui.getSelectedTargetRange(state.ui);
 };
 
-export const getSyncIdOnSearch = (state) => {
-    return ui.getSyncIdOnSearch(state.ui);
-};
-
-export const getSyncIdOnSearch2 = (state) => {
-    return ui.getSyncIdOnSearch2(state.ui);
-};
 //media
 export const isPanelVisible = (state) => {
     return media.isPanelVisible(state.media);
@@ -292,25 +289,15 @@ export const isPanelVisible = (state) => {
 export const getMediaData = (state) => {
     return media.getMediaData(state.media);
 };
-export const getSelectedImageVersion = (state) => {
-    return media.getSelectedImageVersion(state.media);
-};
-export const getImageData = (state: AppState) => {
-    return media.getImageData(state.media);
-};
+
 export const getVideoData = (state: AppState) => {
     return media.getVideoData(state.media);
 };
-export const isImagePortrait = (state: AppState) => {
-    return media.isImagePortrait(state.media);
-};
-export const getSelectedImage = (state: AppState) => {
-    return media.getSelectedImage(state.media);
+
+export const getMediaInterval = (state: AppState) => {
+    return media.getMediaInterval(state.media);
 };
 
-export const getImageAlignmentById = (state) => {
-    return media.getImageAlignmentById(state.media);
-};
 // data
 export const getAlignment = (state: AppState) => {
     return data.getAlignment(state.data);

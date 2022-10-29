@@ -2,18 +2,14 @@
     margin-right: 40px;
     display: flex;
     align-items: center;
+    border-radius: 10px;
 }
 
 .localeOption {
     font-size: 14px;
-    padding: 0 20px;
     cursor: pointer;
 }
 
 .selected {
     font-weight: bold;
-}
-
-.localeOption:not(:nth-child(1)) {
-    border-left: 1px solid white;
 }

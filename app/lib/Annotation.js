@@ -9,7 +9,7 @@ export const ANNOTATION_TYPES: { [string]: string } = {
     marker: "M",
     pageBreak: "P",
     lineBreak: "L",
-    question: "Q"
+    question: "Q",
 };
 
 export const TEMPORARY_TYPE: string = "T";
@@ -29,7 +29,7 @@ export function getNaturalId(
         creatorWitnessId,
         workingWitnessId,
         start,
-        length
+        length,
     ].join("-");
 }
 

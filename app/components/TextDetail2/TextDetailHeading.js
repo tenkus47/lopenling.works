@@ -1,14 +1,13 @@
 import React, { useState, useCallback, useRef, useEffect } from "react";
-import styles from "./textDetailHeading.css";
+import styles from "components/TextDetail/TextDetailHeading.css";
 import SelectVersion from "./SelectVersion";
-import Slider from "../UI/Slider";
-import TextListContainer from "./TextListContainer";
+import TextList from "./TextListContainer";
 import OptionsIcon from "images/options.svg";
 import Settings from "./HeaderMenu/Settings";
 import Search from "./HeaderMenu/Search";
 import TableOfContent from "./HeaderMenu/TableOfContent";
 import _ from "lodash";
-import CloseIcon from "@mui/icons-material/Close";
+import { Close as CloseIcon } from "components/UI/muiIcon";
 
 import {
     Stack,
@@ -21,8 +20,7 @@ import {
     ListItem,
     List,
     IconButton,
-} from "@mui/material";
-import Refresh from "./HeaderMenu/Refresh";
+} from "components/UI/muiComponent";
 
 import SearchList from "./HeaderMenu/SearchList";
 type HeaderProps = {
@@ -30,6 +28,7 @@ type HeaderProps = {
     textFontSize: Number,
     onChangedFontSize: () => void,
     searchResults: [],
+    onSelectedSearchResult: () => void,
 };
 
 function TextDetailHeading(props: HeaderProps) {
@@ -86,14 +85,13 @@ function TextDetailHeading(props: HeaderProps) {
             ref={headingRef}
             spacing={1}
             sx={{
-                paddingInline: { md: 2, xs: 0 },
+                paddingInline: { md: 1, xs: 0 },
                 paddingBlock: { md: 1, xs: 0 },
                 borderTop: { md: 0, xs: "1px solid gray" },
                 bgcolor: "heading.main",
                 color: "text.primary",
             }}
         >
-            {" "}
             <Stack direction="row" spacing={1} justifyContent="space-between">
                 <Box
                     sx={{
@@ -102,7 +100,7 @@ function TextDetailHeading(props: HeaderProps) {
                         flexDirection: { md: "row", xs: "column" },
                     }}
                 >
-                    <TextListContainer />
+                    <TextList />
                     <SelectVersion
                         witnesses={props.witnesses}
                         activeWitness={props.selectedWitness}
@@ -126,7 +124,7 @@ function TextDetailHeading(props: HeaderProps) {
                         bgcolor: "background.paper",
                         color: "text.secondary",
                         "& svg": {
-                            m: 1.5,
+                            m: 1,
                         },
                         "& hr": {
                             mx: 0.5,
@@ -134,14 +132,11 @@ function TextDetailHeading(props: HeaderProps) {
                     }}
                     className={styles.button_group_menu}
                 >
-                    <Refresh isSecondWindowOpen={props.isSecondWindowOpen} />
-
                     <Search handleWindowSearch={handleWindowSearch} />
                     <Settings
                         textFontSize={props.textFontSize}
                         onChangedFontSize={props.onChangedFontSize}
                         onExport={props.onExport}
-                        isPanelLinked={props.isPanelLinked}
                     />
                     <TableOfContent
                         changeShowTableContent={props.changeShowTableContent}
@@ -195,8 +190,8 @@ function TextDetailHeading(props: HeaderProps) {
                                 )}
                                 {condition && results.length > 0 && (
                                     <SearchList
-                                        handleListItemClick={
-                                            handleListItemClick
+                                        onSelectedSearchResult={
+                                            props.onSelectedSearchResult
                                         }
                                         searchValue={props.searchValue}
                                         results={results}

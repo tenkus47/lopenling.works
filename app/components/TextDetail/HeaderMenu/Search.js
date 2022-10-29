@@ -1,6 +1,6 @@
 import React from "react";
-import SearchIcon from "@mui/icons-material/Search";
-import { IconButton } from "@mui/material";
+import { Search as SearchIcon } from "components/UI/muiIcon";
+import { IconButton } from "components/UI/muiComponent";
 
 function Search({ handleWindowSearch }) {
     return (

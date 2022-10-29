@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 import TextList from "./TextList";
 import * as actions from "actions";
-import { getSelectedText2 } from "reducers";
+import { getSelectedText2, getSelectedText } from "reducers";
 import type { AppState } from "reducers";
 import * as api from "api";
 import * as reducers from "reducers";
@@ -31,6 +31,7 @@ const mapStateToProps = (state: AppState) => {
 
     return {
         texts: texts,
+        selectedText1: getSelectedText(state),
         selectedText: getSelectedText2(state),
         searchTerm: searchValue,
         searchResults,

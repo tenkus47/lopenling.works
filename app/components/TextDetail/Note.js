@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./Note.css";
 import Annotation from "lib/Annotation";
 import FormattedDate from "react-intl";
-import { Box, IconButton } from "@mui/material";
-import DeleteIcon from "@mui/icons-material/Delete";
+import { Box, IconButton } from "components/UI/muiComponent";
+import { Delete as DeleteIcon } from "components/UI/muiIcon";
 type Props = {
     note: Annotation,
     delete?: (note: Annotation) => void,

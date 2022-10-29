@@ -2,16 +2,17 @@
 
 
 .textDetail {
-    /* background-color: var(--text-bg); */
     position: relative;
     width: 100%;
-    /* color: var(--text-color); */
-    transition: height 0.4s linear;
+    height: 100%;
+    max-width: 700px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .1),
+        inset -1px -1px 10px rgba(0, 0, 0, .1);
 }
 
 .textDetail ::selection {
     color: black;
-    background-color: #ccc
+    background-color: #eee
 }
 
 .textContainer {

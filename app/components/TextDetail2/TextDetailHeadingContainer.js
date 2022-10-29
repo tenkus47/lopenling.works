@@ -82,7 +82,22 @@ const mergeProps = (stateProps, dispatchProps, ownProps) => {
             dispatch(actions.changedSearchValue2(searchTerm));
         },
         changeSelectSyncId: (payload) => {
-            dispatch(actions.changeSyncIdOnSearch2(payload));
+        }, onSelectedSearchResult: (
+            text: api.TextData,
+            start: number,
+            length: number,
+            selectedText: api.TextData | null
+        ) => {
+            if (!selectedText || selectedText.id !== text.id) {
+                dispatch(
+                    batchActions([
+                        actions.selectedSearchResult2(text.id, start, length),
+                        actions.selectedText2(text),
+                    ])
+                );
+            } else {
+                dispatch(actions.selectedSearchResult2(text.id, start, length));
+            }
         },
     };
 };

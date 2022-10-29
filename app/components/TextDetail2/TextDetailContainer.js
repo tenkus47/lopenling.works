@@ -30,13 +30,23 @@ import {
     getSelectedSearchResult,
     getTextFontSize,
     isSecondWindowOpen,
-    getImageData,
     getSelectedImage,
-    isImagePortrait,
     isPanelVisible,
     getSelectedTargetRange,
     getSelectedSourceRange,
     getSearchResults2,
+    getTextFontSize2,
+    getSelectedText2,
+    getTextAlignmentById,
+    getShowTableContent2,
+    getSelectedSearchResult2,
+    isPanelLinked,
+    getScrollToId,
+    getSyncIdOnClick,
+    getTextAlignment,
+    getSelectedWindow,
+    getSearchValue2,
+    getConditionForAlignment,
 } from "reducers";
 
 const DISMISS_CONTROLS_ON_CLICK = true;
@@ -131,8 +141,8 @@ const mapStateToProps = (state: AppState): {} => {
     let selectedWitness = {};
     let annotatedText = null;
     let workingWitness;
-    let textFontSize = reducers.getTextFontSize2(state);
-    let selectedText = reducers.getSelectedText2(state);
+    let textFontSize = getTextFontSize2(state);
+    let selectedText = getSelectedText2(state);
     let annotationPositions = {};
     let annotations = [];
     if (selectedText) {
@@ -162,11 +172,14 @@ const mapStateToProps = (state: AppState): {} => {
         );
     }
     const isPanelLinked = reducers.isPanelLinked(state);
-    const scrollToId = reducers.getScrollToId(state);
-    const syncIdOnClick = reducers.getSyncIdOnClick(state);
-    const textAlignment = reducers.getTextAlignment(state);
-    const selectedWindow = reducers.getSelectedWindow(state);
-    const searchValue = reducers.getSearchValue2(state);
+    const scrollToId = getScrollToId(state);
+    const syncIdOnClick = getSyncIdOnClick(state);
+    const textAlignment = getTextAlignment(state);
+    const selectedWindow = getSelectedWindow(state);
+    const searchValue = getSearchValue2(state);
+    const isSecondWindowOpen = reducers.isSecondWindowOpen(state);
+    const condition = getConditionForAlignment(state);
+
     return {
         text: selectedText,
         textFontSize,
@@ -174,23 +187,18 @@ const mapStateToProps = (state: AppState): {} => {
         selectedWitness,
         loading,
         annotationPositions,
-        isSecondWindowOpen: isSecondWindowOpen(state),
-        imageData: getImageData(state),
-        isPanelLinked,
-        selectedImage: getSelectedImage(state),
-        isImagePortrait: isImagePortrait(state),
-        isPanelVisible: isPanelVisible(state),
         scrollToId,
         syncIdOnClick,
         textAlignment,
-        textAlignmentById: reducers.getTextAlignmentById(state),
+        textAlignmentById: getTextAlignmentById(state),
         selectedWindow,
         selectedSourceRange: getSelectedSourceRange(state),
         selectedTargetRange: getSelectedTargetRange(state),
-        showTableContent: reducers.getShowTableContent2(state),
+        showTableContent: getShowTableContent2(state),
+        selectedSearchResult: getSelectedSearchResult2(state),
         searchResults: getSearchResults2(state, searchValue),
         searchValue,
-        syncIdOnSearch: reducers.getSyncIdOnSearch2(state),
+        condition: condition && isPanelLinked && isSecondWindowOpen,
     };
 };
 

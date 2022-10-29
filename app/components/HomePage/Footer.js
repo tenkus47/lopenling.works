@@ -1,8 +1,6 @@
-import { Box, Container, Paper, Stack, Typography } from "@mui/material";
+import { Box, Paper, Stack, Typography } from "components/UI/muiComponent";
 import React from "react";
-import Indrajala from "images/indrajala_logo.png";
-import { prayer } from "./prayerMarquee";
-import Marquee from "react-fast-marquee";
+import Indrajala from "images/Indrajala_logo.png";
 
 export default function GuestFooter() {
     return (
@@ -59,16 +57,6 @@ export default function GuestFooter() {
                         }}
                     />
                 </Box>
-                <Marquee
-                    pauseOnHover={true}
-                    gradient={false}
-                    style={{
-                        background: "#292826",
-                        color: "white",
-                    }}
-                >
-                    {prayer}
-                </Marquee>
             </Stack>
         </Paper>
     );

@@ -33,10 +33,11 @@ export default class QuestionEditor extends React.Component<Props> {
 
     save() {
         const content = this.textarea ? this.textarea.value : "";
-
+        let topicTitle=this.props.defaultTitle+`[# ${Date.now().toString().slice(-5,-1)} ]`;
+         // randomize topic Title 
         this.props.saveQuestion(
             this.props.question,
-            this.props.defaultTitle,
+            topicTitle,
             content
         );
     }

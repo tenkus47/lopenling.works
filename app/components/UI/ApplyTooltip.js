@@ -1,6 +1,6 @@
 import React from "react";
 import { FormattedMessage, injectIntl } from "react-intl";
-import { Tooltip, Tootip } from "@mui/material";
+import { Tooltip, Tootip } from "components/UI/muiComponent";
 function ApplyTooltip({
     children,
     tooltipName,

@@ -4,6 +4,7 @@ import classnames from "classnames";
 import { FormattedMessage } from "react-intl";
 import styles from "./AnnotationDetail.css";
 import type { Props as AnnotationDetailProps } from "./AnnotationDetail";
+import PencilAltIcon from "images/PencilAltIcon.svg";
 
 export type Props = AnnotationDetailProps & {
     saveAnnotationHandler: (text: string) => void,
@@ -43,6 +44,11 @@ const AnnotationDetailEdit = (props: Props) => {
                             }
                         }}
                     >
+                         <PencilAltIcon
+                         height='0.8em'
+                         width='0.8em'
+                                style={{ fill: "currentColor",marginRight:6 }}
+                            />
                         <FormattedMessage id="annotation.save" />
                     </div>
                     <div

@@ -1,13 +1,14 @@
 import React from "react";
 import Draggable from "react-draggable";
-import CloseIcon from "@mui/icons-material/Close";
-import Paper, { PaperProps } from "@mui/material/Paper";
-import { ResizableBox } from "react-resizable";
+import { Close as CloseIcon } from "components/UI/muiIcon";
+import { Paper } from "components/UI/muiComponent";
 import Video from "./Video";
 import Audio from "./Audio";
-import Box from "@mui/material/Box";
-import { IconButton } from "@mui/material";
-function PaperComponent(props: PaperProps) {
+import { IconButton } from "components/UI/muiComponent";
+
+const MEDIA_MAX_WIDTH = "400px";
+
+function PaperComponent(props) {
     return (
         <Draggable handle="#draggable-dialog-title" bounds="parent">
             <Paper {...props} />
@@ -16,7 +17,7 @@ function PaperComponent(props: PaperProps) {
 }
 
 function DraggableMedia(props) {
-    const [hide, setHide] = React.useState(true);
+    const [hide, setHide] = React.useState(false);
 
     const handleClose = () => {
         props.changeMediaSelection(null);
@@ -24,15 +25,18 @@ function DraggableMedia(props) {
     const toggleHide = () => {
         setHide((prev) => !prev);
     };
-    if (props.selectedMedia.isImageVisible) return null;
 
     return (
         <PaperComponent
-            sx={{ position: "absolute", zIndex: 1, right: 0 }}
+            sx={{
+                position: "absolute",
+                zIndex: 1,
+                right: 0,
+                maxWidth: MEDIA_MAX_WIDTH,
+            }}
 
             // onClose={handleClose}
         >
-            {/* <ResizableBox height={350} width={400}> */}
             <div className="Resizable-media-div">
                 <div
                     style={{
@@ -49,7 +53,7 @@ function DraggableMedia(props) {
                     <h3>{props.selectedMedia.isAudioVisible && "AUDIO"}</h3>
                     <div className="buttons-hide-close">
                         <IconButton onClick={toggleHide} disableRipple>
-                            {hide ? "-" : "+"}
+                            {hide ? "+" : "-"}
                         </IconButton>
                         <IconButton onClick={handleClose} disableRipple>
                             <CloseIcon />
@@ -58,14 +62,13 @@ function DraggableMedia(props) {
                 </div>
                 <>
                     {props.selectedMedia.isVideoVisible && (
-                        <Video {...props} open={hide} setOpen={setHide} />
+                        <Video open={!hide} setOpen={setHide} />
                     )}
                     {props.selectedMedia.isAudioVisible && (
-                        <Audio open={hide} setOpen={setHide} />
+                        <Audio open={!hide} setOpen={setHide} />
                     )}
                 </>
             </div>
-            {/* </ResizableBox> */}
         </PaperComponent>
     );
 }

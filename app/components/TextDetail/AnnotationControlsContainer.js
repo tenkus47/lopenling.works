@@ -52,7 +52,7 @@ const getAnnotationsData = (
         let annotationsById = {};
         for (let i = 0; i < annotations.length; i++) {
             let annotation = annotations[i];
-            let id = annotation.content + annotation.start;
+            let id = annotation.content + annotation.start + i; // remove i if you want to make group of same annotations
             if (annotation.isTemporary) {
                 annotationsById[TEMPORARY_ANNOTATION_ID] = {
                     name: annotation.getSourceName(),
@@ -100,10 +100,9 @@ const getAnnotationsData = (
             selectedText?.name !==
             "བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ་བཞུགས་སོ།"
         ) {
-            //Dominant only awailable for chojuk text
+            //Dominant only available for chojuk text
             Base = baseSourceNames.filter((l) => l !== "Dominant");
         }
-
         annotationsData = Object.keys(annotationsById).reduce((arr, key) => {
             const annotationData = annotationsById[key];
 
@@ -117,7 +116,6 @@ const getAnnotationsData = (
             return arr;
         }, []);
     }
-
     return annotationsData;
 };
 
@@ -419,7 +417,6 @@ export const mapStateToProps = (state: AppState, ownProps: ContainerProps) => {
         }
     }
     let fontSize = getTextFontSize(state);
-
     return {
         annotationsData: variantsData,
         activeAnnotation: activeAnnotation,
@@ -451,8 +448,8 @@ const mergeProps = (stateProps: StateProps, dispatchProps, ownProps) => {
             if (stateProps.questionsData.hasOwnProperty(question.uniqueId)) {
                 if (
                     stateProps.questionsData[question.uniqueId].questions
-                        .length > 0 ||
-                    stateProps.questionsData[question.uniqueId].loading
+                        .length > 0 &&
+                    !stateProps.questionsData[question.uniqueId].loading
                 ) {
                     loadQuestionData = false;
                 }
@@ -812,13 +809,13 @@ const mergeProps = (stateProps: StateProps, dispatchProps, ownProps) => {
                 stateProps.questionQuote
             );
             let questionText = questionQuoteText + content;
-
             saveAnnotation(question, content);
             const createdQuestionAction = actions.createdQuestion(
                 question,
                 title,
                 questionText
             );
+
             dispatch(createdQuestionAction);
         },
     };

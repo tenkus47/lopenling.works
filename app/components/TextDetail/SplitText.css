@@ -3,10 +3,10 @@
 .splitText {
     /* background-color: white; */
     flex-grow: 1;
-    font-size: 24px;
-    width: 100%;
-    height: 100%;
+    width: 100%; 
 }
+
+
 
 .splitText * {
     scroll-behavior: smooth;
@@ -58,8 +58,8 @@
 }
 
 .image {
-    border: 1px solid black;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .pechaImage img {

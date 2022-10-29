@@ -1,0 +1,21 @@
+.voteBtn{
+    border:none;
+    background-color: transparent;
+}
+.voteBtn svg{
+    width:1rem;
+    height:1rem;
+}
+.voteBtn svg path:hover{
+
+    color:green;
+}
+.number{
+font-size: 0.7rem;
+}
+.voteContainer{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap:2px
+}

@@ -9,7 +9,8 @@ import HighlightedString from "./HighlightedString";
 import styles from "./SearchStyle.css";
 
 function SearchList(props) {
-    const { handleListItemClick, searchValue, results, selectedText } = props;
+    const { onSelectedSearchResult, searchValue, results, selectedText } =
+        props;
     let listRef = useRef();
     let cache = useRef(
         new CellMeasurerCache({
@@ -27,25 +28,30 @@ function SearchList(props) {
                 columnIndex={0}
                 rowIndex={index}
             >
-                <div style={style}>
-                    {results.length > 0 && (
-                        <div
-                            className={styles.searchListItem}
-                            onClick={() => handleListItemClick(result[0])}
-                        >
-                            <HighlightedString
-                                string={result[1]}
-                                highlightClass={styles.highlight}
-                                searchTerm={searchValue}
-                            />
-                        </div>
-                    )}
+                <div
+                    className={styles.searchListItem}
+                    onClick={() =>
+                        onSelectedSearchResult(
+                            selectedText,
+                            result[0],
+                            searchValue.length,
+                            selectedText
+                        )
+                    }
+                    style={style}
+                >
+                    <HighlightedString
+                        string={result[1]}
+                        highlightClass={styles.highlight}
+                        searchTerm={searchValue}
+                    />
                 </div>
             </CellMeasurer>
         );
     };
 
     if (!results) return null;
+
     return (
         <>
             <AutoSizer>

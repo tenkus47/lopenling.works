@@ -5,11 +5,11 @@ import React, {
     useEffect,
     useMemo,
 } from "react";
-import styles from "./textDetailHeading.css";
+import styles from "./TextDetailHeading.css";
 import SelectVersion from "./SelectVersion";
 import _ from "lodash";
 import TextList from "./TextListContainer";
-import CloseIcon from "@mui/icons-material/Close";
+import { Close as CloseIcon } from "components/UI/muiIcon";
 import {
     Stack,
     Box,
@@ -19,8 +19,7 @@ import {
     Divider,
     ButtonGroup,
     IconButton,
-} from "@mui/material";
-import Refresh from "./HeaderMenu/Refresh";
+} from "components/UI/muiComponent";
 import Search from "./HeaderMenu/Search";
 import Settings from "./HeaderMenu/Settings";
 import TableOfContent from "./HeaderMenu/TableOfContent";
@@ -46,6 +45,7 @@ type HeaderProps = {
     searchValue: String,
     changeShowTableContent: () => void,
     searchResults: [],
+    onSelectedSearchResult: () => void,
 };
 
 function TextDetailHeading(props: HeaderProps) {
@@ -148,14 +148,12 @@ function TextDetailHeading(props: HeaderProps) {
                     }}
                     className={styles.button_group_menu}
                 >
-                    <Refresh isSecondWindowOpen={props.isSecondWindowOpen} />
                     <Divider orientation="vertical" variant="middle" flexItem />
                     <Search handleWindowSearch={handleWindowSearch} />
                     <Settings
                         textFontSize={props.textFontSize}
                         onChangedFontSize={props.onChangedFontSize}
                         onExport={props.onExport}
-                        isPanelLinked={props.isPanelLinked}
                     />
                     <TableOfContent
                         changeShowTableContent={props.changeShowTableContent}
@@ -164,7 +162,7 @@ function TextDetailHeading(props: HeaderProps) {
                 </ButtonGroup>
             </Stack>
 
-            <Collapse in={showFind}>
+            <Collapse in={showFind} mountOnEnter unmountOnExit>
                 <form onSubmit={handleSearch}>
                     <Stack direction="row" spacing={2} position="relative">
                         <TextField
@@ -205,15 +203,14 @@ function TextDetailHeading(props: HeaderProps) {
                                     boxShadow: 3,
                                     overflowX: "hidden",
                                     boxShadow: 3,
+                                    display:
+                                        results.length === 0 ? "none" : "block",
                                 }}
                             >
-                                {results.length === 0 && (
-                                    <p>no such word present</p>
-                                )}
                                 {condition && results.length > 0 && (
                                     <SearchList
-                                        handleListItemClick={
-                                            handleListItemClick
+                                        onSelectedSearchResult={
+                                            props.onSelectedSearchResult
                                         }
                                         searchValue={props.searchValue}
                                         results={results}

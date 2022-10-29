@@ -8,14 +8,13 @@ import {
     CellMeasurerCache,
 } from "react-virtualized/dist/es/CellMeasurer";
 import "react-virtualized/styles.css";
-import Text2 from "./Text2";
+import Text from "./Text";
 import SplitText from "lib/SplitText";
-import styles from "./SplitText.css";
+import styles from "components/TextDetail/SplitText.css";
 import _, { split } from "lodash";
 import TextSegment from "lib/TextSegment";
 import Witness from "lib/Witness";
 import GraphemeSplitter from "grapheme-splitter";
-import { Box } from "@mui/material";
 
 let _searchResultsCache: {
     [splitTextUniqueId: string]: {
@@ -46,7 +45,6 @@ export type Props = {
     selectedWindow: Boolean,
     selectedTargetRange: [],
     selectedSourceRange: [],
-    syncIdOnSearch: String,
     changeSyncIdOnClick: () => void,
 };
 
@@ -86,14 +84,13 @@ export default class SplitTextComponent extends React.PureComponent<Props> {
         super(props);
         this.textAlignmentById = [];
         this.changeScrollToId = props.changeScrollToId;
-
+        this.condition = props.condition;
         this.list = null;
         this.splitText = null;
         this.cache = new CellMeasurerCache({
             fixedWidth: true,
         });
         this.rowRenderer = this.rowRenderer.bind(this);
-        this.isPanelLinked = this.props.isPanelLinked;
         this.activeSelection = null;
         this.selectedNodes = null;
         this._mouseDown = false;
@@ -110,7 +107,7 @@ export default class SplitTextComponent extends React.PureComponent<Props> {
     }
     scrollEvent(e) {
         if (this.selectedWindow === 1) return null;
-        if (this.selectedWindow === 2 && this.isPanelLinked) {
+        if (this.selectedWindow === 2) {
             let list = [];
             this.textAlignmentById.map((l) => {
                 let number = document.getElementById("s2_" + l.TStart);
@@ -479,57 +476,60 @@ export default class SplitTextComponent extends React.PureComponent<Props> {
 
         this.processProps(this.props);
         this.componentDidUpdate();
-
+        this.splitText.style.scrollBehavior = "smooth";
         this.timer = setTimeout(() => {
             this.resizeHandler();
         }, 2000);
     }
+    scrollToIndex(selectedTextIndex) {
+        let list = this.list;
 
+        setTimeout(() => {
+            list.scrollToRow(selectedTextIndex);
+            setTimeout(() => {
+                list.scrollToPosition(list.props.scrollTop - 300);
+            }, 0);
+        }, 100);
+    }
     componentDidUpdate(prevProps, prevState) {
         let scrollToId = this.props.scrollToId;
         this.targetId2 = this.props.syncIdOnClick;
-        this.isPanelLinked = this.props.isPanelLinked;
         this.selectedWindow = this.props.selectedWindow;
-        let SearchSyncId = this.props.syncIdOnSearch || null;
         let list = this.list;
         let result = this.props.searchResults;
         let Alignment = this.props.textAlignment;
-        this.condition =
-            Alignment?.target?.witness === this.props.selectedWitness.id;
+        this.condition = this.props.condition;
 
-        let con =
-            prevProps?.searchResults !== this.props?.searchResults ||
-            prevProps?.syncIdOnSearch !== this.props?.syncIdOnSearch;
-
-        // for scrolling for search results;
-
-        if (con && result) {
-            if (SearchSyncId) {
-                let selectedTextIndex =
-                    this.props.splitText.getTextIndexOfPosition(SearchSyncId);
+        if (!this._didSetInitialScrollPosition && this.list) {
+            const list = this.list;
+            if (
+                this.props.activeAnnotation ||
+                this.props.selectedSearchResult
+            ) {
+                let selectedTextIndex = this.getSelectedTextIndex();
                 setTimeout(() => {
                     list.scrollToRow(selectedTextIndex);
+                    // scrollToRow often positions the annotation at the
+                    // bottom of the screen, so scroll up a bit
                     setTimeout(() => {
                         list.scrollToPosition(list.props.scrollTop - 300);
                     }, 0);
                 }, 100);
             }
+            this._didSetInitialScrollPosition = true;
         }
 
-        //for scrolling to id aligned with first window
-        //scroll control linked
+        // scroll dom with respect to window 1 scrolling
 
         if (
             this.selectedWindow === 1 &&
             scrollToId.from === 1 &&
-            this.isPanelLinked &&
             this.condition &&
             scrollToId.id !== null
         ) {
-            let list = this.list;
             this.textAlignmentById = this.props.textAlignmentById || [];
-            this.splitText.style.scrollBehavior = "smooth";
-            if (Alignment && this.isPanelLinked) {
+
+            if (Alignment) {
                 let req = this.textAlignmentById.find(
                     (l) => l.start === scrollToId.id
                 );
@@ -537,21 +537,13 @@ export default class SplitTextComponent extends React.PureComponent<Props> {
                 if (TStart !== null) {
                     let selectedTextIndex =
                         this.props.splitText.getTextIndexOfPosition(TStart);
-
-                    setTimeout(() => {
-                        list.scrollToRow(selectedTextIndex);
-
-                        setTimeout(() => {
-                            list.scrollToPosition(list.props.scrollTop - 300);
-                        }, 0);
-                    }, 100);
+                    this.scrollToIndex(selectedTextIndex);
                 }
             }
         }
-
+        // scroll dom with respect to window 1 click
         //for scrolling to the highlighted alignment if its outside visible DOM
         if (
-            this.isPanelLinked &&
             this.targetId2 &&
             scrollToId.from === null &&
             this.selectedWindow === 1 &&
@@ -567,13 +559,7 @@ export default class SplitTextComponent extends React.PureComponent<Props> {
             let selectedTextIndex =
                 this.props.splitText.getTextIndexOfPosition(syncClickTargetId);
 
-            setTimeout(() => {
-                list.scrollToRow(selectedTextIndex);
-
-                setTimeout(() => {
-                    list.scrollToPosition(list.props.scrollTop - 300);
-                }, 0);
-            }, 100);
+            this.scrollToIndex(selectedTextIndex);
         }
 
         // if (this.selectedNodes && this.selectedNodes.length > 0) {
@@ -791,18 +777,13 @@ export default class SplitTextComponent extends React.PureComponent<Props> {
 
         return (
             <div
-                className={styles.splitText2}
+                className={styles.splitText}
                 ref={(div) => (this.splitText = div)}
                 key={key}
                 style={{
                     cursor: "pointer",
                 }}
             >
-                <button
-                    id="updateList2"
-                    style={{ display: "none" }}
-                    onClick={() => this.updateList(true)}
-                ></button>
                 <AutoSizer disableWidth>
                     {({ height }) => (
                         <List
@@ -822,6 +803,8 @@ export default class SplitTextComponent extends React.PureComponent<Props> {
                             }}
                             style={{
                                 width: "100%",
+                                paddingTop: 30,
+                                paddingInline: 50,
                             }}
                         ></List>
                     )}
@@ -927,24 +910,26 @@ export default class SplitTextComponent extends React.PureComponent<Props> {
             );
         }
 
-        let newStyle = { ...style, height: style.height + 10 };
+        let newStyle = {
+            ...style,
+            height: style.height + 10,
+        };
         return (
             <CellMeasurer
                 columnIndex={0}
-                key={key}
                 parent={parent}
                 rowIndex={index}
                 cache={cache}
+                key={key}
             >
                 <div
-                    key={key}
                     style={newStyle}
                     ref={this.splitTextRef}
                     id={`index2_${index}`}
                     className={styles.splitTextRow}
                 >
                     <div className={styles.splitTextRowContent}>
-                        <Text2
+                        <Text
                             segmentedText={props.splitText.texts[index]}
                             row={index}
                             selectedSegmentId={props.selectedSegmentId}

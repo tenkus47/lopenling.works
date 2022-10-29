@@ -3,14 +3,15 @@ import TextDetailHeading from "./TextDetailHeadingContainer";
 import SplitText from "lib/SplitText";
 import Loader from "react-loader";
 import lengthSplitter from "lib/text_splitters/lengthSplitter";
-import styles from "./TextDetail.css";
-import { Box, Divider, Slide } from "@mui/material";
+import styles from "components/TextDetail/TextDetail.css";
+import { Box, Divider, Slide } from "components/UI/muiComponent";
 import TableOfContent from "./TableOfContent/TableOfContent";
 import utilStyles from "css/util.css";
 import classnames from "classnames";
+import TestHtml from "./TestHtml";
 
-import imageStyle from "components/MediaComponent/Image.css";
 import SplitTextComponent from "./SplitText";
+import TextHtml from "./TestHtml";
 
 function TextDetail(props) {
     const ref = useRef();
@@ -29,7 +30,9 @@ function TextDetail(props) {
     }, []);
 
     function mouseEnter() {
-        props.changeSelectedWindow(2);
+        if (text.name) {
+            props.changeSelectedWindow(2);
+        }
     }
 
     let inlineControls = false;
@@ -37,7 +40,7 @@ function TextDetail(props) {
     let splitText = null;
     const selectedWindow = props.selectedWindow;
     if (!props.annotatedText || !props.text || props.loading) {
-        textComponent = <div key={`key-${Math.random()}`} />;
+        textComponent = <div key={Math.random()} />;
     } else {
         let limitWidth = false;
         let splitter;
@@ -53,21 +56,13 @@ function TextDetail(props) {
         textComponent = (
             <SplitTextComponent
                 splitText={splitText}
-                // annotations={this.props.annotations}
-                // activeAnnotations={this.props.activeAnnotations}
-                // activeAnnotation={this.props.activeAnnotation}
                 limitWidth={limitWidth}
-                // didSelectSegmentIds={props.didSelectSegmentIds}
                 selectedSegmentId={props.selectedSegmentId}
                 annotationPositions={props.annotationPositions}
                 selectedAnnotatedSegments={props?.selectedAnnotatedSegments}
-                // textListVisible={this.props.textListVisible}
-                // showImages={this.props.pageImagesVisible}
-                // imagesBaseUrl={this.props.imagesBaseUrl}
                 selectedWitness={props.selectedWitness}
                 key={key}
-                // selectedSearchResult={this.props.selectedSearchResult}
-                // searchValue={this.props.searchValue}
+                selectedSearchResult={props.selectedSearchResult}
                 fontSize={props.textFontSize}
                 scrollToId={props.scrollToId}
                 syncIdOnClick={props.syncIdOnClick}
@@ -83,29 +78,26 @@ function TextDetail(props) {
                 searchResults={props.searchResults}
                 searchValue={props.searchValue}
                 selectedText={props.text}
-                syncIdOnSearch={props.syncIdOnSearch}
+                condition={props.condition}
             ></SplitTextComponent>
         );
     }
 
     let textComponents = [textComponent];
-    let thirdWindowHeight = imageStyle.ThirdWindowHeight;
-    let bodyHeight = "calc(100% - " + thirdWindowHeight + ")";
-    // let condition = props.isPanelVisible;
     return (
         <Box
             ref={ref}
-            className={styles.textDetail2}
+            className={styles.textDetail}
             sx={{
                 height: "100%",
                 flex: 1,
-                bgcolor: "navbar.main",
+                bgcolor: "heading.main",
                 color: "texts.main",
             }}
         >
             <TextDetailHeading />
             <Divider />
-            <Loader loaded={!props.loading} />
+            <Loader loaded={!props.loading} zIndex={5} />
             <Box
                 style={{
                     display: "flex",
@@ -115,15 +107,13 @@ function TextDetail(props) {
                 }}
             >
                 <Box
-                    style={{ flex: 1 }}
                     className={classnames(
-                        styles.textContainer2,
+                        styles.textContainer,
                         utilStyles.flex
                     )}
                 >
-                    {!props.loading ? textComponents : <div></div>}
+                    {!props.loading ? textComponents : <div />}
                 </Box>
-
                 <Slide
                     direction="left"
                     in={props.showTableContent}

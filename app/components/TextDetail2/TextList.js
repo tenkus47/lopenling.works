@@ -6,7 +6,7 @@ import {
     CellMeasurerCache,
 } from "react-virtualized";
 import classname from "classnames";
-import styles from "./TextList.css";
+import styles from "components/TextDetail/TextList.css";
 import addShay from "lib/addTibetanShay";
 
 import {
@@ -16,19 +16,18 @@ import {
     Typography,
     Button,
     Grow,
-} from "@mui/material";
+} from "components/UI/muiComponent";
 import { useMemo } from "react";
 function TextList(props) {
     const temptext = useRef(props.texts);
     const [textslist, setTextList] = useState(temptext.current);
     const [filterValue, setFilterValue] = useState(null);
-
     const onSelectedText = props.onSelectedText;
     const selectedText = props.selectedText;
     const [isOpen, setIsOpen] = useState(false);
-    let selected = useMemo(() => {
-        return selectedText ? selectedText.name : textslist[0].name;
-    }, [selectedText, textslist]);
+
+    let selected = selectedText?.name;
+    let selectedText1 = props.selectedText1;
     useEffect(() => {
         let temp = [];
         if (filterValue === "") {
@@ -117,8 +116,11 @@ function TextList(props) {
                         height: "100%",
                         color: "text.primary",
                     }}
+                    disabled={selectedText1 === null}
                 >
-                    <Typography noWrap={true}>{selected}</Typography>
+                    <Typography noWrap={true}>
+                        {selected ? selected : "select Text here"}
+                    </Typography>
                 </Button>
                 <Grow in={isOpen}>
                     <Box

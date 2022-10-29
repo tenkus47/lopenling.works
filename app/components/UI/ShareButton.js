@@ -7,16 +7,15 @@
     import styles from './Sharebutton.css'
 
 
-const ShareButton=({props})=>{
+const ShareButton=({content})=>{
 
-const content=props?.annotationData?.content
+// const content=props?.annotationData?.content
 
     return (
         <div className={styles.shareContainer} >
             <div className={styles.shareButton}>
                  <FormattedMessage id="annotation.share" />
-              
-                 </div>
+            </div>
             <FacebookShareButton
             className={styles.facebookButton}
                 id="sharebutton"

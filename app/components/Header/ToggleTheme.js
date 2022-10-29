@@ -1,7 +1,6 @@
-import { Box, IconButton } from "@mui/material";
+import { Box, IconButton } from "components/UI/muiComponent";
 import React, { useEffect } from "react";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
+import { Brightness7, Brightness4 } from "components/UI/muiIcon";
 import { useTheme } from "@mui/material/styles";
 import useLocalStorage from "components/utility/useLocalStorage";
 function ToggleTheme({ changeTheme }) {
@@ -20,11 +19,7 @@ function ToggleTheme({ changeTheme }) {
 
     return (
         <IconButton sx={{ ml: 1 }} onClick={handleThemeChange} color="inherit">
-            {theme.palette.mode === "dark" ? (
-                <Brightness7Icon />
-            ) : (
-                <Brightness4Icon />
-            )}
+            {theme.palette.mode === "dark" ? <Brightness7 /> : <Brightness4 />}
         </IconButton>
     );
 }

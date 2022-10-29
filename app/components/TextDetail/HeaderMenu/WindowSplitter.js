@@ -1,8 +1,12 @@
 import React from "react";
-import VerticalSplitIcon from "@mui/icons-material/VerticalSplit";
-import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
-import MuiToggleButton from "@mui/material/ToggleButton";
-import { Tooltip } from "@mui/material";
+import VerticalSplitIcon from "components/UI/muiIcon/VerticalSplit";
+import {
+    styled,
+    createTheme,
+    ThemeProvider,
+} from "components/UI/muiComponent/styles";
+import MuiToggleButton from "components/UI/muiComponent/ToggleButton";
+import { Tooltip } from "components/UI/muiComponent";
 
 const ToggleButton = styled(MuiToggleButton)(({ selectedcolor }) => ({
     "&.Mui-selected, &.Mui-selected:hover": {

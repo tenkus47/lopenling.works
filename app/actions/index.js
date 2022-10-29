@@ -13,11 +13,8 @@ export const CHANGE_URL = "CHANGE_URL";
 //Media
 
 export const ACTIVATE_MEDIA = "MEDIA_SELECTION";
-export const LOAD_IMAGE_DATA = "LOAD_IMAGE_DATA";
 export const LOAD_VIDEO_DATA = "LOAD_VIDEO_DATA";
-export const IS_IMAGE_PORTRAIT = "IS_IMAGE_PORTRAIT";
-export const SELECT_IMAGE_VERSION = "SELECT_IMAGE_VERSION";
-export const SELECT_IMAGE = "SELECT_IMAGE";
+export const SELECT_MEDIA_INTERVAL = "SELECT_MEDIA_INTERVAL";
 // Data
 export const LOAD_ALIGNMENT = "LOAD_ALIGNMENT";
 export const TEXT_ALIGNMENTS = "TEXT_ALIGNMENTS";
@@ -50,11 +47,11 @@ export const LOADING_WITNESS_ANNOTATIONS2 = "LOADING_WITNESS_ANNOTATIONS2";
 export const LOADED_WITNESS_ANNOTATIONS = "LOADED_WITNESS_ANNOTATIONS";
 export const LOADED_WITNESS_ANNOTATIONS2 = "LOADED_WITNESS_ANNOTATIONS2";
 export const LOADED_WITNESS_ANNOTATION_OPERATIONS =
-  "LOADED_WITNESS_ANNOTATION_OPERATIONS";
+    "LOADED_WITNESS_ANNOTATION_OPERATIONS";
 export const LOADED_WITNESS_ANNOTATION_OPERATIONS2 =
-  "LOADED_WITNESS_ANNOTATION_OPERATIONS2";
+    "LOADED_WITNESS_ANNOTATION_OPERATIONS2";
 export const LOADED_WITNESS_REMOVED_ANNOTATIONS =
-  "LOADED_WITNESS_REMOVED_ANNOTATIONS";
+    "LOADED_WITNESS_REMOVED_ANNOTATIONS";
 
 export const LOADED_TEXT_DATA = "LOADED_TEXT_DATA";
 
@@ -81,6 +78,7 @@ export const REMOVED_TEMPORARY_ANNOTATION = "text/REMOVED_TEMPORARY_ANNOTATION";
 
 // UI
 export const CHANGE_THEME = "CHANGE_THEME";
+export const CHANGE_CONDITION = "CHANGE_CONDITION";
 export const CHANGE_ANNOTATING = "CHANGE_ANNOTATING";
 export const SELECTED_TEXT = "textList/SELECTED_TEXT";
 export const SELECTED_TEXT2 = "textList/SELECTED_TEXT2";
@@ -92,7 +90,9 @@ export const UPDATED_SEARCH_RESULTS = "textList/UPDATED_SEARCH_RESULTS";
 export const UPDATED_SEARCH_RESULTS2 = "textList/UPDATED_SEARCH_RESULTS2";
 
 export const SELECTED_SEARCH_RESULT = "textList/SELECTED_SEARCH_RESULT";
-export const SECOND_WINDOW = "notification/SECOND_WINDOW";
+export const SELECTED_SEARCH_RESULT2 = "textList/SELECTED_SEARCH_RESULT2";
+
+export const SECOND_WINDOW = "UI/SECOND_WINDOW";
 
 export const CHANGE_RANGE_SELECTION = "CHANGE_RANGE_SELECTION";
 
@@ -108,7 +108,7 @@ export const DESELECTED_SEGMENT = "text/DESELECTED_SEGMENT";
 
 export const CHANGED_ACTIVE_ANNOTATION = "text/CHANGED_ACTIVE_ANNOTATION";
 export const CHANGED_ACTIVE_TEXT_ANNOTATION =
-  "text/CHANGED_ACTIVE_TEXT_ANNOTATION";
+    "text/CHANGED_ACTIVE_TEXT_ANNOTATION";
 
 export const CHANGED_TEXT_LIST_VISIBLE = "textList/CHANGED_TEXT_LIST_VISIBLE";
 export const CHANGED_MENU_LIST_VISIBLE = "textList/CHANGED_MENU_LIST_VISIBLE";
@@ -116,7 +116,7 @@ export const CHANGED_TEXT_LIST_WIDTH = "textList/CHANGED_TEXT_LIST_WIDTH";
 export const CHANGED_MENU_LIST_WIDTH = "textList/CHANGED_MENU_LIST_WIDTH";
 
 export const CHANGED_WITNESS_SCROLL_POSITION =
-  "text/CHANGED_WITNESS_SCROLL_POSITION";
+    "text/CHANGED_WITNESS_SCROLL_POSITION";
 
 export const EXPORT_WITNESS = "text/EXPORT_WITNESS";
 export const EXPORTED_WITNESS = "text/EXPORTED_WITNESS";
@@ -158,20 +158,20 @@ export const TEXTID_ONLY_URL = "urls/TEXTID";
 /** Action creators **/
 
 export type Action = {
-  type: string,
-  payload?: any,
+    type: string,
+    payload?: any,
 };
 
 export type WitnessAction = Action & {
-  witnessId: number,
+    witnessId: number,
 };
 
 export type TextDataAction = Action & {
-  text: api.TextData,
+    text: api.TextData,
 };
 
 export type AnnotationAction = Action & {
-  annotation: Annotation,
+    annotation: Annotation,
 };
 
 /* DATA */
@@ -179,905 +179,906 @@ export type AnnotationAction = Action & {
 // TEXTS
 
 export function loadTexts(): Action {
-  return {
-    type: LOAD_TEXTS,
-  };
+    return {
+        type: LOAD_TEXTS,
+    };
 }
 
 export function loadingTexts(): Action {
-  return {
-    type: LOADING_TEXTS,
-  };
+    return {
+        type: LOADING_TEXTS,
+    };
 }
 
 export type TextsAction = Action & {
-  texts: api.TextData[],
+    texts: api.TextData[],
 };
 
 export function loadedTexts(texts: api.TextData[]): TextsAction {
-  return {
-    type: LOADED_TEXTS,
-    texts,
-  };
+    return {
+        type: LOADED_TEXTS,
+        texts,
+    };
 }
 export function loadAllTexts(texts) {
-  return {
-    type: LOADED_TEXTS_ALL,
-    texts,
-  };
+    return {
+        type: LOADED_TEXTS_ALL,
+        texts,
+    };
 }
 
 // SOURCES
 
 export function loadSources(): Action {
-  return {
-    type: LOAD_SOURCES,
-  };
+    return {
+        type: LOAD_SOURCES,
+    };
 }
 
 export function loadingSources(): Action {
-  return {
-    type: LOADING_SOURCES,
-  };
+    return {
+        type: LOADING_SOURCES,
+    };
 }
 
 export type LoadedSourcesAction = Action & {
-  sources: api.SourceData[],
+    sources: api.SourceData[],
 };
 export function loadedSources(sources: api.SourceData[]): LoadedSourcesAction {
-  return {
-    type: LOADED_SOURCES,
-    sources,
-  };
+    return {
+        type: LOADED_SOURCES,
+        sources,
+    };
 }
 
 // INITIAL DATA
 
 export function loadInitialData(): Action {
-  return {
-    type: LOAD_INITIAL_DATA,
-  };
+    return {
+        type: LOAD_INITIAL_DATA,
+    };
 }
 
 export function loadingInitialData(): Action {
-  return {
-    type: LOADING_INITIAL_DATA,
-  };
+    return {
+        type: LOADING_INITIAL_DATA,
+    };
 }
 
 export function loadedInitialData(): Action {
-  return {
-    type: LOADED_INITIAL_DATA,
-  };
+    return {
+        type: LOADED_INITIAL_DATA,
+    };
 }
 
 export function loadingWitnesses(text: api.TextData): TextDataAction {
-  return {
-    type: LOADING_WITNESSES,
-    text,
-  };
+    return {
+        type: LOADING_WITNESSES,
+        text,
+    };
 }
 export function loadingWitnesses2(text: api.TextData): TextDataAction {
-  return {
-    type: LOADING_WITNESSES2,
-    text,
-  };
+    return {
+        type: LOADING_WITNESSES2,
+        text,
+    };
 }
 
 export type LoadedWitnessesAction = TextDataAction & {
-  witnesses: api.WitnessData[],
+    witnesses: api.WitnessData[],
 };
 export function loadedWitnesses(
-  text: api.TextData,
-  witnesses: api.WitnessData[]
+    text: api.TextData,
+    witnesses: api.WitnessData[]
 ) {
-  return {
-    type: LOADED_WITNESSES,
-    text,
-    witnesses,
-  };
+    return {
+        type: LOADED_WITNESSES,
+        text,
+        witnesses,
+    };
 }
 
 export function loadedWitnesses2(
-  text: api.TextData,
-  witnesses: api.WitnessData[]
+    text: api.TextData,
+    witnesses: api.WitnessData[]
 ) {
-  return {
-    type: LOADED_WITNESSES2,
-    text,
-    witnesses,
-  };
+    return {
+        type: LOADED_WITNESSES2,
+        text,
+        witnesses,
+    };
 }
 
 // ANNOTATIONS
 
 export function loadWitnessAnnotations(witnessId: number): WitnessAction {
-  return {
-    type: LOAD_WITNESS_ANNOTATIONS,
-    witnessId,
-  };
+    return {
+        type: LOAD_WITNESS_ANNOTATIONS,
+        witnessId,
+    };
 }
 export function loadWitnessAnnotations2(witnessId: number): WitnessAction {
-  return {
-    type: LOAD_WITNESS_ANNOTATIONS2,
-    witnessId,
-  };
+    return {
+        type: LOAD_WITNESS_ANNOTATIONS2,
+        witnessId,
+    };
 }
 
 export function loadingWitnessAnnotations(witnessId: number): WitnessAction {
-  return {
-    type: LOADING_WITNESS_ANNOTATIONS,
-    witnessId,
-  };
+    return {
+        type: LOADING_WITNESS_ANNOTATIONS,
+        witnessId,
+    };
 }
 export function loadingWitnessAnnotations2(witnessId: number): WitnessAction {
-  return {
-    type: LOADING_WITNESS_ANNOTATIONS2,
-    witnessId,
-  };
+    return {
+        type: LOADING_WITNESS_ANNOTATIONS2,
+        witnessId,
+    };
 }
 
 export type LoadedWitnessAnnotationsAction = Action & {
-  witnessId: number,
-  annotations: api.AnnotationData[],
+    witnessId: number,
+    annotations: api.AnnotationData[],
 };
 export function loadedWitnessAnnotations(
-  witnessId: number,
-  annotations: api.AnnotationData[]
+    witnessId: number,
+    annotations: api.AnnotationData[]
 ): LoadedWitnessAnnotationsAction {
-  return {
-    type: LOADED_WITNESS_ANNOTATIONS,
-    witnessId,
-    annotations,
-  };
+    return {
+        type: LOADED_WITNESS_ANNOTATIONS,
+        witnessId,
+        annotations,
+    };
 }
 
 export type LoadedWitnessAnnotationsAction2 = Action & {
-  witnessId: number,
-  annotations: api.AnnotationData[],
+    witnessId: number,
+    annotations: api.AnnotationData[],
 };
 export function loadedWitnessAnnotations2(
-  witnessId: number,
-  annotations: api.AnnotationData[]
+    witnessId: number,
+    annotations: api.AnnotationData[]
 ): LoadedWitnessAnnotationsAction2 {
-  return {
-    type: LOADED_WITNESS_ANNOTATIONS2,
-    witnessId,
-    annotations,
-  };
+    return {
+        type: LOADED_WITNESS_ANNOTATIONS2,
+        witnessId,
+        annotations,
+    };
 }
 
 export type LoadedWitnessAnnotationOperationsAction = WitnessAction & {
-  annotationOperations: api.AnnotationOperationData[],
+    annotationOperations: api.AnnotationOperationData[],
 };
 export function loadedWitnessAnnotationOperations(
-  witnessId: number,
-  annotationOperations: api.AnnotationOperationData[]
+    witnessId: number,
+    annotationOperations: api.AnnotationOperationData[]
 ): LoadedWitnessAnnotationOperationsAction {
-  return {
-    type: LOADED_WITNESS_ANNOTATION_OPERATIONS,
-    witnessId,
-    annotationOperations,
-  };
+    return {
+        type: LOADED_WITNESS_ANNOTATION_OPERATIONS,
+        witnessId,
+        annotationOperations,
+    };
 }
 export function loadedWitnessAnnotationOperations2(
-  witnessId: number,
-  annotationOperations: api.AnnotationOperationData[]
+    witnessId: number,
+    annotationOperations: api.AnnotationOperationData[]
 ): LoadedWitnessAnnotationOperationsAction {
-  return {
-    type: LOADED_WITNESS_ANNOTATION_OPERATIONS2,
-    witnessId,
-    annotationOperations,
-  };
+    return {
+        type: LOADED_WITNESS_ANNOTATION_OPERATIONS2,
+        witnessId,
+        annotationOperations,
+    };
 }
 
 export type AppliedAnnotationAction = Action & {
-  annotationId: AnnotationUniqueId,
-  witnessData: api.WitnessData,
+    annotationId: AnnotationUniqueId,
+    witnessData: api.WitnessData,
 };
 export function appliedAnnotation(
-  annotationId: AnnotationUniqueId,
-  witnessData: api.WitnessData
+    annotationId: AnnotationUniqueId,
+    witnessData: api.WitnessData
 ): AppliedAnnotationAction {
-  return {
-    type: APPLIED_ANNOTATION,
-    annotationId,
-    witnessData: witnessData,
-  };
+    return {
+        type: APPLIED_ANNOTATION,
+        annotationId,
+        witnessData: witnessData,
+    };
 }
 
 export type RemovedAppliedAnnotationAction = Action & {
-  annotationId: AnnotationUniqueId,
-  witnessData: api.WitnessData,
+    annotationId: AnnotationUniqueId,
+    witnessData: api.WitnessData,
 };
 export function removedAppliedAnnotation(
-  annotationId: AnnotationUniqueId,
-  witnessData: api.WitnessData
+    annotationId: AnnotationUniqueId,
+    witnessData: api.WitnessData
 ): RemovedAppliedAnnotationAction {
-  return {
-    type: REMOVED_APPLIED_ANNOTATION,
-    annotationId,
-    witnessData: witnessData,
-  };
+    return {
+        type: REMOVED_APPLIED_ANNOTATION,
+        annotationId,
+        witnessData: witnessData,
+    };
 }
 
 export type RemovedDefaultAnnotationAction = Action & {
-  annotationId: AnnotationUniqueId,
-  witnessData: api.WitnessData,
+    annotationId: AnnotationUniqueId,
+    witnessData: api.WitnessData,
 };
 export function removedDefaultAnnotation(
-  annotationId: AnnotationUniqueId,
-  witnessData: api.WitnessData
+    annotationId: AnnotationUniqueId,
+    witnessData: api.WitnessData
 ): RemovedDefaultAnnotationAction {
-  return {
-    type: REMOVED_DEFAULT_ANNOTATION,
-    annotationId,
-    witnessData: witnessData,
-  };
+    return {
+        type: REMOVED_DEFAULT_ANNOTATION,
+        annotationId,
+        witnessData: witnessData,
+    };
 }
 
 export type AppliedDefaultAnnotationAction = Action & {
-  annotationId: AnnotationUniqueId,
-  witnessData: api.WitnessData,
+    annotationId: AnnotationUniqueId,
+    witnessData: api.WitnessData,
 };
 export function appliedDefaultAnnotation(
-  annotationId: AnnotationUniqueId,
-  witnessData: api.WitnessData
+    annotationId: AnnotationUniqueId,
+    witnessData: api.WitnessData
 ): AppliedDefaultAnnotationAction {
-  return {
-    type: APPLIED_DEFAULT_ANNOTATION,
-    annotationId,
-    witnessData: witnessData,
-  };
+    return {
+        type: APPLIED_DEFAULT_ANNOTATION,
+        annotationId,
+        witnessData: witnessData,
+    };
 }
 
 export type CreatedAnnotationAction = Action & {
-  annotation: Annotation,
+    annotation: Annotation,
 };
 /**
  * The given annotation has been created and applied.
  */
 export function createdAnnotation(
-  annotation: Annotation
+    annotation: Annotation
 ): CreatedAnnotationAction {
-  return {
-    type: CREATED_ANNOTATION,
-    annotation,
-  };
+    return {
+        type: CREATED_ANNOTATION,
+        annotation,
+    };
 }
 
 export type UpdatedAnnotationAction = Action & {
-  annotation: Annotation,
+    annotation: Annotation,
 };
 /**
  * The given annotation has been updated with new data.
  */
 export function updatedAnnotation(
-  annotation: Annotation
+    annotation: Annotation
 ): UpdatedAnnotationAction {
-  return {
-    type: UPDATED_ANNOTATION,
-    annotation,
-  };
+    return {
+        type: UPDATED_ANNOTATION,
+        annotation,
+    };
 }
 
 export type DeletedAnnotationAction = Action & {
-  annotation: Annotation,
-  witness: Witness,
+    annotation: Annotation,
+    witness: Witness,
 };
 /**
  * The given annotation has been deleted.
  */
 export function deletedAnnotation(
-  annotation: Annotation,
-  witness: Witness
+    annotation: Annotation,
+    witness: Witness
 ): DeletedAnnotationAction {
-  return {
-    type: DELETED_ANNOTATION,
-    annotation,
-    witness,
-  };
+    return {
+        type: DELETED_ANNOTATION,
+        annotation,
+        witness,
+    };
 }
 
 export type SavedAnnotationAction = Action & {
-  annotation: Annotation,
+    annotation: Annotation,
 };
 /**
  * The annotation has been succesfully saved and given a
  * valid id.
  */
 export function savedAnnotation(annotation: Annotation): SavedAnnotationAction {
-  return {
-    type: SAVED_ANNOTATION,
-    annotation,
-  };
+    return {
+        type: SAVED_ANNOTATION,
+        annotation,
+    };
 }
 
 export type CreatedQuestionAction = Action & {
-  annotation: Annotation,
-  title: string,
-  content: string,
+    annotation: Annotation,
+    title: string,
+    content: string,
 };
 /**
  * The given annotation has been created and applied.
  */
 export function createdQuestion(
-  annotation: Annotation,
-  title: string,
-  content: string
+    annotation: Annotation,
+    title: string,
+    content: string
 ): CreatedQuestionAction {
-  return {
-    type: CREATED_QUESTION,
-    annotation,
-    title,
-    content,
-  };
+    return {
+        type: CREATED_QUESTION,
+        annotation,
+        title,
+        content,
+    };
 }
 
 export type LoadQuestionAction = Action & {
-  annotation: Annotation,
+    annotation: Annotation,
 };
 export function loadQuestion(annotation: Annotation): LoadQuestionAction {
-  return {
-    type: LOAD_QUESTION,
-    annotation,
-  };
+    return {
+        type: LOAD_QUESTION,
+        annotation,
+    };
 }
 
 export type LoadingQuestionAction = Action & {
-  annotation: Annotation,
+    annotation: Annotation,
 };
 export function loadingQuestion(annotation: Annotation): LoadingQuestionAction {
-  return {
-    type: LOADING_QUESTION,
-    annotation,
-  };
+    return {
+        type: LOADING_QUESTION,
+        annotation,
+    };
 }
 
 export type LoadedQuestionAction = Action & {
-  annotation: Annotation,
-  data: {},
+    annotation: Annotation,
+    data: {},
 };
 export function loadedQuestion(
-  annotation: Annotation,
-  data: {}
+    annotation: Annotation,
+    data: {}
 ): LoadedQuestionAction {
-  return {
-    type: LOADED_QUESTION,
-    annotation,
-    data,
-  };
+    return {
+        type: LOADED_QUESTION,
+        annotation,
+        data,
+    };
 }
 
 /* USER */
 export type UserAction = Action & {
-  userId: number,
-  userName: string,
-  userLocale: string,
+    userId: number,
+    userName: string,
+    userLocale: string,
 };
 export function userLoggedIn(
-  userId: number,
-  userName: string,
-  userLocale: string
+    userId: number,
+    userName: string,
+    userLocale: string
 ): UserAction {
-  return {
-    type: USER_LOGGED_IN,
-    userId,
-    userName,
-    userLocale,
-  };
+    return {
+        type: USER_LOGGED_IN,
+        userId,
+        userName,
+        userLocale,
+    };
 }
 
 export type LoadedUserSettingsAction = Action & {
-  settings: api.UserSettings,
+    settings: api.UserSettings,
 };
 export function loadedUserSettings(
-  settings: api.UserSettings
+    settings: api.UserSettings
 ): LoadedUserSettingsAction {
-  return {
-    type: LOADED_USER_SETTINGS,
-    settings,
-  };
+    return {
+        type: LOADED_USER_SETTINGS,
+        settings,
+    };
 }
 
 /* UI */
 
 export type SelectedTextAction = Action & TextDataAction;
 export function selectedText(text: api.TextData): SelectedTextAction {
-  return {
-    type: SELECTED_TEXT,
-    text,
-  };
+    return {
+        type: SELECTED_TEXT,
+        text,
+    };
 }
 
 export function changeIsAnnotating(payload) {
-  return {
-    type: CHANGE_ANNOTATING,
-    payload,
-  };
+    return {
+        type: CHANGE_ANNOTATING,
+        payload,
+    };
 }
 export type SelectedTextAction2 = Action & TextDataAction;
 export function selectedText2(text: api.TextData): SelectedTextAction2 {
-  return {
-    type: SELECTED_TEXT2,
-    text,
-  };
+    return {
+        type: SELECTED_TEXT2,
+        text,
+    };
 }
 export function changeTheme(payload) {
-  return {
-    type: CHANGE_THEME,
-    payload,
-  };
+    return {
+        type: CHANGE_THEME,
+        payload,
+    };
 }
+export function changeCondition(payload) {
+    return {
+        type: CHANGE_CONDITION,
+        payload,
+    };
+}
+
 export type ChangedSearchValueAction = Action & {
-  searchValue: string,
+    searchValue: string,
 };
 export function changedSearchValue(
-  searchValue: string
+    searchValue: string
 ): ChangedSearchValueAction {
-  return {
-    type: CHANGED_SEARCH_VALUE,
-    searchValue,
-  };
+    return {
+        type: CHANGED_SEARCH_VALUE,
+        searchValue,
+    };
 }
 export function changedSearchValue2(
-  searchValue: string
+    searchValue: string
 ): ChangedSearchValueAction {
-  return {
-    type: CHANGED_SEARCH_VALUE2,
-    searchValue,
-  };
+    return {
+        type: CHANGED_SEARCH_VALUE2,
+        searchValue,
+    };
 }
 
 export type ChangedSearchTermAction = Action & {
-  searchTerm: string,
+    searchTerm: string,
 };
 export function changedSearchTerm(searchTerm: string): ChangedSearchTermAction {
-  return {
-    type: CHANGED_SEARCH_TERM,
-    searchTerm,
-  };
+    return {
+        type: CHANGED_SEARCH_TERM,
+        searchTerm,
+    };
 }
 
 export type SearchedTextAction = Action & {
-  textId: number,
-  searchValue: string,
+    textId: number,
+    searchValue: string,
 };
 export function searchedText(
-  textId: number,
-  searchValue: string
+    textId: number,
+    searchValue: string
 ): ChangedSearchValueAction {
-  return {
-    type: SEARCHED_TEXT,
-    textId,
-    searchValue,
-  };
+    return {
+        type: SEARCHED_TEXT,
+        textId,
+        searchValue,
+    };
 }
 
 export type UpdatedSearchResultsAction = Action & {
-  searchValue: string,
-  searchResults: { [text_id: number]: api.TextSearchResultData },
+    searchValue: string,
+    searchResults: { [text_id: number]: api.TextSearchResultData },
 };
 export function updatedSearchResults(
-  searchValue: string,
-  searchResults: { [number]: api.TextSearchResultData }
+    searchValue: string,
+    searchResults: { [number]: api.TextSearchResultData }
 ): UpdatedSearchResultsAction {
-  return {
-    type: UPDATED_SEARCH_RESULTS,
-    searchValue,
-    searchResults,
-  };
+    return {
+        type: UPDATED_SEARCH_RESULTS,
+        searchValue,
+        searchResults,
+    };
 }
 
 export function updatedSearchResults2(
-  searchValue: string,
-  searchResults: { [number]: api.TextSearchResultData }
+    searchValue: string,
+    searchResults: { [number]: api.TextSearchResultData }
 ): UpdatedSearchResultsAction {
-  return {
-    type: UPDATED_SEARCH_RESULTS2,
-    searchValue,
-    searchResults,
-  };
+    return {
+        type: UPDATED_SEARCH_RESULTS2,
+        searchValue,
+        searchResults,
+    };
 }
 
 export type SelectedSearchResultAction = Action & {
-  textId: number | null,
-  start: number | null,
-  length: number | null,
+    textId: number | null,
+    start: number | null,
+    length: number | null,
 };
 export function selectedSearchResult(
-  textId: number | null,
-  start: number | null,
-  length: number | null
+    textId: number | null,
+    start: number | null,
+    length: number | null
 ): SelectedSearchResultAction {
-  return {
-    type: SELECTED_SEARCH_RESULT,
-    textId,
-    start,
-    length,
-  };
+    return {
+        type: SELECTED_SEARCH_RESULT,
+        textId,
+        start,
+        length,
+    };
+}
+export function selectedSearchResult2(
+    textId: number | null,
+    start: number | null,
+    length: number | null
+): SelectedSearchResultAction {
+    return {
+        type: SELECTED_SEARCH_RESULT2,
+        textId,
+        start,
+        length,
+    };
 }
 
 export type ChangedTextListWidth = Action & {
-  width: number,
+    width: number,
 };
 export function changedTextListWidth(width: number): ChangedTextListWidth {
-  return {
-    type: CHANGED_TEXT_LIST_WIDTH,
-    width,
-  };
+    return {
+        type: CHANGED_TEXT_LIST_WIDTH,
+        width,
+    };
 }
 
 export type ChangedShowPageImagesAction = Action & {
-  showPageImages: boolean,
+    showPageImages: boolean,
 };
 export function changedShowPageImages(
-  showPageImages: boolean
+    showPageImages: boolean
 ): ChangedShowPageImagesAction {
-  return {
-    type: CHANGED_SHOW_PAGE_IMAGES,
-    showPageImages,
-  };
+    return {
+        type: CHANGED_SHOW_PAGE_IMAGES,
+        showPageImages,
+    };
 }
 
 export type ChangedTextFontSizeAction = Action & {
-  fontSize: number,
+    fontSize: number,
 };
 export function changedTextFontSize(
-  fontSize: number
+    fontSize: number
 ): ChangedTextFontSizeAction {
-  return {
-    type: CHANGED_TEXT_FONT_SIZE,
-    fontSize,
-  };
+    return {
+        type: CHANGED_TEXT_FONT_SIZE,
+        fontSize,
+    };
 }
 
 export type ChangedTextFontSizeAction2 = Action & {
-  fontSize: number,
+    fontSize: number,
 };
 export function changedTextFontSize2(
-  fontSize: number
+    fontSize: number
 ): ChangedTextFontSizeAction2 {
-  return {
-    type: CHANGED_TEXT_FONT_SIZE2,
-    fontSize,
-  };
+    return {
+        type: CHANGED_TEXT_FONT_SIZE2,
+        fontSize,
+    };
 }
 
 export type SelectedTextWitnessAction = Action & {
-  witnessId: number,
-  textId: number,
+    witnessId: number,
+    textId: number,
 };
 export function selectedTextWitness(
-  textId: number,
-  witnessId: number
+    textId: number,
+    witnessId: number
 ): SelectedTextWitnessAction {
-  return {
-    type: SELECTED_WITNESS,
-    textId,
-    witnessId,
-  };
+    return {
+        type: SELECTED_WITNESS,
+        textId,
+        witnessId,
+    };
 }
 
 export type SelectedTextWitnessAction2 = Action & {
-  witnessId: number,
-  textId: number,
+    witnessId: number,
+    textId: number,
 };
 export function selectedTextWitness2(
-  textId: number,
-  witnessId: number
+    textId: number,
+    witnessId: number
 ): SelectedTextWitnessAction2 {
-  return {
-    type: SELECTED_WITNESS2,
-    textId,
-    witnessId,
-  };
+    return {
+        type: SELECTED_WITNESS2,
+        textId,
+        witnessId,
+    };
 }
 
 export type AddedTemporaryAnnotationAction = Action & {
-  annotation: TemporaryAnnotation,
-  isActive: boolean,
+    annotation: TemporaryAnnotation,
+    isActive: boolean,
 };
 export function addedTemporaryAnnotation(
-  annotation: TemporaryAnnotation,
-  isActive: boolean
+    annotation: TemporaryAnnotation,
+    isActive: boolean
 ): AddedTemporaryAnnotationAction {
-  return {
-    type: ADDED_TEMPORARY_ANNOTATION,
-    annotation,
-    isActive,
-  };
+    return {
+        type: ADDED_TEMPORARY_ANNOTATION,
+        annotation,
+        isActive,
+    };
 }
 
 export type RemovedTemporaryAnnotationAction = Action & {
-  annotation: TemporaryAnnotation,
+    annotation: TemporaryAnnotation,
 };
 export function removedTemporaryAnnotation(
-  annotation: TemporaryAnnotation
+    annotation: TemporaryAnnotation
 ): RemovedTemporaryAnnotationAction {
-  return {
-    type: REMOVED_TEMPORARY_ANNOTATION,
-    annotation,
-  };
+    return {
+        type: REMOVED_TEMPORARY_ANNOTATION,
+        annotation,
+    };
 }
 
 export type ChangedActiveAnnotationAction = Action & {
-  annotation: Annotation | null,
+    annotation: Annotation | null,
 };
 
 export function changedActiveAnnotation(
-  annotation: Annotation | null
+    annotation: Annotation | null
 ): ChangedActiveAnnotationAction {
-  return {
-    type: CHANGED_ACTIVE_ANNOTATION,
-    annotation,
-  };
+    return {
+        type: CHANGED_ACTIVE_ANNOTATION,
+        annotation,
+    };
 }
 
 export function changedActiveTextAnnotation(
-  annotation: Annotation | null
+    annotation: Annotation | null
 ): ChangedActiveAnnotationAction {
-  return {
-    type: CHANGED_ACTIVE_TEXT_ANNOTATION,
-    annotation,
-  };
+    return {
+        type: CHANGED_ACTIVE_TEXT_ANNOTATION,
+        annotation,
+    };
 }
 
 export type ChangedTextListVisibleAction = Action & {
-  isVisible: boolean,
+    isVisible: boolean,
 };
 export function changedTextListVisible(
-  isVisible: boolean
+    isVisible: boolean
 ): ChangedTextListVisibleAction {
-  return {
-    type: CHANGED_TEXT_LIST_VISIBLE,
-    isVisible,
-  };
+    return {
+        type: CHANGED_TEXT_LIST_VISIBLE,
+        isVisible,
+    };
 }
 
 export type ChangedWitnessScrollPositionAction = Action & {
-  witnessId: number,
-  scrollPosition: number,
+    witnessId: number,
+    scrollPosition: number,
 };
 
 export function changedWitnessScrollPosition(
-  witnessId: number,
-  scrollPosition: number
+    witnessId: number,
+    scrollPosition: number
 ): ChangedWitnessScrollPositionAction {
-  return {
-    type: CHANGED_WITNESS_SCROLL_POSITION,
-    witnessId,
-    scrollPosition,
-  };
+    return {
+        type: CHANGED_WITNESS_SCROLL_POSITION,
+        witnessId,
+        scrollPosition,
+    };
 }
 
 export type ExportWitnessAction = Action & {
-  witnessId: number,
-  format: string,
+    witnessId: number,
+    format: string,
 };
 
 export function exportWitness(
-  witnessId: number,
-  format: string
+    witnessId: number,
+    format: string
 ): ExportWitnessAction {
-  return {
-    type: EXPORT_WITNESS,
-    witnessId,
-    format,
-  };
+    return {
+        type: EXPORT_WITNESS,
+        witnessId,
+        format,
+    };
 }
 
 export function exportedWitness(
-  witnessId: number,
-  format: string
+    witnessId: number,
+    format: string
 ): ExportWitnessAction {
-  return {
-    type: EXPORTED_WITNESS,
-    witnessId,
-    format,
-  };
+    return {
+        type: EXPORTED_WITNESS,
+        witnessId,
+        format,
+    };
 }
 
 export type ChangedAccountOverlayAction = Action & {
-  isVisible: boolean,
+    isVisible: boolean,
 };
 export function changedAccountOverlay(
-  isVisible: boolean
+    isVisible: boolean
 ): ChangedAccountOverlayAction {
-  return {
-    type: CHANGED_ACCOUNT_OVERLAY,
-    isVisible,
-  };
+    return {
+        type: CHANGED_ACCOUNT_OVERLAY,
+        isVisible,
+    };
 }
 
 /* I18N */
 export type UpdateLocalesAction = {
-  type: string,
-  payload: LocalesData,
+    type: string,
+    payload: LocalesData,
 };
 
 export function updateLocales(locales: LocalesData): UpdateLocalesAction {
-  return {
-    type: UPDATE_LOCALES,
-    payload: locales,
-  };
+    return {
+        type: UPDATE_LOCALES,
+        payload: locales,
+    };
 }
 
 export function selectedLocale(locale: string): Action {
-  return {
-    type: SELECTED_LOCALE,
-    payload: locale,
-  };
+    return {
+        type: SELECTED_LOCALE,
+        payload: locale,
+    };
 }
 
 /* URLS */
 export type TextUrlAction = {
-  type: string,
-  payload: {
-    textId: number,
-    witnessId?: number,
-    annotation?: string,
-  },
+    type: string,
+    payload: {
+        textId: number,
+        witnessId?: number,
+        annotation?: string,
+    },
 };
 
 export function enteredUrl(url: TextUrlAction) {
-  return {
-    type: TEXT_URL,
-    payload: {},
-  };
+    return {
+        type: TEXT_URL,
+        payload: {},
+    };
 }
 
 export function selectTextTitle(textTitle: string) {
-  return {
-    type: SELECT_TEXTTITLE,
-    payload: textTitle,
-  };
+    return {
+        type: SELECT_TEXTTITLE,
+        payload: textTitle,
+    };
 }
 
 export function setTextData(featuredText) {
-  return {
-    type: SET_TEXTDATA,
-    payload: featuredText,
-  };
+    return {
+        type: SET_TEXTDATA,
+        payload: featuredText,
+    };
 }
 
 export function searchTerm(data) {
-  return {
-    type: SEARCH_TERM,
-    payload: data,
-  };
+    return {
+        type: SEARCH_TERM,
+        payload: data,
+    };
 }
 export function loadAlignment(payload) {
-  return {
-    type: LOAD_ALIGNMENT,
-    payload,
-  };
+    return {
+        type: LOAD_ALIGNMENT,
+        payload,
+    };
 }
 export function setTextAlignment(data) {
-  return {
-    type: TEXT_ALIGNMENTS,
-    data,
-  };
+    return {
+        type: TEXT_ALIGNMENTS,
+        data,
+    };
 }
-export function toggleSecondWindow(data, textId) {
-  return {
-    type: SECOND_WINDOW,
-    payload: data,
-    textId,
-  };
+export function toggleSecondWindow(data) {
+    setTimeout(() => {
+        window.dispatchEvent(new Event("resize"));
+    }, 10);
+    return {
+        type: SECOND_WINDOW,
+        payload: data,
+    };
 }
 
 export function changeScrollToId(payload) {
-  return {
-    type: SCROLL_TO_ID,
-    payload,
-  };
-}
-
-export function changeImageScrollId(data) {
-  return {
-    type: IMAGE_SCROLL_ID,
-    data,
-  };
+    return {
+        type: SCROLL_TO_ID,
+        payload,
+    };
 }
 
 export function changeSyncIdOnClick(payload) {
-  return {
-    type: SYNC_ID_ON_CLICK,
-    payload,
-  };
-}
-
-export function changeSyncIdOnSearch(payload) {
-  return {
-    type: SYNC_ID_ON_SEARCH,
-    payload,
-  };
-}
-
-export function changeSyncIdOnSearch2(payload) {
-  return {
-    type: SYNC_ID_ON_SEARCH2,
-    payload,
-  };
+    return {
+        type: SYNC_ID_ON_CLICK,
+        payload,
+    };
 }
 
 export function changeSelectedRange(payload) {
-  return {
-    type: CHANGE_RANGE_SELECTION,
-    payload,
-  };
+    return {
+        type: CHANGE_RANGE_SELECTION,
+        payload,
+    };
 }
 
 export function changeSelectedWindow(payload) {
-  return {
-    type: CHANGE_SELECTED_WINDOW,
-    payload,
-  };
+    return {
+        type: CHANGE_SELECTED_WINDOW,
+        payload,
+    };
 }
 
 export function showTableContent(payload) {
-  return {
-    type: SHOW_TABLE_CONTENT,
-    payload,
-  };
+    return {
+        type: SHOW_TABLE_CONTENT,
+        payload,
+    };
 }
 export function showTableContent2(payload) {
-  return {
-    type: SHOW_TABLE_CONTENT2,
-    payload,
-  };
+    return {
+        type: SHOW_TABLE_CONTENT2,
+        payload,
+    };
 }
 
 export function changePanelLink(payload) {
-  return {
-    type: LINK_PANEL,
-    payload: payload,
-  };
+    return {
+        type: LINK_PANEL,
+        payload: payload,
+    };
 }
-export function changeImageData(data) {
-  return {
-    type: LOAD_IMAGE_DATA,
-    data: data,
-  };
-}
+
 export function changeVideoData(data) {
-  return {
-    type: LOAD_VIDEO_DATA,
-    data: data,
-  };
+    return {
+        type: LOAD_VIDEO_DATA,
+        data: data,
+    };
 }
 
 export function mediaSelection(data) {
-  const payload = data;
-  return {
-    type: ACTIVATE_MEDIA,
-    payload,
-  };
+    const payload = data;
+    return {
+        type: ACTIVATE_MEDIA,
+        payload,
+    };
 }
 export function changeUrl(data) {
-  return {
-    type: CHANGE_URL,
-    data,
-  };
+    return {
+        type: CHANGE_URL,
+        data,
+    };
 }
 
 export function setIsImagePortrait(payload) {
-  return {
-    type: IS_IMAGE_PORTRAIT,
-    payload,
-  };
+    return {
+        type: IS_IMAGE_PORTRAIT,
+        payload,
+    };
 }
 
 export function selectImageVersion(payload) {
-  return {
-    type: SELECT_IMAGE_VERSION,
-    payload,
-  };
+    return {
+        type: SELECT_IMAGE_VERSION,
+        payload,
+    };
 }
 export function selectImage(payload) {
-  return {
-    type: SELECT_IMAGE,
-    payload,
-  };
+    return {
+        type: SELECT_IMAGE,
+        payload,
+    };
+}
+export function selectMediaInterval(payload) {
+    return {
+        type: SELECT_MEDIA_INTERVAL,
+        interval: payload,
+    };
 }

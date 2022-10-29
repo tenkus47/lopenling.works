@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import WrenchIcon from "images/wrench.svg";
-import Slider from "../../UI/Slider";
-import CheckIcon from "@mui/icons-material/Check";
+import { Check as CheckIcon } from "components/UI/muiIcon";
 import useLocalStorage from "components/utility/useLocalStorage";
+import FontContainer from "components/textDetail/fontSize";
 import {
     IconButton,
     MenuList,
@@ -12,7 +12,8 @@ import {
     Typography,
     Box,
     ClickAwayListener,
-} from "@mui/material";
+} from "components/UI/muiComponent";
+
 import { FONT_LIST } from "app_constants";
 function Settings(props) {
     let [showOption, setShowOption] = useState(false);
@@ -29,11 +30,10 @@ function Settings(props) {
     const handlefont = (value) => {
         setFontSelect(value);
         document.body.style.setProperty("--tibetan-fonts", `${value}`);
-        let update = document.getElementById("updateList");
 
         setTimeout(() => {
-            update.click();
-        }, 800);
+            window.dispatchEvent(new Event("resize"));
+        }, 1000);
         setShowOption(false);
     };
 
@@ -54,12 +54,11 @@ function Settings(props) {
                             bgcolor: "heading.main",
                         }}
                     >
-                        <Slider
-                            max={20}
-                            min={7}
-                            initialvalue={props.textFontSize}
-                            changeSize={props.onChangedFontSize}
+                        <FontContainer
+                            fontSize={props.textFontSize}
+                            onChange={props.onChangedFontSize}
                         />
+
                         <Divider />
                         <FontSelection
                             selectFont={handlefont}

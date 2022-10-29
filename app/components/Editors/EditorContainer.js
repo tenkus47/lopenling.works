@@ -43,9 +43,6 @@ const mapStateToProps = (state) => {
         }
     }
 
-    if (!state.user.userId === -1) {
-        user = state.user;
-    }
     return {
         selectedText,
         selectedWitness,
@@ -58,6 +55,7 @@ const mapStateToProps = (state) => {
         theme: reducers.getTheme(state),
         isPanelLinked: reducers.isPanelLinked(state),
         textListIsVisible: reducers.getTextListVisible(state),
+        isPanelVisible: reducers.isPanelVisible(state),
     };
 };
 
@@ -78,8 +76,8 @@ const matchDispatchToProps = (dispatch) => {
                 dispatch(actions.changedActiveTextAnnotation(null));
             }
         },
-        onChangeWindowOpen: (data: boolean, textId) => {
-            dispatch(actions.toggleSecondWindow(data, textId));
+        onChangeWindowOpen: (data: boolean) => {
+            dispatch(actions.toggleSecondWindow(data));
         },
         onChangePanelLink: (data: boolean) => {
             dispatch(actions.changePanelLink(data));

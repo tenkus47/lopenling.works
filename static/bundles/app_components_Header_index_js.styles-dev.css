@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src: local("arial");
+}
+
+@font-face {
+    font-family: "Tibetan";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/static/fonts/monlam_bodyig-webfont.woff") format("woff"),
+        url("/static/fonts/monlam_bodyig-webfont.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
+    font-family: "Tsumachu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/tsumachu.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+.Header---header {
+    background-color: #FBFBFA;
+    font-family: "Overpass", "arial", "sans-serif";
+    font-size: clamp(0.69rem, calc(0.65rem + 0.21vw), 0.80rem);
+    color: #666666;
+    height: 40px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .18);
+            box-shadow: 0 1px 8px rgba(0, 0, 0, .18);
+    /* Same as lopenling header */
+    z-index: 1;
+}
+
+.Header---header p {
+    margin: 0;
+    padding: 0;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+}
+
+.Header---logo {
+    margin-right: 20px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.Header---navigationButton {
+    margin-right: 10px;
+}
+
+.Header---loginButton {
+    font-family: "Overpass", "arial", "sans-serif";
+    background-color: #88af8e;
+    color: #ffffff;
+    margin-right: 20px;
+    margin-left: 7px;
+    border: 0;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.Header---ButtonText {
+    font-size: clamp(0.69rem, calc(0.65rem + 0.21vw), 0.80rem) !important;
+
+}
+
+.Header---loginButton svg {
+    color: white;
+    margin-right: 5px;
+}
+
+.Header---buttonLink {
+    line-height: 1;
+    background-color: #88af8e;
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+.Header---controls {
+    position: relative;
+}
+.LocaleSwitcher---localeOptions {
+    margin-right: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 10px;
+}
+
+.LocaleSwitcher---localeOption {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.LocaleSwitcher---selected {
+    font-weight: bold;
+}
+.NavigationButton---button {
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    border-radius: 5px;
+}
+
+.NavigationButton---button svg {
+    width: 16px;
+}
+
+.NavigationButton---button:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+.AccountOverlay---overlay {
+    position: absolute;
+    width: 200px;
+    background-color: #ddd;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, .4);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, .4);
+    z-index: 1;
+    padding: 10px;
+}
+
+.AccountOverlay---username {
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+    color: #444;
+    margin: 0 0 10px 0;
+}

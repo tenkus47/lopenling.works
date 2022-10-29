@@ -4,8 +4,10 @@ import styles from "./TextsSearch.css";
 import * as constants from "app_constants";
 
 import { injectIntl } from "react-intl";
-import Button from "components/UI/Button";
-import SearchIcon from "images/search.svg";
+// import Button from "components/UI/Button";
+import { Button, IconButton } from "components/UI/muiComponent";
+import { Search as SearchIcon } from "components/UI/muiIcon";
+import { Box } from "components/UI/muiComponent";
 
 type Props = {
     searchValue: string,
@@ -31,26 +33,16 @@ const TextsSearch = (props: Props) => {
         }
     };
 
-    const handleChange = (e) => {
-        startTransition(() => {
-            if (e.target.value === "") {
-                props.searchChanged(null);
-                return;
-            }
-            props.searchChanged(e.target.value);
-        });
-    };
-    console.log(props.textListWidth);
     return (
-        <div
+        <Box
+            sx={{ bgcolor: "inherit" }}
             className={styles.textsSearchContainer}
-            style={{ maxWidth: props.textListWidth }}
+            // style={{ maxWidth: props.textListWidth }}
         >
             <div className={styles.textsSearch}>
                 <form onSubmit={initiateSearch}>
                     <input
-                        onChange={handleChange}
-                        style={{ outline: "none", width: 150 }}
+                        style={{ outline: "none", maxWidth: 196 }}
                         type="text"
                         id="textSearchInput"
                         placeholder={props.intl.formatMessage({
@@ -59,17 +51,16 @@ const TextsSearch = (props: Props) => {
                         ref={textInput}
                     />
                     <Button
-                        backgroundColor="#35BF5C"
                         onClick={initiateSearch}
-                        // title={props.intl.formatMessage({
-                        //     id: "leftbar.search",
-                        // })}
-                        noBezel={true}
-                        icon={<SearchIcon />}
-                    />
+                        variant="outlined"
+                        size="small"
+                        sx={{ minWidth: 2 }}
+                    >
+                        <SearchIcon />
+                    </Button>
                 </form>
             </div>
-        </div>
+        </Box>
     );
 };
 

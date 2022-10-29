@@ -7,7 +7,7 @@ var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var LodashModuleReplacementPlugin = require("lodash-webpack-plugin");
 /*We are basically telling webpack to take index.js from entry. Then check for all file extensions in resolve. 
 After that apply all the rules in module.rules and produce the output and place it in main.js in the public folder.*/
-
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   context: __dirname,
   mode: "development",
@@ -16,8 +16,8 @@ module.exports = {
     parkhang: ["./app/index", "./website/index"],
   },
   output: {
-    path: path.resolve(__dirname, "docs"),
-    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "static/bundles"),
+    filename: "main.bundle.js",
   },
   optimization: {
     splitChunks: {
@@ -53,14 +53,23 @@ module.exports = {
       },
     }),
     new LodashModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      title: "Lopenling App",
+      templateContent: `
+      <html>
+      <body>
+      <div id='root'></div>
+      </body>
+      </html>`,
+    }),
   ],
-  target: "web",
   devServer: {
-    port: "9500",
+    port: "8000",
     static: ["./"],
     open: true,
     hot: true,
     liveReload: true,
+    historyApiFallback: true,
   },
   resolve: {
     extensions: [".js", ".jsx", ".json", ".tsx", ".ts"],
@@ -182,4 +191,5 @@ module.exports = {
       },
     ],
   },
+  // devtool: "source-map",
 };

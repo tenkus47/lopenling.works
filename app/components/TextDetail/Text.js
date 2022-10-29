@@ -62,6 +62,7 @@ export type Props = {
     textAlignmentById: {},
     selectedSourceRange: [],
     selectedTargetRange: [],
+    MediaInterval: {},
 };
 
 export type State = {
@@ -186,7 +187,6 @@ class Text extends React.Component<Props, State> {
 
     generateHtml(renderProps: Props, renderState: State): { __html: string } {
         let segments = renderState.segmentedText.segments;
-
         let textLineClass = styles.textLine;
         let segmentHTML = '<p class="' + textLineClass + '">';
         if (segments.length === 0) return { __html: segmentHTML };
@@ -337,12 +337,28 @@ class Text extends React.Component<Props, State> {
                         selectedCurrentLineBreak = true;
                     }
                 }
-
                 if (
                     remainingAnnotations.length > 0 ||
                     activeInsertions.length > 0
                 ) {
-                    classes.push(styles.annotation);
+                    if (remainingAnnotations.some((l) => l.type === "P")) {
+                        classes.push(styles.P_annotation);
+                    }
+                    if (remainingAnnotations.some((l) => l.type === "Q")) {
+                        var double = remainingAnnotations.filter(
+                            (l) => l.type === "Q"
+                        );
+                        if (double.length > 1) {
+                            classes.push(styles.Q_annotation_double);
+                        }
+                        classes.push(styles.Q_annotation);
+                    }
+                    if (remainingAnnotations.some((l) => l.type === "N")) {
+                        classes.push(styles.N_annotation);
+                    }
+                    if (remainingAnnotations.some((l) => l.type === "V")) {
+                        classes.push(styles.V_annotation);
+                    }
                 }
             }
 
@@ -382,6 +398,18 @@ class Text extends React.Component<Props, State> {
                         ? styles.selectedRangelight
                         : styles.selectedRangeDark;
                 classes.push(newClass);
+            }
+            if (
+                renderProps.selectedMedia.isVideoVisible &&
+                renderProps.isPanelLinked
+            ) {
+                if (
+                    renderProps.MediaInterval.source_segment &&
+                    renderProps.MediaInterval.source_segment.start <
+                        segment.start &&
+                    renderProps.MediaInterval.source_segment.end > segment.start
+                )
+                    classes.push(styles.mediaInterval);
             }
 
             if (classes.length > 0) {
@@ -500,8 +528,9 @@ class Text extends React.Component<Props, State> {
         return html;
     }
     shouldComponentUpdate(nextProps: Props, nextState: State) {
-        const renderedHtml = this.generateHtml(nextProps, nextState);
+        this.textAlignmentById = this.props.textAlignmentById;
 
+        const renderedHtml = this.generateHtml(nextProps, nextState);
         if (this.props.fontSize !== nextProps.fontSize) {
             return true;
         } else if (
@@ -513,12 +542,7 @@ class Text extends React.Component<Props, State> {
             this._renderedHtml = renderedHtml;
             return true;
         }
-        // return false;
     }
-    componentDidUpdate() {
-        this.textAlignmentById = this.props.textAlignmentById;
-    }
-
     render() {
         let classes = [styles.text];
         if (this.props.row === 0) {

@@ -20,7 +20,7 @@ import {
     Typography,
     Button,
     Grow,
-} from "@mui/material";
+} from "components/UI/muiComponent";
 import addShay from "lib/addTibetanShay";
 import { filter } from "lodash";
 function TextList(props) {
@@ -30,6 +30,7 @@ function TextList(props) {
     const onSelectedText = props.onSelectedText;
     const selectedText = props.selectedText;
     const [isOpen, setIsOpen] = useState(false);
+
     let selected = selectedText?.name;
     const cache = useRef(
         new CellMeasurerCache({
@@ -51,6 +52,7 @@ function TextList(props) {
             setTextList([...temp]);
         }
     }, [filterValue]);
+
     const handleClick = () => {
         setIsOpen((prev) => !prev);
         if (isOpen === false) classes.push(styles.open);
@@ -112,14 +114,15 @@ function TextList(props) {
                     component="div"
                     variant="outlined"
                     sx={{
-                        overflow: "hidden",
                         textOverflow: "ellipsis",
                         width: "10rem",
                         height: "100%",
                         color: "text.primary",
                     }}
                 >
-                    <Typography noWrap={true}>{selected}</Typography>
+                    <Typography noWrap={true}>
+                        {selected ? selected : "select Text here"}
+                    </Typography>
                 </Button>
 
                 <Grow in={isOpen}>
@@ -134,7 +137,7 @@ function TextList(props) {
                         <TextField
                             onChange={handleChange}
                             id="standard-basic"
-                            label="filter"
+                            label="Search"
                             variant="standard"
                             style={{ width: "100%" }}
                         />
@@ -143,7 +146,7 @@ function TextList(props) {
                                 <List
                                     width={width}
                                     height={height}
-                                    rowHeight={40}
+                                    rowHeight={30}
                                     deferredMeasurementCache={cache.current}
                                     rowCount={textslist.length}
                                     rowRenderer={rowRenderer}

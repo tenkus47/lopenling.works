@@ -2,9 +2,9 @@
 import React, { useState, useEffect, memo, useLayoutEffect } from "react";
 import _ from "lodash";
 import { FormattedMessage, injectIntl } from "react-intl";
-import styles from "./SelectVersion.css";
+import styles from "components/TextDetail/SelectVersion.css";
 import Witness from "lib/Witness";
-import { NativeSelect } from "@mui/material";
+import { NativeSelect } from "components/UI/muiComponent";
 
 export type Props = {
     witnesses: Witness[],

@@ -1,11 +1,20 @@
 import React from "react";
-import { Box, ClickAwayListener, Typography } from "@mui/material";
+import {
+    Box,
+    ClickAwayListener,
+    Typography,
+    Toolbar,
+    InputBase,
+} from "components/UI/muiComponent";
+import { connect } from "react-redux";
+import * as actions from "actions";
+import * as reducers from "reducers";
+
 import Loader from "react-loader";
 import styles from "./TableOfContent.css";
 import { styled, alpha } from "@mui/material/styles";
-import SearchIcon from "@mui/icons-material/Search";
-import InputBase from "@mui/material/InputBase";
-import Toolbar from "@mui/material/Toolbar";
+import { Search as SearchIcon } from "components/UI/muiIcon/";
+import Commentary from "./Commentary";
 const Search = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: theme.shape.borderRadius,
@@ -49,10 +58,11 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
 }));
 
-function TableOfContent() {
+function TableOfContent(props) {
     let data = [
-        { Id: 1, Title: "chapter 1", segment_id: 0 },
+        { Id: 1, Title: "chapter 1", segment_id: 1 },
         { Id: 2, Title: "chapter 2", segment_id: 400 },
+        { Id: 3, Title: "chapter 3", segment_id: 3000 },
     ];
     let loaded = data.length > 0 ? true : false;
 
@@ -67,6 +77,7 @@ function TableOfContent() {
                 paddingInline: 2,
             }}
         >
+            <Commentary />
             <Toolbar
                 sx={{
                     justifyContent: "space-between",
@@ -97,9 +108,15 @@ function TableOfContent() {
                                 cursor: "pointer",
                                 width: "fit-content",
                                 "&:hover": {
-                                    fontWeight: "bold",
+                                    textDecoration: "underline",
                                 },
                             }}
+                            onClick={() =>
+                                props.changeScrollToId({
+                                    from: "table",
+                                    id: list.segment_id,
+                                })
+                            }
                         >
                             {list.Title}
                         </Box>
@@ -110,4 +127,16 @@ function TableOfContent() {
     );
 }
 
-export default React.memo(TableOfContent);
+const mapStateToProps = (state) => {
+    return {};
+};
+const mapDispatchToProps = (dispatch) => {
+    return {
+        changeScrollToId: (payload) =>
+            dispatch(actions.changeScrollToId(payload)),
+    };
+};
+
+export default React.memo(
+    connect(mapStateToProps, mapDispatchToProps)(TableOfContent)
+);

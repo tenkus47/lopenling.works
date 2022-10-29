@@ -2,7 +2,7 @@
     "locale": "en",
     "displayName": "English",
     "messages": {
-        "header.title": "Nalanda Texts Project",
+        "header.title": "Lopenling Application",
         "header.login": "Log In",
         "header.signUp": "Sign Up",
         "header.logout": "Sign Out",
@@ -16,8 +16,8 @@
         "annotation.workingEdition": "Working",
         "annotation.edit": "Edit",
         "annotation.delete": "delete",
-        "annotation.save": "✅",
-        "annotation.cancel": "❌",
+        "annotation.save": "Save Edit",
+        "annotation.cancel": "Cancel",
         "annotations.login": "Login",
         "annotations.loginLink": "login",
         "annotations.loginMessage": "Please {loginLink} to make changes.",
@@ -33,6 +33,13 @@
         "header.texts":"Texts",
         "header.editor":"Editor",
         "lopenlingForum":"Lopenling Forum",
-        "Nalanda":"Nalanda"
+        "Nalanda":"Nalanda",
+        "library":"Library",
+            "Resource.About":"About",
+        "text.title":"Title",
+        "text.description":"Description",
+        "header.vote":"vote"
+
+
     }
 }

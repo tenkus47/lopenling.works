@@ -1,7 +1,6 @@
 import React from "react";
-import { IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-import ClearIcon from "@mui/icons-material/Clear";
+import { IconButton } from "components/UI/muiComponent";
+import { Menu as MenuIcon, Clear as ClearIcon } from "components/UI/muiIcon";
 function TableOfContent({ changeShowTableContent, showTableContent }) {
     function handleClick() {
         changeShowTableContent(!showTableContent);

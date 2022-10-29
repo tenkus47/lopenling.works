@@ -5,7 +5,7 @@ import classnames from "classnames";
 import { FormattedMessage, injectIntl } from "react-intl";
 import styles from "./SelectVersion.css";
 import Witness from "lib/Witness";
-import { NativeSelect } from "@mui/material";
+import { NativeSelect } from "components/UI/muiComponent";
 export type Props = {
     witnesses: Witness[],
     activeWitness: Witness | null,

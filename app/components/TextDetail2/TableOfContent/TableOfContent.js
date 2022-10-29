@@ -1,11 +1,10 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography } from "components/UI/muiComponent";
 import Loader from "react-loader";
 
 import { styled, alpha } from "@mui/material/styles";
-import SearchIcon from "@mui/icons-material/Search";
-import InputBase from "@mui/material/InputBase";
-import Toolbar from "@mui/material/Toolbar";
+import { Search as SearchIcon } from "components/UI/muiIcon";
+import { InputBase, Toolbar } from "components/UI/muiComponent";
 
 const Search = styled("div")(({ theme }) => ({
     position: "relative",

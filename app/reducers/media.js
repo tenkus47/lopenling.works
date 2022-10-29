@@ -3,30 +3,29 @@ import * as actions from "actions";
 
 export type MediaState = {
     isPanelVisible: Boolean,
-    isImageVisible: Boolean,
     isVideoVisible: Boolean,
     isAudioVisible: Boolean,
-    isImagePortrait: Boolean,
-    imageData: {},
     videoData: {},
     audioData: {},
-    selectedImage: Number,
-    selectedImageVersion: Number,
-    imageAlignmentById: [],
+    selectedInterval: {},
 };
 
 export const initialMediaState: MediaState = {
     isPanelVisible: false,
-    isImageVisible: false,
     isVideoVisible: false,
     isAudioVisible: false,
-    isImagePortrait: false,
-    imageData: {},
     videoData: {},
     audioData: {},
-    selectedImage: 0,
-    selectedImageVersion: null,
-    imageAlignmentById: [],
+    selectedInterval: {
+        source_segment: {
+            end: "1",
+            start: "0",
+        },
+        target_segment: {
+            end: "00:00:1",
+            start: "00:00:00",
+        },
+    },
 };
 
 function selectMedia(state, action) {
@@ -41,21 +40,6 @@ function selectMedia(state, action) {
     }
 
     switch (action.payload) {
-        case "IMAGE":
-            if (state.isImageVisible === true) {
-                return {
-                    ...state,
-                    isImageVisible: false,
-                    isPanelVisible: false,
-                };
-            }
-            return {
-                ...state,
-                isPanelVisible: true,
-                isVideoVisible: false,
-                isAudioVisible: false,
-                isImageVisible: true,
-            };
         case "VIDEO":
             if (state.isVideoVisible === true) {
                 return {
@@ -69,8 +53,6 @@ function selectMedia(state, action) {
                 isPanelVisible: true,
                 isVideoVisible: true,
                 isAudioVisible: false,
-                isImageVisible: false,
-                isImagePortrait: true,
             };
         case "AUDIO":
             if (state.isAudioVisible === true) {
@@ -85,48 +67,16 @@ function selectMedia(state, action) {
                 isVideoVisible: false,
                 isPanelVisible: true,
                 isAudioVisible: true,
-                isImageVisible: false,
-                isImagePortrait: true,
             };
     }
 }
-function changeSelectedImage(state, action) {
+function changeMediaSyncInterval(state: MediaState, action): MediaState {
     return {
         ...state,
-        selectImage: action.payload,
-    };
-}
-function changeSelectedImageVersion(state, action) {
-    return {
-        ...state,
-        selectedImageVersion: action.payload,
-    };
-}
-function changeIsImagePortrait(state: MediaState, action): MediaState {
-    return {
-        ...state,
-        isImagePortrait: action.payload,
+        selectedInterval: action.interval,
     };
 }
 
-function loadImageData(state: MediaState, action): MediaState {
-    let datas = action.data;
-    let imageAlignmentById = [];
-    if (datas?.alignment) {
-        datas.alignment.map((data, index) => {
-            imageAlignmentById.push({
-                id: index,
-                start: data.source_segment.start,
-                end: data.source_segment.end,
-            });
-        });
-    }
-    return {
-        ...state,
-        imageData: action.data,
-        imageAlignmentById,
-    };
-}
 function loadVideoData(state: MediaState, action): MediaState {
     return {
         ...state,
@@ -136,11 +86,8 @@ function loadVideoData(state: MediaState, action): MediaState {
 
 const mediaReducers = {
     [actions.ACTIVATE_MEDIA]: selectMedia,
-    [actions.LOAD_IMAGE_DATA]: loadImageData,
     [actions.LOAD_VIDEO_DATA]: loadVideoData,
-    [actions.IS_IMAGE_PORTRAIT]: changeIsImagePortrait,
-    [actions.SELECT_IMAGE_VERSION]: changeSelectedImageVersion,
-    [actions.SELECT_IMAGE]: changeSelectedImage,
+    [actions.SELECT_MEDIA_INTERVAL]: changeMediaSyncInterval,
 };
 
 export const getMediaData = (state) => {
@@ -149,25 +96,13 @@ export const getMediaData = (state) => {
 export const isPanelVisible = (state) => {
     return state.isPanelVisible;
 };
-export const getSelectedImageVersion = (state) => {
-    return state.selectedImageVersion;
+
+export const getMediaInterval = (state) => {
+    return state.selectedInterval;
 };
 
-export const getSelectedImage = (state) => {
-    return state.selectImage;
-};
-export const isImagePortrait = (state: DataState) => {
-    return state.isImagePortrait;
-};
-
-export const getImageData = (state: DataState) => {
-    return state.imageData;
-};
 export const getVideoData = (state: DataState) => {
     return state.videoData;
-};
-export const getImageAlignmentById = (state) => {
-    return state.imageAlignmentById;
 };
 
 export default mediaReducers;

@@ -1,5 +1,5 @@
 import React from "react";
-import reactDom from "react-dom";
+import ReactDOM from "react-dom/client";
 import Cookies from "js-cookie";
 import AppContainer from "components/App/AppContainer";
 
@@ -57,6 +57,7 @@ const locales = {
 
 // App Constants
 import * as constants from "app_constants";
+
 // For react-intl - prevents FormattedMessage from always
 // outputting a <span>
 // see https://github.com/yahoo/react-intl/issues/999#issuecomment-335799491
@@ -92,6 +93,12 @@ const routesMap = {
     path: "/editor",
     thunk: RouteEditorPage,
   },
+  vote: {
+    path: "/vote",
+    thunk: (dispatch, getState) => {
+      dispatch(actions.changeUrl("Vote"));
+    },
+  },
 };
 
 const routes = connectRoutes(routesMap, {
@@ -121,12 +128,15 @@ sagaMiddleware.run(rootSaga);
 routes.initialDispatch();
 
 // TODO: use batch dispatcher?
-store.dispatch(actions.updateLocales(locales));
+store.dispatch(
+  actions.updateLocales({
+    en: en,
+    bo: bo,
+  })
+);
 
-let USER_LOGGED_IN = false;
-// USER_ID
+const USER_LOGGED_IN = false;
 let USER_LOCALE = "en";
-// USER_NAME
 
 if (USER_LOGGED_IN) {
   store.dispatch(userLoggedIn(USER_ID, USER_NAME, USER_LOCALE));
@@ -152,12 +162,13 @@ function intlSelector(state) {
   };
 }
 
-reactDom.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <Provider store={store}>
     <IntlProvider textComponent={Fragment} intlSelector={intlSelector}>
       <AppContainer />
     </IntlProvider>
-  </Provider>,
-  document.getElementById("root")
+  </Provider>
 );
+
 store.dispatch(loadInitialData());

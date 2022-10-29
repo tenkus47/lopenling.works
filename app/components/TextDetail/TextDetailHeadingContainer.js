@@ -88,8 +88,8 @@ const mergeProps = (stateProps, dispatchProps, ownProps) => {
         onChangedFontSize: (fontSize: number) => {
             dispatch(actions.changedTextFontSize(fontSize));
         },
-        onChangeWindowOpen: (data: boolean, textId) => {
-            dispatch(actions.toggleSecondWindow(data, textId));
+        onChangeWindowOpen: (data: boolean) => {
+            dispatch(actions.toggleSecondWindow(data));
         },
         onExport: () => {
             dispatch(
@@ -117,8 +117,23 @@ const mergeProps = (stateProps, dispatchProps, ownProps) => {
         changeShowTableContent: (payload) => {
             dispatch(actions.showTableContent(payload));
         },
-        changeSelectSyncId: (payload) => {
-            dispatch(actions.changeSyncIdOnSearch(payload));
+    
+          onSelectedSearchResult: (
+            text: api.TextData,
+            start: number,
+            length: number,
+            selectedText: api.TextData | null
+        ) => {
+            if (!selectedText || selectedText.id !== text.id) {
+                dispatch(
+                    batchActions([
+                        actions.selectedSearchResult(text.id, start, length),
+                        actions.selectedText(text),
+                    ])
+                );
+            } else {
+                dispatch(actions.selectedSearchResult(text.id, start, length));
+            }
         },
     };
 };

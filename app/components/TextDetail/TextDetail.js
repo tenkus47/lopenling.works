@@ -1,8 +1,6 @@
 // @flow
 import React from "react";
 import classnames from "classnames";
-import imageStyle from "components/MediaComponent/Image.css";
-
 import Loader from "react-loader";
 import AnnotationControlsContainer from "./AnnotationControlsContainer";
 import SplitText from "lib/SplitText";
@@ -17,10 +15,15 @@ import utilStyles from "css/util.css";
 import type { TextData } from "api";
 import TextSegment from "lib/TextSegment";
 import TextDetailHeadingContainer from "./TextDetailHeadingContainer";
-import { Box, ClickAwayListener, Divider, Slide } from "@mui/material";
+import {
+    Box,
+    ClickAwayListener,
+    Divider,
+    Slide,
+} from "components/UI/muiComponent";
 import _ from "lodash";
 import TableOfContent from "./TableOfContent/TableOfContent";
-
+import AnnotationPortal from "./AnnotationProtal";
 import SplitTextComponent from "components/TextDetail/SplitText";
 
 export type Props = {
@@ -56,6 +59,7 @@ export type Props = {
     changeScrollToId: () => void,
     changeSelectedImage: () => void,
     closeAnnotation: () => void,
+    textAlignment: [],
     textAlignmentById: {},
     selectedWindow: Number,
     changeSelectedWindow: () => void,
@@ -66,10 +70,9 @@ export type Props = {
     searchResults: [],
     changeShowTableContent: () => void,
     showTableContent: Boolean,
-    syncIdOnSearch: String,
-    imageAlignmentById: [],
-    changeImageScrollId: () => void,
     imageScrollId: {},
+    MediaInterval: {},
+    isAnnotating: Boolean,
 };
 
 let textDetailId = 0;
@@ -86,7 +89,8 @@ class TextDetail extends React.Component<Props> {
     }
 
     mouseEnter() {
-        if (this.selectedWindow === 2) this.props.changeSelectedWindow(1);
+        if (this.selectedWindow === 2 && this.props.text.name)
+            this.props.changeSelectedWindow(1);
     }
     componentDidMount() {
         this.ref.current.addEventListener(
@@ -122,7 +126,6 @@ class TextDetail extends React.Component<Props> {
             } else {
                 splitter = lengthSplitter(1000, /^།[\s]+(?!།[\s]+)/, 2, 5);
             }
-
             splitText = new SplitText(this.props.annotatedText, splitter);
 
             inlineControls = true;
@@ -139,13 +142,12 @@ class TextDetail extends React.Component<Props> {
                     selectedAnnotatedSegments={
                         this.props.selectedAnnotatedSegments
                     }
+                    isAnnotating={this.props.isAnnotating}
                     syncIdOnClick={this.props.syncIdOnClick}
                     textListVisible={this.props.textListVisible}
                     showImages={this.props.pageImagesVisible}
-                    // showImages={this.props.selectedMedia.isImageVisible}
                     imagesBaseUrl={this.props.imagesBaseUrl}
                     selectedWitness={this.props.selectedWitness}
-                    selectedWitness2={this.props.selectedWitness2}
                     key={this.key}
                     selectedSearchResult={this.props.selectedSearchResult}
                     searchValue={this.props.searchValue}
@@ -157,7 +159,6 @@ class TextDetail extends React.Component<Props> {
                     isPanelLinked={this.props.isPanelLinked}
                     selectedImage={this.props.selectedImage}
                     changeSelectedImage={this.props.changeSelectedImage}
-                    isAnnotating={this.props.isAnnotating}
                     closeAnnotation={this.props.closeAnnotation}
                     textAlignment={this.props.textAlignment}
                     textAlignmentById={this.props.textAlignmentById}
@@ -170,11 +171,9 @@ class TextDetail extends React.Component<Props> {
                     searchResults={this.props.searchResults}
                     showTableContent={this.props.showTableContent}
                     selectedText={this.props.text}
-                    syncIdOnSearch={this.props.syncIdOnSearch}
-                    imageAlignmentById={this.props.imageAlignmentById}
-                    changeImageScrollId={this.props.changeImageScrollId}
-                    imageScrollId={this.props.imageScrollId}
                     condition={this.props.condition}
+                    selectedMedia={this.props.selectedMedia}
+                    MediaInterval={this.props.MediaInterval}
                 />
             );
         }
@@ -182,9 +181,7 @@ class TextDetail extends React.Component<Props> {
         return (
             <Box
                 sx={{
-                    height: "100%",
-                    flex: 1,
-                    bgcolor: "navbar.main",
+                    bgcolor: "heading.main",
                     color: "texts.main",
                 }}
                 className={classnames(
@@ -203,11 +200,9 @@ class TextDetail extends React.Component<Props> {
                         display: "flex",
                         height: "100%",
                         width: "100%",
-                        position: "relative",
                     }}
                 >
                     <Box
-                        style={{ flex: 1 }}
                         className={classnames(
                             styles.textContainer,
                             utilStyles.flex
@@ -235,6 +230,7 @@ class TextDetail extends React.Component<Props> {
                         </Box>
                     </Slide>
                 </Box>
+                <AnnotationPortal />
             </Box>
         );
     }

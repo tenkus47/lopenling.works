@@ -73,7 +73,11 @@ export type DataState = {
         [annotationId: AnnotationUniqueId]: boolean,
     },
     alignment: {},
-    textAlignment: {},
+    textAlignment: {
+        alignments: [],
+        source: {},
+        target: {},
+    },
 };
 
 // Data
@@ -102,8 +106,15 @@ export const initialDataState: DataState = {
     searchResults: {},
     questions: {},
     questionsLoading: {},
-    alignment: {},
-    textAlignment: {},
+    alignment: {
+        text: 0,
+        alignments: { text: [], image: {}, video: {} },
+    },
+    textAlignment: {
+        alignment: [],
+        source: { text: "", witness: "" },
+        target: { text: "", witness: "" },
+    },
     textAlignmentById: [],
 };
 

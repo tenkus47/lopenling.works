@@ -17,9 +17,7 @@ export type AnnotationOp = "A" | "R";
 export const appliedOp: AnnotationOp = "A";
 export const removedOp: AnnotationOp = "R";
 
-// let HOST = "https://parkhang.lopenling.org";
-let HOST = "http://localhost:8000";
-
+let HOST = "https://parkhang.lopenling.org";
 export function setHost(host: string) {
   HOST = host;
 }
@@ -54,7 +52,7 @@ function request(method: ReqMethod, url, data: any = null): Promise<*> {
       })
       .catch((error) => {
         // console.dir(error);
-        console.log("couldnot get the data . check connection");
+        console.log("connection problem");
         reject(error);
       });
   });
@@ -374,6 +372,10 @@ export function updateAnnotation(annotation: Annotation) {
 
 export function deleteAnnotation(annotation: Annotation) {
   const url = getAnnotationUrl(annotation.witness, annotation);
+
+  if (annotation.type === "Q") {
+    deleteQuestion(annotation);
+  }
   return request(DELETE, url);
 }
 
@@ -394,7 +396,6 @@ function getQuestionUrl(
   if (annotation) {
     url += `${annotation.start}-${annotation.length}`;
   }
-
   return url;
 }
 
@@ -409,12 +410,15 @@ export function createQuestion(
     question_content: content,
     ...dataFromAnnotation(annotation),
   };
-
   return request(POST, url, data);
+}
+
+export function deleteQuestion(annotation: Annotation) {
+  const url = getQuestionUrl(annotation.witness, annotation);
+  return request(DELETE, url);
 }
 
 export function getQuestion(annotation: Annotation) {
   const url = getQuestionUrl(annotation.witness, annotation);
-
   return request(GET, url);
 }

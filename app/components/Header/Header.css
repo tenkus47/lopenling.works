@@ -1,6 +1,6 @@
 @import "css/type.css";
 @import "css/colour.css";
-
+@import "css/layout.css";
 @value header-height: 40px;
 
 :root {
@@ -14,7 +14,7 @@
 .header {
     background-color: var(--nav-bgcolor);
     font-family: var(--fonts);
-    font-size: 1.5rem;
+    font-size: var(--step--2);
     color: var(--nav-text);
     height: var(--header-height);
     justify-content: space-between;
@@ -46,7 +46,6 @@
 
 .loginButton {
     font-family: var(--fonts);
-    font-size: 15px;
     background-color: var(--green-tint);
     color: #ffffff;
     margin-right: 20px;
@@ -57,6 +56,11 @@
     border-radius: 4px;
     display: flex;
     align-items: center;
+}
+
+.ButtonText {
+    font-size: var(--step--2) !important;
+
 }
 
 .loginButton svg {

@@ -58,9 +58,9 @@ export default class Button extends React.Component<Props> {
                     {this.props.title && (
                         <span className={styles.title}>{this.props.title}</span>
                     )}
-                    {/* {this.props.accessoryType && (
-                    <Accessory type={this.props.accessoryType} />
-                )} */}
+                    {this.props.accessoryType && (
+                        <Accessory type={this.props.accessoryType} />
+                    )}
                 </button>
             </ApplyTooltip>
         );

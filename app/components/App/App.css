@@ -27,7 +27,15 @@ body {
     /* background-color: white; */
     overflow: hidden;
 }
-
+body textArea{
+resize: vertical;
+background-color: white;
+color: black;
+border-radius: 10px;
+border: none;
+box-shadow: 1px 1px 3px gray;
+caret-color: blue;
+}
 
 .container {
     padding: 0;

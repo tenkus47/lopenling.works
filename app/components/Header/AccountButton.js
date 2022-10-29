@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { Avatar, Tooltip, IconButton } from "@mui/material";
+import { Avatar, Tooltip, IconButton } from "components/UI/muiComponent";
 
 type Props = {
     name: string,

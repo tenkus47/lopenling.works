@@ -9,7 +9,7 @@ import HighlightedString from "./HighlightedString";
 import styles from "./SearchStyle.css";
 
 function SearchList(props) {
-    const { handleListItemClick, searchValue, results, selectedText } = props;
+    const { onSelectedSearchResult, searchValue, results, selectedText } = props;
     let listRef = useRef();
     let cache = useRef(
         new CellMeasurerCache({
@@ -31,7 +31,12 @@ function SearchList(props) {
                     {results.length > 0 && (
                         <div
                             className={styles.searchListItem}
-                            onClick={() => handleListItemClick(result[0])}
+                            onClick={() => onSelectedSearchResult(
+                                selectedText,
+                                result[0],
+                                searchValue.length,
+                                selectedText
+                            )}
                         >
                             <HighlightedString
                                 string={result[1]}

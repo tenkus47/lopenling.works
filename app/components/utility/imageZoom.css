@@ -1,0 +1,9 @@
+figure {
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+figure:hover img {
+    opacity: 0;
+}
+

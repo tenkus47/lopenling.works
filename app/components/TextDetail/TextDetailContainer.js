@@ -46,16 +46,12 @@ import {
     getSearchValue,
     getTextFontSize,
     isSecondWindowOpen,
-    getImageData,
-    getSelectedImage,
-    isImagePortrait,
     isPanelVisible,
     getSelectedSourceRange,
     getSelectedTargetRange,
     getSearchResults,
     getShowTableContent,
-    getImageAlignmentById,
-    getImageScrollId,
+    getMediaInterval,
 } from "reducers";
 import * as reducers from "reducers";
 import _ from "lodash";
@@ -161,7 +157,6 @@ const mapStateToProps = (state) => {
     const loading =
         state.data.loadingWitnesses || state.data.loadingAnnotations;
     const textListVisible = getTextListVisible(state);
-    const isPanelLinked = reducers.isPanelLinked(state);
     const textAlignmentById = reducers.getTextAlignmentById(state);
 
     if (loading) {
@@ -181,9 +176,7 @@ const mapStateToProps = (state) => {
             user: user,
             textListVisible,
             fontSize: constants.DEFAULT_TEXT_FONT_SIZE,
-            isPanelLinked,
             textAlignmentById,
-            imageAlignmentById: getImageAlignmentById(state),
         };
     }
 
@@ -268,10 +261,14 @@ const mapStateToProps = (state) => {
             }
         }
         if (selectedWitness && baseWitness && annotatedText) {
-            let witnessPageBreaks =
-                annotatedText.getAnnotationsOfType(
-                    ANNOTATION_TYPES.pageBreak
-                ) || {};
+            var selectedWitnessAnnotaion =
+                state.data.witnessAnnotationsById[selectedWitness.id];
+            let newArray = Object.values(selectedWitnessAnnotaion);
+            let witnessPageBreaks = newArray;
+            // annotatedText.getAnnotationsOfType(
+            //     ANNOTATION_TYPES.pageBreak
+            // ) || {};
+
             let basePageBreaks = null;
             if (selectedWitness.id !== baseWitness.id) {
                 basePageBreaks = getAnnotationsForWitnessId(
@@ -281,8 +278,8 @@ const mapStateToProps = (state) => {
                     baseWitness.id
                 );
             }
-
             pageBreaks = getPageBreaks(witnessPageBreaks, basePageBreaks);
+
             for (let i = 0, len = pageBreaks.length; i < len; i++) {
                 let position = pageBreaks[i];
                 let segment = annotatedText.segmentAtOriginalPosition(position);
@@ -305,18 +302,15 @@ const mapStateToProps = (state) => {
     }
     _selectedWitness = selectedWitness;
     const scrollToId = reducers.getScrollToId(state);
+    const isPanelLinked = reducers.isPanelLinked(state);
+
     const textAlignment = reducers.getTextAlignment(state);
     const syncIdOnClick = reducers.getSyncIdOnClick(state);
     const selectedWindow = reducers.getSelectedWindow(state);
     const selectedWitness2 = reducers.getSelectedTextWitness2(state);
     let Media = reducers.getMediaData(state);
-    const imageData = getImageData(state);
-    let isSecondWindowOpen = reducers.isSecondWindowOpen(state);
-    let condition =
-        textAlignment?.source?.witness === selectedWitness?.id &&
-        isSecondWindowOpen &&
-        textAlignment?.target?.witness === selectedWitness2?.id &&
-        isPanelLinked;
+    const isSecondWindowOpen = reducers.isSecondWindowOpen(state);
+    const condition = reducers.getConditionForAlignment(state);
     return {
         text: selectedText,
         witnesses: witnesses,
@@ -340,11 +334,6 @@ const mapStateToProps = (state) => {
         searchValue,
         fontSize,
         isSecondWindowOpen,
-        imageData,
-        isPanelLinked,
-        selectedImage: getSelectedImage(state),
-        isImagePortrait: isImagePortrait(state),
-        isPanelVisible: isPanelVisible(state),
         isAnnotating: reducers.isAnnotating(state),
         textAlignment,
         textAlignmentById,
@@ -355,11 +344,10 @@ const mapStateToProps = (state) => {
         selectedTargetRange: getSelectedTargetRange(state),
         searchResults: getSearchResults(state, searchValue),
         showTableContent: getShowTableContent(state),
-        syncIdOnSearch: reducers.getSyncIdOnSearch(state),
-        imageAlignmentById: getImageAlignmentById(state),
-        imageScrollId: getImageScrollId(state),
         selectedMedia: Media,
-        condition: condition,
+        MediaInterval: getMediaInterval(state),
+        condition: condition && isPanelLinked && isSecondWindowOpen,
+        isPanelLinked,
     };
 };
 
@@ -598,9 +586,6 @@ const mergeProps = (stateProps, dispatchProps, ownProps) => {
                 actions.changedActiveTextAnnotation(null);
             dispatch(dismissTextAnnotation);
         },
-        changeImageScrollId: (data) => {
-            dispatch(actions.changeImageScrollId(data));
-        },
     };
 };
 
@@ -611,7 +596,6 @@ const getPageBreaks = (
     let witnessStarts = [];
     _.forIn(witnessPageBreaks, (o) => witnessStarts.push(o.start));
     witnessStarts = witnessStarts.sort((a, b) => a - b);
-
     if (!basePageBreaks) {
         return witnessStarts;
     }
@@ -619,7 +603,6 @@ const getPageBreaks = (
     let baseStarts = [];
     _.forIn(basePageBreaks, (o) => baseStarts.push(o.start));
     baseStarts = baseStarts.sort((a, b) => a - b);
-
     if (witnessStarts.length === 0) {
         return baseStarts;
     }
@@ -635,7 +618,6 @@ const getPageBreaks = (
             if (start > lastWitnessPageStart) witnessStarts.push(start);
         }
     }
-    console.log(witnessStarts);
     return witnessStarts;
 };
 
@@ -737,4 +719,4 @@ const TextDetailContainer = connect(
     mergeProps
 )(TextDetail);
 
-export default React.memo(TextDetailContainer);
+export default TextDetailContainer;

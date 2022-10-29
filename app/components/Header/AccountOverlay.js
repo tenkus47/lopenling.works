@@ -3,11 +3,14 @@ import React from "react";
 import { FormattedMessage, injectIntl } from "react-intl";
 import User from "lib/User";
 import styles from "./AccountOverlay.css";
-import { Avatar, MenuItem, Divider, ListItemIcon, Link } from "@mui/material";
-import PersonAdd from "@mui/icons-material/PersonAdd";
-import Settings from "@mui/icons-material/Settings";
-import Logout from "@mui/icons-material/Logout";
-
+import {
+    Avatar,
+    MenuItem,
+    Divider,
+    ListItemIcon,
+    Link,
+} from "components/UI/muiComponent";
+import { PersonAdd, Settings, Logout } from "components/UI/muiIcon";
 type Props = {
     top: number,
     right: number,

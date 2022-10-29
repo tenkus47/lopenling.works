@@ -12,29 +12,37 @@
         cursor: pointer;
     }
 }
-
+#annotation-desc{
+    width: 100%;
+}
 .annotationDetail {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 5px 10px 0px 0;
     padding: 0 0 0 0;
     background-color: #ddd;
     position: relative;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
-
+    cursor: pointer;
+    margin-top: 10px;
 }
-
+.annotationDetail:first-child{
+    margin-top: 0;
+}
 .annotationDetail h3 {
     flex-grow: 1;
     font-size: 12px;
     color: #444;
     font-family: var(--tibetan-fonts);
     font-weight: normal;
-    margin: 0 0 10px 0;
+    margin:0;
     padding: 5px 10px 0px 10px;
 }
-
+.date{
+        font-size: 11px;
+    color: rgba(0,0,0,0.6);
+    padding-left: 10px;
+}
 .annotationDetail p {
     flex-shrink: 0;
     font-size: 12px;
@@ -53,8 +61,9 @@
 
 .annotationHeader {
     display: flex;
-    align-items: flex-start;
-    background-color: #aebcc7;
+    align-items: center;
+    padding-inline:10px;
+
 }
 
 .annotationDetail.active h3 {
@@ -77,19 +86,25 @@
     font-family: var(--tibetan-fonts);
     flex-grow: 1;
     max-width: 100%;
-    resize: none;
     overflow: hidden;
     min-height: 50px;
-    max-height: 100px;
 }
+.contentOptions{
+    padding-bottom:10px;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 10px;
+    flex-direction: row-reverse;
+    align-items: center;
 
+}
 .actionButtons {
     display: flex;
     flex-direction: row;
     font-size: 14px;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
 }
 
@@ -103,6 +118,7 @@
     flex-shrink: 0;
     margin-right: 10px;
     border-radius: 50%;
+   
 }
 
 
@@ -111,10 +127,26 @@
 }
 
 .save {
-    color: white;
+    /* color: white;
     background-color: var(--main-tint);
     @apply --button;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease; */
+
+        border: 1px solid transparent;
+        line-height: normal;
+        box-sizing: border-box;
+        padding: 0.5em 0.65em;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        font-weight: normal;
+        color: white;
+        background: var(--main-tint);
+        cursor: pointer;
+        transition: all 0.25s;
+        font-size: 0.8706em;
+            height: 20px;
 }
 
 .save:hover {
@@ -126,4 +158,8 @@
     color: white;
     background-color: var(--cancel);
     @apply --button;
+    font-size: 0.8706em;
+        height: 20px;
+        display: flex;
+        align-items: center;
 }
